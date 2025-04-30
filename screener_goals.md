@@ -1,8 +1,8 @@
-# ✅ Stock Screener v3.6 – Final Goals Before v3.7
+# ✅ Stock Screener v3.7
 
 > **Status:** Stable daily-use build  
 > **Next phase:** Universe Builder + Automation + Risk Logic Fixes  
-> **Tag:** `v3.6-final`
+> **Tag:** `v3.7-alpha`
 
 ---
 
