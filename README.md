@@ -1,4 +1,4 @@
-# 📊 Stock Screener 3.6 – Momentum & Risk-Aware Watchlist Builder
+# 📊 Stock Screener 3.7 – Momentum & Risk-Aware Watchlist Builder
 
 A real-time stock scanning tool that builds a tiered watchlist using premarket signals, sector rotation, volume, and risk filters. Built with FastAPI + Next.js.
 
