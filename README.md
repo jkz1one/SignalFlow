@@ -8,6 +8,7 @@ A real-time stock scanning tool that builds a tiered watchlist using premarket s
 
 ### 📦 Daily Refresh
 - `daily_refresh.py`: Must be run once per day to fetch and cache fresh data. **9:40AM EST is optimal run time** 
+  - [ Build Universe] → `universe_cache.json`
   - [ Scrape TV Signals ] → `tv_signals.json`
   - [ Scrape Sector ETFs ] → `sector_etf_prices.json`
   - [ Scrape Multi-Day High/Lows ] → `multi_day_levels.json`

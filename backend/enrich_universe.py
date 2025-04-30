@@ -269,6 +269,7 @@ def main():
     now_eastern = datetime.now(eastern)
 
     for symbol, info in universe.items():
+        info.pop("yfinance_updated", None)
         info["enriched_timestamp"] = now_eastern.isoformat()
 
     with open(OUTPUT_PATH, "w") as f:

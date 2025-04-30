@@ -18,15 +18,37 @@ IMPORTANT_FILES = [
 ]
 
 # --- Cleanup Functions ---
+from datetime import timedelta
+import pandas_market_calendars as mcal
+
+def get_last_market_day():
+    nyse = mcal.get_calendar("XNYS")
+    today = datetime.now().date()
+    schedule = nyse.schedule(start_date=today - timedelta(days=7), end_date=today)
+    return schedule.index[-1].date()
+
+
+import re
 
 def is_today(file_path):
+    basename = os.path.basename(file_path)
+    match = re.search(r"_(\d{4}-\d{2}-\d{2})\.json$", basename)
+    if match:
+        file_date_str = match.group(1)
+        try:
+            file_date = datetime.strptime(file_date_str, "%Y-%m-%d").date()
+            return file_date == get_last_market_day()
+        except ValueError:
+            pass
+    # fallback: still check file mod time for non-dated files
     try:
         modified_time = os.path.getmtime(file_path)
         file_date = datetime.fromtimestamp(modified_time).date()
-        today = datetime.now().date()
-        return file_date == today
+        return file_date == get_last_market_day()
     except Exception:
         return False
+
+
 
 def cleanup_old_files():
     print("🧹 Starting Cache Cleanup...")
@@ -35,26 +57,69 @@ def cleanup_old_files():
     skipped_count = 0
 
     for base_name in IMPORTANT_FILES:
-        found_today = False
-        candidates = []
+        candidates = [
+            os.path.join(CACHE_DIR, fname)
+            for fname in os.listdir(CACHE_DIR)
+            if fname.startswith(base_name)
+        ]
 
-        for fname in os.listdir(CACHE_DIR):
-            if fname.startswith(base_name):
-                full_path = os.path.join(CACHE_DIR, fname)
-                candidates.append(full_path)
-                if is_today(full_path):
-                    found_today = True
+        # Aggressive deletion for universe_enriched / universe_scored
+        if base_name in ("universe_enriched", "universe_scored"):
+            for path in candidates:
+                if not is_today(path):
+                    try:
+                        os.remove(path)
+                        deleted_count += 1
+                        print(f"🗑️ Deleted old cache file: {os.path.basename(path)}")
+                    except Exception as e:
+                        print(f"⚠️ Error deleting {path}: {e}")
+            continue
+
+        # Conservative logic for others (only delete if today's file exists)
+        found_today = any(is_today(p) for p in candidates)
 
         if found_today:
             for path in candidates:
                 if not is_today(path):
-                    os.remove(path)
-                    deleted_count += 1
+                    try:
+                        os.remove(path)
+                        deleted_count += 1
+                        print(f"🗑️ Deleted old cache file: {os.path.basename(path)}")
+                    except Exception as e:
+                        print(f"⚠️ Error deleting {path}: {e}")
         else:
             skipped_count += 1
             print(f"⚠️ No fresh {base_name} file today. Skipping delete.")
 
     print(f"✅ Cache cleanup complete: {deleted_count} files deleted, {skipped_count} skipped.\n")
+
+import glob
+from datetime import datetime, timedelta
+
+def cleanup_old_universe_files(days_to_keep=1):
+    print("\n🧹 Cleaning Up Old Universe Files...")
+
+    # Cutoff is midnight N days ago
+    cutoff_dt = (datetime.now() - timedelta(days=days_to_keep)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+    cutoff = cutoff_dt.timestamp()
+
+    universe_files = glob.glob(os.path.join(CACHE_DIR, "universe_*.json"))
+    deleted = 0
+
+    for fpath in universe_files:
+        if os.path.getmtime(fpath) < cutoff and not fpath.endswith("universe_cache.json"):
+            try:
+                os.remove(fpath)
+                print(f"🗑️ Deleted: {os.path.basename(fpath)}")
+                deleted += 1
+            except Exception as e:
+                print(f"⚠️ Failed to delete {fpath}: {e}")
+
+    print(f"✅ Old universe cleanup complete. Deleted {deleted} files.\n")
+
+
 
 # --- Audit Functions ---
 
@@ -135,6 +200,10 @@ def audit_cache_files():
 
 # --- Main Execution ---
 
-if __name__ == "__main__":
+def run_all():
     cleanup_old_files()
+    cleanup_old_universe_files()
     audit_cache_files()
+
+if __name__ == "__main__":
+    run_all()
