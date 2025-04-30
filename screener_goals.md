@@ -1,7 +1,8 @@
 # ✅ Stock Screener v3.7
 
 > **Status:** Stable daily-use build  
-> **Next phase:** Universe Builder + Automation + Risk Logic Fixes  
+> **Next phase:** Universe Builder + Automation + Risk Logic Fixes
+> **Further Phases** Admin Panel + Sector Rotation Tab + Screener Tab (custom inputs) + Sentiment Block (to tracker) + Timestamp on Frontend
 > **Tag:** `v3.7-alpha`
 
 ---
@@ -75,16 +76,19 @@
 - [ ] Add stealth options to TradingView scraper  
 
 ### Frontend Goals
-- [ ] Sector Rotation tab  
+- [ ] Sector Rotation tab
+- [ ] Admin Panel (run refresh, etc.)
 - [ ] Add frontend config (e.g. `rel_vol` threshold)  
 - [ ] UI badge for cache timestamp freshness  
 - [ ] Add “Top 3 Only” or “Show Blocked” toggles  
 
 ### Long-Term / Advanced
 - [ ] Options data (GEX, Vanna, Charm)  
-- [ ] Sentiment overlays (SPY, VIX)  
+- [ ] Sentiment overlays (SPY, VIX)
+- [ ] Sentiment overlay with spx+spy, nq+qqq?
 - [ ] Screener builder or rule editor  
 - [ ] Export / Alerts for top picks  
 - [ ] Replay engine for backtesting signals
 - [ ] Same day, next day, weekly contract scanner.
 - [ ] Daily large order scannner
+- [ ] Containerization Deployment
