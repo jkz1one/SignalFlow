@@ -1,8 +1,11 @@
 # ✅ Stock Screener v3.7
 
-> **Status:** Stable daily-use build  
+> **Status:** Stable daily-use build
+> 
 > **Next phase:** Universe Builder + Automation + Risk Logic Fixes
+> 
 > **Further Phases** Admin Panel + Sector Rotation Tab + Screener Tab (custom inputs) + Sentiment Block (to tracker) + Timestamp on Frontend
+> 
 > **Tag:** `v3.7-alpha`
 
 ---
