@@ -65,7 +65,7 @@
 - [ ] Risk “No Reliable Price” logic  
 
 ### Automation
-- [ ] `daily_refresh.py` timed run (before 9:00AM)  
+- [ ] `daily_refresh.py` timed runs (before 9:00AM, 9:30AM, 9:40AM, etc depending on script)  
 - [ ] Modular runner script (`runner.py`)  
 - [ ] Skip scraper if cache is fresh (timestamp check)  
 
@@ -85,4 +85,6 @@
 - [ ] Sentiment overlays (SPY, VIX)  
 - [ ] Screener builder or rule editor  
 - [ ] Export / Alerts for top picks  
-- [ ] Replay engine for backtesting signals  
+- [ ] Replay engine for backtesting signals
+- [ ] Same day, next day, weekly contract scanner.
+- [ ] Daily large order scannner
