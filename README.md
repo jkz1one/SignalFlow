@@ -124,4 +124,4 @@ npm run dev
 
 ---
 
-> This system is a modular and efficient watchlist engine built to scale. Data-driven, momentum-aware, and risk-filtered by default.
+> This system is a modular and efficient watchlist engine built to scale. Data-driven, momentum-aware, and risk-filtered by default. But it is incomplete, double check all data points.
