@@ -104,7 +104,7 @@ npm run dev
 - ⏳ Frontend timestamp display + Sector Tab
 
 ### Next Steps
-- [ ] Finish Universe Builder v2 with full L1–L3 logic
+- [ ] Finish Universe Builder v2.
 - [ ] Fix frontend risk toggle logic
 - [ ] Add Admin Panel to trigger backend jobs
 - [ ] Add customizable thresholds (e.g., rel vol min)

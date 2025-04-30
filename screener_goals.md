@@ -51,7 +51,7 @@
 
 - [~] Tier 1: Momentum Confluence (awaiting accurate premarket highs/lows from TradingView)  
 - [~] Daily refresh runs manually, but automation flow is staged  
-- [~] Universe Builder still uses static anchor lists; partial L1–L3 logic in place  
+- [~] Universe Builder still uses static anchor lists; partial L1–L3 logic in place. Finish Universe Builder v2 with modifiable anchor source.
 
 ---
 
@@ -59,7 +59,7 @@
 
 ### Backend Enhancements
 - [ ] Fix UI logic for hiding risk-blocked tickers (AutoWatchlist risk toggle)  
-- [ ] Universe Builder v2 with full dynamic CSV → L1–L3 assignment  
+- [ ] Universe Builder v2 with with modifiable anchor source. 
 - [ ] Risk filter: "No Reliable Price" logic  
 - [ ] Add logging for Universe, Scoring, and Watchlist phases  
 - [ ] Add per-file timestamps in audit output  
@@ -91,5 +91,6 @@
 - [ ] Alerts + email/export for top picks  
 - [ ] Replay backtesting of signal triggers  
 - [ ] Same-day, next-day, weekly contract scanner  
+- [ ] Dynamic Universe Builder
 - [ ] Institutional flow tracker (block trades, large orders)  
 - [ ] Docker container deployment for reproducibility  
