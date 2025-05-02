@@ -32,7 +32,7 @@ for desc, script_path in tqdm(tasks, desc="Running Daily Refresh", unit="task"):
 
 # After all tasks...
 cleanup_old_files()
-cleanup_old_universe_files(days_to_keep=1)
+cleanup_old_universe_files()
 audit_cache_files()
 
 print("\n🎯 Daily Refresh Complete!")

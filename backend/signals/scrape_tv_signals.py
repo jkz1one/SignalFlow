@@ -1,3 +1,4 @@
+##scrape_tv_signals.py
 import json
 import os
 from datetime import datetime
@@ -7,7 +8,18 @@ import yfinance as yf
 # --- Paths ---
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "../cache")
 TV_OUTPUT = os.path.join(CACHE_DIR, "tv_signals.json")
-UNIVERSE_PATH = os.path.join(CACHE_DIR, "universe_cache.json")
+
+def get_latest_universe_file():
+    files = [
+        f for f in os.listdir(CACHE_DIR)
+        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+    ]
+    if not files:
+        raise FileNotFoundError("❌ No dated universe files found in cache.")
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    return os.path.join(CACHE_DIR, files[0])
+
+UNIVERSE_PATH = get_latest_universe_file()
 
 # --- Load Universe ---
 with open(UNIVERSE_PATH, "r") as f:

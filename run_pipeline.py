@@ -3,9 +3,13 @@
 import subprocess
 import os
 from datetime import datetime
+import time  # <-- add this
 
 print("🔁 [1/4] Building base universe...")
 subprocess.run(["python3", "backend/enrich_universe.py"], check=True)
+
+# ✅ Wait a moment to ensure filesystem sync
+time.sleep(1)
 
 def check_required_cache():
     today = datetime.now().strftime("%Y-%m-%d")
@@ -16,24 +20,18 @@ def check_required_cache():
         f"candles_5m.json",
         f"multi_day_levels.json",
         f"short_interest.json",
+        f"universe_{today}.json"
     ]
     missing = []
     for fname in required_files:
-        full_path = os.path.join(CACHE_DIR, fname)
-        if not os.path.exists(full_path):
+        if not os.path.exists(os.path.join(CACHE_DIR, fname)):
             missing.append(fname)
-
-    enriched_file = os.path.join(CACHE_DIR, f"universe_enriched_{today}.json")
-    if os.path.exists(enriched_file):
-        pass  # ok
-    else:
-        missing.append(f"universe_enriched_{today}.json (expected from refresh)")
 
     if missing:
         print("\n❌ Missing or outdated cache files detected:")
         for m in missing:
             print(f" - {m}")
-        raise SystemExit("\n🛑 Aborting pipeline! Run Daily Refresh first.\n")
+        raise SystemExit("\n🛑 Aborting pipeline! Refresh data or debug enrich.\n")
 
 print("🔎 Verifying cache/enrich freshness ...")
 check_required_cache()

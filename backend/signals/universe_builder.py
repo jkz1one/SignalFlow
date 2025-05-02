@@ -7,7 +7,7 @@ import requests
 from datetime import datetime
 
 # === CONFIG ===
-ANCHOR_TICKERS = ["SPY", "QQQ", "AAPL", "MSFT", "TSLA", "NVDA", "GME", "KSS", "AMC", "BYND", "GRRR"]
+ANCHOR_TICKERS = ["SPY", "QQQ", "AAPL", "MSFT", "TSLA", "NVDA", "GME", "KSS", "AMC", "BYND", "LMND", "GRRR"]
 SECTOR_ETFS = ["XLF", "XLK", "XLE"]
 DOW_30_TICKERS = [
     "AAPL", "AMGN", "AXP", "BA", "CAT", "CSCO", "CVX", "DIS", "DOW", "GS",
@@ -122,5 +122,5 @@ if __name__ == "__main__":
     build_universe()
 
 
-copyfile(CACHE_FILE, "backend/cache/universe_cache.json")
-print("✅ Universe also saved to backend/cache/universe_cache.json")
+# copyfile(CACHE_FILE, "backend/cache/universe_cache.json")
+# print("✅ Universe also saved to backend/cache/universe_cache.json")

@@ -1,4 +1,4 @@
-# scrape_candles_5m.py (optimized + rounded)
+# scrape_candles_5m.py (finalized)
 
 import os
 import json
@@ -8,7 +8,18 @@ import pytz
 from tqdm import tqdm
 
 CACHE_DIR = "backend/cache"
-UNIVERSE_PATH = os.path.join(CACHE_DIR, "universe_cache.json")
+
+def get_latest_universe_file():
+    files = [
+        f for f in os.listdir(CACHE_DIR)
+        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+    ]
+    if not files:
+        raise FileNotFoundError("❌ No dated universe files found in cache.")
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    return os.path.join(CACHE_DIR, files[0])
+
+UNIVERSE_PATH = get_latest_universe_file()
 OUTPUT_PATH = os.path.join(CACHE_DIR, "candles_5m.json")
 
 def load_universe(path):
@@ -38,6 +49,7 @@ def main():
             ticker = yf.Ticker(symbol)
             hist = ticker.history(period="1d", interval="5m", prepost=True)
             if hist.empty:
+                print(f"⚠️ No data for {symbol}")
                 continue
 
             candles = []
@@ -58,6 +70,10 @@ def main():
 
         except Exception as e:
             print(f"⚠️ Failed {symbol}: {e}")
+
+    if not result:
+        print("⚠️ No candles collected. Skipping save.")
+        return
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(result, f, indent=2)

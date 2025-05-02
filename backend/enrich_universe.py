@@ -1,3 +1,4 @@
+##enrich_universe.py
 import json
 import os
 from datetime import datetime
@@ -6,7 +7,17 @@ from pytz import timezone
 from tqdm import tqdm
 
 CACHE_DIR = "backend/cache"
-UNIVERSE_PATH = os.path.join(CACHE_DIR, "universe_cache.json")
+def get_latest_universe_file():
+    files = [
+        f for f in os.listdir(CACHE_DIR)
+        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+    ]
+    if not files:
+        raise FileNotFoundError("❌ No dated universe files found in cache.")
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    return os.path.join(CACHE_DIR, files[0])
+
+UNIVERSE_PATH = get_latest_universe_file()
 TV_SIGNALS_PATH = os.path.join(CACHE_DIR, "tv_signals.json")
 SECTOR_PRICES_PATH = os.path.join(CACHE_DIR, "sector_etf_prices.json")
 CANDLES_PATH = os.path.join(CACHE_DIR, "candles_5m.json")
@@ -180,8 +191,16 @@ def apply_signal_flags(universe):
         if open_price is not None and prev_close is not None:
             if open_price > prev_close * 1.01:
                 signals["gap_up"] = True
+                signals.pop("gap_down", None)
             elif open_price < prev_close * 0.99:
                 signals["gap_down"] = True
+                signals.pop("gap_up", None)
+            else:
+                # Neither gap
+                signals.pop("gap_up", None)
+                signals.pop("gap_down", None)
+
+
 
         if price is not None and high is not None and price > high:
             signals["break_above_range"] = True
@@ -252,6 +271,10 @@ def main():
     candles = load_json(CANDLES_PATH)
     short_interest = load_json(SHORT_INTEREST_PATH)
     multi_day_data = load_json(MULTI_DAY_PATH)
+
+    if not universe:
+        print("❌ No tickers found in base universe. Aborting enrichment.")
+        return
 
     print(f"📦 Loaded {len(universe)} tickers")
 

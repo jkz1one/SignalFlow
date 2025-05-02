@@ -61,6 +61,9 @@ Run this each morning before market open (9:40 AM EST is optimal run time):
 ## ▶️ How to Run
 
 ```bash
+# Step 0 — Install dependencies (one-time setup)
+pip install -r backend/requirements.txt
+
 # Step 1 — Run daily refresh (once per day)
 python3 backend/daily_refresh.py
 

@@ -2,14 +2,25 @@ import os
 import json
 import yfinance as yf
 from datetime import datetime
-from tqdm import tqdm  # ✅ Add this
+from tqdm import tqdm
 
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "..", "cache")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-UNIVERSE_PATH = os.path.join(CACHE_DIR, "universe_cache.json")
-OUTPUT_PATH = os.path.join(CACHE_DIR, "multi_day_levels.json")
+def get_latest_universe_file():
+    files = [
+        f for f in os.listdir(CACHE_DIR)
+        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+    ]
+    if not files:
+        raise FileNotFoundError("❌ No dated universe files found in cache.")
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    latest_file = os.path.join(CACHE_DIR, files[0])
+    print(f"📄 Using universe file: {os.path.basename(latest_file)}")
+    return latest_file
 
+UNIVERSE_PATH = get_latest_universe_file()
+OUTPUT_PATH = os.path.join(CACHE_DIR, "multi_day_levels.json")
 LOOKBACK_DAYS = 10
 
 def main():
