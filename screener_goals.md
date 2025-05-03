@@ -2,7 +2,7 @@
 
 > **Status:** Stable daily-use build  
 > **Next Phase:** Universe Builder + Scheduled Automation  
-> **Further Phases:** Sector Tab + Admin Panel + Frontend Timestamp + Screener Builder  
+> **Further Phases:** Sector Tab • Admin Panel • Frontend Timestamp • Screener Builder  
 >  
 > **Tag:** `v3.7-beta`
 
@@ -10,7 +10,7 @@
 
 ## ✅ COMPLETED
 
-### Tier Logic
+### Tier Logic  
 - Tier 1: Gap Up / Gap Down  
 - Tier 1: Break Above/Below 9:30–9:40 Range  
 - Tier 1: High Relative Volume  
@@ -22,75 +22,88 @@
 - Tier 3: Near Multi-Day High / Low  
 - Tier 3: High Volume, No Breakout  
 
-### Risk Filters
+### Risk Filters  
 - Low Liquidity  
 - Wide Spread  
 
-### Data & Enrichment
+### Data & Enrichment  
 - TradingView signal scraper merged with yfinance  
 - Sector ETF scraper (`sector_etf_prices.json`)  
-- 5-minute candle scraper (930–940 range)  
+- 5-minute candle scraper (9:30–9:40 range)  
 - Short interest loader from FINRA/Nasdaq  
 - Multi-day high/low scraper  
-- `enriched_timestamp` injected into universe  
+- `enriched_timestamp` added to universe  
 - Removed deprecated `yfinance_updated` field  
-- Universe enrichment and scoring validated  
-- AutoWatchlist builder + frontend rendering  
+- Universe enrichment + scoring fully validated  
+- AutoWatchlist builder + clean frontend rendering  
 
-### Backend Architecture
-- `run_pipeline.py` orchestrates refresh → score → build  
-- `daily_refresh.py` wraps all scrapers with cleanup and audit  
-- `cache_manager.py` handles cleanup (uses last valid market day logic)  
-- Modular `signals/` folder with all enrichment logic  
-- Universe Builder added (`universe_builder.py`)  
-- `watchlist_builder.py` builds filtered, scored JSON output  
+### Backend Architecture  
+- `run_pipeline.py` orchestrates enrich → score → build  
+- `daily_refresh.py` wraps all scrapers with cache audit  
+- `cache_manager.py` handles cleanup + validation (strict mode optional)  
+- Modular `signals/` folder for enrichment layers  
+- Universe Builder (`universe_builder.py`) added  
+- Watchlist system built with `watchlist_builder.py`
 
 ---
 
 ## 🔄 IN PROGRESS / PARTIAL
 
-- [~] Tier 1: Momentum Confluence (awaiting accurate premarket highs/lows from TradingView)  
-- [~] Daily refresh runs manually, but automation flow is staged  
-- [~] Universe Builder still uses static anchor lists; partial L1–L3 logic in place. Finish Universe Builder v2 with modifiable anchor source.
+- [~] Tier 1: Momentum Confluence (awaiting reliable premarket highs/lows)  
+- [~] Universe Builder still uses static anchors; v2 under development  
+- [~] Daily refresh pipeline is still manual; scheduler integration staged  
 
 ---
 
 ## 🛠️ UPCOMING (v3.7)
 
-### Backend Enhancements
+### Backend Enhancements  
 - [ ] Fix UI logic for hiding risk-blocked tickers (AutoWatchlist risk toggle)  
-- [ ] Universe Builder v2 with with modifiable anchor source. 
-- [ ] Risk filter: "No Reliable Price" logic  
-- [ ] Add logging for Universe, Scoring, and Watchlist phases  
-- [ ] Add per-file timestamps in audit output  
+- [ ] Universe Builder v2: modular anchor logic with optional tagging  
+- [ ] Add risk filter: “No Reliable Price”  
+- [ ] Add logging for enrichment, scoring, and watchlist stages  
+- [ ] Add cache freshness timestamps per file (embedded + visual)
 
-### Automation
-- [ ] Add scheduler (APScheduler or cron) to run `daily_refresh.py` and `run_pipeline.py` automatically  
-- [ ] Add `runner.py` modular launcher  
-- [ ] All scrapers should skip if cache file is up to date (timestamp-based skip)  
+### Automation  
+- [ ] Add scheduler (APScheduler or cron) to automate `daily_refresh.py` + `run_pipeline.py`  
+- [ ] Add `runner.py` to manage modular refreshes (scrape-only, score-only, etc.)  
+- [ ] Implement timestamp-based skip logic for scrapers if data is fresh  
 
-### Scraper System
-- [ ] Convert all scrapers to callable functions (vs raw scripts)  
-- [ ] Add stealth scraping improvements for TradingView  
-- [ ] Option to retry or failover on scrape errors  
+### Scraper System  
+- [ ] Convert all scrapers to callable Python modules (instead of CLI scripts)  
+- [ ] Add stealth/resilience improvements for TradingView scrapes  
+- [ ] Add retry + failover options on scraper failures  
 
-### Frontend Goals
-- [ ] Add Sector Rotation tab view  
+### Frontend Goals  
+- [ ] Add dedicated Sector Rotation tab  
 - [ ] Add Admin Panel to manually trigger backend refresh  
-- [ ] Add cache freshness timestamps per file (badge/UI footer)  
-- [ ] Allow user config overrides (e.g., relative volume threshold)  
-- [ ] UI toggle for "Top 3 Only" / "Show Blocked"  
+- [ ] Display per-file cache freshness (e.g., badges, tooltips, footer)  
+- [ ] Add user config override system (e.g., rel vol %, volume thresholds)  
+- [ ] Add toggle for “Top 3 Only” / “Show Risk-Blocked” tickers  
+
+---
+
+## 🚧 Further Improvements (beyond v3.7)
+
+### Modular Screener System
+- [ ] Adopt a **time-based screener framework** (Opening, Swing, Overnight)  
+- [ ] Build and maintain separate logic pipelines for each screener type  
+- [ ] Add **Admin Panel** for internal overrides + screener-level control  
+- [ ] Create unified **Screener Page** where users can toggle screener types and adjust logic parameters (e.g., rel vol %, volume thresholds, gap %)  
+- [ ] Ensure some **core signals remain shared** across screeners for consistency  
+- [ ] Introduce **fundamental signal logic** (e.g., valuation, growth) in Swing + Overnight screeners only  
+- [ ] Leave room for future screeners (e.g., Lunch Break, Block Trades, Earnings Flow)
 
 ---
 
 ## 🧪 Long-Term & Advanced
 
-- [ ] Options data analysis (GEX, Vanna, Charm, 0DTE)  
+- [ ] Options data integration (GEX, Vanna, Charm, 0DTE)  
 - [ ] Sentiment overlays (SPX vs SPY, QQQ vs NQ, VIX vs VIXY)  
-- [ ] Screener builder / rule editor  
-- [ ] Alerts + email/export for top picks  
-- [ ] Replay backtesting of signal triggers  
-- [ ] Same-day, next-day, weekly contract scanner  
-- [ ] Dynamic Universe Builder
-- [ ] Institutional flow tracker (block trades, large orders)  
-- [ ] Docker container deployment for reproducibility  
+- [ ] Screener logic builder (rule editor)  
+- [ ] Alerts + email/export for top-ranked setups  
+- [ ] Replay / backtest signal triggers  
+- [ ] Same-day, next-day, and weekly contract scanner  
+- [ ] Dynamic Universe Builder with auto-tuned anchors  
+- [ ] Institutional order tracker (block trades, sweeps, etc.)  
+- [ ] Docker deployment for reproducibility + scale  

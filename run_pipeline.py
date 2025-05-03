@@ -11,31 +11,6 @@ subprocess.run(["python3", "backend/enrich_universe.py"], check=True)
 # ✅ Wait a moment to ensure filesystem sync
 time.sleep(1)
 
-def check_required_cache():
-    today = datetime.now().strftime("%Y-%m-%d")
-    CACHE_DIR = "backend/cache"
-    required_files = [
-        f"tv_signals.json",
-        f"sector_etf_prices.json",
-        f"candles_5m.json",
-        f"multi_day_levels.json",
-        f"short_interest.json",
-        f"universe_{today}.json"
-    ]
-    missing = []
-    for fname in required_files:
-        if not os.path.exists(os.path.join(CACHE_DIR, fname)):
-            missing.append(fname)
-
-    if missing:
-        print("\n❌ Missing or outdated cache files detected:")
-        for m in missing:
-            print(f" - {m}")
-        raise SystemExit("\n🛑 Aborting pipeline! Refresh data or debug enrich.\n")
-
-print("🔎 Verifying cache/enrich freshness ...")
-check_required_cache()
-
 print("🧨 [2/4] Cleaning cache...")
 subprocess.run(["python3", "backend/cache_manager.py"], check=True)
 
