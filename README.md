@@ -108,6 +108,7 @@ npm run dev
 - ⏳ Frontend timestamp display + Sector Tab
 
 ### Next Steps
+- [ ] Fix Cache Manager.
 - [ ] Finish Universe Builder v2.
 - [ ] Fix frontend risk toggle logic
 - [ ] Add Admin Panel to trigger backend jobs
@@ -117,7 +118,9 @@ npm run dev
 ---
 
 ## 🧪 Long-Term Features (Exploration)
-
+- Admin page toggles for variables.
+- Multiple time based screens. (EOD/AH)
+- Unified screener with logic toggles.
 - Options flow: GEX, Vanna, Charm, 0DTE triggers
 - Screener rule editor UI (custom setups)
 - Watchlist alerts + email/export
