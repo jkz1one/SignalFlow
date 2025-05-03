@@ -18,9 +18,6 @@ IMPORTANT_FILES = [
     "universe_scored"
 ]
 
-# --- Strict Mode ---
-STRICT_MODE = True
-
 # --- Market Calendar ---
 def get_last_market_day():
     nyse = mcal.get_calendar("XNYS")
@@ -84,10 +81,7 @@ def cleanup_old_files():
                         print(f"⚠️ Error deleting {path}: {e}")
         else:
             skipped_count += 1
-            if STRICT_MODE:
-                print(f"❌ STRICT MODE: No fresh {base_name} file today!")
-            else:
-                print(f"⚠️ No fresh {base_name} file today. Skipping delete.")
+            print(f"⚠️ No fresh {base_name} file today. Skipping delete.")
 
     print(f"✅ Cache cleanup complete: {deleted_count} files deleted, {skipped_count} skipped.\n")
 
