@@ -9,7 +9,7 @@ Currently optimized for identifying momentum setups at market open.
 ## 🔧 How It Works
 
 ### 📦 Daily Refresh
-Run this each morning before market open (9:40 AM EST is optimal run time):
+Run this each morning at market open (9:40 AM EST is optimal run time):
 
 - `daily_refresh.py`: Pulls and caches data from multiple scrapers.
   - Build Universe → `universe_cache.json`
