@@ -1,6 +1,6 @@
 # ⚠️ Additional Risk Filter Ideas – Stock Screener v3.7
 
-Expand your risk filtering system with these advanced checks used by pro screeners and institutional workflows:
+Expand risk filtering system with these advanced checks used by pro screeners and institutional workflows:
 
 ---
 
@@ -53,4 +53,4 @@ Expand your risk filtering system with these advanced checks used by pro screene
 
 ---
 
-> Consider integrating these filters as scoring penalties or hard blocks depending on your screener tier and timeframe. Some may be flagged via scraper logic, others via enrichment metadata.
+> Considering integrating these filters as scoring penalties or hard blocks depending on your screener tier and timeframe. Some may be flagged via scraper logic, others via enrichment metadata.
