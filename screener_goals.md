@@ -89,7 +89,7 @@
 - [ ] Adopt a **time-based screener framework** (Opening, Swing, Overnight)  
 - [ ] Build and maintain separate logic pipelines for each screener type  
 - [ ] Add **Admin Panel** for internal overrides + screener-level control  
-- [ ] Create unified **Screener Page** where users can toggle screener types and adjust logic parameters (e.g., rel vol %, volume thresholds, gap %)  
+- [ ] Create unified **Screener Build Page** where users can edit rules, toggle screener types, and adjust logic parameters (e.g., rel vol %, volume thresholds, gap %)  
 - [ ] Ensure some **core signals remain shared** across screeners for consistency  
 - [ ] Introduce **fundamental signal logic** (e.g., valuation, growth) in Swing + Overnight screeners only  
 - [ ] Leave room for future screeners (e.g., Lunch Break, Block Trades, Earnings Flow)
@@ -99,8 +99,7 @@
 ## 🧪 Long-Term & Advanced
 
 - [ ] Options data integration (GEX, Vanna, Charm, 0DTE)  
-- [ ] Sentiment overlays (SPX vs SPY, QQQ vs NQ, VIX vs VIXY)  
-- [ ] Screener logic builder (rule editor)  
+- [ ] Sentiment overlays (SPX vs SPY, QQQ vs NQ, VIX vs VIXY) 
 - [ ] Alerts + email/export for top-ranked setups  
 - [ ] Replay / backtest signal triggers  
 - [ ] Same-day, next-day, and weekly contract scanner  
