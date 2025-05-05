@@ -101,6 +101,7 @@ npm run dev
 - ✅ Cache cleaner + audit tools
 - ✅ Watchlist scoring + tagging + filtering
 - ✅ `run_pipeline.py` orchestrates full system
+- ✅ Fixed Cache Manager.
 
 ### In Progress
 - ⏳ Tier 1 Momentum Confluence (waiting for TradingView premarket levels)
@@ -108,7 +109,6 @@ npm run dev
 - ⏳ Frontend timestamp display + Sector Tab
 
 ### Next Steps
-- [ ] Fix Cache Manager.
 - [ ] Finish Universe Builder v2.
 - [ ] Fix frontend risk toggle logic
 - [ ] Add Admin Panel to trigger backend jobs

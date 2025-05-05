@@ -21,6 +21,8 @@ tasks = [
 
 print("\n🚀 Starting Daily Refresh...\n")
 
+failed_tasks = []
+
 for desc, script_path in tqdm(tasks, desc="Running Daily Refresh", unit="task"):
     print(f"\n🔹 {desc}...")
     try:
@@ -29,10 +31,13 @@ for desc, script_path in tqdm(tasks, desc="Running Daily Refresh", unit="task"):
     except subprocess.CalledProcessError as e:
         print(f"❌ Error running {script_path}: {e}")
         print(f"⚠️ {desc} failed. Continuing...")
+        failed_tasks.append(desc)
 
-# After all tasks...
-cleanup_old_files()
-cleanup_old_universe_files()
-audit_cache_files()
+if failed_tasks:
+    print(f"\n❌ {len(failed_tasks)} tasks failed: {', '.join(failed_tasks)}")
+
+# Log completion timestamp
+with open("backend/cache/last_refresh.log", "w") as f:
+    f.write(f"Last refresh completed: {datetime.now().isoformat()}\n")
 
 print("\n🎯 Daily Refresh Complete!")

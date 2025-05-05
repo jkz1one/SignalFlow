@@ -4,6 +4,7 @@ import subprocess
 import os
 from datetime import datetime
 import time  # <-- add this
+from backend.cache_manager import validate_caches, cleanup_old_files
 
 print("🔁 [1/4] Building base universe...")
 subprocess.run(["python3", "backend/enrich_universe.py"], check=True)
@@ -11,33 +12,12 @@ subprocess.run(["python3", "backend/enrich_universe.py"], check=True)
 # ✅ Wait a moment to ensure filesystem sync
 time.sleep(1)
 
-def check_required_cache():
-    today = datetime.now().strftime("%Y-%m-%d")
-    CACHE_DIR = "backend/cache"
-    required_files = [
-        f"tv_signals.json",
-        f"sector_etf_prices.json",
-        f"candles_5m.json",
-        f"multi_day_levels.json",
-        f"short_interest.json",
-        f"universe_{today}.json"
-    ]
-    missing = []
-    for fname in required_files:
-        if not os.path.exists(os.path.join(CACHE_DIR, fname)):
-            missing.append(fname)
+print("🔎 Validating cache files...")
+validate_caches(strict=True, include_scored=False)  # Strict mode ON for prod
 
-    if missing:
-        print("\n❌ Missing or outdated cache files detected:")
-        for m in missing:
-            print(f" - {m}")
-        raise SystemExit("\n🛑 Aborting pipeline! Refresh data or debug enrich.\n")
-
-print("🔎 Verifying cache/enrich freshness ...")
-check_required_cache()
-
-print("🧨 [2/4] Cleaning cache...")
-subprocess.run(["python3", "backend/cache_manager.py"], check=True)
+print("🧨 [2/4] Cleaning old cache files...")
+result = cleanup_old_files()
+print(f"🧹 Deleted: {result[0]} | Skipped: {result[1]}")
 
 print("⚙️ [3/4] Scoring and saving autowatchlist output...")
 subprocess.run(["python3", "-m", "backend.screenbuilder"], check=True)
@@ -47,3 +27,8 @@ print("📋 [4/4] Building AutoWatchlist from scored universe...")
 build_autowatchlist()
 
 print("✅ Pipeline complete. Watchlist and cache updated.")
+validate_caches(strict=True, include_scored=True)
+print("🧨 Cleaning old cache files...")
+result = cleanup_old_files()
+print(f"🧹 Deleted: {result[0]} | Skipped: {result[1]}")
+print("💯 Done.")

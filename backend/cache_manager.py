@@ -1,3 +1,5 @@
+##cache_manager.py
+
 import os
 import json
 import time
@@ -15,8 +17,9 @@ IMPORTANT_FILES = [
     "multi_day_levels.json",
     "short_interest.json",
     "universe_enriched",
-    "universe_scored"
+    "universe_scored",
 ]
+
 
 # --- Market Calendar ---
 def get_last_market_day():
@@ -24,6 +27,8 @@ def get_last_market_day():
     today = datetime.now().date()
     schedule = nyse.schedule(start_date=today - timedelta(days=7), end_date=today)
     return schedule.index[-1].date()
+
+TODAY = get_last_market_day()
 
 # --- Utility ---
 def is_today(file_path):
@@ -33,13 +38,13 @@ def is_today(file_path):
         file_date_str = match.group(1)
         try:
             file_date = datetime.strptime(file_date_str, "%Y-%m-%d").date()
-            return file_date == get_last_market_day()
+            return file_date == TODAY
         except ValueError:
             pass
     try:
         modified_time = os.path.getmtime(file_path)
         file_date = datetime.fromtimestamp(modified_time).date()
-        return file_date == get_last_market_day()
+        return file_date == TODAY
     except Exception:
         return False
 
@@ -49,7 +54,7 @@ def cleanup_old_files():
 
     deleted_count = 0
     skipped_count = 0
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = TODAY.strftime("%Y-%m-%d")
 
     for base_name in IMPORTANT_FILES:
         candidates = [
@@ -84,11 +89,12 @@ def cleanup_old_files():
             print(f"⚠️ No fresh {base_name} file today. Skipping delete.")
 
     print(f"✅ Cache cleanup complete: {deleted_count} files deleted, {skipped_count} skipped.\n")
+    return deleted_count, skipped_count
 
 def cleanup_old_universe_files():
     print("\n\U0001F9F9 Cleaning Up Old Universe Files (Keep Only Today)...")
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = TODAY.strftime("%Y-%m-%d")
     universe_files = glob.glob(os.path.join(CACHE_DIR, "universe_*.json"))
     universe_files = [f for f in universe_files if today_str not in f and "universe_cache.json" not in f]
 
@@ -102,6 +108,7 @@ def cleanup_old_universe_files():
             print(f"⚠️ Failed to delete {path}: {e}")
 
     print(f"✅ Cleanup complete — {deleted} old universe files deleted.\n")
+    return deleted
 
 # --- Audit Function ---
 def audit_cache_files():
@@ -192,11 +199,63 @@ def audit_cache_files():
     else:
         print("⚠️ Cache Audit found some problems. Check warnings above.\n")
 
+    return not issues_found
+
+# --- Validation Function ---
+def validate_caches(strict=True, include_scored=False):
+    """
+    Validate all required cache files exist and are fresh.
+    Optionally validate scored universe only after screenbuilder is run.
+    """
+    issues = []
+    today_str = TODAY.strftime("%Y-%m-%d")
+
+    files_to_check = IMPORTANT_FILES.copy()
+    if include_scored:
+        files_to_check.append("universe_scored")
+
+    for fname in files_to_check:
+        if fname.startswith("universe_"):
+            pattern = os.path.join(CACHE_DIR, f"{fname}_{today_str}.json")
+            matches = glob.glob(pattern)
+            if not matches:
+                issues.append(f"{fname}_{today_str}.json is missing.")
+                continue
+            for match in matches:
+                if os.path.getsize(match) == 0:
+                    issues.append(f"{os.path.basename(match)} is empty.")
+        else:
+            full_path = os.path.join(CACHE_DIR, fname)
+            if not os.path.exists(full_path):
+                issues.append(f"{fname} is missing.")
+            elif os.path.getsize(full_path) == 0:
+                issues.append(f"{fname} is empty.")
+
+    if issues:
+        print("❌ Cache validation failed:")
+        for issue in issues:
+            print(" -", issue)
+        if strict:
+            raise SystemExit("🛑 Strict mode enabled — aborting pipeline.")
+        else:
+            print("⚠️ Non-strict mode — continuing despite warnings.")
+            return False
+    else:
+        print("✅ All required caches validated.")
+        return True
+    
 # --- Main ---
 def run_all():
-    cleanup_old_files()
-    cleanup_old_universe_files()
-    audit_cache_files()
+    deleted_files, skipped_files = cleanup_old_files()
+    deleted_universe = cleanup_old_universe_files()
+    audit_passed = audit_cache_files()
+
+    return {
+        "deleted": deleted_files,
+        "skipped": skipped_files,
+        "universe_deleted": deleted_universe,
+        "audit_passed": audit_passed
+    }
 
 if __name__ == "__main__":
     run_all()
