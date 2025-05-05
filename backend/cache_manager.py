@@ -16,8 +16,7 @@ IMPORTANT_FILES = [
     "candles_5m.json",
     "multi_day_levels.json",
     "short_interest.json",
-    "universe_enriched",
-    "universe_scored",
+    "universe_enriched"
 ]
 
 
@@ -211,24 +210,29 @@ def validate_caches(strict=True, include_scored=False):
     today_str = TODAY.strftime("%Y-%m-%d")
 
     files_to_check = IMPORTANT_FILES.copy()
-    if include_scored:
+    if include_scored and "universe_scored" not in files_to_check:
         files_to_check.append("universe_scored")
 
     for fname in files_to_check:
+        if fname == "universe_enriched":
+            pattern = os.path.join(CACHE_DIR, f"universe_enriched_{today_str}.json")
+        elif fname == "universe_scored":
+            pattern = os.path.join(CACHE_DIR, f"universe_scored_{today_str}.json")
+        else:
+            pattern = os.path.join(CACHE_DIR, fname)
+
         if fname.startswith("universe_"):
-            pattern = os.path.join(CACHE_DIR, f"{fname}_{today_str}.json")
             matches = glob.glob(pattern)
             if not matches:
-                issues.append(f"{fname}_{today_str}.json is missing.")
+                issues.append(f"{os.path.basename(pattern)} is missing.")
                 continue
             for match in matches:
                 if os.path.getsize(match) == 0:
                     issues.append(f"{os.path.basename(match)} is empty.")
         else:
-            full_path = os.path.join(CACHE_DIR, fname)
-            if not os.path.exists(full_path):
+            if not os.path.exists(pattern):
                 issues.append(f"{fname} is missing.")
-            elif os.path.getsize(full_path) == 0:
+            elif os.path.getsize(pattern) == 0:
                 issues.append(f"{fname} is empty.")
 
     if issues:
