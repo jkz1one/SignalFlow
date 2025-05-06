@@ -63,7 +63,7 @@
 - [ ] Add risk filter: “No Reliable Price”  
 - [ ] Add logging for enrichment, scoring, and watchlist stages  
 - [ ] Add cache freshness timestamps per file (embedded + visual)
-
+- [ ] Strip unused dependencies and files
 ### Automation  
 - [ ] Add scheduler (APScheduler or cron) to automate `daily_refresh.py` + `run_pipeline.py`  
 - [ ] Add `runner.py` to manage modular refreshes (scrape-only, score-only, etc.)  
