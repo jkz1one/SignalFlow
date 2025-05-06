@@ -38,6 +38,15 @@ UNIVERSE_PATH = get_latest_universe_file()
 current_date_str = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%d")
 OUTPUT_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{current_date_str}.json")
 
+    # --- Load base or previously enriched universe ---
+ENRICHED_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{TODAY}.json")
+if os.path.exists(ENRICHED_PATH):
+    print(f"📥 Loading previously enriched file: {ENRICHED_PATH}")
+    universe = load_json(ENRICHED_PATH)
+else:
+    print(f"📥 No prior enriched file found. Using base universe: {UNIVERSE_PATH}")
+    universe = load_json(UNIVERSE_PATH)
+
 post_open = load_json(os.path.join(CACHE_DIR, f"post_open_signals_{TODAY}.json"))
 candles = load_json(os.path.join(CACHE_DIR, f"945_signals_{TODAY}.json"))
 multi_day_data = load_json(os.path.join(CACHE_DIR, "multi_day_levels.json"))
@@ -57,22 +66,21 @@ def enrich_with_tv_signals(universe, tv_data):
         if tv:
             signals = info.setdefault("signals", {})
             if "price" in tv:
-                signals["price"] = tv["price"]
-                info["tv_price"] = tv["price"]
+                info["last_price"] = tv["price"]
             if "volume" in tv:
                 signals["volume"] = tv["volume"]
-                info["tv_volume"] = tv["volume"]
+                info["vol_latest"] = tv["volume"]
             if "changePercent" in tv:
                 signals["changePercent"] = tv["changePercent"]
-                info["tv_changePercent"] = tv["changePercent"]
+                info["pct_change"] = tv["changePercent"]
             if "rel_vol" in tv:
                 info["rel_vol"] = tv["rel_vol"]
-            if "avg_volume_10d" in tv:
-                info["avg_volume_10d"] = tv["avg_volume_10d"]
-            if "open" in tv:
-                info["open"] = tv["open"]
-            if "prevClose" in tv:
-                info["prevClose"] = tv["prevClose"]
+            if "avg_vol_10d" in tv:
+                info["avg_vol_10d"] = tv["avg_vol_10d"]
+            if "open_price" in tv:
+                info["open_price"] = tv["open_price"]
+            if "prev_close" in tv:
+                info["prev_close"] = tv["prev_close"]
             if "yfinance_updated" in tv:
                 info["yfinance_updated"] = tv["yfinance_updated"]
     
@@ -111,8 +119,8 @@ def apply_sector_rotation_signals(universe, sector_data):
         etf_info = sector_data.get(etf)
         if not etf_info:
             continue
-        price = etf_info.get("tv_price")
-        prev_close = etf_info.get("prevClose")
+        price = etf_info.get("last_price")
+        prev_close = etf_info.get("prev_close")
         if price and prev_close:
             try:
                 change = ((price - prev_close) / prev_close) * 100
@@ -187,14 +195,15 @@ def enrich_with_short_interest(universe, short_data):
 def apply_signal_flags(universe):
     for symbol, info in universe.items():
         signals = info.setdefault("signals", {})
-        price = signals.get("price")
-        volume = signals.get("volume")
-        change = signals.get("changePercent")
-        open_price = info.get("open")
-        prev_close = info.get("prevClose")
+        price = info.get("last_price")
+        volume = info.get("vol_latest")
+        change = info.get("pct_change")
+        open_price = info.get("open_price")
+        prev_close = info.get("prev_close")
         high = info.get("range_930_940_high")
         low = info.get("range_930_940_low")
-        
+        early_move = info.get("early_percent_move")
+
         if open_price is not None and prev_close is not None:
             if open_price > prev_close * 1.01:
                 signals["gap_up"] = True
@@ -203,18 +212,15 @@ def apply_signal_flags(universe):
                 signals["gap_down"] = True
                 signals.pop("gap_up", None)
             else:
-                # Neither gap
                 signals.pop("gap_up", None)
                 signals.pop("gap_down", None)
-
-
 
         if price is not None and high is not None and price > high:
             signals["break_above_range"] = True
         if price is not None and low is not None and price < low:
             signals["break_below_range"] = True
 
-        if change is not None and abs(change) >= 2.5:
+        if early_move is not None and abs(early_move) >= 2.5:
             signals["early_move"] = True
 
         if volume is not None and volume >= 1_000_000:
@@ -222,6 +228,9 @@ def apply_signal_flags(universe):
 
         if price is not None and high is not None and 0 < (high - price) <= 0.25:
             signals["near_range_high"] = True
+        if price is not None and low is not None and 0 < (price - low) <= 0.25:
+            signals["near_range_low"] = True
+
 
         if info.get("rel_vol", 0) > 1.5:
             signals["high_rel_vol"] = True
@@ -233,23 +242,23 @@ def apply_signal_flags(universe):
             signals["near_multi_day_low"] = True
 
         if (
-            volume is not None and volume >= 800_000 and  # lower vol threshold a bit
-            info.get("rel_vol", 0) > 1.0 and              # loosen rel vol to 1.0
+            volume is not None and volume >= 800_000 and
+            info.get("rel_vol", 0) > 1.0 and
             high is not None and low is not None and
             price is not None and
-            low * 0.99 <= price <= high * 1.01 and         # widen wiggle room from 0.5% → 1%
+            low * 0.99 <= price <= high * 1.01 and
             not signals.get("break_above_range") and
             not signals.get("break_below_range") and
-            (high - low) / low < 0.02                     # expand range limit from 1.5% → 2%
+            (high - low) / low < 0.02
         ):
             signals["high_volume_no_breakout"] = True
-        
+
     return universe
 
 def flag_top_volume_gainers(universe, top_n=5):
     sorted_tickers = sorted(
         universe.items(),
-        key=lambda x: x[1].get("tv_volume") or 0,
+        key=lambda x: x[1].get("vol_latest") or 0,
         reverse=True
     )
     for symbol, info in sorted_tickers[:top_n]:
@@ -268,26 +277,46 @@ def inject_risk_flags(universe):
 
 def main():
     print("🚀 Starting enrichment...")
-    universe = load_json(UNIVERSE_PATH)
     if not universe:
         print("❌ No tickers found in base universe. Aborting enrichment.")
         return
 
     print(f"📦 Loaded {len(universe)} tickers")
 
-    universe = enrich_with_tv_signals(universe, tv_signals)
-    universe = enrich_with_sector(universe, sector_prices)
-    universe = apply_sector_rotation_signals(universe, sector_prices)
-    universe = enrich_with_candles(universe, candles)
-    universe = enrich_with_multi_day_levels(universe, multi_day_data)
-    universe = enrich_with_short_interest(universe, short_interest)
+    if tv_signals:
+        universe = enrich_with_tv_signals(universe, tv_signals)
+    else:
+        print("⚠️ Skipping TV signals – not available yet.")
+
+    if sector_prices:
+        universe = enrich_with_sector(universe, sector_prices)
+        universe = apply_sector_rotation_signals(universe, sector_prices)
+    else:
+        print("⚠️ Skipping sector signals – not available yet.")
+
+    if candles:
+        universe = enrich_with_candles(universe, candles)
+    else:
+        print("⚠️ Skipping 9:30–9:40 range enrichment – no candle data yet.")
+
+    if multi_day_data:
+        universe = enrich_with_multi_day_levels(universe, multi_day_data)
+    else:
+        print("⚠️ Skipping multi-day high/low enrichment – data missing.")
+
+    if short_interest:
+        universe = enrich_with_short_interest(universe, short_interest)
+    else:
+        print("⚠️ Skipping short interest enrichment – data missing.")
+
+    # Always apply signal flags and final processing
     universe = apply_signal_flags(universe)
     universe = flag_top_volume_gainers(universe)
     universe = inject_risk_flags(universe)
 
+    # Timestamp
     eastern = timezone('America/New_York')
     now_eastern = datetime.now(eastern)
-
     for symbol, info in universe.items():
         info.pop("yfinance_updated", None)
         info["enriched_timestamp"] = now_eastern.isoformat()

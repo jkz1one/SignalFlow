@@ -1,0 +1,64 @@
+import os
+import time
+import subprocess
+from datetime import datetime
+
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+# --- Config ---
+WATCH_DIR = os.path.join("backend", "cache")
+TRIGGER_SCRIPT = os.path.join("backend", "signals", "enrich_universe.py")
+TRIGGER_FILES = [
+    "post_open_signals_",
+    "945_signals_",
+    "short_interest.json",
+    "multi_day_levels.json"
+]
+COOLDOWN_SECONDS = 60  # Avoid re-triggering too frequently
+
+last_triggered = {}
+
+class CacheUpdateHandler(FileSystemEventHandler):
+    def on_modified(self, event):
+        if event.is_directory:
+            return
+
+        filename = os.path.basename(event.src_path)
+        for trigger_key in TRIGGER_FILES:
+            if trigger_key in filename:
+                now = time.time()
+                last_time = last_triggered.get(trigger_key, 0)
+
+                if now - last_time > COOLDOWN_SECONDS:
+                    print(f"🕵️ File updated: {filename} — triggering enrichment...")
+                    run_enrichment()
+                    last_triggered[trigger_key] = now
+                else:
+                    print(f"⏱️ Skipped duplicate trigger for: {filename}")
+
+def run_enrichment():
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    try:
+        subprocess.run(["python", TRIGGER_SCRIPT], check=True)
+        print(f"✅ Enrichment completed at {timestamp}")
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Enrichment failed at {timestamp}: {e}")
+
+def start_watchdog():
+    print(f"👀 Watching directory: {WATCH_DIR}")
+    event_handler = CacheUpdateHandler()
+    observer = Observer()
+    observer.schedule(event_handler, WATCH_DIR, recursive=False)
+    observer.start()
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+        print("🛑 Watchdog stopped.")
+    observer.join()
+
+if __name__ == "__main__":
+    start_watchdog()

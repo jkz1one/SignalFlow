@@ -57,12 +57,12 @@ def main():
 
             # Relative volume
             rel_vol = None
-            avg_volume_10d = None
+            avg_vol_10d = None
             if not daily_hist.empty and len(daily_hist) >= 10:
                 past_volumes = daily_hist['Volume'][:-1]
-                avg_volume_10d = past_volumes.mean()
+                avg_vol_10d = past_volumes.mean()
                 today_volume = daily_hist['Volume'].iloc[-1]
-                rel_vol = today_volume / avg_volume_10d if avg_volume_10d > 0 else 0
+                rel_vol = today_volume / avg_vol_10d if avg_vol_10d > 0 else 0
 
             # Early % move from 5m candles
             early_move = None
@@ -76,18 +76,19 @@ def main():
 
             info = ticker.info
             combined_output["tickers"][symbol] = {
-                "price": info.get("regularMarketPrice"),
-                "volume": info.get("volume"),
-                "changePercent": info.get("regularMarketChangePercent"),
-                "open": info.get("open"),
-                "prevClose": info.get("previousClose"),
+                "last_price": info.get("regularMarketPrice"),
+                "vol_latest": info.get("volume"),
+                "pct_change": info.get("regularMarketChangePercent"),
+                "open_price": info.get("open"),
+                "prev_close": info.get("previousClose"),
                 "timestamp": datetime.now().isoformat(),
             }
 
+
             if rel_vol is not None:
                 combined_output["tickers"][symbol]["rel_vol"] = round(rel_vol, 2)
-            if avg_volume_10d is not None:
-                combined_output["tickers"][symbol]["avg_volume_10d"] = int(avg_volume_10d)
+            if avg_vol_10d is not None:
+                combined_output["tickers"][symbol]["avg_vol_10d"] = int(avg_vol_10d)
             if early_move is not None:
                 combined_output["tickers"][symbol]["early_percent_move"] = early_move
 
@@ -109,10 +110,11 @@ def main():
         try:
             data = yf.Ticker(etf).info
             combined_output["sectors"][etf] = {
-                "price": data.get("regularMarketPrice"),
-                "prevClose": data.get("previousClose"),
-                "changePercent": data.get("regularMarketChangePercent")
+                "last_price": data.get("regularMarketPrice"),
+                "prev_close": data.get("previousClose"),
+                "pct_change": data.get("regularMarketChangePercent")
             }
+
         except Exception as e:
             tqdm.write(f"⚠️ Failed to fetch sector {etf}: {e}")
 
