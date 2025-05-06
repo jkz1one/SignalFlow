@@ -6,6 +6,9 @@ Currently optimized for identifying momentum setups at market open.
 ---
 ![example](https://github.com/user-attachments/assets/97ff525c-fe60-4af3-8952-d913e9e46a75)
 
+# 🚧 THIS VERSION IS UNDER CONSTRUCTION FOR AUTOMATION. IT IS BROKEN 🚧
+## Use the stable branch instead
+
 ## 🔧 How It Works
 
 ### 📦 Daily Refresh
@@ -114,6 +117,9 @@ npm run dev
 - [ ] Add Admin Panel to trigger backend jobs
 - [ ] Add customizable thresholds (e.g., rel vol min)
 - [ ] Add sector rotation view + GEX system (future)
+- [ ] Fix error for stocks with periods/dashes (e.g.,BRK.B)
+- [ ] Automate Data Pulls
+- [ ] Add Discord and/or Email Alerts 
 
 ---
 

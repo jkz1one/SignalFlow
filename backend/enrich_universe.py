@@ -6,27 +6,8 @@ import pytz
 from pytz import timezone
 from tqdm import tqdm
 
+# --- Setup ---
 CACHE_DIR = "backend/cache"
-def get_latest_universe_file():
-    files = [
-        f for f in os.listdir(CACHE_DIR)
-        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
-    ]
-    if not files:
-        raise FileNotFoundError("❌ No dated universe files found in cache.")
-    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
-    return os.path.join(CACHE_DIR, files[0])
-
-UNIVERSE_PATH = get_latest_universe_file()
-TV_SIGNALS_PATH = os.path.join(CACHE_DIR, "tv_signals.json")
-SECTOR_PRICES_PATH = os.path.join(CACHE_DIR, "sector_etf_prices.json")
-CANDLES_PATH = os.path.join(CACHE_DIR, "candles_5m.json")
-MULTI_DAY_PATH = os.path.join(CACHE_DIR, "multi_day_levels.json")
-SHORT_INTEREST_PATH = os.path.join(CACHE_DIR, "short_interest.json")
-
-
-current_date_str = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%d")
-OUTPUT_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{current_date_str}.json")
 
 def load_json(path):
     if not os.path.exists(path):
@@ -38,6 +19,32 @@ def load_json(path):
     except Exception as e:
         print(f"❌ Error loading {path}: {e}")
         return {}
+
+# --- Resolve Input Files ---
+TODAY = datetime.now(timezone("U" \
+"S/Eastern")).strftime("%Y-%m-%d")
+
+def get_latest_universe_file():
+    files = [
+        f for f in os.listdir(CACHE_DIR)
+        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+    ]
+    if not files:
+        raise FileNotFoundError("❌ No dated universe files found in cache.")
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    return os.path.join(CACHE_DIR, files[0])
+
+UNIVERSE_PATH = get_latest_universe_file()
+current_date_str = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%d")
+OUTPUT_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{current_date_str}.json")
+
+post_open = load_json(os.path.join(CACHE_DIR, f"post_open_signals_{TODAY}.json"))
+candles = load_json(os.path.join(CACHE_DIR, f"945_signals_{TODAY}.json"))
+multi_day_data = load_json(os.path.join(CACHE_DIR, "multi_day_levels.json"))
+short_interest = load_json(os.path.join(CACHE_DIR, "short_interest.json"))
+
+tv_signals = post_open.get("tickers", {})  # derived from post_open_signals
+sector_prices = post_open.get("sectors", {})
 
 def enrich_with_tv_signals(universe, tv_data):
     normalized_tv_data = {}
@@ -236,9 +243,6 @@ def apply_signal_flags(universe):
             (high - low) / low < 0.02                     # expand range limit from 1.5% → 2%
         ):
             signals["high_volume_no_breakout"] = True
-
-
-
         
     return universe
 
@@ -265,13 +269,6 @@ def inject_risk_flags(universe):
 def main():
     print("🚀 Starting enrichment...")
     universe = load_json(UNIVERSE_PATH)
-    print(f"📡 Loading latest TV signals...")
-    tv_signals = load_json(TV_SIGNALS_PATH)
-    sector_prices = load_json(SECTOR_PRICES_PATH)
-    candles = load_json(CANDLES_PATH)
-    short_interest = load_json(SHORT_INTEREST_PATH)
-    multi_day_data = load_json(MULTI_DAY_PATH)
-
     if not universe:
         print("❌ No tickers found in base universe. Aborting enrichment.")
         return
@@ -297,6 +294,7 @@ def main():
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(universe, f, indent=2)
+
     print(f"✅ Enriched universe saved to {OUTPUT_PATH}")
 
 if __name__ == "__main__":

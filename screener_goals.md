@@ -1,6 +1,6 @@
 # ✅ Stock Screener v3.7
 
-> **Status:** Stable daily-use build  
+> **Status:** Broken/Under Construction
 > **Next Phase:** Universe Builder + Scheduled Automation  
 > **Further Phases:** Sector Tab • Admin Panel • Frontend Timestamp • Screener Builder  
 >  
@@ -73,6 +73,7 @@
 - [ ] Convert all scrapers to callable Python modules (instead of CLI scripts)  
 - [ ] Add stealth/resilience improvements for TradingView scrapes  
 - [ ] Add retry + failover options on scraper failures  
+- [ ] Fix BRB.B parsing error. Stocks with ./-
 
 ### Frontend Goals  
 - [ ] Add dedicated Sector Rotation tab  

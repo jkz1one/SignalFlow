@@ -11,11 +11,9 @@ import pandas_market_calendars as mcal
 # --- Config ---
 CACHE_DIR = "backend/cache"
 IMPORTANT_FILES = [
-    "tv_signals.json",
-    "sector_etf_prices.json",
-    "candles_5m.json",
-    "multi_day_levels.json",
+    "945_signals",
     "short_interest.json",
+    "post_open_signals",
     "universe_enriched"
 ]
 
@@ -128,57 +126,36 @@ def audit_cache_files():
             print(f"⚠️ {label} missing!")
             issues_found = True
 
-    # Check TV Signals
-    tv_path = os.path.join(CACHE_DIR, "tv_signals.json")
-    if os.path.exists(tv_path):
-        with open(tv_path, "r") as f:
-            tv_data = json.load(f)
-        old_entries = [k for k, v in tv_data.items() if "timestamp" not in v]
-        if old_entries:
-            print(f"⚠️ {len(old_entries)} tickers missing timestamp in tv_signals.json")
+    # Unified post_open_signals
+    post_path = os.path.join(CACHE_DIR, f"post_open_signals_{TODAY.strftime('%Y-%m-%d')}.json")
+    if os.path.exists(post_path):
+        with open(post_path, "r") as f:
+            data = json.load(f)
+        if "tickers" not in data or "sectors" not in data:
+            print(f"⚠️ Missing top-level keys in post_open_signals")
+            issues_found = True
+        elif len(data["tickers"]) < 10:
+            print(f"⚠️ Unusually small ticker set in post_open_signals ({len(data['tickers'])})")
             issues_found = True
     else:
-        print("⚠️ tv_signals.json missing!")
-        issues_found = True
-
-    # Sector ETF
-    sector_path = os.path.join(CACHE_DIR, "sector_etf_prices.json")
-    if os.path.exists(sector_path):
-        with open(sector_path, "r") as f:
-            sector_data = json.load(f)
-        expected_etfs = ["XLF", "XLK", "XLE", "XLV", "XLY", "XLI", "XLP", "XLU", "XLRE", "XLB", "XLC"]
-        missing_etfs = [etf for etf in expected_etfs if etf not in sector_data]
-        if missing_etfs:
-            print(f"⚠️ Missing sector ETF prices for: {missing_etfs}")
-            issues_found = True
-    else:
-        print("⚠️ sector_etf_prices.json missing!")
+        print("⚠️ post_open_signals file is missing!")
         issues_found = True
 
     # Candles
-    candles_path = os.path.join(CACHE_DIR, "candles_5m.json")
+    candles_path = os.path.join(CACHE_DIR, f"945_signals_{TODAY.strftime('%Y-%m-%d')}.json")
     if os.path.exists(candles_path):
         with open(candles_path, "r") as f:
-            candle_data = json.load(f)
-        empty_candles = [s for s, c in candle_data.items() if not c]
-        if empty_candles:
-            print(f"⚠️ {len(empty_candles)} tickers have no 5m candles")
+            candle_data = json.load(f)        
+        if "candles" not in candle_data or not candle_data["candles"]:
+            print("⚠️ 945_signals is missing 'candles' or it's empty")
             issues_found = True
+        else:
+            empty_candles = [s for s, c in candle_data["candles"].items() if not c]
+            if empty_candles:
+                print(f"⚠️ {len(empty_candles)} tickers have no candle data in 945_signals")
+                issues_found = True
     else:
-        print("⚠️ candles_5m.json missing!")
-        issues_found = True
-
-    # Multi-day
-    multi_path = os.path.join(CACHE_DIR, "multi_day_levels.json")
-    if os.path.exists(multi_path):
-        with open(multi_path, "r") as f:
-            multi_data = json.load(f)
-        missing = [s for s, d in multi_data.items() if "high" not in d or "low" not in d]
-        if missing:
-            print(f"⚠️ {len(missing)} tickers missing multi-day high/low levels")
-            issues_found = True
-    else:
-        print("⚠️ multi_day_levels.json missing!")
+        print("⚠️ 945_signals missing!")
         issues_found = True
 
     # Short Interest
@@ -218,6 +195,8 @@ def validate_caches(strict=True, include_scored=False):
             pattern = os.path.join(CACHE_DIR, f"universe_enriched_{today_str}.json")
         elif fname == "universe_scored":
             pattern = os.path.join(CACHE_DIR, f"universe_scored_{today_str}.json")
+        elif fname.startswith("post_open_signals"):
+            pattern = os.path.join(CACHE_DIR, f"{fname}_{today_str}.json")
         else:
             pattern = os.path.join(CACHE_DIR, fname)
 

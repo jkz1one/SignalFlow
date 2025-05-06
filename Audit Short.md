@@ -45,7 +45,6 @@ The project uses `cache_manager.py` to clean old files and audit the cache direc
 ### Key Improvements:
 - NYSE calendar logic (via `pandas_market_calendars`) used to define “today” on weekends/holidays
 - Risk of accidental cache deletion minimized by fallback mod-time checks
-- **Note:** `cache_manager.py` is currently run in **both** `daily_refresh.py` and `run_pipeline.py`. This is redundant and should be run **only once**, ideally during the refresh phase
 
 ---
 
