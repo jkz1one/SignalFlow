@@ -9,6 +9,29 @@ Currently optimized for identifying momentum setups at market open.
 # 🚧 THIS VERSION IS UNDER CONSTRUCTION FOR AUTOMATION. IT IS BROKEN 🚧
 ## Use the stable branch instead
 
+## 🛠️ Main Branch Fixes To Do List
+
+- [ ] Ensure screener resets cleanly at 4 AM:
+      - No ticker data should populate until the scheduler runs its next task.
+      - Prevent pre-4AM enrichment or early data pollution.
+
+- [ ] Ensure `enrich_universe.py` handles missing or delayed data safely:
+      - Skip if run before 9:36 AM.
+      - Skip if `post_open_signals.json` is missing or incomplete.
+
+- [ ] Update or modularize `run_pipeline.py` and `daily_refresh.py`:
+      - Deprecate `daily_refresh.py` if `scheduler.py` replaces it.
+      - Consider splitting into `run_opening_pipeline.py` and `run_postopen_pipeline.py`.
+
+- [ ] Make sure `cache_manager.py` clears out stale/previous-day files:
+      - Automatically run at 4 AM via scheduler.
+      - Preserve files from the current day.
+
+- [ ] Finalize and structure the full automation flow:
+      - Clean timing logic.
+      - Ensure all scripts run in correct order and with proper safeguards.
+
+
 ## 🔧 How It Works
 
 ### 📦 Daily Refresh
