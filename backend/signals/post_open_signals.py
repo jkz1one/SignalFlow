@@ -12,7 +12,7 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 TODAY_STR = datetime.now().strftime("%Y-%m-%d")
 OUTPUT_PATH = os.path.join(CACHE_DIR, f"post_open_signals_{TODAY_STR}.json")
 LOOKBACK_DAYS = 10
-SAVE_INTERVAL = 25  # Save after every N tickers
+SAVE_INTERVAL = 25
 
 SECTOR_ETFS = [
     "XLF", "XLK", "XLE", "XLV", "XLY",
@@ -22,10 +22,16 @@ SECTOR_ETFS = [
 def get_latest_universe_file():
     files = [
         f for f in os.listdir(CACHE_DIR)
-        if f.startswith("universe_") and f.endswith(".json") and "cache" not in f
+        if (
+            f.startswith("universe_")
+            and f.endswith(".json")
+            and "cache" not in f
+            and "enriched" not in f
+            and "scored" not in f
+        )
     ]
     if not files:
-        raise FileNotFoundError("❌ No dated universe files found in cache.")
+        raise FileNotFoundError("❌ No valid universe files found in cache.")
     files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
     return os.path.join(CACHE_DIR, files[0])
 
@@ -64,6 +70,7 @@ def fetch_yf_data(symbol, lookback_days=10, retries=3):
                 "pct_change": info.get("regularMarketChangePercent"),
                 "open_price": info.get("open"),
                 "prev_close": info.get("previousClose"),
+                "shortPercentOfFloat": info.get("shortPercentOfFloat"),
                 "timestamp": datetime.now().isoformat(),
             }
 
@@ -106,20 +113,6 @@ def main():
         "sectors": {}
     }
 
-    print(f"📡 Fetching TV-style + YF enrichment + {LOOKBACK_DAYS}-day highs/lows for {len(symbols)} tickers...")
-
-    for i, symbol in enumerate(tqdm(symbols, desc="🔄 Scraping Tickers")):
-        data = fetch_yf_data(symbol, LOOKBACK_DAYS)
-        if data:
-            combined_output["tickers"][symbol] = data
-
-        # Random delay to avoid rate limiting
-        time.sleep(random.uniform(0.3, 0.6))
-
-        # Save progress in batches
-        if i > 0 and i % SAVE_INTERVAL == 0:
-            save_progress(combined_output)
-
     print("📊 Fetching sector ETF prices...")
     for etf in SECTOR_ETFS:
         try:
@@ -131,6 +124,50 @@ def main():
             }
         except Exception as e:
             tqdm.write(f"⚠️ Failed to fetch sector {etf}: {e}")
+
+    print(f"📡 Fetching post-open signals + highs/lows for {len(symbols)} tickers...")
+
+    for i, symbol in enumerate(tqdm(symbols, desc="🔄 Scraping Tickers")):
+        data = fetch_yf_data(symbol, LOOKBACK_DAYS)
+        if data:
+            # Tier 2: squeeze watch
+            short_pct = data.get("shortPercentOfFloat")
+            if short_pct is None:
+                short_pct = 0
+            rel_vol = data.get("rel_vol", 0)
+            pct_change = data.get("pct_change", 0)
+            if (
+                short_pct >= 0.18 and
+                rel_vol > 1.2 and
+                abs(pct_change) >= 1.5
+            ):
+                data["squeeze_watch"] = True
+
+            # Tier 3: near multi-day high/low
+            price = data.get("last_price")
+            if price and data.get("high"):
+                if price >= data["high"] * 0.98:
+                    data["near_multi_day_high"] = True
+            if price and data.get("low"):
+                if price <= data["low"] * 1.02:
+                    data["near_multi_day_low"] = True
+
+            combined_output["tickers"][symbol] = data
+
+
+        time.sleep(random.uniform(0.3, 0.6))
+
+        if i > 0 and i % SAVE_INTERVAL == 0:
+            save_progress(combined_output)
+
+    # Tier 3: top volume gainers
+    top_volume = sorted(
+        combined_output["tickers"].items(),
+        key=lambda x: x[1].get("vol_latest", 0),
+        reverse=True
+    )[:5]
+    for symbol, _ in top_volume:
+        combined_output["tickers"][symbol]["top_volume_gainer"] = True
 
     save_progress(combined_output)
     print(f"✅ Final post-open signals saved to: {OUTPUT_PATH}")

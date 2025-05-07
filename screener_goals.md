@@ -100,6 +100,7 @@
 - [ ] Ensure some **core signals remain shared** across screeners for consistency  
 - [ ] Introduce **fundamental signal logic** (e.g., valuation, growth) in Swing + Overnight screeners only  
 - [ ] Leave room for future screeners (e.g., Lunch Break, Block Trades, Earnings Flow)
+- [ ] Consider adding manual run commands while **Sheduler.py** is actively running. Ie run post open scrape, run enrichment, etc. 
 
 ---
 

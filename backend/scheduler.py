@@ -85,8 +85,8 @@ def schedule_jobs():
                       trigger="cron", hour=9, minute=35, second=50)
     scheduler.add_job(lambda: run_script(SCRIPTS["945 Signals"], "945 Signals"),
                       trigger="cron", hour=9, minute=45, second=50)
-    scheduler.add_job(lambda: run_script(SCRIPTS["Enrich Universe"], "Enrich Universe"),
-                      trigger="cron", hour=9, minute=46, second=30)
+    #scheduler.add_job(lambda: run_script(SCRIPTS["Enrich Universe"], "Enrich Universe"),
+    #                  trigger="cron", hour=9, minute=46, second=30)
     scheduler.start()
     logging.info("✅ APScheduler started.")
 
@@ -98,6 +98,8 @@ if __name__ == "__main__":
     logging.info("📅 Scheduler initializing...")
 
     launch_enrich_watchdog()
+    # ✅ Wait a moment for wathdog to start
+    time.sleep(5)
     check_and_run_backfills()
     schedule_jobs()
 

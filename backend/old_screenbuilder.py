@@ -1,4 +1,3 @@
-
 import json
 import os
 from datetime import datetime
@@ -28,7 +27,6 @@ TIER_1 = {
     "break_above_range": 3,
     "break_below_range": 3,
     "high_rel_vol": 3,
-    "momentum_confluence": 3,
 }
 
 TIER_2 = {
@@ -83,45 +81,19 @@ def build_tier_hits(info):
         "T3": [sig for sig in TIER_3 if signals.get(sig)],
     }
 
-def build_reasons(info):
-    signals = info.get("signals", {})
-    reasons = []
-    for sig in TIER_1:
-        if signals.get(sig): reasons.append(f"T1: {sig}")
-    for sig in TIER_2:
-        if signals.get(sig): reasons.append(f"T2: {sig}")
-    for sig in TIER_3:
-        if signals.get(sig): reasons.append(f"T3: {sig}")
-    return reasons
-
 def main():
     print("🚀 Starting enrichment and scoring...")
     universe = load_json(UNIVERSE_PATH)
     print(f"📦 Loaded {len(universe)} tickers to enrich")
     print("⚙️ Scoring tickers...")
-    filtered = {}
     for symbol in tqdm(universe):
-        stock = universe[symbol]
-        if stock.get("isBlocked", False):
-            continue
-        stock["score"] = score(stock)
-        if stock["score"] < 3:
-            continue
-        stock["tierHits"] = build_tier_hits(stock)
-        stock["reasons"] = build_reasons(stock)
-        filtered[symbol] = {
-            "score": stock["score"],
-            "tierHits": stock["tierHits"],
-            "reasons": stock["reasons"],
-            "level": stock.get("level"),
-            "sector": stock.get("sector"),
-            "tags": stock.get("tags", []),
-            "signals": stock.get("signals", {})
-        }
+        s = score(universe[symbol])
+        universe[symbol]["score"] = s
+        universe[symbol]["tierHits"] = build_tier_hits(universe[symbol])  # ✅ Add this line!
 
     with open(OUTPUT_PATH, "w") as f:
-        json.dump(filtered, f, indent=2)
-    print(f"✅ Scored universe saved to {OUTPUT_PATH}")
+        json.dump(universe, f, indent=2)
+    print(f"✅ Enriched universe saved to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     main()

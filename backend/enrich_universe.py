@@ -1,10 +1,10 @@
-##enrich_universe.py
 import json
 import os
 from datetime import datetime
 import pytz 
 from pytz import timezone
 from tqdm import tqdm
+from collections import defaultdict
 
 # --- Setup ---
 CACHE_DIR = "backend/cache"
@@ -21,8 +21,7 @@ def load_json(path):
         return {}
 
 # --- Resolve Input Files ---
-TODAY = datetime.now(timezone("U" \
-"S/Eastern")).strftime("%Y-%m-%d")
+TODAY = datetime.now(timezone("US/Eastern")).strftime("%Y-%m-%d")
 
 def get_latest_universe_file():
     files = [
@@ -38,7 +37,6 @@ UNIVERSE_PATH = get_latest_universe_file()
 current_date_str = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%d")
 OUTPUT_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{current_date_str}.json")
 
-    # --- Load base or previously enriched universe ---
 ENRICHED_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{TODAY}.json")
 if os.path.exists(ENRICHED_PATH):
     print(f"📥 Loading previously enriched file: {ENRICHED_PATH}")
@@ -49,11 +47,19 @@ else:
 
 post_open = load_json(os.path.join(CACHE_DIR, f"post_open_signals_{TODAY}.json"))
 candles = load_json(os.path.join(CACHE_DIR, f"945_signals_{TODAY}.json"))
-multi_day_data = load_json(os.path.join(CACHE_DIR, "multi_day_levels.json"))
 short_interest = load_json(os.path.join(CACHE_DIR, "short_interest.json"))
 
 tv_signals = post_open.get("tickers", {})  # derived from post_open_signals
 sector_prices = post_open.get("sectors", {})
+
+multi_day_data = {
+    symbol: {
+        "high": data.get("high"),
+        "low": data.get("low")
+    }
+    for symbol, data in tv_signals.items()
+    if data.get("high") is not None and data.get("low") is not None
+}
 
 def enrich_with_tv_signals(universe, tv_data):
     normalized_tv_data = {}
@@ -65,14 +71,13 @@ def enrich_with_tv_signals(universe, tv_data):
         tv = normalized_tv_data.get(symbol.upper())
         if tv:
             signals = info.setdefault("signals", {})
-            if "price" in tv:
-                info["last_price"] = tv["price"]
-            if "volume" in tv:
-                signals["volume"] = tv["volume"]
-                info["vol_latest"] = tv["volume"]
-            if "changePercent" in tv:
-                signals["changePercent"] = tv["changePercent"]
-                info["pct_change"] = tv["changePercent"]
+            # Map data from post_open_signals to universe fields
+            if "last_price" in tv:
+                info["last_price"] = tv["last_price"]
+            if "vol_latest" in tv:
+                info["vol_latest"] = tv["vol_latest"]
+            if "pct_change" in tv:
+                info["pct_change"] = tv["pct_change"]
             if "rel_vol" in tv:
                 info["rel_vol"] = tv["rel_vol"]
             if "avg_vol_10d" in tv:
@@ -81,9 +86,8 @@ def enrich_with_tv_signals(universe, tv_data):
                 info["open_price"] = tv["open_price"]
             if "prev_close" in tv:
                 info["prev_close"] = tv["prev_close"]
-            if "yfinance_updated" in tv:
-                info["yfinance_updated"] = tv["yfinance_updated"]
-    
+            if "early_percent_move" in tv:
+                info["early_percent_move"] = tv["early_percent_move"]
     return universe
 
 def enrich_with_sector(universe, sector_data):
@@ -108,7 +112,7 @@ def apply_sector_rotation_signals(universe, sector_data):
         "XLU": "Utilities",
         "XLRE": "Real Estate",
         "XLB": "Basic Materials",
-        "XLCD": "Communication Services"
+        "XLC": "Communication Services"
     }
 
     # Reverse map for easier matching
@@ -144,29 +148,34 @@ def apply_sector_rotation_signals(universe, sector_data):
 
     return universe
 
-
 def enrich_with_candles(universe, candle_data):
+    # The 945_signals output JSON has a top-level "candles" dict
+    data = candle_data.get("candles", {}) if isinstance(candle_data, dict) else candle_data
     for symbol, info in universe.items():
-        candles = candle_data.get(symbol, [])
-        if not candles:
+        entry = data.get(symbol)
+        if not entry:
             continue
-
-        highs = []
-        lows = []
-
-        for c in candles:
-            high = c.get("high")
-            low = c.get("low")
+        # If entry is a dict with range info
+        if isinstance(entry, dict):
+            high = entry.get("940_high")
+            low = entry.get("940_low")
             if high is not None and low is not None:
-                highs.append(high)
-                lows.append(low)
-
-        if highs and lows:
-            info["range_930_940_high"] = max(highs)
-            info["range_930_940_low"] = min(lows)
-
+                info["range_930_940_high"] = high
+                info["range_930_940_low"] = low
+        # If entry is a list of 5m candles (old format)
+        elif isinstance(entry, list):
+            highs = []
+            lows = []
+            for c in entry:
+                high = c.get("high")
+                low = c.get("low")
+                if high is not None and low is not None:
+                    highs.append(high)
+                    lows.append(low)
+            if highs and lows:
+                info["range_930_940_high"] = max(highs)
+                info["range_930_940_low"] = min(lows)
     return universe
-
 
 def enrich_with_multi_day_levels(universe, multi_day_data):
     for symbol, info in universe.items():
@@ -180,7 +189,7 @@ def enrich_with_short_interest(universe, short_data):
     for symbol, info in universe.items():
         si = short_data.get(symbol.upper())
         rel_vol = info.get("rel_vol", 0)
-        change = info.get("signals", {}).get("changePercent", 0)
+        change = info.get("pct_change", 0)
 
         if si:
             short_pct = si.get("shortPercentOfFloat", 0)
@@ -193,6 +202,10 @@ def enrich_with_short_interest(universe, short_data):
     return universe
 
 def apply_signal_flags(universe):
+    # Load once and extract "tickers" for signal lookup
+    post_open = load_json(os.path.join(CACHE_DIR, f"post_open_signals_{TODAY}.json"))
+    post_open_signals = post_open.get("tickers", {})
+
     for symbol, info in universe.items():
         signals = info.setdefault("signals", {})
         price = info.get("last_price")
@@ -202,45 +215,53 @@ def apply_signal_flags(universe):
         prev_close = info.get("prev_close")
         high = info.get("range_930_940_high")
         low = info.get("range_930_940_low")
-        early_move = info.get("early_percent_move")
 
+        info.setdefault("tierHits", {"T1": [], "T2": [], "T3": []})
+        info.setdefault("reasons", [])
+        score = info.get("score", 0)
+
+        # --- Tier 1 signals ---
         if open_price is not None and prev_close is not None:
             if open_price > prev_close * 1.01:
                 signals["gap_up"] = True
-                signals.pop("gap_down", None)
+                info["tierHits"]["T1"].append("gap_up")
+                info["reasons"].append("T1: gap_up")
+                score += 3
             elif open_price < prev_close * 0.99:
                 signals["gap_down"] = True
-                signals.pop("gap_up", None)
-            else:
-                signals.pop("gap_up", None)
-                signals.pop("gap_down", None)
+                info["tierHits"]["T1"].append("gap_down")
+                info["reasons"].append("T1: gap_down")
+                score += 3
 
         if price is not None and high is not None and price > high:
             signals["break_above_range"] = True
+            info["tierHits"]["T1"].append("break_above_range")
+            info["reasons"].append("T1: break_above_range")
+            score += 3
+
         if price is not None and low is not None and price < low:
             signals["break_below_range"] = True
+            info["tierHits"]["T1"].append("break_below_range")
+            info["reasons"].append("T1: break_below_range")
+            score += 3
 
-        if early_move is not None and abs(early_move) >= 2.5:
-            signals["early_move"] = True
+        if info.get("rel_vol", 0) > 1.5:
+            signals["high_rel_vol"] = True
+            info["tierHits"]["T1"].append("high_rel_vol")
+            info["reasons"].append("T1: high_rel_vol")
+            score += 3
 
+        # --- Raw supporting signals ---
         if volume is not None and volume >= 1_000_000:
             signals["high_volume"] = True
-
         if price is not None and high is not None and 0 < (high - price) <= 0.25:
             signals["near_range_high"] = True
         if price is not None and low is not None and 0 < (price - low) <= 0.25:
             signals["near_range_low"] = True
-
-
-        if info.get("rel_vol", 0) > 1.5:
-            signals["high_rel_vol"] = True
-
         if price is not None and info.get("high_10d") and price >= info["high_10d"] * 0.98:
             signals["near_multi_day_high"] = True
-
         if price is not None and info.get("low_10d") and price <= info["low_10d"] * 1.02:
             signals["near_multi_day_low"] = True
-
         if (
             volume is not None and volume >= 800_000 and
             info.get("rel_vol", 0) > 1.0 and
@@ -252,6 +273,66 @@ def apply_signal_flags(universe):
             (high - low) / low < 0.02
         ):
             signals["high_volume_no_breakout"] = True
+
+        # --- Tier 2 & 3 from post_open_signals ---
+        post = post_open_signals.get(symbol, {})
+
+        if post.get("squeeze_watch"):
+            signals["squeeze_watch"] = True
+            info["tierHits"]["T2"].append("squeeze_watch")
+            info["reasons"].append("T2: squeeze_watch")
+            score += 2
+
+        if abs(post.get("early_percent_move", 0)) >= 2.5:
+            signals["early_move"] = post["early_percent_move"]
+            info["tierHits"]["T2"].append("early_move")
+            info["reasons"].append("T2: early_move")
+            score += 2
+
+        # Apply sector rotation signals to Tier 2
+        if signals.get("strong_sector"):
+            info["tierHits"]["T2"].append("strong_sector")
+            info["reasons"].append("T2: strong_sector")
+            score += 2
+        if signals.get("weak_sector"):
+            info["tierHits"]["T2"].append("weak_sector")
+            info["reasons"].append("T2: weak_sector")
+            score += 2
+
+        if post.get("top_volume_gainer"):
+            signals["top_volume_gainer"] = True
+            info["tierHits"]["T3"].append("top_volume_gainer")
+            info["reasons"].append("T3: top_volume_gainer")
+            score += 1
+
+        if post.get("near_multi_day_high"):
+            signals["near_multi_day_high"] = True
+            info["tierHits"]["T3"].append("near_multi_day_high")
+            info["reasons"].append("T3: near_multi_day_high")
+            score += 1
+
+        if post.get("near_multi_day_low"):
+            signals["near_multi_day_low"] = True
+            info["tierHits"]["T3"].append("near_multi_day_low")
+            info["reasons"].append("T3: near_multi_day_low")
+            score += 1
+
+        # Tier 3 raw signals
+        if signals.get("near_range_high"):
+            info["tierHits"]["T3"].append("near_range_high")
+            info["reasons"].append("T3: near_range_high")
+            score += 1
+        if signals.get("high_volume"):
+            info["tierHits"]["T3"].append("high_volume")
+            info["reasons"].append("T3: high_volume")
+            score += 1
+        if signals.get("high_volume_no_breakout"):
+            info["tierHits"]["T3"].append("high_volume_no_breakout")
+            info["reasons"].append("T3: high_volume_no_breakout")
+            score += 1
+
+        # Final score
+        info["score"] = score
 
     return universe
 
@@ -285,8 +366,9 @@ def main():
         print(f"📥 No prior enriched file found. Using base universe: {UNIVERSE_PATH}")
         universe = load_json(UNIVERSE_PATH)
     else:
-        print("❌ No universe file available to load.")         
-   
+        print("❌ No universe file available to load.")
+        return
+
     print("🚀 Starting enrichment...")
     if not universe:
         print("❌ No tickers found in base universe. Aborting enrichment.")
@@ -331,6 +413,10 @@ def main():
     for symbol, info in universe.items():
         info.pop("yfinance_updated", None)
         info["enriched_timestamp"] = now_eastern.isoformat()
+
+    t2_hits = sum(1 for x in universe.values() if x["tierHits"]["T2"])
+    t3_hits = sum(1 for x in universe.values() if x["tierHits"]["T3"])
+    print(f"✅ Tier 2 hits: {t2_hits}, Tier 3 hits: {t3_hits}")
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(universe, f, indent=2)
