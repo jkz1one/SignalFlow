@@ -56,6 +56,7 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 * ✅ `post_open_signals.py` rewritten to prevent YF rate limits
 * ✅ `enrich_universe.py` now fails gracefully, supports incremental enrichments
 * ✅ Scheduler + Watchdog now coordinate
+* ✅  Fixed BRK.B ticker parsing
 
 ### In Progress
 
@@ -67,11 +68,11 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 ### Next Steps
 
 * [ ] Implement 4:00 AM daily reset via `cache_manager.py`
+    (smart reset incase pipeline is ran after 4A M)
 * [ ] Automatically run `screenbuilder.py` and `watchlist_builder.py` after enrichment
 * [ ] Add Admin Panel to trigger backend jobs manually
 * [ ] Add customizable thresholds (e.g., rel vol min) via config
 * [ ] Fix frontend risk toggle logic
-* [ ] Fix BRK.B ticker parsing
 * [ ] Add Discord/Email alerts for job failures
 * [ ] Strip unused dependencies and clean legacy scripts
 

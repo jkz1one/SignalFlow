@@ -36,6 +36,7 @@
 - Removed deprecated `yfinance_updated` field  
 - Universe enrichment + scoring fully validated  
 - AutoWatchlist builder + clean frontend rendering  
+- Fixed BRK.B ticker parsing
 
 ### Backend Architecture  
 - `run_pipeline.py` orchestrates enrich → score → build  
