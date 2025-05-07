@@ -1,20 +1,60 @@
-The pipeline system should be refactored as follows for better scalability and modularity:
 
-Unified Cache Checks: Remove any direct cache validation or “hard stop” logic from run_pipeline.py and other scripts. Instead, call a cache_manager.validate_caches() (or similar) at the top of the pipeline. This function (in cache_manager.py) will perform all checks (e.g. “Do we have today’s universe_cache.json? Is the latest universe_enriched file from today? Are all required JSON files present and non-empty?”). If anything is wrong, it will handle it according to strict mode. This central function acts as the gatekeeper of the pipeline’s input quality.
+# ✅ Screener Automation System – Updated Goals (May 2025)
 
-Strict Mode Controls Errors: Use the STRICT_MODE flag (or a parameter) to decide how cache_manager responds to issues. In practice, you should implement this as a parameter to the validation/cleanup functions, defaulting to True for production runs. In strict mode, have the function log an error and abort the run (e.g. by raising an exception or SystemExit). In non-strict mode, log a warning and allow the pipeline to continue (perhaps returning a False/False status that the caller can check). This dual behavior with one switch makes it easy to toggle strictness for different scenarios (for instance, a developer running an ad-hoc pipeline might set strict=False to use whatever data is there, whereas an automated daily run uses strict=True to ensure freshness). Importantly, the implementation should favor raising exceptions over calling sys.exit deep inside library code – let the top level script decide to exit, which is a cleaner separation of concerns. That said, since run_pipeline.py is a standalone script, raising SystemExit inside cache_manager in strict mode is an acceptable shortcut as long as it's documented.
+## 1. **Enrichment Watchdog Logic**
+- **Current Behavior**: `enrich_watchdog.py` triggers `enrich_universe.py` **only** when new cache inputs (e.g., `post_open_signals.json`, `945_signals.json`) appear or change.
+- **What’s Next**:
+  - [ ] **Append** `screenbuilder.py` and `watchlist_builder.py` as post-enrichment steps inside `enrich_watchdog.py`.
+    - This makes the system “live-update” the screener anytime enrichment is refreshed.
+  - [ ] Add a log statement:  
+    `"✅ Enrichment complete — running screener + watchlist builders..."`
 
-Dedicated Cleanup Routine: Implement a cache cleanup function in cache_manager.py that knows how to delete or archive old cache files. This could be based on a retention policy (e.g. keep last 7 days of universe_enriched_*.json and universe_scored_*.json, delete older). This function should be invoked at a single point (for example, right after validation in run_pipeline.py). By centralizing this, if in the future we adjust how many days of data to keep, there’s one place to change it. It also means we don’t accidentally run cleanup twice in one day from both scripts. Ensuring old files are cleaned up regularly improves disk usage and reduces the chance of the pipeline accidentally reading an outdated file (if, say, someone runs the wrong file name).
-No Cache Manager in Refresh: Simplify daily_refresh.py to only perform data fetching and writing. It should call whatever functions or modules gather the universe list, scrape signals, etc., and write out universe_cache.json, tv_signals.json, etc., followed by the universe_enriched_<date>.json creation. Once done, it can exit without running any cache validation. We assume if something went wrong (like an API failed), the script would log or raise an error at that point. We do not explicitly run cache audits here. This keeps extraction isolated. According to pipeline best practices, extraction, transformation, and loading stages should be distinct and reusable– our extraction stage doesn’t need to know about the validation rules, that’s the job of the transformation stage
- 
-Improved Reliability: With this structure, the system is more fault-tolerant and transparent. If daily_refresh fails or is skipped, run_pipeline (with strict mode) will catch the stale data and clearly log an error like “Universe cache is outdated – please run daily_refresh.py first” and halt. This is a clear signal to the operator. In non-strict mode, it would warn but still run, which might be useful for testing or if you intentionally want to rerun the pipeline later in the day without re-fetching daily data. In all cases, the decision is centralized, so you won’t have one part of the code ignoring a problem that another part would catch. This fail-fast approach in strict mode prevents cascading issues (e.g. avoid generating a bogus watchlist based on yesterday’s inputs), while still allowing flexibility when needed.
+---
 
-Modularity and Testing: The new cache_manager.py can be thought of as a self-contained “cache health” module. In the future, you could expand it to do more sophisticated audits (for example, verify the cache data content ranges or detect anomalies) without touching the pipeline logic. It could also be called from a monitoring script or an API endpoint (/api/cache-timestamps likely already uses it or could use it to report freshness). Each piece of the pipeline now has a clear role:
+## 2. **Universe Builder Automation vs. Manual Frontend Control**
 
-daily_refresh – data extraction (raw cache building),
-cache_manager – cache validation & maintenance (single source of truth for cache state),
-run_pipeline – data processing (enrich, score, output) assuming valid caches.
+You now have two possible paths for handling `universe_builder.py`:
 
-This separation is cleaner and follows solid design principles, making the system easier to extend. For example, if you add a new data source that must be fetched daily, you add it in daily_refresh and then list it in cache_manager’s checks – no need to modify the core pipeline flow.
+### Option A: Automated Daily Run (Backend-Controlled)
+- **Pros**: Fully hands-off, always fresh.
+- **Cons**: Requires stable CSV source, logic can’t be tuned easily without code changes.
 
-By implementing these recommendations, the stock screener pipeline will be more robust and easier to manage. You’ll avoid subtle bugs from inconsistent cache handling and ensure that when something is wrong with the cached data, it’s caught in one definitive place. Overall, this structure improves clarity (each script does one job), reliability (no using stale data unnoticed), and scalability (new cache rules or files can be managed in one module).
+### Option B: Manual via Admin Panel (Frontend-Controlled)
+- **Pros**: Lets you configure filters like `min cap`, `volume`, or anchor tickers from the frontend.
+- **Cons**: Adds a UI step, requires logic to persist user config.
+
+**Decision:**  
+- [ ] Decide if you're pursuing **Option A (automation)** or **Option B (manual UI-based universe control)**  
+- If **A**, add to daily scheduler at 4:00 AM  
+- If **B**, build admin config schema and store to disk (`universe_config.json`)
+
+---
+
+## 3. **runner.py Refactor**
+- Add flexible flags to modularize your runs:
+  ```bash
+  python runner.py --step scrape
+  python runner.py --step enrich
+  python runner.py --step build
+  python runner.py --step full
+  ```
+- [ ] Parse flags using `argparse`
+- [ ] Internally call the correct sequence for each flag
+
+---
+
+## 4. **Daily Automation Schedule (Suggested Triggers)**
+
+| Time (ET) | Task |
+|-----------|------|
+| 04:00 AM  | `universe_builder.py` *(if auto)* + clear stale cache |
+| 09:35 AM  | `post_open_signals.py` |
+| 09:45 AM  | `945_signals.py` |
+| 09:46 AM+ | `enrich_watchdog.py` auto-triggers full refresh: enrichment → screener → watchlist |
+
+---
+
+## 5. **Fail-Safe & Logging**
+- [ ] Log each enrichment run with timestamp + signal freshness report
+- [ ] Add sanity check: if < X tickers enriched, warn: `"⚠️ Low output: only N tickers enriched. Possible signal delay or universe issue."`
+- [ ] (Future) Trigger Discord/email alert if critical failure
