@@ -1,6 +1,6 @@
 # ✅ Stock Screener v3.7
 
-> **Status:** Broken/Under Construction
+> **Status:** Broken/Under Construction  
 > **Next Phase:** Universe Builder + Scheduled Automation  
 > **Further Phases:** Sector Tab • Admin Panel • Frontend Timestamp • Screener Builder  
 >  
@@ -62,18 +62,22 @@
 - [ ] Universe Builder v2: modular anchor logic with optional tagging  
 - [ ] Add risk filter: “No Reliable Price”  
 - [ ] Add logging for enrichment, scoring, and watchlist stages  
-- [ ] Add cache freshness timestamps per file (embedded + visual)
-- [ ] Strip unused dependencies and files
+- [ ] Add cache freshness timestamps per file (embedded + visual)  
+- [ ] Strip unused dependencies and files  
+
 ### Automation  
 - [ ] Add scheduler (APScheduler or cron) to automate `daily_refresh.py` + `run_pipeline.py`  
 - [ ] Add `runner.py` to manage modular refreshes (scrape-only, score-only, etc.)  
 - [ ] Implement timestamp-based skip logic for scrapers if data is fresh  
+- [ ] Auto-run `screenbuilder.py` and `watchlist_builder.py` after enrichment  
+- [ ] Implement 4:00 AM daily reset via `cache_manager.py`  
 
 ### Scraper System  
 - [ ] Convert all scrapers to callable Python modules (instead of CLI scripts)  
 - [ ] Add stealth/resilience improvements for TradingView scrapes  
 - [ ] Add retry + failover options on scraper failures  
-- [ ] Fix BRB.B parsing error. Stocks with ./-
+- [ ] Fix BRK.B and other special ticker parsing issues  
+- [ ] Use updated yfinance 0.2.58+ for more resilient `.info` and `.history()`  
 
 ### Frontend Goals  
 - [ ] Add dedicated Sector Rotation tab  
@@ -81,12 +85,13 @@
 - [ ] Display per-file cache freshness (e.g., badges, tooltips, footer)  
 - [ ] Add user config override system (e.g., rel vol %, volume thresholds)  
 - [ ] Add toggle for “Top 3 Only” / “Show Risk-Blocked” tickers  
+- [ ] Add frontend timestamp display for enriched file + inputs  
 
 ---
 
 ## 🚧 Further Improvements (beyond v3.7)
 
-### Modular Screener System
+### Modular Screener System  
 - [ ] Adopt a **time-based screener framework** (Opening, Swing, Overnight)  
 - [ ] Build and maintain separate logic pipelines for each screener type  
 - [ ] Add **Admin Panel** for internal overrides + screener-level control  
@@ -100,7 +105,7 @@
 ## 🧪 Long-Term & Advanced
 
 - [ ] Options data integration (GEX, Vanna, Charm, 0DTE)  
-- [ ] Sentiment overlays (SPX vs SPY, QQQ vs NQ, VIX vs VIXY) 
+- [ ] Sentiment overlays (SPX vs SPY, QQQ vs NQ, VIX vs VIXY)  
 - [ ] Alerts + email/export for top-ranked setups  
 - [ ] Replay / backtest signal triggers  
 - [ ] Same-day, next-day, and weekly contract scanner  

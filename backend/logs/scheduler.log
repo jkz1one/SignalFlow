@@ -3,3 +3,140 @@
 2025-05-06 11:10:54,975 — INFO — ⏱️ Running: Short Interest
 2025-05-06 11:10:56,248 — INFO — ✅ Short Interest completed successfully.
 2025-05-06 11:10:56,249 — INFO — ⏱️ Running: Post Open Signals
+2025-05-06 18:25:39,251 — INFO — 📅 Scheduler initializing...
+2025-05-06 18:25:39,251 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 18:25:39,289 — INFO — ⏱️ Running: Short Interest
+2025-05-06 18:25:40,745 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 18:25:40,746 — INFO — ⏱️ Running: Post Open Signals
+2025-05-06 18:34:22,987 — INFO — ✅ Post Open Signals completed successfully.
+2025-05-06 18:34:22,998 — INFO — ⏱️ Running: 945 Signals
+2025-05-06 18:35:32,282 — INFO — ✅ 945 Signals completed successfully.
+2025-05-06 18:35:32,309 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:35:32,309 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:35:32,310 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:35:32,310 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:35:32,311 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:35:32,315 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:35:32,315 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:35:32,315 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:35:32,315 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:35:32,315 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:35:32,316 — INFO — Scheduler started
+2025-05-06 18:35:32,316 — INFO — ✅ APScheduler started.
+2025-05-06 18:35:32,316 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 18:37:35,512 — INFO — Scheduler has been shut down
+2025-05-06 18:37:35,513 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 18:37:37,567 — INFO — 📅 Scheduler initializing...
+2025-05-06 18:37:37,567 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 18:37:37,602 — INFO — ⏱️ Running: Short Interest
+2025-05-06 18:37:38,766 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 18:37:38,770 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:37:38,771 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:37:38,771 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:37:38,771 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:37:38,772 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:37:38,774 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:37:38,775 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:37:38,775 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:37:38,775 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:37:38,776 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:37:38,776 — INFO — Scheduler started
+2025-05-06 18:37:38,776 — INFO — ✅ APScheduler started.
+2025-05-06 18:37:38,776 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 18:38:26,847 — INFO — Scheduler has been shut down
+2025-05-06 18:38:26,848 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 18:38:45,772 — INFO — 📅 Scheduler initializing...
+2025-05-06 18:38:45,773 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 18:38:45,806 — INFO — ⏱️ Running: Short Interest
+2025-05-06 18:38:46,946 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 18:38:46,951 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:38:46,951 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:38:46,951 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:38:46,952 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:38:46,952 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 18:38:46,953 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:38:46,954 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:38:46,954 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:38:46,954 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:38:46,954 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 18:38:46,954 — INFO — Scheduler started
+2025-05-06 18:38:46,955 — INFO — ✅ APScheduler started.
+2025-05-06 18:38:46,955 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 18:38:58,676 — INFO — Scheduler has been shut down
+2025-05-06 18:38:58,677 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 19:24:21,541 — INFO — 📅 Scheduler initializing...
+2025-05-06 19:24:21,541 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 19:24:21,582 — INFO — ⏱️ Running: Short Interest
+2025-05-06 19:24:22,820 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 19:24:22,827 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:24:22,827 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:24:22,827 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:24:22,827 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:24:22,828 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:24:22,829 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:24:22,830 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:24:22,830 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:24:22,830 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:24:22,830 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:24:22,830 — INFO — Scheduler started
+2025-05-06 19:24:22,831 — INFO — ✅ APScheduler started.
+2025-05-06 19:24:22,831 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 19:41:02,292 — INFO — Scheduler has been shut down
+2025-05-06 19:41:02,299 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 19:41:04,707 — INFO — 📅 Scheduler initializing...
+2025-05-06 19:41:04,707 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 19:41:04,711 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 19:41:04,747 — INFO — ⏱️ Running: Short Interest
+2025-05-06 19:41:05,964 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 19:41:05,971 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:41:05,972 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:41:05,972 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:41:05,972 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:41:05,972 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:41:05,974 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:41:05,974 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:41:05,974 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:41:05,974 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:41:05,974 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:41:05,975 — INFO — Scheduler started
+2025-05-06 19:41:05,975 — INFO — ✅ APScheduler started.
+2025-05-06 19:59:12,975 — INFO — Scheduler has been shut down
+2025-05-06 19:59:12,975 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 19:59:14,288 — INFO — 📅 Scheduler initializing...
+2025-05-06 19:59:14,288 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 19:59:14,291 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 19:59:14,326 — INFO — ⏱️ Running: Short Interest
+2025-05-06 19:59:15,462 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 19:59:15,466 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:59:15,466 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:59:15,467 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:59:15,467 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:59:15,467 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 19:59:15,469 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:59:15,469 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:59:15,469 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:59:15,469 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:59:15,470 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 19:59:15,470 — INFO — Scheduler started
+2025-05-06 19:59:15,470 — INFO — ✅ APScheduler started.
+2025-05-06 20:00:08,252 — INFO — Scheduler has been shut down
+2025-05-06 20:00:08,253 — INFO — 🛑 Scheduler shutdown complete.
+2025-05-06 20:10:55,846 — INFO — 📅 Scheduler initializing...
+2025-05-06 20:10:55,846 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-06 20:10:55,850 — INFO — 🔁 Checking for missed jobs...
+2025-05-06 20:10:55,885 — INFO — ⏱️ Running: Short Interest
+2025-05-06 20:10:57,145 — INFO — ✅ Short Interest completed successfully.
+2025-05-06 20:10:57,150 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 20:10:57,150 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 20:10:57,151 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 20:10:57,151 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 20:10:57,151 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-06 20:10:57,153 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 20:10:57,153 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 20:10:57,153 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 20:10:57,154 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 20:10:57,154 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-06 20:10:57,154 — INFO — Scheduler started
+2025-05-06 20:10:57,154 — INFO — ✅ APScheduler started.
+2025-05-06 20:46:30,753 — INFO — Scheduler has been shut down
+2025-05-06 20:46:30,760 — INFO — 🛑 Scheduler shutdown complete.

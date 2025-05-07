@@ -1,0 +1,6934 @@
+{
+  "JNPR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "top_volume_gainer": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 2341760,
+    "open_price": 36.32,
+    "prev_close": 36.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LLY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "top_volume_gainer": true
+    },
+    "rel_vol": 1.04,
+    "avg_vol_10d": 4397570,
+    "open_price": 816.89,
+    "prev_close": 821.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "V": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "top_volume_gainer": true
+    },
+    "rel_vol": 0.41,
+    "avg_vol_10d": 6314750,
+    "open_price": 346.4,
+    "prev_close": 348.64,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TRGP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "top_volume_gainer": true
+    },
+    "rel_vol": 1.24,
+    "avg_vol_10d": 2343690,
+    "open_price": 157.48,
+    "prev_close": 158.25,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CPB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "top_volume_gainer": true
+    },
+    "rel_vol": 0.75,
+    "avg_vol_10d": 2504060,
+    "open_price": 35.49,
+    "prev_close": 35.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GRMN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.69,
+    "avg_vol_10d": 1053500,
+    "open_price": 188.11,
+    "prev_close": 190.15,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TECH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.68,
+    "avg_vol_10d": 1709150,
+    "open_price": 49.32,
+    "prev_close": 49.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VLTO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.71,
+    "avg_vol_10d": 1615240,
+    "open_price": 95.18,
+    "prev_close": 95.69,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.2,
+    "avg_vol_10d": 4488130,
+    "open_price": 39.08,
+    "prev_close": 39.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BLK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 598260,
+    "open_price": 910.49,
+    "prev_close": 920.53,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CBRE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1851690,
+    "open_price": 123.94,
+    "prev_close": 125.96,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CSCO": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.67,
+    "avg_vol_10d": 19592940,
+    "open_price": 58.67,
+    "prev_close": 59.32,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BXP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1595090,
+    "open_price": 64.35,
+    "prev_close": 64.74,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.66,
+    "avg_vol_10d": 19088070,
+    "open_price": 79.03,
+    "prev_close": 80.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XEL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 4500920,
+    "open_price": 70.62,
+    "prev_close": 70.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APTV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.93,
+    "avg_vol_10d": 2276070,
+    "open_price": 58.27,
+    "prev_close": 58.78,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "INCY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.08,
+    "avg_vol_10d": 1952530,
+    "open_price": 61.91,
+    "prev_close": 62.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ATO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.82,
+    "avg_vol_10d": 1256530,
+    "open_price": 161.5,
+    "prev_close": 161.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HRL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.71,
+    "avg_vol_10d": 2443130,
+    "open_price": 29.13,
+    "prev_close": 29.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LMT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 1423630,
+    "open_price": 469.77,
+    "prev_close": 471.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DLTR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.72,
+    "avg_vol_10d": 3968190,
+    "open_price": 83.402,
+    "prev_close": 83.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IVZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.84,
+    "avg_vol_10d": 5843820,
+    "open_price": 14.06,
+    "prev_close": 14.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PEP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.77,
+    "avg_vol_10d": 8840840,
+    "open_price": 131.9,
+    "prev_close": 131.99,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IFF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 1356930,
+    "open_price": 79.05,
+    "prev_close": 79.15,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CSGP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.59,
+    "avg_vol_10d": 4379510,
+    "open_price": 76.41,
+    "prev_close": 77.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SLB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.01,
+    "avg_vol_10d": 17367730,
+    "open_price": 34.1,
+    "prev_close": 33.76,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.73,
+    "avg_vol_10d": 3446370,
+    "open_price": 55.94,
+    "prev_close": 56.08,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ALB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.59,
+    "avg_vol_10d": 3468990,
+    "open_price": 56.77,
+    "prev_close": 57.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CTSH": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.58,
+    "avg_vol_10d": 4220740,
+    "open_price": 77.12,
+    "prev_close": 77.91,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NCLH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.49,
+    "avg_vol_10d": 18181560,
+    "open_price": 16.98,
+    "prev_close": 17.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 2481480,
+    "open_price": 556.48,
+    "prev_close": 561.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MET": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 3241310,
+    "open_price": 76.29,
+    "prev_close": 76.8425,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NVR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.8,
+    "avg_vol_10d": 18300,
+    "open_price": 7059.66,
+    "prev_close": 7076.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VRSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.82,
+    "avg_vol_10d": 1102610,
+    "open_price": 283.0,
+    "prev_close": 284.55,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SYK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.05,
+    "avg_vol_10d": 1738670,
+    "open_price": 379.13,
+    "prev_close": 381.36,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DXCM": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.12,
+    "avg_vol_10d": 4636240,
+    "open_price": 79.232,
+    "prev_close": 80.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.78,
+    "avg_vol_10d": 4149590,
+    "open_price": 77.08,
+    "prev_close": 78.32,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.63,
+    "avg_vol_10d": 4519450,
+    "open_price": 133.04,
+    "prev_close": 136.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMGN": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.24,
+    "avg_vol_10d": 2611910,
+    "open_price": 277.09,
+    "prev_close": 280.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ZBH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.89,
+    "avg_vol_10d": 2202850,
+    "open_price": 90.48,
+    "prev_close": 90.48,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KDP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 19159740,
+    "open_price": 34.38,
+    "prev_close": 34.45,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.63,
+    "avg_vol_10d": 4116160,
+    "open_price": 76.1,
+    "prev_close": 76.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BKNG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.66,
+    "avg_vol_10d": 274000,
+    "open_price": 5190.15,
+    "prev_close": 5191.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.16,
+    "avg_vol_10d": 4558980,
+    "open_price": 44.0,
+    "prev_close": 44.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PRU": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.08,
+    "avg_vol_10d": 1641110,
+    "open_price": 101.53,
+    "prev_close": 102.67,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EXC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.01,
+    "avg_vol_10d": 6271780,
+    "open_price": 45.99,
+    "prev_close": 46.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EMR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.58,
+    "avg_vol_10d": 2799700,
+    "open_price": 107.06,
+    "prev_close": 108.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ALLE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 1087340,
+    "open_price": 139.66,
+    "prev_close": 140.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.95,
+    "avg_vol_10d": 2853380,
+    "open_price": 106.77,
+    "prev_close": 106.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ZBRA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.75,
+    "avg_vol_10d": 694820,
+    "open_price": 246.87,
+    "prev_close": 250.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UNP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.66,
+    "avg_vol_10d": 3425250,
+    "open_price": 214.76,
+    "prev_close": 216.53,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "COST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 1927130,
+    "open_price": 1008.45,
+    "prev_close": 1014.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SMCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.84,
+    "avg_vol_10d": 49527930,
+    "open_price": 31.65,
+    "prev_close": 32.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DASH": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.57,
+    "avg_vol_10d": 3689450,
+    "open_price": 193.95,
+    "prev_close": 205.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 8826830,
+    "open_price": 59.92,
+    "prev_close": 59.87,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ETN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.8,
+    "avg_vol_10d": 3093460,
+    "open_price": 296.28,
+    "prev_close": 298.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AWK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 1238270,
+    "open_price": 148.33,
+    "prev_close": 148.15,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DIS": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 1.33,
+    "avg_vol_10d": 8866930,
+    "open_price": 91.2,
+    "prev_close": 92.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AFL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 1956690,
+    "open_price": 105.57,
+    "prev_close": 105.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.48,
+    "avg_vol_10d": 1561280,
+    "open_price": 271.235,
+    "prev_close": 272.14,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SNA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.8,
+    "avg_vol_10d": 370720,
+    "open_price": 311.01,
+    "prev_close": 313.76,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CPT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 1043750,
+    "open_price": 118.94,
+    "prev_close": 119.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HD": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.8,
+    "avg_vol_10d": 2869480,
+    "open_price": 358.68,
+    "prev_close": 361.73,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "COF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 4553010,
+    "open_price": 185.0,
+    "prev_close": 187.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JBL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.55,
+    "avg_vol_10d": 982960,
+    "open_price": 147.36,
+    "prev_close": 150.22,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SJM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.95,
+    "avg_vol_10d": 933250,
+    "open_price": 113.63,
+    "prev_close": 113.91,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "POOL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 623220,
+    "open_price": 304.2,
+    "prev_close": 306.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "COR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 1579820,
+    "open_price": 292.29,
+    "prev_close": 291.97,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HIG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 1627080,
+    "open_price": 124.96,
+    "prev_close": 125.71,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EXR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 1010430,
+    "open_price": 148.13,
+    "prev_close": 149.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ERIE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 187170,
+    "open_price": 359.75,
+    "prev_close": 360.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LYV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.63,
+    "avg_vol_10d": 2356070,
+    "open_price": 134.3,
+    "prev_close": 136.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MSFT": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30",
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.58,
+    "avg_vol_10d": 25908210,
+    "open_price": 431.79,
+    "prev_close": 436.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CSX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.67,
+    "avg_vol_10d": 12934160,
+    "open_price": 28.325,
+    "prev_close": 28.47,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VRSK": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 774720,
+    "open_price": 294.26,
+    "prev_close": 294.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMC": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {},
+    "rel_vol": 0.92,
+    "avg_vol_10d": 7012270,
+    "open_price": 2.64,
+    "prev_close": 2.64,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BKR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.0,
+    "avg_vol_10d": 8795480,
+    "open_price": 36.75,
+    "prev_close": 36.52,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 3998040,
+    "open_price": 91.07,
+    "prev_close": 91.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "STZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.78,
+    "avg_vol_10d": 1514470,
+    "open_price": 187.32,
+    "prev_close": 187.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PAYX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1922260,
+    "open_price": 148.62,
+    "prev_close": 149.45,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMAT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.55,
+    "avg_vol_10d": 6256330,
+    "open_price": 152.002,
+    "prev_close": 154.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PPL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.59,
+    "avg_vol_10d": 6612550,
+    "open_price": 36.24,
+    "prev_close": 36.28,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LKQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 2965190,
+    "open_price": 39.26,
+    "prev_close": 39.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 3414530,
+    "open_price": 64.65,
+    "prev_close": 65.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "OXY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 0.85,
+    "avg_vol_10d": 9282840,
+    "open_price": 39.31,
+    "prev_close": 38.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DOW": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 10011900,
+    "open_price": 28.89,
+    "prev_close": 28.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FOX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 1230360,
+    "open_price": 45.16,
+    "prev_close": 45.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ROST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 2505170,
+    "open_price": 140.27,
+    "prev_close": 141.47,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DTE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 1721890,
+    "open_price": 136.74,
+    "prev_close": 136.69,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CNC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 5791900,
+    "open_price": 59.43,
+    "prev_close": 59.78,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UPS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 6822410,
+    "open_price": 94.995,
+    "prev_close": 95.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LHX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 1473050,
+    "open_price": 216.69,
+    "prev_close": 218.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EQT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.54,
+    "avg_vol_10d": 9358040,
+    "open_price": 53.53,
+    "prev_close": 53.52,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.85,
+    "avg_vol_10d": 3796440,
+    "open_price": 54.87,
+    "prev_close": 55.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.83,
+    "avg_vol_10d": 1322040,
+    "open_price": 77.26,
+    "prev_close": 77.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BAX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.73,
+    "avg_vol_10d": 4438210,
+    "open_price": 30.31,
+    "prev_close": 30.43,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CRWD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.08,
+    "avg_vol_10d": 3158090,
+    "open_price": 432.202,
+    "prev_close": 443.47,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CRM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.68,
+    "avg_vol_10d": 5296700,
+    "open_price": 269.82,
+    "prev_close": 272.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MAR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.14,
+    "avg_vol_10d": 2122330,
+    "open_price": 256.14,
+    "prev_close": 247.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NWS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.9,
+    "avg_vol_10d": 447870,
+    "open_price": 32.08,
+    "prev_close": 32.08,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RMD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.65,
+    "avg_vol_10d": 1177430,
+    "open_price": 238.01,
+    "prev_close": 240.66,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GS": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.13,
+    "avg_vol_10d": 2265580,
+    "open_price": 549.6,
+    "prev_close": 559.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SOLV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.4,
+    "avg_vol_10d": 811470,
+    "open_price": 66.2,
+    "prev_close": 66.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CZR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 7131250,
+    "open_price": 27.13,
+    "prev_close": 27.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MELI": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.23,
+    "avg_vol_10d": 348370,
+    "open_price": 2225.0,
+    "prev_close": 2246.54,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IQV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.68,
+    "avg_vol_10d": 1734280,
+    "open_price": 149.83,
+    "prev_close": 152.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LVS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.93,
+    "avg_vol_10d": 7447420,
+    "open_price": 38.06,
+    "prev_close": 38.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CFG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.0,
+    "avg_vol_10d": 4328010,
+    "open_price": 38.19,
+    "prev_close": 38.71,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WRB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 1838810,
+    "open_price": 72.18,
+    "prev_close": 72.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "T": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.72,
+    "avg_vol_10d": 34462910,
+    "open_price": 27.54,
+    "prev_close": 27.51,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CMI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.71,
+    "avg_vol_10d": 979950,
+    "open_price": 300.0,
+    "prev_close": 302.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PTC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.83,
+    "avg_vol_10d": 981060,
+    "open_price": 159.19,
+    "prev_close": 161.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WTW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 838620,
+    "open_price": 308.34,
+    "prev_close": 309.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HUBB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 647693,
+    "open_price": 350.0,
+    "prev_close": 353.51,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.99,
+    "avg_vol_10d": 3266950,
+    "open_price": 39.05,
+    "prev_close": 39.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DHI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 3111480,
+    "open_price": 124.47,
+    "prev_close": 125.67,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FRT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 752030,
+    "open_price": 93.73,
+    "prev_close": 94.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "F": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.08,
+    "avg_vol_10d": 112575750,
+    "open_price": 10.09,
+    "prev_close": 10.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KVUE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 17063960,
+    "open_price": 23.48,
+    "prev_close": 23.64,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NTRS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 1329130,
+    "open_price": 96.28,
+    "prev_close": 97.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 21744820,
+    "open_price": 19.22,
+    "prev_close": 19.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ABBV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.21,
+    "avg_vol_10d": 7543310,
+    "open_price": 195.5,
+    "prev_close": 196.07,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AIG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 3845120,
+    "open_price": 82.51,
+    "prev_close": 83.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "REG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.91,
+    "avg_vol_10d": 993130,
+    "open_price": 72.48,
+    "prev_close": 72.48,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "INVH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.51,
+    "avg_vol_10d": 2841940,
+    "open_price": 34.97,
+    "prev_close": 34.99,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GEV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.63,
+    "avg_vol_10d": 3519090,
+    "open_price": 394.57,
+    "prev_close": 401.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VICI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.5,
+    "avg_vol_10d": 6965190,
+    "open_price": 31.78,
+    "prev_close": 31.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HPQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.9,
+    "avg_vol_10d": 5882160,
+    "open_price": 25.62,
+    "prev_close": 25.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MPC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.43,
+    "avg_vol_10d": 2306560,
+    "open_price": 144.72,
+    "prev_close": 143.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MCHP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.61,
+    "avg_vol_10d": 10258180,
+    "open_price": 47.0,
+    "prev_close": 47.78,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TMUS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.57,
+    "avg_vol_10d": 5081660,
+    "open_price": 247.51,
+    "prev_close": 248.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ITW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 1508270,
+    "open_price": 239.45,
+    "prev_close": 240.87,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MTCH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 3744220,
+    "open_price": 30.0,
+    "prev_close": 30.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SPY": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {},
+    "rel_vol": 0.72,
+    "avg_vol_10d": 64286180,
+    "open_price": 557.93,
+    "prev_close": 563.51,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PGR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.81,
+    "avg_vol_10d": 2355150,
+    "open_price": 281.5,
+    "prev_close": 282.16,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WAB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.06,
+    "avg_vol_10d": 984330,
+    "open_price": 188.8,
+    "prev_close": 190.79,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.8,
+    "avg_vol_10d": 1464670,
+    "open_price": 272.17,
+    "prev_close": 272.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HUM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.57,
+    "avg_vol_10d": 1711450,
+    "open_price": 255.07,
+    "prev_close": 256.69,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HSIC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.28,
+    "avg_vol_10d": 1337740,
+    "open_price": 66.97,
+    "prev_close": 66.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BBY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.61,
+    "avg_vol_10d": 3594970,
+    "open_price": 66.79,
+    "prev_close": 67.66,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 1023880,
+    "open_price": 478.05,
+    "prev_close": 481.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MMM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.86,
+    "avg_vol_10d": 3273590,
+    "open_price": 139.13,
+    "prev_close": 140.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ARE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.77,
+    "avg_vol_10d": 1774350,
+    "open_price": 73.0,
+    "prev_close": 73.54,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TFC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.95,
+    "avg_vol_10d": 7902010,
+    "open_price": 38.88,
+    "prev_close": 39.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TRV": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.71,
+    "avg_vol_10d": 1247460,
+    "open_price": 266.59,
+    "prev_close": 267.54,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WEC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.18,
+    "avg_vol_10d": 1848060,
+    "open_price": 109.43,
+    "prev_close": 108.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.14,
+    "avg_vol_10d": 1657850,
+    "open_price": 400.0,
+    "prev_close": 402.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EA": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.99,
+    "avg_vol_10d": 2942820,
+    "open_price": 152.845,
+    "prev_close": 154.74,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BF.B": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LDOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.95,
+    "avg_vol_10d": 1217330,
+    "open_price": 145.87,
+    "prev_close": 147.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.92,
+    "avg_vol_10d": 4462680,
+    "open_price": 19.79,
+    "prev_close": 20.01,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NKE": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.58,
+    "avg_vol_10d": 15489400,
+    "open_price": 57.15,
+    "prev_close": 57.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MRVL": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 15336560,
+    "open_price": 60.02,
+    "prev_close": 61.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PNR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.49,
+    "avg_vol_10d": 1756030,
+    "open_price": 91.71,
+    "prev_close": 93.04,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EXPE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.89,
+    "avg_vol_10d": 1862190,
+    "open_price": 164.14,
+    "prev_close": 165.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.47,
+    "avg_vol_10d": 5371800,
+    "open_price": 183.16,
+    "prev_close": 185.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.35,
+    "avg_vol_10d": 5792930,
+    "open_price": 59.19,
+    "prev_close": 60.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.66,
+    "avg_vol_10d": 501690,
+    "open_price": 471.76,
+    "prev_close": 480.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TDG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.91,
+    "avg_vol_10d": 291340,
+    "open_price": 1416.43,
+    "prev_close": 1472.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ULTA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.85,
+    "avg_vol_10d": 645190,
+    "open_price": 391.0,
+    "prev_close": 394.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "A": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.2,
+    "avg_vol_10d": 1613310,
+    "open_price": 107.25,
+    "prev_close": 108.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TEAM": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 2880330,
+    "open_price": 205.11,
+    "prev_close": 207.78,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ETR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.07,
+    "avg_vol_10d": 3372650,
+    "open_price": 83.83,
+    "prev_close": 84.39,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "INTC": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.57,
+    "avg_vol_10d": 86044770,
+    "open_price": 19.91,
+    "prev_close": 20.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "OMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.51,
+    "avg_vol_10d": 2718140,
+    "open_price": 76.25,
+    "prev_close": 77.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 1731990,
+    "open_price": 286.95,
+    "prev_close": 287.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FTV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.01,
+    "avg_vol_10d": 3440200,
+    "open_price": 66.62,
+    "prev_close": 67.59,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PANW": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 4359090,
+    "open_price": 186.585,
+    "prev_close": 188.13,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.67,
+    "avg_vol_10d": 5390250,
+    "open_price": 43.15,
+    "prev_close": 43.09,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DHR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.98,
+    "avg_vol_10d": 3917070,
+    "open_price": 195.84,
+    "prev_close": 197.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.79,
+    "avg_vol_10d": 3644260,
+    "open_price": 57.09,
+    "prev_close": 57.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "STLD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.69,
+    "avg_vol_10d": 1260790,
+    "open_price": 132.47,
+    "prev_close": 133.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.49,
+    "avg_vol_10d": 3201810,
+    "open_price": 224.31,
+    "prev_close": 223.87,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EIX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.53,
+    "avg_vol_10d": 3754480,
+    "open_price": 54.56,
+    "prev_close": 54.93,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EXPD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.02,
+    "avg_vol_10d": 1241930,
+    "open_price": 106.96,
+    "prev_close": 111.77,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ADBE": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.02,
+    "avg_vol_10d": 2895510,
+    "open_price": 376.565,
+    "prev_close": 381.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RJF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 1226950,
+    "open_price": 140.23,
+    "prev_close": 142.13,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CINF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 724610,
+    "open_price": 143.07,
+    "prev_close": 143.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JPM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.53,
+    "avg_vol_10d": 9138010,
+    "open_price": 250.0,
+    "prev_close": 252.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ESS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.47,
+    "avg_vol_10d": 453300,
+    "open_price": 287.3,
+    "prev_close": 288.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "O": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.97,
+    "avg_vol_10d": 4687050,
+    "open_price": 56.88,
+    "prev_close": 56.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TTWO": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.0,
+    "avg_vol_10d": 2760610,
+    "open_price": 223.375,
+    "prev_close": 225.32,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EXE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.81,
+    "avg_vol_10d": 3278030,
+    "open_price": 108.83,
+    "prev_close": 108.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CARR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.67,
+    "avg_vol_10d": 5969650,
+    "open_price": 69.85,
+    "prev_close": 70.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GOOG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.49,
+    "avg_vol_10d": 21194600,
+    "open_price": 163.9,
+    "prev_close": 166.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PG": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.78,
+    "avg_vol_10d": 9917500,
+    "open_price": 158.04,
+    "prev_close": 158.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FFIV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.59,
+    "avg_vol_10d": 695270,
+    "open_price": 263.05,
+    "prev_close": 267.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NEM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 0.91,
+    "avg_vol_10d": 13177840,
+    "open_price": 53.77,
+    "prev_close": 53.04,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMZN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.54,
+    "avg_vol_10d": 51771030,
+    "open_price": 184.57,
+    "prev_close": 186.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KHC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.63,
+    "avg_vol_10d": 9961830,
+    "open_price": 28.55,
+    "prev_close": 28.59,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XOM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 14704760,
+    "open_price": 103.89,
+    "prev_close": 103.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SBUX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 14206730,
+    "open_price": 80.98,
+    "prev_close": 81.66,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CAH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.81,
+    "avg_vol_10d": 2518960,
+    "open_price": 151.26,
+    "prev_close": 151.99,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CRL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.89,
+    "avg_vol_10d": 1499270,
+    "open_price": 117.44,
+    "prev_close": 119.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TDY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.27,
+    "avg_vol_10d": 345880,
+    "open_price": 474.42,
+    "prev_close": 478.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BALL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.75,
+    "avg_vol_10d": 2388760,
+    "open_price": 53.29,
+    "prev_close": 51.85,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CAG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 5206690,
+    "open_price": 23.42,
+    "prev_close": 23.51,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PCG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.02,
+    "avg_vol_10d": 14472360,
+    "open_price": 16.83,
+    "prev_close": 16.92,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TER": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 3506800,
+    "open_price": 74.4,
+    "prev_close": 75.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.62,
+    "avg_vol_10d": 6864800,
+    "open_price": 72.9,
+    "prev_close": 74.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DVN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.06,
+    "avg_vol_10d": 7757460,
+    "open_price": 30.93,
+    "prev_close": 30.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ON": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.24,
+    "avg_vol_10d": 10833490,
+    "open_price": 38.05,
+    "prev_close": 38.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TYL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.51,
+    "avg_vol_10d": 418620,
+    "open_price": 544.73,
+    "prev_close": 549.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 9675380,
+    "open_price": 79.65,
+    "prev_close": 80.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 14525140,
+    "open_price": 10.23,
+    "prev_close": 10.26,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DFS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.54,
+    "avg_vol_10d": 2323080,
+    "open_price": 187.67,
+    "prev_close": 190.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JKHY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.47,
+    "avg_vol_10d": 619900,
+    "open_price": 171.355,
+    "prev_close": 172.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GILD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.32,
+    "avg_vol_10d": 8658610,
+    "open_price": 102.33,
+    "prev_close": 102.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GOOGL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.59,
+    "avg_vol_10d": 32882450,
+    "open_price": 162.14,
+    "prev_close": 164.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UHS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.76,
+    "avg_vol_10d": 884140,
+    "open_price": 177.68,
+    "prev_close": 178.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LIN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 1849350,
+    "open_price": 452.855,
+    "prev_close": 452.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EQR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.78,
+    "avg_vol_10d": 2034360,
+    "open_price": 70.48,
+    "prev_close": 70.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "J": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.42,
+    "avg_vol_10d": 932950,
+    "open_price": 117.93,
+    "prev_close": 126.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PSX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.88,
+    "avg_vol_10d": 2653610,
+    "open_price": 107.2,
+    "prev_close": 106.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SPGI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.55,
+    "avg_vol_10d": 1399340,
+    "open_price": 500.95,
+    "prev_close": 505.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.17,
+    "avg_vol_10d": 32030280,
+    "open_price": 98.41,
+    "prev_close": 100.59,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KMX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.81,
+    "avg_vol_10d": 2844410,
+    "open_price": 65.32,
+    "prev_close": 66.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.61,
+    "avg_vol_10d": 1084480,
+    "open_price": 265.09,
+    "prev_close": 270.04,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WFC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.93,
+    "avg_vol_10d": 19371320,
+    "open_price": 73.14,
+    "prev_close": 73.85,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AME": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.58,
+    "avg_vol_10d": 1343550,
+    "open_price": 168.95,
+    "prev_close": 170.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ABNB": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.81,
+    "avg_vol_10d": 6376910,
+    "open_price": 123.21,
+    "prev_close": 124.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TXT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1646140,
+    "open_price": 69.7,
+    "prev_close": 70.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AJG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 1766050,
+    "open_price": 333.85,
+    "prev_close": 334.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 2230720,
+    "open_price": 226.0,
+    "prev_close": 226.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ZTS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.38,
+    "avg_vol_10d": 2595520,
+    "open_price": 159.68,
+    "prev_close": 158.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EMN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.59,
+    "avg_vol_10d": 1634550,
+    "open_price": 75.79,
+    "prev_close": 76.22,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KIM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.45,
+    "avg_vol_10d": 6381210,
+    "open_price": 20.59,
+    "prev_close": 20.72,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WYNN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.55,
+    "avg_vol_10d": 1907950,
+    "open_price": 82.79,
+    "prev_close": 82.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.15,
+    "avg_vol_10d": 4218230,
+    "open_price": 25.66,
+    "prev_close": 25.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CME": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 2203680,
+    "open_price": 282.05,
+    "prev_close": 282.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BDX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 4107690,
+    "open_price": 166.68,
+    "prev_close": 167.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "QQQ": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.74,
+    "avg_vol_10d": 41457730,
+    "open_price": 479.56,
+    "prev_close": 485.93,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LMND": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_up": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 3.24,
+    "avg_vol_10d": 1305200,
+    "open_price": 32.56,
+    "prev_close": 30.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MAA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.6,
+    "avg_vol_10d": 791160,
+    "open_price": 164.05,
+    "prev_close": 165.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EQIX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 573760,
+    "open_price": 880.0,
+    "prev_close": 883.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FITB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.69,
+    "avg_vol_10d": 3852600,
+    "open_price": 37.03,
+    "prev_close": 37.28,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AAPL": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30",
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {},
+    "rel_vol": 0.9,
+    "avg_vol_10d": 54669090,
+    "open_price": 198.125,
+    "prev_close": 198.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 988160,
+    "open_price": 245.05,
+    "prev_close": 246.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.2,
+    "avg_vol_10d": 3627460,
+    "open_price": 81.12,
+    "prev_close": 82.18,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LII": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.71,
+    "avg_vol_10d": 577270,
+    "open_price": 553.76,
+    "prev_close": 562.92,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CMG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.38,
+    "avg_vol_10d": 16884930,
+    "open_price": 49.575,
+    "prev_close": 50.01,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FANG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.79,
+    "avg_vol_10d": 2022670,
+    "open_price": 133.91,
+    "prev_close": 133.08,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PNW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.86,
+    "avg_vol_10d": 1299580,
+    "open_price": 93.67,
+    "prev_close": 93.91,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "C": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.51,
+    "avg_vol_10d": 12863800,
+    "open_price": 69.45,
+    "prev_close": 70.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PKG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.45,
+    "avg_vol_10d": 946650,
+    "open_price": 180.39,
+    "prev_close": 181.22,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BYND": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {},
+    "rel_vol": 0.77,
+    "avg_vol_10d": 1699910,
+    "open_price": 2.57,
+    "prev_close": 2.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WMT": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 15112760,
+    "open_price": 98.74,
+    "prev_close": 99.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NEE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.67,
+    "avg_vol_10d": 11891050,
+    "open_price": 65.81,
+    "prev_close": 66.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UDR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 2374160,
+    "open_price": 42.74,
+    "prev_close": 43.03,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KLAC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.9,
+    "avg_vol_10d": 1001470,
+    "open_price": 683.3,
+    "prev_close": 693.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CTAS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 1506330,
+    "open_price": 210.75,
+    "prev_close": 211.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IRM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.85,
+    "avg_vol_10d": 1760170,
+    "open_price": 95.69,
+    "prev_close": 97.17,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MSI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.17,
+    "avg_vol_10d": 875060,
+    "open_price": 402.16,
+    "prev_close": 405.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ROP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.89,
+    "avg_vol_10d": 647310,
+    "open_price": 565.45,
+    "prev_close": 571.13,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "STE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.61,
+    "avg_vol_10d": 726960,
+    "open_price": 222.99,
+    "prev_close": 224.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UBER": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.46,
+    "avg_vol_10d": 19128430,
+    "open_price": 83.5,
+    "prev_close": 85.43,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 2022110,
+    "open_price": 109.2,
+    "prev_close": 110.22,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 0.93,
+    "avg_vol_10d": 7735670,
+    "open_price": 15.66,
+    "prev_close": 15.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TTD": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.04,
+    "avg_vol_10d": 7770570,
+    "open_price": 54.7,
+    "prev_close": 55.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HCA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.05,
+    "avg_vol_10d": 1492610,
+    "open_price": 349.6,
+    "prev_close": 349.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.89,
+    "avg_vol_10d": 596310,
+    "open_price": 232.23,
+    "prev_close": 232.18,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WBA": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.95,
+    "avg_vol_10d": 8432730,
+    "open_price": 10.97,
+    "prev_close": 11.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1140220,
+    "open_price": 210.24,
+    "prev_close": 210.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ORCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.48,
+    "avg_vol_10d": 8288420,
+    "open_price": 146.98,
+    "prev_close": 149.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TEL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.67,
+    "avg_vol_10d": 2009080,
+    "open_price": 147.93,
+    "prev_close": 149.85,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SHW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.71,
+    "avg_vol_10d": 1630220,
+    "open_price": 356.38,
+    "prev_close": 359.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FDS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.08,
+    "avg_vol_10d": 210860,
+    "open_price": 430.4,
+    "prev_close": 433.09,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CVS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.44,
+    "avg_vol_10d": 10738140,
+    "open_price": 66.92,
+    "prev_close": 67.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GPN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.93,
+    "avg_vol_10d": 4225840,
+    "open_price": 78.43,
+    "prev_close": 79.25,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PLTR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.91,
+    "avg_vol_10d": 104120620,
+    "open_price": 112.71,
+    "prev_close": 123.77,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PDD": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.6,
+    "avg_vol_10d": 7154690,
+    "open_price": 109.95,
+    "prev_close": 110.85,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.8,
+    "avg_vol_10d": 534090,
+    "open_price": 417.55,
+    "prev_close": 426.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AEE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.73,
+    "avg_vol_10d": 1533380,
+    "open_price": 99.5,
+    "prev_close": 99.55,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CNP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 4807420,
+    "open_price": 38.81,
+    "prev_close": 38.88,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XLE": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 13808760,
+    "open_price": 80.86,
+    "prev_close": 80.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NFLX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.63,
+    "avg_vol_10d": 5098390,
+    "open_price": 1129.43,
+    "prev_close": 1134.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "COP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.11,
+    "avg_vol_10d": 6662300,
+    "open_price": 88.52,
+    "prev_close": 87.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EBAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.56,
+    "avg_vol_10d": 6616840,
+    "open_price": 69.64,
+    "prev_close": 70.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GWW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 279670,
+    "open_price": 1053.0,
+    "prev_close": 1065.48,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CPAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.3,
+    "avg_vol_10d": 457510,
+    "open_price": 324.89,
+    "prev_close": 328.16,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VRTX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 5.49,
+    "avg_vol_10d": 1428860,
+    "open_price": 465.555,
+    "prev_close": 500.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "STT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.27,
+    "avg_vol_10d": 2161710,
+    "open_price": 89.55,
+    "prev_close": 90.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MCK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 845630,
+    "open_price": 706.07,
+    "prev_close": 707.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TRMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.99,
+    "avg_vol_10d": 1222040,
+    "open_price": 63.33,
+    "prev_close": 64.09,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BMY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.88,
+    "avg_vol_10d": 17247470,
+    "open_price": 49.74,
+    "prev_close": 50.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ANET": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.99,
+    "avg_vol_10d": 11126930,
+    "open_price": 87.42,
+    "prev_close": 90.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FTNT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.15,
+    "avg_vol_10d": 4138490,
+    "open_price": 105.985,
+    "prev_close": 108.69,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PODD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.27,
+    "avg_vol_10d": 683200,
+    "open_price": 256.46,
+    "prev_close": 258.79,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VTRS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.0,
+    "avg_vol_10d": 12090500,
+    "open_price": 8.61,
+    "prev_close": 8.59,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BIIB": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.11,
+    "avg_vol_10d": 1545590,
+    "open_price": 121.81,
+    "prev_close": 121.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PCAR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.63,
+    "avg_vol_10d": 3781150,
+    "open_price": 88.82,
+    "prev_close": 89.45,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IBM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.35,
+    "avg_vol_10d": 5864520,
+    "open_price": 247.76,
+    "prev_close": 249.18,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.0,
+    "avg_vol_10d": 1449440,
+    "open_price": 50.89,
+    "prev_close": 51.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DLR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.62,
+    "avg_vol_10d": 2022130,
+    "open_price": 164.86,
+    "prev_close": 166.64,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MSTR": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 15645600,
+    "open_price": 378.56,
+    "prev_close": 386.53,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 1815510,
+    "open_price": 130.05,
+    "prev_close": 128.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IDXX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 1039230,
+    "open_price": 470.42,
+    "prev_close": 475.07,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ANSS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.48,
+    "avg_vol_10d": 575400,
+    "open_price": 321.03,
+    "prev_close": 324.89,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PFG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 1780650,
+    "open_price": 76.12,
+    "prev_close": 76.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WDAY": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.67,
+    "avg_vol_10d": 1351300,
+    "open_price": 246.66,
+    "prev_close": 248.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DELL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.84,
+    "avg_vol_10d": 5924560,
+    "open_price": 92.66,
+    "prev_close": 94.36,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.88,
+    "avg_vol_10d": 9034540,
+    "open_price": 14.68,
+    "prev_close": 14.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.05,
+    "avg_vol_10d": 384830,
+    "open_price": 346.86,
+    "prev_close": 347.36,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.34,
+    "avg_vol_10d": 1938550,
+    "open_price": 81.2,
+    "prev_close": 80.92,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CVX": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 9278630,
+    "open_price": 136.35,
+    "prev_close": 135.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FDX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.77,
+    "avg_vol_10d": 1429460,
+    "open_price": 213.88,
+    "prev_close": 216.99,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MDT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.02,
+    "avg_vol_10d": 5898130,
+    "open_price": 83.34,
+    "prev_close": 83.45,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CHTR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1702120,
+    "open_price": 392.365,
+    "prev_close": 394.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WAT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.17,
+    "avg_vol_10d": 464360,
+    "open_price": 341.96,
+    "prev_close": 348.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CAT": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.46,
+    "avg_vol_10d": 2824700,
+    "open_price": 321.55,
+    "prev_close": 323.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CMCSA": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.6,
+    "avg_vol_10d": 26916400,
+    "open_price": 34.255,
+    "prev_close": 34.45,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BRK.B": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TPR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.02,
+    "avg_vol_10d": 4315630,
+    "open_price": 72.14,
+    "prev_close": 73.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DECK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.89,
+    "avg_vol_10d": 2183220,
+    "open_price": 115.42,
+    "prev_close": 118.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JNJ": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.88,
+    "avg_vol_10d": 7261420,
+    "open_price": 154.82,
+    "prev_close": 155.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MPWR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.65,
+    "avg_vol_10d": 863470,
+    "open_price": 620.295,
+    "prev_close": 627.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ALGN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.97,
+    "avg_vol_10d": 1453360,
+    "open_price": 177.66,
+    "prev_close": 177.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.19,
+    "avg_vol_10d": 5423820,
+    "open_price": 30.74,
+    "prev_close": 30.6,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CEG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.53,
+    "avg_vol_10d": 2809280,
+    "open_price": 258.83,
+    "prev_close": 248.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TGT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 6352160,
+    "open_price": 93.9,
+    "prev_close": 94.02,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GFS": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.62,
+    "avg_vol_10d": 1618920,
+    "open_price": 36.0,
+    "prev_close": 35.88,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ORLY": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 492680,
+    "open_price": 1385.05,
+    "prev_close": 1387.14,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NOW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.54,
+    "avg_vol_10d": 2356980,
+    "open_price": 969.04,
+    "prev_close": 978.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BA": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.45,
+    "avg_vol_10d": 8783730,
+    "open_price": 184.71,
+    "prev_close": 186.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CMS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 3483230,
+    "open_price": 72.92,
+    "prev_close": 73.04,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.68,
+    "avg_vol_10d": 7055740,
+    "open_price": 20.75,
+    "prev_close": 21.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DVA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.19,
+    "avg_vol_10d": 669730,
+    "open_price": 141.22,
+    "prev_close": 141.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AXON": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.62,
+    "avg_vol_10d": 467460,
+    "open_price": 608.97,
+    "prev_close": 621.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PARA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 7792110,
+    "open_price": 11.17,
+    "prev_close": 11.25,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CLX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.12,
+    "avg_vol_10d": 1425710,
+    "open_price": 134.0,
+    "prev_close": 138.39,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MCD": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.47,
+    "avg_vol_10d": 3619620,
+    "open_price": 315.11,
+    "prev_close": 315.72,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ODFL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.41,
+    "avg_vol_10d": 2457740,
+    "open_price": 154.0,
+    "prev_close": 156.23,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BSX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 7626300,
+    "open_price": 103.32,
+    "prev_close": 104.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TSLA": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.61,
+    "avg_vol_10d": 123159740,
+    "open_price": 273.09,
+    "prev_close": 280.26,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XLF": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 34712680,
+    "open_price": 49.0,
+    "prev_close": 49.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EVRG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.09,
+    "avg_vol_10d": 1654180,
+    "open_price": 69.11,
+    "prev_close": 69.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WBD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.99,
+    "avg_vol_10d": 37822000,
+    "open_price": 8.182,
+    "prev_close": 8.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ECL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 1373140,
+    "open_price": 253.16,
+    "prev_close": 255.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ICE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.01,
+    "avg_vol_10d": 2628170,
+    "open_price": 172.96,
+    "prev_close": 173.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LRCX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 12150340,
+    "open_price": 72.8,
+    "prev_close": 73.91,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WSM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.9,
+    "avg_vol_10d": 1474380,
+    "open_price": 155.83,
+    "prev_close": 158.39,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LYB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.81,
+    "avg_vol_10d": 3794450,
+    "open_price": 56.1,
+    "prev_close": 56.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MOH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.51,
+    "avg_vol_10d": 838720,
+    "open_price": 317.07,
+    "prev_close": 319.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "INTU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.62,
+    "avg_vol_10d": 1412120,
+    "open_price": 625.5,
+    "prev_close": 632.18,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KMI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.38,
+    "avg_vol_10d": 13804960,
+    "open_price": 26.85,
+    "prev_close": 26.87,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TPL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.22,
+    "avg_vol_10d": 87000,
+    "open_price": 1326.26,
+    "prev_close": 1321.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XYL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 2100100,
+    "open_price": 120.95,
+    "prev_close": 122.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BRO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.53,
+    "avg_vol_10d": 2182480,
+    "open_price": 110.09,
+    "prev_close": 110.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VLO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 3282260,
+    "open_price": 120.18,
+    "prev_close": 119.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EFX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.57,
+    "avg_vol_10d": 1029510,
+    "open_price": 259.1,
+    "prev_close": 262.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ADP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1778010,
+    "open_price": 303.92,
+    "prev_close": 303.96,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GNRC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 875450,
+    "open_price": 115.59,
+    "prev_close": 116.6,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HLT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 2393680,
+    "open_price": 238.0,
+    "prev_close": 238.96,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CHRW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.93,
+    "avg_vol_10d": 1574700,
+    "open_price": 89.01,
+    "prev_close": 89.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "UNH": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.77,
+    "avg_vol_10d": 8997860,
+    "open_price": 402.8,
+    "prev_close": 404.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BAC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.75,
+    "avg_vol_10d": 39209500,
+    "open_price": 40.65,
+    "prev_close": 41.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HPE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.83,
+    "avg_vol_10d": 15234700,
+    "open_price": 16.57,
+    "prev_close": 16.67,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AZN": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 5582540,
+    "open_price": 72.63,
+    "prev_close": 72.09,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PHM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.8,
+    "avg_vol_10d": 1963750,
+    "open_price": 102.62,
+    "prev_close": 103.67,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PWR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.63,
+    "avg_vol_10d": 1549180,
+    "open_price": 319.11,
+    "prev_close": 322.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.02,
+    "avg_vol_10d": 16108120,
+    "open_price": 20.0,
+    "prev_close": 19.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SWK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.49,
+    "avg_vol_10d": 3301450,
+    "open_price": 59.07,
+    "prev_close": 60.08,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ROK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.32,
+    "avg_vol_10d": 844920,
+    "open_price": 250.63,
+    "prev_close": 253.84,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MTB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.12,
+    "avg_vol_10d": 985860,
+    "open_price": 173.56,
+    "prev_close": 175.43,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RVTY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.54,
+    "avg_vol_10d": 1587000,
+    "open_price": 91.89,
+    "prev_close": 92.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PSA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 871880,
+    "open_price": 298.15,
+    "prev_close": 300.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "K": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 2998690,
+    "open_price": 82.8,
+    "prev_close": 82.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AZO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 110040,
+    "open_price": 3768.06,
+    "prev_close": 3775.55,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ED": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 2893340,
+    "open_price": 109.84,
+    "prev_close": 109.52,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KSS": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.02,
+    "avg_vol_10d": 9665970,
+    "open_price": 6.94,
+    "prev_close": 7.06,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ALL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 1576780,
+    "open_price": 200.0,
+    "prev_close": 200.25,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.87,
+    "avg_vol_10d": 4275560,
+    "open_price": 87.93,
+    "prev_close": 89.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HSY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.93,
+    "avg_vol_10d": 1629580,
+    "open_price": 166.28,
+    "prev_close": 166.66,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.31,
+    "avg_vol_10d": 3459510,
+    "open_price": 25.41,
+    "prev_close": 25.77,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NSC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.79,
+    "avg_vol_10d": 1286740,
+    "open_price": 220.0,
+    "prev_close": 222.28,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ENPH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.82,
+    "avg_vol_10d": 7043660,
+    "open_price": 44.765,
+    "prev_close": 44.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GDDY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.93,
+    "avg_vol_10d": 1695560,
+    "open_price": 180.12,
+    "prev_close": 182.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CHD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.71,
+    "avg_vol_10d": 2859490,
+    "open_price": 91.69,
+    "prev_close": 92.78,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MGM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.85,
+    "avg_vol_10d": 6043990,
+    "open_price": 31.53,
+    "prev_close": 32.07,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WDC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.66,
+    "avg_vol_10d": 7457300,
+    "open_price": 44.61,
+    "prev_close": 45.03,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TJX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.59,
+    "avg_vol_10d": 4675550,
+    "open_price": 127.63,
+    "prev_close": 128.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.58,
+    "avg_vol_10d": 1606110,
+    "open_price": 67.7,
+    "prev_close": 68.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HON": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 1.02,
+    "avg_vol_10d": 4910550,
+    "open_price": 212.9,
+    "prev_close": 214.25,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "BLDR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.55,
+    "avg_vol_10d": 1548230,
+    "open_price": 109.77,
+    "prev_close": 111.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "L": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.68,
+    "avg_vol_10d": 563640,
+    "open_price": 86.23,
+    "prev_close": 86.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AKAM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.85,
+    "avg_vol_10d": 1478300,
+    "open_price": 82.54,
+    "prev_close": 83.1,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NOC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.28,
+    "avg_vol_10d": 1771170,
+    "open_price": 491.48,
+    "prev_close": 493.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HAS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.52,
+    "avg_vol_10d": 2855920,
+    "open_price": 61.03,
+    "prev_close": 61.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PNC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.94,
+    "avg_vol_10d": 1997410,
+    "open_price": 164.29,
+    "prev_close": 165.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CTRA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 4.18,
+    "avg_vol_10d": 5846650,
+    "open_price": 24.43,
+    "prev_close": 25.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APP": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.7,
+    "avg_vol_10d": 6393200,
+    "open_price": 294.645,
+    "prev_close": 301.84,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DPZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 702900,
+    "open_price": 474.6,
+    "prev_close": 477.84,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NWSA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 2762840,
+    "open_price": 27.55,
+    "prev_close": 27.72,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CPRT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 3802340,
+    "open_price": 60.63,
+    "prev_close": 61.05,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RTX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.29,
+    "avg_vol_10d": 6683360,
+    "open_price": 127.58,
+    "prev_close": 128.59,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VTR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.14,
+    "avg_vol_10d": 2865260,
+    "open_price": 66.26,
+    "prev_close": 66.62,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MLM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.53,
+    "avg_vol_10d": 481530,
+    "open_price": 533.58,
+    "prev_close": 542.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WELL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 2744060,
+    "open_price": 150.49,
+    "prev_close": 150.93,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NUE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.15,
+    "avg_vol_10d": 2048040,
+    "open_price": 119.03,
+    "prev_close": 120.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FSLR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.51,
+    "avg_vol_10d": 5148530,
+    "open_price": 127.22,
+    "prev_close": 127.16,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ADI": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 3788650,
+    "open_price": 194.89,
+    "prev_close": 197.72,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "WM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1801990,
+    "open_price": 232.67,
+    "prev_close": 234.79,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NDSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.69,
+    "avg_vol_10d": 324640,
+    "open_price": 189.72,
+    "prev_close": 190.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "APO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.9,
+    "avg_vol_10d": 3498420,
+    "open_price": 131.89,
+    "prev_close": 133.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.6,
+    "avg_vol_10d": 2359550,
+    "open_price": 224.55,
+    "prev_close": 228.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NRG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.27,
+    "avg_vol_10d": 2264670,
+    "open_price": 115.37,
+    "prev_close": 116.23,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PAYC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.32,
+    "avg_vol_10d": 436500,
+    "open_price": 224.74,
+    "prev_close": 227.28,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MRNA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 3.07,
+    "avg_vol_10d": 7498360,
+    "open_price": 27.37,
+    "prev_close": 27.84,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DRI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.92,
+    "avg_vol_10d": 927650,
+    "open_price": 200.69,
+    "prev_close": 202.68,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TMO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.18,
+    "avg_vol_10d": 2934540,
+    "open_price": 419.45,
+    "prev_close": 422.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SRE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 3924120,
+    "open_price": 75.04,
+    "prev_close": 75.36,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DGX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 1351670,
+    "open_price": 177.15,
+    "prev_close": 177.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MKC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.12,
+    "avg_vol_10d": 1763740,
+    "open_price": 75.03,
+    "prev_close": 75.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ACGL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.9,
+    "avg_vol_10d": 1532080,
+    "open_price": 92.4,
+    "prev_close": 92.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ISRG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 2003930,
+    "open_price": 526.16,
+    "prev_close": 531.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RSG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1343990,
+    "open_price": 250.46,
+    "prev_close": 250.73,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FCX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.55,
+    "avg_vol_10d": 14751270,
+    "open_price": 37.185,
+    "prev_close": 37.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CTVA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.88,
+    "avg_vol_10d": 3020120,
+    "open_price": 62.34,
+    "prev_close": 62.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KO": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.59,
+    "avg_vol_10d": 16109010,
+    "open_price": 71.675,
+    "prev_close": 71.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HBAN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.11,
+    "avg_vol_10d": 16956300,
+    "open_price": 14.81,
+    "prev_close": 15.02,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MDB": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.54,
+    "avg_vol_10d": 2144520,
+    "open_price": 170.45,
+    "prev_close": 172.96,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.74,
+    "avg_vol_10d": 10244600,
+    "open_price": 44.24,
+    "prev_close": 45.51,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IEX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.7,
+    "avg_vol_10d": 815590,
+    "open_price": 179.86,
+    "prev_close": 181.73,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.57,
+    "avg_vol_10d": 1527050,
+    "open_price": 159.78,
+    "prev_close": 160.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 3507610,
+    "open_price": 91.9,
+    "prev_close": 92.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DOV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.48,
+    "avg_vol_10d": 1467600,
+    "open_price": 171.39,
+    "prev_close": 173.02,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MAS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.4,
+    "avg_vol_10d": 3129810,
+    "open_price": 61.13,
+    "prev_close": 61.76,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MNST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.21,
+    "avg_vol_10d": 4267190,
+    "open_price": 60.58,
+    "prev_close": 60.91,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MCO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.57,
+    "avg_vol_10d": 795220,
+    "open_price": 460.54,
+    "prev_close": 464.68,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ARM": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.98,
+    "avg_vol_10d": 4248870,
+    "open_price": 118.0,
+    "prev_close": 121.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FICO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.61,
+    "avg_vol_10d": 189110,
+    "open_price": 2053.56,
+    "prev_close": 2080.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GPC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 1390510,
+    "open_price": 117.61,
+    "prev_close": 118.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KEY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.82,
+    "avg_vol_10d": 11596510,
+    "open_price": 15.36,
+    "prev_close": 15.56,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GME": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {},
+    "rel_vol": 0.84,
+    "avg_vol_10d": 6919170,
+    "open_price": 26.44,
+    "prev_close": 26.6,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KEYS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.58,
+    "avg_vol_10d": 936640,
+    "open_price": 145.56,
+    "prev_close": 147.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TKO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1081820,
+    "open_price": 165.0,
+    "prev_close": 166.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CCEP": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.98,
+    "avg_vol_10d": 1794800,
+    "open_price": 90.43,
+    "prev_close": 89.86,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GEHC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 6646570,
+    "open_price": 68.48,
+    "prev_close": 69.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SNPS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.64,
+    "avg_vol_10d": 1145710,
+    "open_price": 468.76,
+    "prev_close": 477.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GLW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.42,
+    "avg_vol_10d": 5916460,
+    "open_price": 44.68,
+    "prev_close": 45.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.54,
+    "avg_vol_10d": 6656790,
+    "open_price": 90.42,
+    "prev_close": 90.74,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.7,
+    "avg_vol_10d": 3489540,
+    "open_price": 59.28,
+    "prev_close": 59.29,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DOC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.77,
+    "avg_vol_10d": 6449830,
+    "open_price": 17.55,
+    "prev_close": 17.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TAP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.09,
+    "avg_vol_10d": 1836290,
+    "open_price": 57.025,
+    "prev_close": 57.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SBAC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.68,
+    "avg_vol_10d": 1066030,
+    "open_price": 242.21,
+    "prev_close": 241.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PEG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.91,
+    "avg_vol_10d": 3188990,
+    "open_price": 78.01,
+    "prev_close": 78.35,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AMCR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.53,
+    "avg_vol_10d": 67080450,
+    "open_price": 9.21,
+    "prev_close": 9.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "USB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.62,
+    "avg_vol_10d": 8270620,
+    "open_price": 40.98,
+    "prev_close": 41.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.15,
+    "avg_vol_10d": 2607690,
+    "open_price": 130.55,
+    "prev_close": 130.9,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NXPI": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.42,
+    "avg_vol_10d": 3713900,
+    "open_price": 182.25,
+    "prev_close": 184.95,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.65,
+    "avg_vol_10d": 5753860,
+    "open_price": 138.48,
+    "prev_close": 140.0,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TROW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.85,
+    "avg_vol_10d": 2238600,
+    "open_price": 90.51,
+    "prev_close": 91.43,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ROL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.87,
+    "avg_vol_10d": 2465020,
+    "open_price": 56.71,
+    "prev_close": 56.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ZS": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 2383160,
+    "open_price": 229.6,
+    "prev_close": 232.98,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AON": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.9,
+    "avg_vol_10d": 2089720,
+    "open_price": 355.0,
+    "prev_close": 355.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "RL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 755020,
+    "open_price": 233.85,
+    "prev_close": 237.81,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AVB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.79,
+    "avg_vol_10d": 744240,
+    "open_price": 208.01,
+    "prev_close": 210.02,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NTAP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.02,
+    "avg_vol_10d": 1721770,
+    "open_price": 92.01,
+    "prev_close": 93.09,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AVGO": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 20222120,
+    "open_price": 196.44,
+    "prev_close": 200.72,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HII": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.65,
+    "avg_vol_10d": 732760,
+    "open_price": 231.15,
+    "prev_close": 233.18,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ADM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.85,
+    "avg_vol_10d": 2625510,
+    "open_price": 48.33,
+    "prev_close": 47.5,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.33,
+    "avg_vol_10d": 8330200,
+    "open_price": 72.94,
+    "prev_close": 72.88,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NVDA": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.69,
+    "avg_vol_10d": 213308740,
+    "open_price": 111.445,
+    "prev_close": 113.82,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "KKR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 4832270,
+    "open_price": 113.0,
+    "prev_close": 114.79,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TXN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.52,
+    "avg_vol_10d": 8706510,
+    "open_price": 160.4,
+    "prev_close": 162.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SWKS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.09,
+    "avg_vol_10d": 3133520,
+    "open_price": 65.38,
+    "prev_close": 66.13,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GRRR": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.24,
+    "avg_vol_10d": 1353550,
+    "open_price": 15.6,
+    "prev_close": 15.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ELV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.73,
+    "avg_vol_10d": 1433550,
+    "open_price": 415.82,
+    "prev_close": 416.3,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 6675110,
+    "open_price": 172.78,
+    "prev_close": 173.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AXP": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.06,
+    "avg_vol_10d": 2563780,
+    "open_price": 274.48,
+    "prev_close": 278.03,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HWM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.73,
+    "avg_vol_10d": 2781640,
+    "open_price": 151.32,
+    "prev_close": 154.34,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MKTX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.55,
+    "avg_vol_10d": 474600,
+    "open_price": 228.57,
+    "prev_close": 226.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.44,
+    "avg_vol_10d": 5381850,
+    "open_price": 74.41,
+    "prev_close": 75.11,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MRK": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 15505240,
+    "open_price": 82.47,
+    "prev_close": 82.84,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ADSK": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.61,
+    "avg_vol_10d": 1108250,
+    "open_price": 277.88,
+    "prev_close": 280.07,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EPAM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.01,
+    "avg_vol_10d": 578240,
+    "open_price": 157.27,
+    "prev_close": 159.12,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "HOLX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.24,
+    "avg_vol_10d": 2865950,
+    "open_price": 52.22,
+    "prev_close": 52.73,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MDLZ": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.56,
+    "avg_vol_10d": 8165110,
+    "open_price": 67.76,
+    "prev_close": 67.8,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "META": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.54,
+    "avg_vol_10d": 19262620,
+    "open_price": 592.525,
+    "prev_close": 599.27,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PFE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.17,
+    "avg_vol_10d": 49545100,
+    "open_price": 23.83,
+    "prev_close": 23.87,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FAST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 1.22,
+    "avg_vol_10d": 3435010,
+    "open_price": 80.862,
+    "prev_close": 82.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ABT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.96,
+    "avg_vol_10d": 6505040,
+    "open_price": 131.95,
+    "prev_close": 132.6,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "D": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.75,
+    "avg_vol_10d": 5425510,
+    "open_price": 54.5,
+    "prev_close": 54.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CDW": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.22,
+    "avg_vol_10d": 1113790,
+    "open_price": 164.12,
+    "prev_close": 165.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AVY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.64,
+    "avg_vol_10d": 915380,
+    "open_price": 170.18,
+    "prev_close": 170.93,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "STX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.55,
+    "avg_vol_10d": 4734220,
+    "open_price": 92.46,
+    "prev_close": 93.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CDNS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.69,
+    "avg_vol_10d": 2373540,
+    "open_price": 302.89,
+    "prev_close": 308.83,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LNT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.14,
+    "avg_vol_10d": 1733290,
+    "open_price": 60.65,
+    "prev_close": 60.99,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LULU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.71,
+    "avg_vol_10d": 1597960,
+    "open_price": 274.2,
+    "prev_close": 278.55,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.47,
+    "avg_vol_10d": 5485680,
+    "open_price": 206.02,
+    "prev_close": 208.94,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.76,
+    "avg_vol_10d": 786790,
+    "open_price": 610.4,
+    "prev_close": 616.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 12609970,
+    "open_price": 45.01,
+    "prev_close": 45.38,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SYY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.74,
+    "avg_vol_10d": 3795610,
+    "open_price": 70.24,
+    "prev_close": 70.63,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "URI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.74,
+    "avg_vol_10d": 797900,
+    "open_price": 648.35,
+    "prev_close": 657.73,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "YUM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.73,
+    "avg_vol_10d": 2274500,
+    "open_price": 146.39,
+    "prev_close": 146.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DUK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_up": true
+    },
+    "rel_vol": 1.31,
+    "avg_vol_10d": 3012240,
+    "open_price": 122.01,
+    "prev_close": 120.75,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SYF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.81,
+    "avg_vol_10d": 4418980,
+    "open_price": 53.15,
+    "prev_close": 54.2,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LUV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.42,
+    "avg_vol_10d": 15680830,
+    "open_price": 29.7,
+    "prev_close": 30.08,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ASML": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1320750,
+    "open_price": 676.17,
+    "prev_close": 683.36,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PLD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.41,
+    "avg_vol_10d": 4391490,
+    "open_price": 104.72,
+    "prev_close": 105.33,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.1,
+    "avg_vol_10d": 1649080,
+    "open_price": 332.88,
+    "prev_close": 333.01,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "OKE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.76,
+    "avg_vol_10d": 4095260,
+    "open_price": 80.1,
+    "prev_close": 80.15,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MHK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.19,
+    "avg_vol_10d": 872930,
+    "open_price": 100.6,
+    "prev_close": 101.42,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MTD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.77,
+    "avg_vol_10d": 244120,
+    "open_price": 1078.59,
+    "prev_close": 1091.13,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "OTIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.21,
+    "avg_vol_10d": 3466590,
+    "open_price": 96.86,
+    "prev_close": 97.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "VZ": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "signals": {},
+    "rel_vol": 0.44,
+    "avg_vol_10d": 21095780,
+    "open_price": 43.57,
+    "prev_close": 43.54,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AIZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 1.8,
+    "avg_vol_10d": 343690,
+    "open_price": 195.56,
+    "prev_close": 196.48,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "GL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.9,
+    "avg_vol_10d": 720140,
+    "open_price": 120.74,
+    "prev_close": 121.49,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "JBHT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.56,
+    "avg_vol_10d": 1507130,
+    "open_price": 132.04,
+    "prev_close": 133.61,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "REGN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.05,
+    "avg_vol_10d": 1354620,
+    "open_price": 601.01,
+    "prev_close": 603.58,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "QCOM": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.68,
+    "avg_vol_10d": 9773260,
+    "open_price": 137.82,
+    "prev_close": 139.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "PYPL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.66,
+    "avg_vol_10d": 11520630,
+    "open_price": 67.95,
+    "prev_close": 68.54,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "SCHW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.62,
+    "avg_vol_10d": 8095060,
+    "open_price": 82.71,
+    "prev_close": 83.37,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "ACN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.78,
+    "avg_vol_10d": 2761220,
+    "open_price": 303.86,
+    "prev_close": 307.71,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "CBOE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.86,
+    "avg_vol_10d": 976430,
+    "open_price": 231.71,
+    "prev_close": 231.67,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "COO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.02,
+    "avg_vol_10d": 1559390,
+    "open_price": 81.5,
+    "prev_close": 81.57,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DDOG": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.7,
+    "avg_vol_10d": 4753270,
+    "open_price": 104.73,
+    "prev_close": 105.7,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "EOG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.25,
+    "avg_vol_10d": 3601470,
+    "open_price": 109.49,
+    "prev_close": 108.52,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "NDAQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.47,
+    "avg_vol_10d": 2740600,
+    "open_price": 77.46,
+    "prev_close": 78.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "IPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.58,
+    "avg_vol_10d": 4702220,
+    "open_price": 25.03,
+    "prev_close": 25.31,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.29,
+    "avg_vol_10d": 2060070,
+    "open_price": 108.48,
+    "prev_close": 109.21,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "XLK": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.75,
+    "avg_vol_10d": 4494990,
+    "open_price": 212.26,
+    "prev_close": 215.46,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MSCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.78,
+    "avg_vol_10d": 548650,
+    "open_price": 545.57,
+    "prev_close": 550.41,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "TSCO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.51,
+    "avg_vol_10d": 6869180,
+    "open_price": 51.01,
+    "prev_close": 51.24,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "AEP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.04,
+    "avg_vol_10d": 3141750,
+    "open_price": 108.24,
+    "prev_close": 107.44,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "LOW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 1.0,
+    "avg_vol_10d": 2171440,
+    "open_price": 223.145,
+    "prev_close": 225.19,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "MS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true
+    },
+    "rel_vol": 0.71,
+    "avg_vol_10d": 6401070,
+    "open_price": 117.81,
+    "prev_close": 119.6,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "FOXA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {},
+    "rel_vol": 0.97,
+    "avg_vol_10d": 3143440,
+    "open_price": 48.9,
+    "prev_close": 49.26,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  },
+  "DAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "signals": {
+      "gap_down": true,
+      "high_rel_vol": true
+    },
+    "rel_vol": 2.12,
+    "avg_vol_10d": 1592260,
+    "open_price": 57.69,
+    "prev_close": 58.4,
+    "enriched_timestamp": "2025-05-06T20:10:57.253559-04:00"
+  }
+}

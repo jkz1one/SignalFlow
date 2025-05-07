@@ -1,3 +1,4 @@
+## enrich_watchdog.py
 import os
 import time
 import subprocess
@@ -8,7 +9,7 @@ from watchdog.events import FileSystemEventHandler
 
 # --- Config ---
 WATCH_DIR = os.path.join("backend", "cache")
-TRIGGER_SCRIPT = os.path.join("backend", "signals", "enrich_universe.py")
+TRIGGER_SCRIPT = os.path.join("backend", "enrich_universe.py")
 TRIGGER_FILES = [
     "post_open_signals_",
     "945_signals_",
@@ -16,6 +17,17 @@ TRIGGER_FILES = [
     "multi_day_levels.json"
 ]
 COOLDOWN_SECONDS = 60  # Avoid re-triggering too frequently
+
+def initial_check_and_trigger():
+    found = False
+    for trigger_key in TRIGGER_FILES:
+        for fname in os.listdir(WATCH_DIR):
+            if fname.startswith(trigger_key):
+                found = True
+                break
+    if found:
+        print(f"⚡ Detected ready file on startup: '{fname}' — running enrichment once.")
+        run_enrichment()
 
 last_triggered = {}
 
@@ -37,6 +49,8 @@ class CacheUpdateHandler(FileSystemEventHandler):
                 else:
                     print(f"⏱️ Skipped duplicate trigger for: {filename}")
 
+# ... [rest of the script unchanged]
+
 def run_enrichment():
     timestamp = datetime.now().strftime("%H:%M:%S")
     try:
@@ -45,12 +59,13 @@ def run_enrichment():
     except subprocess.CalledProcessError as e:
         print(f"❌ Enrichment failed at {timestamp}: {e}")
 
-def start_watchdog():
-    print(f"👀 Watching directory: {WATCH_DIR}")
-    event_handler = CacheUpdateHandler()
+if __name__ == "__main__":
+    initial_check_and_trigger()
     observer = Observer()
-    observer.schedule(event_handler, WATCH_DIR, recursive=False)
+    event_handler = CacheUpdateHandler()
+    observer.schedule(event_handler, path=WATCH_DIR, recursive=False)
     observer.start()
+    print("👀 Watchdog is now watching for file updates...")
 
     try:
         while True:
@@ -59,6 +74,3 @@ def start_watchdog():
         observer.stop()
         print("🛑 Watchdog stopped.")
     observer.join()
-
-if __name__ == "__main__":
-    start_watchdog()

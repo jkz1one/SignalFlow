@@ -276,6 +276,17 @@ def inject_risk_flags(universe):
     return universe
 
 def main():
+    universe = {}
+
+    if os.path.exists(ENRICHED_PATH):
+        print(f"📥 Loading previously enriched file: {ENRICHED_PATH}")
+        universe = load_json(ENRICHED_PATH)
+    elif os.path.exists(UNIVERSE_PATH):
+        print(f"📥 No prior enriched file found. Using base universe: {UNIVERSE_PATH}")
+        universe = load_json(UNIVERSE_PATH)
+    else:
+        print("❌ No universe file available to load.")         
+   
     print("🚀 Starting enrichment...")
     if not universe:
         print("❌ No tickers found in base universe. Aborting enrichment.")

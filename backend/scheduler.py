@@ -69,6 +69,12 @@ def check_and_run_backfills():
     if should_backfill("09:45", "945_signals"):
         run_script(SCRIPTS["945 Signals"], "945 Signals")
 
+# --- Watchdog ---
+def launch_enrich_watchdog():
+    print("🐺 Starting Enrich WatchDog...")
+    logging.info("🐺 Starting Enrich WatchDog...")
+    subprocess.Popen(["python", "backend/signals/enrich_watchdog.py"])
+
 # --- Schedule Jobs ---
 def schedule_jobs():
     scheduler.add_job(lambda: run_script(SCRIPTS["Universe Builder"], "Universe Builder"),
@@ -84,19 +90,17 @@ def schedule_jobs():
     scheduler.start()
     logging.info("✅ APScheduler started.")
 
-def launch_enrich_watchdog():
-    print("🐺 Starting Enrich WatchDog...")
-    logging.info("🐺 Starting Enrich WatchDog...")
-    subprocess.Popen(["python", "backend/signals/enrich_watchdog.py"])
+
 
 # --- Entrypoint ---
 if __name__ == "__main__":
     print("📅 Scheduler initializing...")
     logging.info("📅 Scheduler initializing...")
 
+    launch_enrich_watchdog()
     check_and_run_backfills()
     schedule_jobs()
-    launch_enrich_watchdog()
+
 
     try:
         while True:
