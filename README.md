@@ -42,12 +42,15 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
+* ✅ Automation and scheduled jobs now with scheduler.py 
 * ✅ Auto-triggers screen + watchlist build after enrichment
+* ✅ 4:00 AM smart reset via `cache_manager.py`
 * ✅ `enrich_universe.py` now runs incrementally and fails gracefully
 * ✅ `post_open_signals.py` no longer spams multiple writes
 * ✅ Sector and short interest integrated cleanly
 * ✅ Fixed BRK.B and other ticker edge cases
 * ✅ Final watchlist now generated reliably via automation
+* ✅ Tier 1, 2, and 3 signal logic implemented
 
 ---
 
@@ -70,11 +73,13 @@ backend/
 
 ## 🚧 Roadmap & Goals
 
-### In Progress
+### Next Steps and In Progress
 
-* ⏳ 4:00 AM smart reset via `cache_manager.py`
+* ⏳ Make anchor tickers updateable for Universe Builder
+* ⏳ Make unified run script for front, backend, and scheduler.
 * ⏳ Frontend timestamp display (data freshness)
 * ⏳ Universe Builder v2 (dynamic market cap/volume filters)
+* ⏳ Fix risk filters
 * ⏳ Frontend risk toggle fix
 * ⏳ Admin Panel to manually run jobs
 
@@ -82,7 +87,7 @@ backend/
 
 * [ ] Customizable thresholds (e.g., rel vol %, volume floors)
 * [ ] Discord/Email alerts for job failures
-* [ ] Docker deploy and cloud cron runner
+* [ ] Docker deploy
 * [ ] Multi-screener logic (Opening, Swing, Overnight)
 * [ ] GEX / 0DTE / Options Flow overlays
 * [ ] Replay / Backtest mode
@@ -129,7 +134,7 @@ npm run dev
 
 ---
 
-## 🧪 Experimental Features
+## 🧪 Long-Term Goals
 
 * Admin page for manual job control
 * Screener config UI (thresholds, logic toggles)
