@@ -2,7 +2,8 @@
 
 A real-time stock scanning tool that builds a tiered watchlist using volume, price action, sector rotation, and risk filters. Built with FastAPI + Next.js.
 
-> **🚀 Currently optimized for identifying momentum setups at market open.**
+> **Currently optimized** for identifying momentum setups at **market open**. 🚀
+>
 > Use the `stable` branch if you need reliability.
 
 ---
@@ -11,9 +12,26 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ---
 
-## ⚙️ Automation-First Design
+## 🔧 How It Works
 
-### ✅ Active Modules (Live)
+### 🖥️ Frontend
+
+- Live at `/tracker` via Next.js
+- Displays:
+  - Watchlist of scored stocks
+  - Tier hits (T1, T2, T3)
+  - Risk tags (e.g., Low Liquidity, Wide Spread)
+  - Custom labels like “Strong Setup” or “Squeeze Watch”
+
+- Interactive filters:
+  - Tier toggle (T1/T2/T3)
+  - Show/hide risk-blocked tickers
+  - Tag filters (e.g., “Early Watch”, “Top Gainer”)
+  - Sort by score
+
+---
+
+### ⚙️ Backend Active Modules
 
 | Module                 | Function                                                 |
 | ---------------------- | -------------------------------------------------------- |
@@ -23,18 +41,20 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 | `screenbuilder.py`     | Scores and tags all tickers by signal strength           |
 | `watchlist_builder.py` | Filters to final daily watchlist based on score/risk     |
 | `post_open_signals.py` | Combines early % move, TradingView data, sector strength |
-| `cache_manager.py`     | Cleans and resets stale files at start of day (soon 4AM) |
+| `cache_manager.py`     | Cleans and resets stale files at start of day (4AM)      |
 
 ---
 
 ## 🔁 Daily Automation Flow
 
 ### 🕒 Timed by Scheduler
-
-1. **9:00 AM** – `universe_builder.py` runs
-2. **9:35 AM** – `post_open_signals.py`, `945_signals.py`, `fetch_short_interest.py` execute
-3. **\~9:36 AM onward** – `enrich_watchdog.py` detects new signals → triggers `enrich_universe.py`
-4. **Auto** – Enrichment triggers `screenbuilder.py` and `watchlist_builder.py`
+0. **4:00 AM** - `cache_manager.py`
+1. **5:00 AM** – `universe_builder.py` 
+2. **9:35 AM** – `fetch_short_interest.py` 
+3. **9:35 AM** – `post_open_signals.py` 
+4. **9:45 AM**  - `945_signals.py`
+5. **Auto** – `enrich_watchdog.py` detects new signals → triggers `enrich_universe.py`  
+6. **Auto** – Enrichment triggers `screenbuilder.py` and `watchlist_builder.py`
 
 > All steps are modular and incremental — no full rebuilds required after reset.
 
@@ -58,62 +78,22 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 ## 📁 Project Structure
 
 ```
+
 backend/
-├── cache/                     # Daily signal + universe files
-├── scheduler.py               # Master job runner
-├── enrich_watchdog.py         # Watches for updated signals
-├── enrich_universe.py         # Applies all Tier logic + risk flags
-├── screenbuilder.py           # Scores stocks using tier hits
-├── watchlist_builder.py       # Filters final watchlist
-├── post_open_signals.py       # TradingView + sector + early move
-├── cache_manager.py           # Smart morning reset
-└── universe_builder.py        # Builds base ticker universe
-```
 
----
+├── cache/                   # Daily signal + universe files
+├── signals/                 # Signal scrapers and enrichment triggers
+│   ├── 945_signals.py            # Scrapes 9:30–9:40 range breakout data
+│   ├── enrich_watchdog.py        # Watches signal files, triggers enrichment
+│   ├── fetch_short_interest.py   # Pulls short float data from FINRA/Nasdaq
+│   ├── post_open_signals.py      # Combines rel vol, % move, sector strength
+│   └── universe_builder.py       # Builds base universe from anchor levels
+├── cache_manager.py         # Clears stale cache at 4AM or on demand
+├── enrich_universe.py       # Combines signals, applies tiers and risk filters
+├── scheduler.py             # Schedules all timed jobs and monitors run state
+├── screenbuilder.py         # Scores tickers based on tier confluence
+└── watchlist_builder.py     # Filters scored tickers into final ranked output
 
-## 🚧 Roadmap & Goals
-
-### Next Steps and In Progress
-
-* ⏳ Optimize scrapers for speed
-* ⏳ More logging for scheduler
-* ⏳ Make anchor tickers updateable for Universe Builder
-* ⏳ Make unified run script for frontend, backend, and scheduler
-* ⏳ Frontend timestamp display (data freshness)
-* ⏳ Universe Builder v2 (dynamic market cap/volume filters)
-* ⏳ Fix risk filters
-* ⏳ Frontend risk toggle fix
-* ⏳ Admin Panel to manually run jobs
-
-### Upcoming
-
-* [ ] Customizable thresholds (e.g., rel vol %, volume floors)
-* [ ] Discord/Email alerts for job failures
-* [ ] Docker deploy
-* [ ] Multi-screener logic (Opening, Swing, Overnight)
-* [ ] GEX / 0DTE / Options Flow overlays
-* [ ] Replay / Backtest mode
-
----
-
-## ▶️ How to Run (Dev)
-
-```bash
-# 0. Install dependencies
-pip install -r backend/requirements.txt
-
-# 1. Activate virtual env
-source backend/screener-venv/bin/activate
-
-# 2. Launch scheduler
-python3 backend/scheduler.py
-
-# 3. Start FastAPI server
-uvicorn backend.main:app --reload --port 8000
-
-# 4. Start frontend
-npm run dev
 ```
 
 ---
@@ -130,20 +110,43 @@ npm run dev
 
 ---
 
-## ⚠️ Known Issues
+## 🚧 Roadmap & Goals
 
-* Premarket levels pending (needed for Momentum Confluence logic)
+### Next Steps and In Progress
 
----
+* ⏳ Optimize scrapers for speed
+* ⏳ More logging for scheduler
+* ⏳ Make unified run script for frontend, backend, and scheduler
+
+### Upcoming
+
+* [ ] Frontend timestamp display (data freshness)
+* [ ] Backend risk filters fix
+* [ ] Frontend risk toggle fix
+* [ ] Universe Builder v2 (adjustable anchors, etc)
+* [ ] Customizable thresholds (e.g., rel vol %, volume floors)
+* [ ] Admin Panel Build Start
+* [ ] Discord/Email alerts (failures/screener screenshots)
+* [ ] Docker deploy
 
 ## 🧪 Long-Term Goals
 
-* Admin page for manual job control
-* Screener config UI (thresholds, logic toggles)
-* Sentiment overlays: VIX/VVIX/SPY trends
-* Institutional block trade scanning
+- Admin page toggles for variables.
+- Replay / Backtest mode
+- Multi-screener (Opening, Swing, Overnight)
+- Unified screener with all logic toggles.
+- GEX / 0DTE / Options Flow overlays
+- Watchlist alerts + email/export
+- Replay/backtest signal flow
+- Sentiment overlays (SPX/SPY, VIX/VIXY)
 
 ---
 
-> Built for speed. Modular by design. Validate before trading.
+## ⚠️ Known Issues
+
+* Premarket levels pending (needed for Momentum Confluence logic)
+* Risk filters pending (right now, most risk filtering happens in universe build)
+---
+
+> Built for speed. Modular by design. Validate before trading.  
 > *“Momentum belongs to the prepared.”* 🔍
