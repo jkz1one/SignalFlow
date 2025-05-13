@@ -2,138 +2,141 @@
 
 A real-time stock scanning tool that builds a tiered watchlist using volume, price action, sector rotation, and risk filters. Built with FastAPI + Next.js.
 
-## Currently optimized for identifying momentum setups at market open.
-
-![example](https://github.com/user-attachments/assets/97ff525c-fe60-4af3-8952-d913e9e46a75)
-
-**⚠️ This version is under construction for automation and may be unstable.**
-
+> **🚀 Currently optimized for identifying momentum setups at market open.**
 > Use the `stable` branch if you need reliability.
 
 ---
 
-## 🔧 How It Works – Automation Flow
-
-### ⚙️ Daily Pipeline (Scheduler Driven)
-
-* `scheduler.py`: Core job manager with APScheduler.
-
-  * Launches `universe_builder.py` at 9:00 AM
-  * Triggers all enrichment scrapers: `post_open_signals.py`, `945_signals.py`, `fetch_short_interest.py`
-  * Kicks off `enrich_universe.py` (also runs on file update via `enrich_watchdog.py`)
-  * Enrichment is modular and incremental
-  * Future: Trigger scoring and watchlist build automatically after enrichment
-
-### 🐺 `enrich_watchdog.py`
-
-* Monitors cache directory for signal file updates
-* Triggers `enrich_universe.py` when:
-
-  * `post_open_signals_*.json`
-  * `945_signals_*.json`
-  * `short_interest.json`
-  * `multi_day_levels.json` update
-* Detects stale state on startup and optionally runs enrichment
-
-### 📦 Cache Cleanup
-
-* `cache_manager.py`: Clears stale/unneeded files each morning (future 4:00 AM run goal)
-* Health check audit prints missing/expired cache file report
+![example](https://github.com/user-attachments/assets/97ff525c-fe60-4af3-8952-d913e9e46a75)
 
 ---
 
-## ✅ Project Goals – v3.7
+## ⚙️ Automation-First Design
 
-### Known Issues
-* - Enrich runs multiple times during post_open_signals because it is saving every so many tickers. The updated post open signals.json causes enrich universe to run. This is causing the universe file to have multiple tags/reasons under Tier Hits.
-* - Enrich isn't calculating sector 
+### ✅ Active Modules (Live)
 
-### Completed
+| Module                 | Function                                                 |
+| ---------------------- | -------------------------------------------------------- |
+| `scheduler.py`         | Job manager (APScheduler) for timed runs                 |
+| `enrich_watchdog.py`   | Monitors signal files and auto-triggers enrichment flow  |
+| `enrich_universe.py`   | Adds Tier 1–3 signals, risk filters, sector mapping      |
+| `screenbuilder.py`     | Scores and tags all tickers by signal strength           |
+| `watchlist_builder.py` | Filters to final daily watchlist based on score/risk     |
+| `post_open_signals.py` | Combines early % move, TradingView data, sector strength |
+| `cache_manager.py`     | Cleans and resets stale files at start of day (soon 4AM) |
 
-* ✅ Tier 1, 2, and 3 signal logic implemented
-* ✅ Risk filters (liquidity, spread)
-* ✅ Enrichment: TV price/vol, candles, short interest, multi-day highs
-* ✅ Cache cleaner + audit tools
-* ✅ Watchlist scoring + tagging + filtering
-* ✅ `run_pipeline.py` orchestrates full system
-* ✅ Fixed Cache Manager
-* ✅ `post_open_signals.py` rewritten to prevent YF rate limits
-* ✅ `enrich_universe.py` now fails gracefully, supports incremental enrichments
-* ✅ Scheduler + Watchdog now coordinate
-* ✅  Fixed BRK.B ticker parsing
+---
+
+## 🔁 Daily Automation Flow
+
+### 🕒 Timed by Scheduler
+
+1. **9:00 AM** – `universe_builder.py` runs
+2. **9:35 AM** – `post_open_signals.py`, `945_signals.py`, `fetch_short_interest.py` execute
+3. **\~9:36 AM onward** – `enrich_watchdog.py` detects new signals → triggers `enrich_universe.py`
+4. **Auto** – Enrichment triggers `screenbuilder.py` and `watchlist_builder.py`
+
+> All steps are modular and incremental — no full rebuilds required after reset.
+
+---
+
+## 🚨 Key Fixes & Changes (v3.7+)
+
+* ✅ Auto-triggers screen + watchlist build after enrichment
+* ✅ `enrich_universe.py` now runs incrementally and fails gracefully
+* ✅ `post_open_signals.py` no longer spams multiple writes
+* ✅ Sector and short interest integrated cleanly
+* ✅ Fixed BRK.B and other ticker edge cases
+* ✅ Final watchlist now generated reliably via automation
+
+---
+
+## 📁 Project Structure
+
+```
+backend/
+├── cache/                     # Daily signal + universe files
+├── scheduler.py               # Master job runner
+├── enrich_watchdog.py         # Watches for updated signals
+├── enrich_universe.py         # Applies all Tier logic + risk flags
+├── screenbuilder.py           # Scores stocks using tier hits
+├── watchlist_builder.py       # Filters final watchlist
+├── post_open_signals.py       # TradingView + sector + early move
+├── cache_manager.py           # Smart morning reset
+└── universe_builder.py        # Builds base ticker universe
+```
+
+---
+
+## 🚧 Roadmap & Goals
 
 ### In Progress
 
-* ⏳ Tier 1 Momentum Confluence (waiting for TradingView premarket levels)
-* ⏳ Frontend timestamp display + Sector Tab
-* ⏳ Universe Builder v2 (dynamic filtering by market cap, liquidity)
-* ⏳ Auto-run screenbuilder after enrichment
+* ⏳ 4:00 AM smart reset via `cache_manager.py`
+* ⏳ Frontend timestamp display (data freshness)
+* ⏳ Universe Builder v2 (dynamic market cap/volume filters)
+* ⏳ Frontend risk toggle fix
+* ⏳ Admin Panel to manually run jobs
 
-### Next Steps
+### Upcoming
 
-* [ ] Implement 4:00 AM daily reset via `cache_manager.py`
-    (smart reset incase pipeline is ran after 4A M)
-* [ ] Automatically run `screenbuilder.py` and `watchlist_builder.py` after enrichment
-* [ ] Consider adding manual run commands while scheduler active
-* [ ] Add Admin Panel to trigger backend jobs manually
-* [ ] Add customizable thresholds (e.g., rel vol min) via config
-* [ ] Fix frontend risk toggle logic
-* [ ] Add Discord/Email alerts for job failures
-* [ ] Strip unused dependencies and clean legacy scripts
+* [ ] Customizable thresholds (e.g., rel vol %, volume floors)
+* [ ] Discord/Email alerts for job failures
+* [ ] Docker deploy and cloud cron runner
+* [ ] Multi-screener logic (Opening, Swing, Overnight)
+* [ ] GEX / 0DTE / Options Flow overlays
+* [ ] Replay / Backtest mode
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run (Dev)
 
 ```bash
-# Step 0 — Install dependencies (Python 3.10+ recommended)
+# 0. Install dependencies
 pip install -r backend/requirements.txt
 
-# Step 1 — Run the Virtual Environment 
+# 1. Activate virtual env
 source backend/screener-venv/bin/activate
 
-# Step 2 — Run the scheduler (auto job runner)
-# This will schedule all jobs and auto-trigger enrichment
+# 2. Launch scheduler
 python3 backend/scheduler.py
 
-# Step 2.5 — Manual run (to be automated)
-python3 backend/screenbuilder.py
-python3 backend/watchlist_builder.py
-
-# Step 3 — Start backend API (FastAPI)
+# 3. Start FastAPI server
 uvicorn backend.main:app --reload --port 8000
 
-# Step 4 — Start frontend (Next.js)
+# 4. Start frontend
 npm run dev
 ```
 
 ---
 
-## 📡 API Endpoints (Backend/FastAPI)
+## 📡 API Endpoints
 
-| Endpoint                | Description                         |
+| Route                   | Purpose                             |
 | ----------------------- | ----------------------------------- |
-| `/api/autowatchlist`    | Returns final filtered watchlist    |
-| `/api/universe`         | Returns scored universe w/ signals  |
-| `/api/raw`              | Returns raw enriched universe       |
-| `/api/sector`           | Returns sector ETF signal data      |
-| `/api/cache-timestamps` | Returns freshness metadata per file |
+| `/api/autowatchlist`    | Final filtered watchlist            |
+| `/api/universe`         | Universe with scores + tier signals |
+| `/api/raw`              | Raw enriched data (pre-score)       |
+| `/api/sector`           | Sector ETF change + leaders         |
+| `/api/cache-timestamps` | File freshness for debug and UI     |
 
 ---
 
-## 🧪 Long-Term Features (Exploration)
+## ⚠️ Known Issues
 
-* Admin page toggles for variables
-* Multiple time-based screeners (e.g., EOD, After Hours)
-* Unified screener with logic toggles
-* Options flow: GEX, Vanna, Charm, 0DTE triggers
-* Screener rule editor UI (custom setups)
-* Watchlist alerts + export/email
-* Replay/backtest signal flow
-* Sentiment overlays (SPY/VIX/VVIX)
-* Institutional block scan
-* Docker deploy + Cloud job host
+* Enrichment may still occasionally double-flag reasons if signal saves overlap
+* TradingView premarket levels pending (needed for Momentum Confluence logic)
 
 ---
 
-> Modular, scalable, momentum-aware, and built for speed — this system is meant to evolve. Data integrity not guaranteed. Validate before trading.
+## 🧪 Experimental Features
+
+* Admin page for manual job control
+* Screener config UI (thresholds, logic toggles)
+* Sentiment overlays: VIX/VVIX/SPY trends
+* Institutional block trade scanning
+
+---
+
+> Built for speed. Modular by design. Validate before trading.
+> *“Momentum belongs to the prepared.”* 🔍

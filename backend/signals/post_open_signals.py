@@ -1,3 +1,4 @@
+## post_open_signals.py
 import os
 import json
 import yfinance as yf
@@ -12,7 +13,6 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 TODAY_STR = datetime.now().strftime("%Y-%m-%d")
 OUTPUT_PATH = os.path.join(CACHE_DIR, f"post_open_signals_{TODAY_STR}.json")
 LOOKBACK_DAYS = 10
-SAVE_INTERVAL = 25
 
 SECTOR_ETFS = [
     "XLF", "XLK", "XLE", "XLV", "XLY",
@@ -34,10 +34,6 @@ def get_latest_universe_file():
         raise FileNotFoundError("❌ No valid universe files found in cache.")
     files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
     return os.path.join(CACHE_DIR, files[0])
-
-def save_progress(output):
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(output, f, indent=2)
 
 def fetch_yf_data(symbol, lookback_days=10, retries=3):
     yf_symbol = symbol.replace(".", "-")
@@ -126,50 +122,40 @@ def main():
             tqdm.write(f"⚠️ Failed to fetch sector {etf}: {e}")
 
     print(f"📡 Fetching post-open signals + highs/lows for {len(symbols)} tickers...")
-
-    for i, symbol in enumerate(tqdm(symbols, desc="🔄 Scraping Tickers")):
+    for symbol in tqdm(symbols, desc="🔄 Scraping Tickers"):
         data = fetch_yf_data(symbol, LOOKBACK_DAYS)
-        if data:
-            # Tier 2: squeeze watch
-            short_pct = data.get("shortPercentOfFloat")
-            if short_pct is None:
-                short_pct = 0
-            rel_vol = data.get("rel_vol", 0)
-            pct_change = data.get("pct_change", 0)
-            if (
-                short_pct >= 0.18 and
-                rel_vol > 1.2 and
-                abs(pct_change) >= 1.5
-            ):
-                data["squeeze_watch"] = True
+        if not data:
+            continue
 
-            # Tier 3: near multi-day high/low
-            price = data.get("last_price")
-            if price and data.get("high"):
-                if price >= data["high"] * 0.98:
-                    data["near_multi_day_high"] = True
-            if price and data.get("low"):
-                if price <= data["low"] * 1.02:
-                    data["near_multi_day_low"] = True
+        # Tier 2: squeeze watch
+        short_pct = data.get("shortPercentOfFloat") or 0
+        rel_vol = data.get("rel_vol") or 0
+        pct_change = data.get("pct_change") or 0
+        if short_pct >= 0.20 and rel_vol > 1.2 and abs(pct_change) >= 1.0:
+            data["squeeze_watch"] = True
 
-            combined_output["tickers"][symbol] = data
+        # Tier 3: near multi-day high/low
+        price = data.get("last_price")
+        if price and data.get("high") and price >= data["high"] * 0.98:
+            data["near_multi_day_high"] = True
+        if price and data.get("low") and price <= data["low"] * 1.02:
+            data["near_multi_day_low"] = True
 
-
+        combined_output["tickers"][symbol] = data
         time.sleep(random.uniform(0.3, 0.6))
 
-        if i > 0 and i % SAVE_INTERVAL == 0:
-            save_progress(combined_output)
-
-    # Tier 3: top volume gainers
-    top_volume = sorted(
+    # Tier 3: top-5 volume gainers
+    top5 = sorted(
         combined_output["tickers"].items(),
-        key=lambda x: x[1].get("vol_latest", 0),
+        key=lambda kv: kv[1].get("vol_latest", 0),
         reverse=True
     )[:5]
-    for symbol, _ in top_volume:
-        combined_output["tickers"][symbol]["top_volume_gainer"] = True
+    for sym, _ in top5:
+        combined_output["tickers"][sym]["top_volume_gainer"] = True
 
-    save_progress(combined_output)
+    # Single final write
+    with open(OUTPUT_PATH, "w") as f:
+        json.dump(combined_output, f, indent=2)
     print(f"✅ Final post-open signals saved to: {OUTPUT_PATH}")
 
 if __name__ == "__main__":

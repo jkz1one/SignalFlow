@@ -1,7 +1,7 @@
 # ✅ Stock Screener v3.7
 
-> **Status:** Broken/Under Construction  
-> **Next Phase:** Universe Builder + Scheduled Automation  
+> **Status:**  Scheduled Automation
+> **Next Phase:**  Universe Builder Config For Admin Panel
 > **Further Phases:** Sector Tab • Admin Panel • Frontend Timestamp • Screener Builder  
 >  
 > **Tag:** `v3.7-beta`
@@ -39,12 +39,14 @@
 - Fixed BRK.B ticker parsing
 
 ### Backend Architecture  
-- `run_pipeline.py` orchestrates enrich → score → build  
-- `daily_refresh.py` wraps all scrapers with cache audit  
-- `cache_manager.py` handles cleanup + validation (strict mode optional)  
-- Modular `signals/` folder for enrichment layers  
-- Universe Builder (`universe_builder.py`) added  
-- Watchlist system built with `watchlist_builder.py`
+- `scheduler.py` launches universe builder, scrapers, and enrichment modules  
+- `enrich_watchdog.py` monitors cache for updates and auto-triggers enrichment  
+- `enrich_universe.py` processes all Tier logic and applies risk filters  
+- `screenbuilder.py` scores enriched tickers based on signal confluence  
+- `watchlist_builder.py` filters and tags final tickers into the AutoWatchlist  
+- `cache_manager.py` handles smart daily reset (future: 4:00 AM run)  
+- Modular `signals/` folder splits each enrichment component logically  
+- `universe_builder.py` builds base universe (Level 1, 2, 3 anchors and rules)  
 
 ---
 
@@ -99,8 +101,8 @@
 - [ ] Create unified **Screener Build Page** where users can edit rules, toggle screener types, and adjust logic parameters (e.g., rel vol %, volume thresholds, gap %)  
 - [ ] Ensure some **core signals remain shared** across screeners for consistency  
 - [ ] Introduce **fundamental signal logic** (e.g., valuation, growth) in Swing + Overnight screeners only  
-- [ ] Leave room for future screeners (e.g., Lunch Break, Block Trades, Earnings Flow)
-- [ ] Consider adding manual run commands while **Sheduler.py** is actively running. Ie run post open scrape, run enrichment, etc. 
+- [ ] Leave room for future screeners (e.g., Lunch Break, Block Trades, Earnings Flow)  
+- [ ] Consider adding manual run commands while **scheduler.py** is actively running (e.g., run post open scrape, run enrichment, etc.)  
 
 ---
 

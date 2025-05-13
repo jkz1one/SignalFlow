@@ -40,6 +40,7 @@ TIER_2 = {
 
 TIER_3 = {
     "near_range_high": 1,
+    "near_range_low": 1,
     "high_volume": 1,
     "top_volume_gainer": 1,
     "near_multi_day_high": 1,
