@@ -42,7 +42,7 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
-* ✅ Automation and scheduled jobs now with scheduler.py 
+* ✅ Automation and scheduled jobs now with `scheduler.py`
 * ✅ Auto-triggers screen + watchlist build after enrichment
 * ✅ 4:00 AM smart reset via `cache_manager.py`
 * ✅ `enrich_universe.py` now runs incrementally and fails gracefully
