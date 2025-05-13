@@ -115,7 +115,7 @@ def check_and_run_backfills():
             run_script(SCRIPTS["Universe Builder"], "Universe Builder")
 
     # Short Interest @ 09:00
-    si_cutoff = datetime.combine(now.date(), dt_time(9, 0), tzinfo=tz)
+    si_cutoff = datetime.combine(now.date(), dt_time(6, 0), tzinfo=tz)
     if now > si_cutoff:
         si_path = os.path.join(CACHE_DIR, "short_interest.json")
         if not os.path.exists(si_path):
@@ -140,7 +140,7 @@ def schedule_jobs():
     logging.info("⏲️ Scheduling daily jobs now")
     scheduler.add_job(lambda: market_day_wrapper("Cache Manager"), trigger="cron", hour=4, minute=0)
     scheduler.add_job(lambda: market_day_wrapper("Universe Builder"), trigger="cron", hour=5, minute=0)
-    scheduler.add_job(lambda: market_day_wrapper("Short Interest"), trigger="cron", hour=9, minute=0, second=10)
+    scheduler.add_job(lambda: market_day_wrapper("Short Interest"), trigger="cron", hour=6, minute=0, second=10)
     scheduler.add_job(lambda: market_day_wrapper("Post Open Signals"), trigger="cron", hour=9, minute=35, second=50)
     scheduler.add_job(lambda: market_day_wrapper("945 Signals"), trigger="cron", hour=9, minute=45, second=50)
     scheduler.start()
@@ -159,6 +159,7 @@ if __name__ == "__main__":
     check_and_run_backfills()
     # 4) Start scheduled cron jobs for daily runs
     schedule_jobs()
+
     try:
         while True:
             time.sleep(60)

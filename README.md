@@ -48,6 +48,7 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 * ✅ `enrich_universe.py` now runs incrementally and fails gracefully
 * ✅ `post_open_signals.py` no longer spams multiple writes
 * ✅ Sector and short interest integrated cleanly
+* ✅ Enrichment double-flag reasons fixed
 * ✅ Fixed BRK.B and other ticker edge cases
 * ✅ Final watchlist now generated reliably via automation
 * ✅ Tier 1, 2, and 3 signal logic implemented
@@ -75,8 +76,10 @@ backend/
 
 ### Next Steps and In Progress
 
+* ⏳ Optimize scrapers for speed
+* ⏳ More logging for scheduler
 * ⏳ Make anchor tickers updateable for Universe Builder
-* ⏳ Make unified run script for front, backend, and scheduler.
+* ⏳ Make unified run script for frontend, backend, and scheduler
 * ⏳ Frontend timestamp display (data freshness)
 * ⏳ Universe Builder v2 (dynamic market cap/volume filters)
 * ⏳ Fix risk filters
@@ -129,8 +132,7 @@ npm run dev
 
 ## ⚠️ Known Issues
 
-* Enrichment may still occasionally double-flag reasons if signal saves overlap
-* TradingView premarket levels pending (needed for Momentum Confluence logic)
+* Premarket levels pending (needed for Momentum Confluence logic)
 
 ---
 
