@@ -114,7 +114,7 @@ def check_and_run_backfills():
         if not os.path.exists(uni_path):
             run_script(SCRIPTS["Universe Builder"], "Universe Builder")
 
-    # Short Interest @ 09:00
+    # Short Interest @ 06:00
     si_cutoff = datetime.combine(now.date(), dt_time(6, 0), tzinfo=tz)
     if now > si_cutoff:
         si_path = os.path.join(CACHE_DIR, "short_interest.json")

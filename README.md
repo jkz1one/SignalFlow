@@ -36,12 +36,11 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 | Module                 | Function                                                 |
 | ---------------------- | -------------------------------------------------------- |
 | `scheduler.py`         | Job manager (APScheduler) for timed runs                 |
+| `cache_manager.py`     | Cleans and resets stale files at start of day            |
 | `enrich_watchdog.py`   | Monitors signal files and auto-triggers enrichment flow  |
 | `enrich_universe.py`   | Adds Tier 1–3 signals, risk filters, sector mapping      |
 | `screenbuilder.py`     | Scores and tags all tickers by signal strength           |
 | `watchlist_builder.py` | Filters to final daily watchlist based on score/risk     |
-| `post_open_signals.py` | Combines early % move, TradingView data, sector strength |
-| `cache_manager.py`     | Cleans and resets stale files at start of day (4AM)      |
 
 ---
 
@@ -60,8 +59,26 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ---
 
-## 🚨 Key Fixes & Changes (v3.7+)
+## ▶️ How to Run
 
+```bash
+# Step 0 — Install dependencies (one-time setup)
+pip install -r backend/requirements.txt
+
+# Step 1 — Run Scheduler
+python3 backend/scheduler.py
+
+# Step 2 — Start backend API (FastAPI)
+uvicorn backend.main:app --reload --port 8000
+
+# Step 3 — Start frontend (Next.js)
+npm run dev
+```
+
+---
+
+## 🚨 Key Fixes & Changes (v3.7+)
+* ✅ Updated and Fixed API Endpoints
 * ✅ Automation and scheduled jobs now with `scheduler.py`
 * ✅ Auto-triggers screen + watchlist build after enrichment
 * ✅ 4:00 AM smart reset via `cache_manager.py`
@@ -100,13 +117,14 @@ backend/
 
 ## 📡 API Endpoints
 
-| Route                   | Purpose                             |
-| ----------------------- | ----------------------------------- |
-| `/api/autowatchlist`    | Final filtered watchlist            |
-| `/api/universe`         | Universe with scores + tier signals |
-| `/api/raw`              | Raw enriched data (pre-score)       |
-| `/api/sector`           | Sector ETF change + leaders         |
-| `/api/cache-timestamps` | File freshness for debug and UI     |
+| Route                   | Purpose                                  |
+| ----------------------- | ---------------------------------------- |
+| `/api/autowatchlist`    | Final filtered watchlist                 |
+| `/api/scored`           | Scored universe with tier signals        |
+| `/api/enriched`         | Enriched universe (pre-scoring)          |
+| `/api/raw`              | Raw pulled universe (from CSVs/static)   |
+| `/api/sector`           | Sector ETF % change and rotation data    |
+| `/api/cache-timestamps` | File freshness tracker for debugging/UI  |
 
 ---
 
@@ -115,6 +133,7 @@ backend/
 ### Next Steps and In Progress
 
 * ⏳ Optimize scrapers for speed
+* ⏳ 
 * ⏳ More logging for scheduler
 * ⏳ Make unified run script for frontend, backend, and scheduler
 
@@ -123,8 +142,7 @@ backend/
 * [ ] Frontend timestamp display (data freshness)
 * [ ] Backend risk filters fix
 * [ ] Frontend risk toggle fix
-* [ ] Universe Builder v2 (adjustable anchors, etc)
-* [ ] Customizable thresholds (e.g., rel vol %, volume floors)
+* [ ] Customizable thresholds via config API (SI, Rel Vol %, etc.) 
 * [ ] Admin Panel Build Start
 * [ ] Discord/Email alerts (failures/screener screenshots)
 * [ ] Docker deploy
@@ -143,7 +161,7 @@ backend/
 ---
 
 ## ⚠️ Known Issues
-
+* Gap up/down logic needs improvement
 * Premarket levels pending (needed for Momentum Confluence logic)
 * Risk filters pending (right now, most risk filtering happens in universe build)
 ---

@@ -1,0 +1,4366 @@
+{
+  "SPY": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0"
+  },
+  "V": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "DHR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "BLDR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "UPS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Integrated Freight & Logistics"
+  },
+  "HSIC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Distribution"
+  },
+  "TFC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "LVS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Resorts & Casinos"
+  },
+  "CBOE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "TPL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "MTCH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "WTW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "MDT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "REG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Retail"
+  },
+  "HST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Hotel & Motel"
+  },
+  "HD": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Cyclical",
+    "industry": "Home Improvement Retail"
+  },
+  "SPGI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "ICE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "ITW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "INCY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "IP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "NUE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Steel"
+  },
+  "DTE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "CAG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "EIX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "UHS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Care Facilities"
+  },
+  "EVRG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "AES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Diversified"
+  },
+  "SPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Retail"
+  },
+  "AME": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "GPN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Business Services"
+  },
+  "TMUS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Telecom Services"
+  },
+  "ELV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "NCLH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "PNW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "RTX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "F": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers"
+  },
+  "APA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "AMP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "CMCSA": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Telecom Services"
+  },
+  "BMY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "DVA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Care Facilities"
+  },
+  "EXE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "APO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "ALB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "POOL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution"
+  },
+  "PHM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Residential Construction"
+  },
+  "LW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "ULTA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail"
+  },
+  "FICO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "MDLZ": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Confectioners"
+  },
+  "VLTO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Pollution & Treatment Controls"
+  },
+  "SW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "LMND": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "EMR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "AMZN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail"
+  },
+  "ANET": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "MTB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "COF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "BBY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail"
+  },
+  "PNR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "HUM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "XOM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Integrated"
+  },
+  "LIN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "NEE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "RL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Apparel Manufacturing"
+  },
+  "CL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "IEX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "CNC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "MPWR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "HIMS": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "BBAI": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "AMC": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "APH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Electronic Components"
+  },
+  "CME": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "DD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "FTNT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "APP": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "CPT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "PFE": {
+    "sources": [
+      "sp500",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "COO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "BDX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "NWSA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "MSTR": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "ACN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "REGN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "EG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Reinsurance"
+  },
+  "PCG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "MKC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "NOW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "STE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "BAC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified"
+  },
+  "FE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "HPQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "KMX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto & Truck Dealerships"
+  },
+  "NWS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "MHK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Furnishings, Fixtures & Appliances"
+  },
+  "CRL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "CSCO": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Technology",
+    "industry": "Communication Equipment"
+  },
+  "MET": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Life"
+  },
+  "FIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "MMM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Industrials",
+    "industry": "Conglomerates"
+  },
+  "DLTR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores"
+  },
+  "URI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Rental & Leasing Services"
+  },
+  "TECH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "ROL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Personal Services"
+  },
+  "BAX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "MAR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Lodging"
+  },
+  "DOW": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Basic Materials",
+    "industry": "Chemicals"
+  },
+  "JBL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Electronic Components"
+  },
+  "GEV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "MMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "BK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified"
+  },
+  "PFG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "BX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "KDP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic"
+  },
+  "ORLY": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts"
+  },
+  "D": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "KMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "ADP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "LDOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "WEC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "PDD": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail"
+  },
+  "SBUX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "EQT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "ADSK": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "COP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "GDDY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "AVB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "GS": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "industry": "Capital Markets"
+  },
+  "WYNN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Resorts & Casinos"
+  },
+  "INTC": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "KSS": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Consumer Cyclical",
+    "industry": "Department Stores"
+  },
+  "KKR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "JNJ": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "FOXA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "VZ": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Communication Services",
+    "industry": "Telecom Services"
+  },
+  "TROW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "PH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "ZS": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "COST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores"
+  },
+  "FTV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
+  },
+  "QQQ": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0"
+  },
+  "SRE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Diversified"
+  },
+  "WRB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "STT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "TMO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "ORCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "FDX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Integrated Freight & Logistics"
+  },
+  "WBD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "AMAT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment & Materials"
+  },
+  "APTV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts"
+  },
+  "TYL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "EA": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Electronic Gaming & Multimedia"
+  },
+  "PEP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic"
+  },
+  "ESS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "TPR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Luxury Goods"
+  },
+  "VRTX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "KO": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic"
+  },
+  "ABNB": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "DGX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "KHC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "K": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "XEL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "LH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "PPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "MDB": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "MRNA": {
+    "sources": [
+      "sp500",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "ZBH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "WAB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Railroads"
+  },
+  "INVH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "SYF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "DHI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Residential Construction"
+  },
+  "PNC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "AKAM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "VTR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Healthcare Facilities"
+  },
+  "FITB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "PODD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "RMD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "IR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "LOW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Home Improvement Retail"
+  },
+  "MAA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "AAPL": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Technology",
+    "industry": "Consumer Electronics"
+  },
+  "LEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Residential Construction"
+  },
+  "LII": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "AZO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts"
+  },
+  "DLR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "EL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "AVGO": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "JKHY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "MO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Tobacco"
+  },
+  "CPRT": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Business Services"
+  },
+  "CMG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "DIS": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "CMI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "NRG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Independent Power Producers"
+  },
+  "BG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Farm Products"
+  },
+  "KIM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Retail"
+  },
+  "ENPH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Solar"
+  },
+  "MCO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "CFG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "WMT": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores"
+  },
+  "BLK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "PAYX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "WM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Waste Management"
+  },
+  "ATO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Gas"
+  },
+  "ERIE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "BRO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "GILD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "PG": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "CEG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Renewable"
+  },
+  "ODFL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Trucking"
+  },
+  "DUK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "NI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Gas"
+  },
+  "GEHC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Health Information Services"
+  },
+  "HSY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Confectioners"
+  },
+  "STZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Brewers"
+  },
+  "CSX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Railroads"
+  },
+  "VTRS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - Specialty & Generic"
+  },
+  "ADBE": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "DASH": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "VICI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Diversified"
+  },
+  "NEM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Gold"
+  },
+  "BYND": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "SCHW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Capital Markets"
+  },
+  "ON": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "OMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Advertising Agencies"
+  },
+  "AJG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "CHD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "ADM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Farm Products"
+  },
+  "CDW": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "HCA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Care Facilities"
+  },
+  "DE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery"
+  },
+  "EFX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Consulting Services"
+  },
+  "J": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Engineering & Construction"
+  },
+  "EQIX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "ADI": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "NSC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Railroads"
+  },
+  "PWR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Engineering & Construction"
+  },
+  "MCHP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "NFLX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "OXY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "FRT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Retail"
+  },
+  "CMS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "LULU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Apparel Retail"
+  },
+  "LLY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "MSI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Communication Equipment"
+  },
+  "DDOG": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "T": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Telecom Services"
+  },
+  "TRV": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "GD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "A": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "UDR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "WFC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified"
+  },
+  "BEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "TSCO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail"
+  },
+  "PLD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Industrial"
+  },
+  "VMC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Building Materials"
+  },
+  "AMD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "NXPI": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "AXON": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "WY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "EMN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "UAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Airlines"
+  },
+  "ALGN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "MSFT": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "CCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "IT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "TKO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "TDY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
+  },
+  "PYPL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "FANG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "EW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "KLAC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment & Materials"
+  },
+  "TEAM": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "HIG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "JNPR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Communication Equipment"
+  },
+  "STX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "EBAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail"
+  },
+  "RJF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "RF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "ED": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "COR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Distribution"
+  },
+  "QCOM": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "ABT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "UBER": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "BRK.B": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2"
+  },
+  "MS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Capital Markets"
+  },
+  "XLE": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1"
+  },
+  "BIIB": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "TRGP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Midstream"
+  },
+  "BKNG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "FAST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution"
+  },
+  "CNP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "TTWO": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Electronic Gaming & Multimedia"
+  },
+  "HES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "TER": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment & Materials"
+  },
+  "CVX": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Energy",
+    "industry": "Oil & Gas Integrated"
+  },
+  "SWK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Tools & Accessories"
+  },
+  "ZBRA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Communication Equipment"
+  },
+  "BR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "HAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  "MPC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  "GIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "AOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "DOV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "AEE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "ROP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "NVR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Residential Construction"
+  },
+  "TDG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "OKE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Midstream"
+  },
+  "ROST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Apparel Retail"
+  },
+  "TSLA": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers"
+  },
+  "IDXX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "SHW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "LRCX": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment & Materials"
+  },
+  "NDSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "ES": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "MU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "WSM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail"
+  },
+  "PGR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "GRMN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
+  },
+  "SWKS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "CRM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "PLTR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "ABBV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "OTIS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "JBHT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Integrated Freight & Logistics"
+  },
+  "LMT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "TSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Farm Products"
+  },
+  "CF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Agricultural Inputs"
+  },
+  "PKG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "CSGP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "Real Estate Services"
+  },
+  "NTRS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "UNP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Railroads"
+  },
+  "GEN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "RVTY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "DAL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Airlines"
+  },
+  "DECK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Footwear & Accessories"
+  },
+  "CBRE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "Real Estate Services"
+  },
+  "KEY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "AIZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "HPE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Communication Equipment"
+  },
+  "AFL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Life"
+  },
+  "JPM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified"
+  },
+  "CI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "WDAY": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "MCD": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "ALL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "CHTR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Telecom Services"
+  },
+  "CCEP": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic"
+  },
+  "WDC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "HUBB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Electrical Equipment & Parts"
+  },
+  "CB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "AEP": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "MTD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "WELL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Healthcare Facilities"
+  },
+  "ACGL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Diversified"
+  },
+  "VRSK": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Consulting Services"
+  },
+  "STLD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Steel"
+  },
+  "AIG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Diversified"
+  },
+  "IVZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Asset Management"
+  },
+  "MOS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Agricultural Inputs"
+  },
+  "RCL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "TT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "PSX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  "MRK": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "ARE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Office"
+  },
+  "CVS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "AWK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Water"
+  },
+  "APD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "EXPE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Travel Services"
+  },
+  "UNH": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "EXR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Industrial"
+  },
+  "GLW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Electronic Components"
+  },
+  "L": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "CLX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "BXP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Office"
+  },
+  "DXCM": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "AON": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance Brokers"
+  },
+  "MLM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Building Materials"
+  },
+  "TJX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Apparel Retail"
+  },
+  "PANW": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "JCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "KEYS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
+  },
+  "MA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "TAP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Brewers"
+  },
+  "EQR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Residential"
+  },
+  "GRRR": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "FCX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Copper"
+  },
+  "CARR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "CHRW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Integrated Freight & Logistics"
+  },
+  "SO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "KR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Grocery Stores"
+  },
+  "RSG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Waste Management"
+  },
+  "BA": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "WST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "WBA": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "industry": "Pharmaceutical Retailers"
+  },
+  "FOX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "META": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "NTAP": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "HOLX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "IPG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Advertising Agencies"
+  },
+  "DG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores"
+  },
+  "DFS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "CTRA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "LKQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts"
+  },
+  "CZR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Resorts & Casinos"
+  },
+  "EXC": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "MGM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Resorts & Casinos"
+  },
+  "IRM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "NKE": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Consumer Cyclical",
+    "industry": "Footwear & Accessories"
+  },
+  "GFS": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "VLO": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Refining & Marketing"
+  },
+  "HBAN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "MELI": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail"
+  },
+  "SNPS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "GOOGL": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "YUM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "LUV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Airlines"
+  },
+  "IBM": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "BNTX": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Healthcare",
+    "industry": "Biotechnology"
+  },
+  "O": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Retail"
+  },
+  "CCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "GL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Life"
+  },
+  "SMCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "GOOG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "BSX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "CTSH": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "FDS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "FI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "PRU": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Life"
+  },
+  "PARA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "PM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Tobacco"
+  },
+  "PAYC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "CPAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "GM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers"
+  },
+  "EOG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "LNT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "FFIV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "ETN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "BF.B": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2"
+  },
+  "C": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified"
+  },
+  "IFF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "IQV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "SJM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "NOC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "KMI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Midstream"
+  },
+  "DAY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "CAH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Distribution"
+  },
+  "GWW": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution"
+  },
+  "CPB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "DELL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Computer Hardware"
+  },
+  "SNA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Tools & Accessories"
+  },
+  "ASML": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment & Materials"
+  },
+  "SYK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Devices"
+  },
+  "LYB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "DRI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "CTAS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Business Services"
+  },
+  "TRMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
+  },
+  "HLT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Lodging"
+  },
+  "EPAM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Information Technology Services"
+  },
+  "DPZ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants"
+  },
+  "EXPD": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Integrated Freight & Logistics"
+  },
+  "HON": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Industrials",
+    "industry": "Conglomerates"
+  },
+  "CRWD": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "GNRC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "CDNS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "PCAR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery"
+  },
+  "SBAC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "SOLV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "TXN": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "ALLE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Security & Protection Services"
+  },
+  "TEL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Electronic Components"
+  },
+  "LYV": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Communication Services",
+    "industry": "Entertainment"
+  },
+  "HII": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "AXP": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "industry": "Credit Services"
+  },
+  "PPL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "HAS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Leisure"
+  },
+  "ANSS": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "GME": {
+    "sources": [
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail"
+  },
+  "SLB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  "ROK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "ETR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "BKR": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  "GPC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts"
+  },
+  "AMCR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "HRL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Packaged Foods"
+  },
+  "BALL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "DOC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Healthcare Facilities"
+  },
+  "ARM": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "TTD": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "CTVA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Agricultural Inputs"
+  },
+  "TGT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores"
+  },
+  "MRVL": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "AZN": {
+    "sources": [
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "ZTS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - Specialty & Generic"
+  },
+  "KVUE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+  },
+  "XYL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Specialty Industrial Machinery"
+  },
+  "VST": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Independent Power Producers"
+  },
+  "NDAQ": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "PEG": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "industry": "Utilities - Regulated Electric"
+  },
+  "CINF": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Insurance - Property & Casualty"
+  },
+  "DVN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P"
+  },
+  "GE": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "NVDA": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "anchor"
+    ],
+    "level": "L0",
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "MNST": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic"
+  },
+  "SYY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "industry": "Food Distribution"
+  },
+  "CAT": {
+    "sources": [
+      "sp500",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery"
+  },
+  "INTU": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "MAS": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Building Products & Equipment"
+  },
+  "WMB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "industry": "Oil & Gas Midstream"
+  },
+  "USB": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Banks - Regional"
+  },
+  "MSCI": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges"
+  },
+  "XLK": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1"
+  },
+  "ISRG": {
+    "sources": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Instruments & Supplies"
+  },
+  "XLF": {
+    "sources": [
+      "etf"
+    ],
+    "level": "L1"
+  },
+  "MKTX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "industry": "Capital Markets"
+  },
+  "MCK": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Medical Distribution"
+  },
+  "FSLR": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Solar"
+  },
+  "TXT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "LHX": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  },
+  "PTC": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Application"
+  },
+  "VRSN": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure"
+  },
+  "AMGN": {
+    "sources": [
+      "sp500",
+      "nasdaq100",
+      "dow30"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+  },
+  "AVY": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "industry": "Packaging & Containers"
+  },
+  "AMT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Specialty"
+  },
+  "PSA": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "industry": "REIT - Industrial"
+  },
+  "WAT": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Diagnostics & Research"
+  },
+  "ECL": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "industry": "Specialty Chemicals"
+  },
+  "MOH": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "industry": "Healthcare Plans"
+  },
+  "HWM": {
+    "sources": [
+      "sp500"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
+  }
+}

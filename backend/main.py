@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import json
 import os
+import re
 from datetime import datetime
 
 app = FastAPI()
@@ -17,66 +18,106 @@ app.add_middleware(
 
 CACHE_DIR = "backend/cache"
 
+# --- Utility Functions ---
 def load_json_file(path: str, label: str):
     if not os.path.exists(path):
-        return JSONResponse(
-            {"error": f"{label} not found at path: {path}"},
-            status_code=404
-        )
+        return JSONResponse({"error": f"{label} not found at path: {path}"}, status_code=404)
     with open(path, "r") as f:
         return JSONResponse(content=json.load(f))
 
-@app.get("/api/universe")
-async def get_universe():
-    path = os.path.join(CACHE_DIR, "universe_scored.json")
-    return load_json_file(path, "Scored universe")
+def load_latest_file(prefix: str, label: str, required=True):
+    files = [f for f in os.listdir(CACHE_DIR) if f.startswith(prefix) and f.endswith(".json")]
+    if not files:
+        if required:
+            return JSONResponse({"error": f"No file found for {label} with prefix {prefix}"}, status_code=404)
+        else:
+            return JSONResponse(content={})
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    path = os.path.join(CACHE_DIR, files[0])
+    with open(path, "r") as f:
+        return JSONResponse(content=json.load(f))
 
-@app.get("/api/sector")
-async def get_sector_rotation():
-    path = os.path.join(CACHE_DIR, "sector_etf_prices.json")
-    return load_json_file(path, "Sector ETF data")
+# --- API Endpoints ---
+@app.get("/api/scored")
+async def get_universe():
+    return load_latest_file("universe_scored_", "Scored Universe")
+
+@app.get("/api/enriched")
+async def get_universe_enriched():
+    return load_latest_file("universe_enriched_", "Enriched Universe")
 
 @app.get("/api/raw")
 async def get_universe_raw():
-    path = os.path.join(CACHE_DIR, "universe_cache.json")
-    return load_json_file(path, "Raw universe")
+    pattern = re.compile(r"^universe_\d{4}-\d{2}-\d{2}\.json$")
+    files = [f for f in os.listdir(CACHE_DIR) if pattern.match(f)]
+    if not files:
+        return JSONResponse({"error": "No raw universe file found with format universe_YYYY-MM-DD.json"}, status_code=404)
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    latest_file = os.path.join(CACHE_DIR, files[0])
+    with open(latest_file, "r") as f:
+        return JSONResponse(content=json.load(f))
+
+@app.get("/api/sector")
+async def get_sector_rotation():
+    # Find the latest dated post_open_signals file
+    files = [f for f in os.listdir(CACHE_DIR) if f.startswith("post_open_signals_") and f.endswith(".json")]
+    if not files:
+        return JSONResponse(content={"error": "No post_open_signals_<date>.json file found"}, status_code=404)
+
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+    latest_file = os.path.join(CACHE_DIR, files[0])
+
+    try:
+        with open(latest_file, "r") as f:
+            data = json.load(f)
+
+        sector_data = data.get("sectors")
+        if sector_data is None:
+            return JSONResponse(content={"error": "sector_rotation key not found in latest post_open_signals file"}, status_code=404)
+
+        return JSONResponse(content=sector_data)
+
+    except Exception as e:
+        return JSONResponse(content={"error": f"Failed to load or parse {files[0]} — {str(e)}"}, status_code=500)
+
+@app.get("/api/autowatchlist")
+async def get_watchlist():
+    return load_latest_file("autowatchlist_cache", "AutoWatchlist")
 
 @app.get("/api/cache-timestamps")
 async def get_cache_timestamps():
-    files = [
-        "tv_signals.json",
-        "sector_etf_prices.json",
-        "candles_5m.json",
-        "multi_day_levels.json",
+    tracked_files = [
+        "post_open_signals",
+        "945_signals",
         "short_interest.json",
-        "universe_enriched.json",
-        "universe_scored.json",
-        "autowatchlist_cache.json"
+        "universe_enriched",
+        "universe_scored",
+        "autowatchlist_cache"
     ]
 
     now = datetime.now()
-    freshness_minutes = 15
+    freshness_minutes = 1440
     output = {}
 
-    for fname in files:
-        full_path = os.path.join(CACHE_DIR, fname)
-        if os.path.exists(full_path):
+    for prefix in tracked_files:
+        matching = [f for f in os.listdir(CACHE_DIR) if f.startswith(prefix)]
+        if matching:
+            matching.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
+            f = matching[0]
+            full_path = os.path.join(CACHE_DIR, f)
             modified_ts = os.path.getmtime(full_path)
             modified_dt = datetime.fromtimestamp(modified_ts)
             is_fresh = (now - modified_dt).total_seconds() < freshness_minutes * 60
-            output[fname] = {
+            output[prefix] = {
+                "filename": f,
                 "last_modified": modified_dt.strftime("%Y-%m-%d %H:%M:%S"),
                 "is_fresh": is_fresh
             }
         else:
-            output[fname] = {
+            output[prefix] = {
+                "filename": "Missing",
                 "last_modified": "Missing",
                 "is_fresh": False
             }
 
     return JSONResponse(content=output)
-
-@app.get("/api/autowatchlist")
-async def get_watchlist():
-    path = os.path.join(CACHE_DIR, "autowatchlist_cache.json")
-    return load_json_file(path, "AutoWatchlist")
