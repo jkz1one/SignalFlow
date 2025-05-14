@@ -15,11 +15,19 @@ export default function WatchlistPage() {
   const [data, setData] = useState<Stock[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:8008/autowatchlist')
+    fetch('/api/autowatchlist')
       .then((res) => res.json())
       .then((json) => {
-        console.log('API response:', json); // 🔍 inspect backend structure
-        setData(json);
+        console.log('API response:', json);
+        const parsed = Object.entries(json).map(([symbol, entry]) => ({
+          symbol,
+          score: entry.score,
+          tags: entry.tags || [],
+          tier1: entry.tierHits?.T1 || [],
+          tier2: entry.tierHits?.T2 || [],
+          tier3: entry.tierHits?.T3 || [],
+        }));
+        setData(parsed);
       });
   }, []);
 
@@ -39,10 +47,10 @@ export default function WatchlistPage() {
                 <div><span className="text-green-400 font-semibold">T1:</span> {stock.tier1.join(', ')}</div>
               )}
               {stock.tier2?.length > 0 && (
-                <div><span className="text-yellow-300 font-semibold">T2:</span> {stock.tier2.join(', ')}</div>
+                <div><span className="text-blue-300 font-semibold">T2:</span> {stock.tier2.join(', ')}</div>
               )}
               {stock.tier3?.length > 0 && (
-                <div><span className="text-pink-300 font-semibold">T3:</span> {stock.tier3.join(', ')}</div>
+                <div><span className="text-purple-400 font-semibold">T3:</span> {stock.tier3.join(', ')}</div>
               )}
             </div>
           </div>

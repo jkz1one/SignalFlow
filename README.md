@@ -78,6 +78,7 @@ npm run dev
 ---
 
 ## 🚨 Key Fixes & Changes (v3.7+)
+* ✅ Updated frontend with new working Sector Rotation tab
 * ✅ Updated and Fixed API Endpoints
 * ✅ Automation and scheduled jobs now with `scheduler.py`
 * ✅ Auto-triggers screen + watchlist build after enrichment
@@ -133,6 +134,7 @@ backend/
 ### Next Steps and In Progress
 
 * ⏳ Optimize scrapers for speed
+* ⏳ Seperate sector rotation scrape and run hourly
 * ⏳ Add sector rotation page
 * ⏳ More logging for scheduler
 * ⏳ Make unified run script for frontend, backend, and scheduler
