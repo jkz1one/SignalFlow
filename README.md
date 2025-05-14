@@ -133,7 +133,7 @@ backend/
 ### Next Steps and In Progress
 
 * ⏳ Optimize scrapers for speed
-* ⏳ 
+* ⏳ Add sector rotation page
 * ⏳ More logging for scheduler
 * ⏳ Make unified run script for frontend, backend, and scheduler
 
