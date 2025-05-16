@@ -68,8 +68,8 @@ pip install -r backend/requirements.txt
 # Step 1 — Run Scheduler
 python3 backend/scheduler.py
 
-# Step 1 — Run Scheduler
-python3 backend/scheduler.py
+# Step 3 — Run Sector WS
+python3 backend/signals/sector_ws_signals.py
 
 # Step 3 — Start backend API (FastAPI)
 uvicorn backend.main:app --reload --port 8000
