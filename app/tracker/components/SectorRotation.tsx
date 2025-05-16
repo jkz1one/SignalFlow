@@ -3,10 +3,9 @@
 import { useEffect, useState } from 'react';
 
 interface SectorData {
-  sector: string; // ETF symbol like XLF
-  changePercent: number;
-  fullName?: string;
-  leaders?: string[];
+  sector: string;               // ETF symbol like XLF
+  changePercent: number;        // always defined, skip malformed entries
+  fullName?: string;            // full sector name
 }
 
 const SECTOR_NAME_MAP: Record<string, string> = {
@@ -33,15 +32,24 @@ export default function SectorRotation() {
         const res = await fetch('/api/sector');
         const json = await res.json();
 
-        const parsed = Object.entries(json).map(([sector, data]: [string, any]) => ({
-          sector,
-          changePercent: data.pct_change,
-          fullName: SECTOR_NAME_MAP[sector] || sector,
-        }));
-
-        setSectors(parsed);
+        if (!json || typeof json !== 'object' || Object.keys(json).length === 0) {
+          // API blank or completely missing
+          setSectors([]);
+        } else {
+          // Skip malformed or missing entries
+          const parsed = Object.entries(json)
+            .filter(([, data]: [string, any]) => data && Number.isFinite(data.pct_change))
+            .map(([symbol, data]: [string, any]) => ({
+              sector: symbol,
+              changePercent: data.pct_change as number,
+              fullName: SECTOR_NAME_MAP[symbol] || '',
+            }));
+          setSectors(parsed);
+        }
       } catch (err) {
         console.error('Failed to fetch sector data', err);
+        // On error, treat as no data
+        setSectors([]);
       } finally {
         setLoading(false);
       }
@@ -54,7 +62,7 @@ export default function SectorRotation() {
     return <div className="text-gray-400 text-sm">Loading sector data...</div>;
   }
 
-  if (!sectors.length) {
+  if (sectors.length === 0) {
     return <div className="text-gray-400 text-sm">No sector data available.</div>;
   }
 
@@ -67,17 +75,17 @@ export default function SectorRotation() {
         >
           <div className="flex justify-between items-center">
             <div className="text-xl font-bold text-gray-100">
-              {sector.sector} <span className="text-gray-400 text-sm">({sector.fullName})</span>
+              {sector.sector}
+              {sector.fullName && (
+                <span className="text-gray-400 text-sm"> ({sector.fullName})</span>
+              )}
             </div>
             <div
               className={`text-lg font-semibold ${
-                sector.changePercent >= 0
-                  ? 'text-green-400'
-                  : 'text-red-400'
+                sector.changePercent >= 0 ? 'text-green-400' : 'text-red-400'
               }`}
             >
-              {sector.changePercent >= 0 ? '+' : ''}
-              {sector.changePercent.toFixed(2)}%
+              {`${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`}
             </div>
           </div>
         </div>
@@ -85,3 +93,4 @@ export default function SectorRotation() {
     </div>
   );
 }
+
