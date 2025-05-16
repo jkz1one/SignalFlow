@@ -62,3 +62,37 @@
 2025-05-14 09:46:16,855 — INFO — Job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='45', second='50'], next run at: 2025-05-15 09:45:50 EDT)" executed successfully
 2025-05-14 10:46:26,320 — INFO — 🛑 Scheduler shutdown... 
 2025-05-14 10:46:26,329 — INFO — Scheduler has been shut down
+2025-05-16 09:03:59,891 — INFO — 📅 Scheduler initializing...
+2025-05-16 09:04:04,893 — INFO — ⏱️ Starting Cache Manager at 2025-05-16T09:04:04.893099
+2025-05-16 09:04:04,953 — INFO — ✅ Cache Manager completed at 2025-05-16T09:04:04.953392 (duration: 0.06s)
+2025-05-16 09:04:04,954 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-16 09:04:04,959 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-05-16 09:04:04,959 — INFO — 🔁 Checking for missed jobs...
+2025-05-16 09:04:05,269 — INFO — ✅ 2025-05-16 is a market day.
+2025-05-16 09:04:05,270 — INFO — ⏱️ Starting Universe Builder at 2025-05-16T09:04:05.270242
+2025-05-16 09:05:44,329 — INFO — ✅ Universe Builder completed at 2025-05-16T09:05:44.329431 (duration: 99.06s)
+2025-05-16 09:05:44,329 — INFO — ⏱️ Starting Short Interest at 2025-05-16T09:05:44.329939
+2025-05-16 09:05:46,100 — INFO — ✅ Short Interest completed at 2025-05-16T09:05:46.100360 (duration: 1.77s)
+2025-05-16 09:05:46,100 — INFO — ⏲️ Scheduling daily jobs now
+2025-05-16 09:05:46,107 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-16 09:05:46,107 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-16 09:05:46,108 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-16 09:05:46,108 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-16 09:05:46,108 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-16 09:05:46,111 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-16 09:05:46,111 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-16 09:05:46,111 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-16 09:05:46,112 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-16 09:05:46,112 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-16 09:05:46,112 — INFO — Scheduler started
+2025-05-16 09:05:46,112 — INFO — ✅ APScheduler started.
+2025-05-16 09:35:50,005 — INFO — Running job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='35', second='50'], next run at: 2025-05-16 09:35:50 EDT)" (scheduled at 2025-05-16 09:35:50-04:00)
+2025-05-16 09:35:50,229 — INFO — ✅ 2025-05-16 is a market day.
+2025-05-16 09:35:50,229 — INFO — ⏱️ Starting Post Open Signals at 2025-05-16T09:35:50.229430
+2025-05-16 09:45:50,002 — INFO — Running job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='45', second='50'], next run at: 2025-05-16 09:45:50 EDT)" (scheduled at 2025-05-16 09:45:50-04:00)
+2025-05-16 09:45:50,232 — INFO — ✅ 2025-05-16 is a market day.
+2025-05-16 09:45:50,232 — INFO — ⏱️ Starting 945 Signals at 2025-05-16T09:45:50.232394
+2025-05-16 09:45:51,165 — INFO — ✅ 945 Signals completed at 2025-05-16T09:45:51.164995 (duration: 0.93s)
+2025-05-16 09:45:51,165 — INFO — Job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='45', second='50'], next run at: 2025-05-17 09:45:50 EDT)" executed successfully
+2025-05-16 09:50:22,733 — INFO — ✅ Post Open Signals completed at 2025-05-16T09:50:22.733219 (duration: 872.50s)
+2025-05-16 09:50:22,733 — INFO — Job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='35', second='50'], next run at: 2025-05-17 09:35:50 EDT)" executed successfully
