@@ -68,16 +68,20 @@ pip install -r backend/requirements.txt
 # Step 1 — Run Scheduler
 python3 backend/scheduler.py
 
-# Step 2 — Start backend API (FastAPI)
+# Step 1 — Run Scheduler
+python3 backend/scheduler.py
+
+# Step 3 — Start backend API (FastAPI)
 uvicorn backend.main:app --reload --port 8000
 
-# Step 3 — Start frontend (Next.js)
+# Step 4 — Start frontend (Next.js)
 npm run dev
 ```
 
 ---
 
 ## 🚨 Key Fixes & Changes (v3.7+)
+* ✅ Sector Rotation Tab is Live Updating
 * ✅ Updated frontend with new working Sector Rotation tab
 * ✅ Updated and Fixed API Endpoints
 * ✅ Automation and scheduled jobs now with `scheduler.py`
@@ -124,7 +128,7 @@ backend/
 | `/api/scored`           | Scored universe with tier signals        |
 | `/api/enriched`         | Enriched universe (pre-scoring)          |
 | `/api/raw`              | Raw pulled universe (from CSVs/static)   |
-| `/api/sector`           | Sector ETF % change and rotation data    |
+| `/api/sector`           | Live Sector ETF % change and data        |
 | `/api/cache-timestamps` | File freshness tracker for debugging/UI  |
 
 ---
@@ -162,6 +166,7 @@ backend/
 ---
 
 ## ⚠️ Known Issues
+* 
 * Gap up/down logic needs improvement
 * Premarket levels pending (needed for Momentum Confluence logic)
 * Risk filters pending (right now, most risk filtering happens in universe build)

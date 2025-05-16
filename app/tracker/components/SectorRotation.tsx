@@ -3,60 +3,64 @@
 import { useEffect, useState } from 'react';
 
 interface SectorData {
-  sector: string;               // ETF symbol like XLF
-  changePercent: number;        // always defined, skip malformed entries
-  fullName?: string;            // full sector name
+  symbol: string;      // ETF ticker, e.g., XLF
+  fullName: string;    // full sector name from API
+  price: number;       // current price from API
+  changePercent: number; // percent change value
 }
-
-const SECTOR_NAME_MAP: Record<string, string> = {
-  XLF: 'Financials',
-  XLK: 'Technology',
-  XLE: 'Energy',
-  XLV: 'Healthcare',
-  XLY: 'Consumer Discretionary',
-  XLI: 'Industrials',
-  XLP: 'Consumer Staples',
-  XLU: 'Utilities',
-  XLRE: 'Real Estate',
-  XLB: 'Materials',
-  XLC: 'Communication Services',
-};
 
 export default function SectorRotation() {
   const [sectors, setSectors] = useState<SectorData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  const [secondsSince, setSecondsSince] = useState<number>(0);
 
+  // Fetch data once
   useEffect(() => {
     async function fetchSectors() {
       try {
         const res = await fetch('/api/sector');
         const json = await res.json();
+        const raw = json.data && typeof json.data === 'object' ? json.data : {};
 
-        if (!json || typeof json !== 'object' || Object.keys(json).length === 0) {
-          // API blank or completely missing
-          setSectors([]);
-        } else {
-          // Skip malformed or missing entries
-          const parsed = Object.entries(json)
-            .filter(([, data]: [string, any]) => data && Number.isFinite(data.pct_change))
-            .map(([symbol, data]: [string, any]) => ({
-              sector: symbol,
-              changePercent: data.pct_change as number,
-              fullName: SECTOR_NAME_MAP[symbol] || '',
-            }));
-          setSectors(parsed);
-        }
+        const parsed: SectorData[] = Object.entries(raw)
+          .filter(([, entry]: [string, any]) =>
+            entry && typeof entry.changePercent === 'number' && typeof entry.price === 'number'
+          )
+          .map(([symbol, entry]: [string, any]) => ({
+            symbol,
+            fullName: entry.sector || '',
+            price: entry.price,
+            changePercent: entry.changePercent,
+          }));
+
+        setSectors(parsed);
+        setLastUpdated(new Date());
       } catch (err) {
         console.error('Failed to fetch sector data', err);
-        // On error, treat as no data
         setSectors([]);
       } finally {
         setLoading(false);
       }
     }
 
+    // initial fetch
     fetchSectors();
+    // poll every 30 seconds
+    const interval = setInterval(fetchSectors, 30000);
+    return () => clearInterval(interval);
   }, []);
+
+  // Update secondsSince every second
+  useEffect(() => {
+    if (!lastUpdated) return;
+    // Initialize immediately
+    setSecondsSince(Math.floor((Date.now() - lastUpdated.getTime()) / 1000));
+    const timer = setInterval(() => {
+      setSecondsSince(Math.floor((Date.now() - lastUpdated.getTime()) / 1000));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [lastUpdated]);
 
   if (loading) {
     return <div className="text-gray-400 text-sm">Loading sector data...</div>;
@@ -68,29 +72,34 @@ export default function SectorRotation() {
 
   return (
     <div className="space-y-4">
-      {sectors.map((sector) => (
-        <div
-          key={sector.sector}
-          className="bg-gray-800 rounded-lg shadow-md px-4 py-3"
-        >
-          <div className="flex justify-between items-center">
-            <div className="text-xl font-bold text-gray-100">
-              {sector.sector}
-              {sector.fullName && (
-                <span className="text-gray-400 text-sm"> ({sector.fullName})</span>
-              )}
-            </div>
-            <div
-              className={`text-lg font-semibold ${
-                sector.changePercent >= 0 ? 'text-green-400' : 'text-red-400'
-              }`}
-            >
-              {`${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`}
+      {[...sectors].sort((a, b) => b.changePercent - a.changePercent).map((sector) => {
+        const colorClass = sector.changePercent >= 0 ? 'text-green-400' : 'text-red-400';
+        return (
+          <div
+            key={sector.symbol}
+            className="bg-gray-800 rounded-lg shadow-md px-4 py-3"
+          >
+            <div className="flex justify-between items-center">
+              <div className="text-xl font-bold text-gray-100">
+                {sector.symbol}
+                {sector.fullName && (
+                  <span className="text-gray-400 text-sm"> ({sector.fullName})</span>
+                )}
+              </div>
+              <div className="flex flex-col items-end text-right gap-2">
+                <div className="text-lg font-semibold text-gray-100">${sector.price.toFixed(2)}</div>
+                <div className={`text-xl font-bold ${colorClass}`}>{
+                  `${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`
+                }</div>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
+      <div className="flex w-full justify-end text-gray-400 text-xs">
+        Updated at {lastUpdated?.toLocaleTimeString()}
+        {secondsSince !== null && ` (${secondsSince}s ago)`}
+      </div>
     </div>
   );
 }
-

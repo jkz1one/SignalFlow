@@ -96,3 +96,5 @@
 2025-05-16 09:45:51,165 — INFO — Job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='45', second='50'], next run at: 2025-05-17 09:45:50 EDT)" executed successfully
 2025-05-16 09:50:22,733 — INFO — ✅ Post Open Signals completed at 2025-05-16T09:50:22.733219 (duration: 872.50s)
 2025-05-16 09:50:22,733 — INFO — Job "schedule_jobs.<locals>.<lambda> (trigger: cron[hour='9', minute='35', second='50'], next run at: 2025-05-17 09:35:50 EDT)" executed successfully
+2025-05-16 12:12:06,803 — INFO — 🛑 Scheduler shutdown... 
+2025-05-16 12:12:06,810 — INFO — Scheduler has been shut down

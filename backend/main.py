@@ -59,26 +59,32 @@ async def get_universe_raw():
 
 @app.get("/api/sector")
 async def get_sector_rotation():
-    # Find the latest dated post_open_signals file
-    files = [f for f in os.listdir(CACHE_DIR) if f.startswith("post_open_signals_") and f.endswith(".json")]
+    # Find the latest dated sector file
+    files = [f for f in os.listdir(CACHE_DIR) if f.startswith("sector_") and f.endswith(".json")]
     if not files:
-        return JSONResponse(content={"error": "No post_open_signals_<date>.json file found"}, status_code=404)
+        return JSONResponse(content={"error": "No sector_<date>.json file found"}, status_code=404)
 
     files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
-    latest_file = os.path.join(CACHE_DIR, files[0])
+    latest_filename = files[0]
+    latest_path = os.path.join(CACHE_DIR, latest_filename)
 
     try:
-        with open(latest_file, "r") as f:
-            data = json.load(f)
+        with open(latest_path, "r") as f:
+            sector_data = json.load(f)
 
-        sector_data = data.get("sectors")
-        if sector_data is None:
-            return JSONResponse(content={"error": "sector_rotation key not found in latest post_open_signals file"}, status_code=404)
+        # Strip prefix/suffix to get date
+        file_date = latest_filename[len("sector_"):-len(".json")]
 
-        return JSONResponse(content=sector_data)
+        return JSONResponse(content={
+            "date": file_date,
+            "data": sector_data
+        })
 
     except Exception as e:
-        return JSONResponse(content={"error": f"Failed to load or parse {files[0]} — {str(e)}"}, status_code=500)
+        return JSONResponse(
+            content={"error": f"Failed to load or parse {latest_filename} — {str(e)}"},
+            status_code=500
+        )
 
 @app.get("/api/autowatchlist")
 async def get_watchlist():
