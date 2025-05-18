@@ -9,7 +9,7 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 ---
 
 ![example](https://github.com/user-attachments/assets/97ff525c-fe60-4af3-8952-d913e9e46a75)
-![image](https://github.com/user-attachments/assets/dbaacba1-95dd-48ff-8fa6-381fb34b5aa1)
+![image](https://github.com/user-attachments/assets/d0366268-1cc5-4364-80d5-bb63d9c17dab)
 
 ---
 
@@ -145,6 +145,8 @@ backend/
 
 ### Upcoming
 
+* [ ] Improve gap logic
+* [ ] Add more info to sector page (maybe with dropdown?) 
 * [ ] Frontend timestamp display (data freshness)
 * [ ] Backend risk filters fix
 * [ ] Frontend risk toggle fix
