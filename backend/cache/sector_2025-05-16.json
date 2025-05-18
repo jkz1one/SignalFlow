@@ -2,7 +2,7 @@
   "XLK": {
     "sector": "Technology",
     "price": 234.31,
-    "changePercent": 0.0
+    "changePercent": -1
   },
   "XLF": {
     "sector": "Financials",
@@ -52,7 +52,7 @@
   "XLC": {
     "sector": "Communication Services",
     "price": 101.57,
-    "changePercent": 0.09
+    "changePercent": -0.09
   },
   "_timestamp": "2025-05-16T17:28:24.643917Z"
 }

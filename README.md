@@ -20,9 +20,12 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 - Live at `/tracker` via Next.js
 - Displays:
   - Watchlist of scored stocks
-  - Tier hits (T1, T2, T3)
-  - Risk tags (e.g., Low Liquidity, Wide Spread)
-  - Custom labels like “Strong Setup” or “Squeeze Watch”
+    - Tier hits (T1, T2, T3)
+    - Risk tags (e.g., Low Liquidity, Wide Spread)
+    - Custom labels like “Strong Setup” or “Squeeze Watch”
+  - Sector rotation tracker
+    - Live updates
+    - Auto sorts highest to lowest
 
 - Interactive filters:
   - Tier toggle (T1/T2/T3)
@@ -138,41 +141,50 @@ backend/
 
 ### Next Steps and In Progress
 
-* ⏳ Optimize scrapers for speed
-* ⏳ Seperate sector rotation scrape and run hourly
-* ⏳ More logging for scheduler
-* ⏳ Make unified run script for frontend, backend, and scheduler
+* [~] Optimize scrapers for speed
+* [~] Finish integrating new post open signals
+* [~] Improve gap logic
 
-### Upcoming
+### On Deck
 
-* [ ] Improve gap logic
+* [ ] Build DevOps runner to run all scripts at once
+* [ ] Update enrich universe to deal with new post open signals
+* [ ] Add VIX / SPY / QQQ Context Bar to Watchlist Page (live with websocket)
+* [ ] Try lazy-loaded websockets for both WS
 * [ ] Add more info to sector page (maybe with dropdown?) 
 * [ ] Frontend timestamp display (data freshness)
+
+### Upcoming
 * [ ] Backend risk filters fix
 * [ ] Frontend risk toggle fix
+* [ ] Make stocks that score 3 and below hide with risk filter
 * [ ] Customizable thresholds via config API (SI, Rel Vol %, etc.) 
-* [ ] Admin Panel Build Start
-* [ ] Discord/Email alerts (failures/screener screenshots)
+* [ ] Customizable anchor tickers
+* [ ] Start admin page build
+* [ ] Admin page toggles for variables
+* [ ] Integreate momentum tracker into middle tab
+* [ ] Use lazy-loaded WS and add search feature to middle tab
 * [ ] Docker deploy
 
-## 🧪 Long-Term Goals
 
-- Admin page toggles for variables.
-- Replay / Backtest mode
-- Multi-screener (Opening, Swing, Overnight)
-- Unified screener with all logic toggles.
-- GEX / 0DTE / Options Flow overlays
-- Watchlist alerts + email/export
-- Replay/backtest signal flow
-- Sentiment overlays (SPX/SPY, VIX/VIXY)
+### 🧪 Long-Term Goals
+
+* [ ] Discord/Email alerts (failures/screener screenshots)
+* [ ] Multi-screener (Opening, Swing, Overnight)
+* [ ] Unified screener with all logic toggles.
+* [ ] GEX / 0DTE / Options Flow overlays
+* [ ] Watchlist alerts + email/export
+* [ ] Replay/backtest mode 
+* [ ] Live Movers / Real-Time Heatmap tab
 
 ---
 
 ## ⚠️ Known Issues
-* 
+
 * Gap up/down logic needs improvement
 * Premarket levels pending (needed for Momentum Confluence logic)
 * Risk filters pending (right now, most risk filtering happens in universe build)
+
 ---
 
 > Built for speed. Modular by design. Validate before trading.  
