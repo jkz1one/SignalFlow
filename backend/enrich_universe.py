@@ -7,6 +7,8 @@ from pytz import timezone
 
 # --- Setup ---
 CACHE_DIR = "backend/cache"
+GAP_THRESHOLD = 0.005  # 0.5% gap threshold (can be made dynamic later)
+
 
 # --- Helpers ---
 def load_json(path):
@@ -51,11 +53,11 @@ sector_prices = post_open.get("sectors", {})
 
 multi_day_data = {
     symbol: {
-        "high": data.get("high"),
-        "low": data.get("low")
+        "hi_10d": data.get("hi_10d"),
+        "lo_10d": data.get("lo_10d")
     }
     for symbol, data in tv_signals.items()
-    if data.get("high") is not None and data.get("low") is not None
+    if data.get("hi_10d") is not None and data.get("lo_10d") is not None
 }
 
 def enrich_with_tv_signals(universe, tv_data):
@@ -69,6 +71,10 @@ def enrich_with_tv_signals(universe, tv_data):
         if tv:
             signals = info.setdefault("signals", {})
             # Map data from post_open_signals to universe fields
+            if "pd_hi" in tv:
+                info["pd_hi"] = tv["pd_hi"]
+            if "pd_lo" in tv:
+                info["pd_lo"] = tv["pd_lo"]            
             if "last_price" in tv:
                 info["last_price"] = tv["last_price"]
             if "vol_latest" in tv:
@@ -82,11 +88,7 @@ def enrich_with_tv_signals(universe, tv_data):
             if "open_price" in tv:
                 info["open_price"] = tv["open_price"]
             if "prev_close" in tv:
-                info["prev_close"] = tv["prev_close"]
-            if "high" in tv:
-                info["multi_day_high"] = tv["high"]
-            if "low" in tv:
-                info["multi_day_low"] = tv["low"]            
+                info["prev_close"] = tv["prev_close"]        
             if "early_percent_move" in tv:                
                 # Tier 2: Early % Move
                 epm = tv["early_percent_move"]
@@ -191,9 +193,9 @@ def enrich_with_candles(universe, candle_data):
 def enrich_with_multi_day_levels(universe, multi_day_data):
     for symbol, info in universe.items():
         data = multi_day_data.get(symbol)
-        if data and "high" in data and "low" in data:
-            info["high_10d"] = data["high"]
-            info["low_10d"] = data["low"]
+        if data and "hi_10d" in data and "lo_10d" in data:
+            info["hi_10d"] = data["hi_10d"]
+            info["lo_10d"] = data["lo_10d"]
     return universe
 
 def enrich_with_short_interest(universe, short_data):
@@ -225,21 +227,26 @@ def apply_signal_flags(universe):
         vol_latest = info.get("vol_latest", 0)
         avg_vol_10d = info.get("avg_vol_10d", 0)
         post = post_open_signals.get(symbol, {})
+        pd_hi = post.get("pd_hi")
+        pd_lo = post.get("pd_lo")
 
         # Initialize tierHits and reasons
         info.setdefault("tierHits", {"T1": [], "T2": [], "T3": []})
         info.setdefault("reasons", [])
 
         # --- Tier 1: Gap Up / Gap Down ---
-        if open_price is not None and prev_close is not None:
-            if open_price > prev_close * 1.01:  # Gap Up
+
+
+        if open_price is not None:
+            if pd_hi is not None and open_price > pd_hi:
                 signals["gap_up"] = True
                 info["tierHits"]["T1"].append("gap_up")
                 info["reasons"].append("T1: gap_up")
-            elif open_price < prev_close * 0.99:  # Gap Down
+            elif pd_lo is not None and open_price < pd_lo:
                 signals["gap_down"] = True
                 info["tierHits"]["T1"].append("gap_down")
                 info["reasons"].append("T1: gap_down")
+
 
         # --- Tier 1: Break Above/Below 9:30–9:40 Range ---
         if last_price is not None and high is not None and last_price > high:
@@ -291,11 +298,12 @@ def apply_signal_flags(universe):
             info["reasons"].append("T3: top_volume_gainer")
 
         # --- Tier 3: Near Multi-Day High/Low ---
-        if last_price and info.get("high_10d") and last_price >= info["high_10d"] * 0.98:
+        if last_price and info.get("hi_10d") and last_price >= info["hi_10d"] * 0.98:
             signals["near_multi_day_high"] = True
             info["tierHits"]["T3"].append("near_multi_day_high")
             info["reasons"].append("T3: near_multi_day_high")
-        if last_price and info.get("low_10d") and last_price <= info["low_10d"] * 1.02:
+
+        if last_price and info.get("lo_10d") and last_price <= info["lo_10d"] * 1.02:
             signals["near_multi_day_low"] = True
             info["tierHits"]["T3"].append("near_multi_day_low")
             info["reasons"].append("T3: near_multi_day_low")

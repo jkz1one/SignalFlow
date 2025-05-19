@@ -85,7 +85,14 @@ npm run dev
 ---
 
 ## 🚨 Key Fixes & Changes (v3.7+)
+
+* ✅ Gap threshold set to be dynamic in the future
+* ✅ Implented improved gap up logic
+* ✅ Optimized `post_open_signals.py`
 * ✅ Sector Rotation Tab is Live Updating
+
+### Key Fixes & Changes (v3.72)
+
 * ✅ Updated frontend with new working Sector Rotation tab
 * ✅ Updated and Fixed API Endpoints
 * ✅ Automation and scheduled jobs now with `scheduler.py`
@@ -113,6 +120,7 @@ backend/
 │   ├── enrich_watchdog.py        # Watches signal files, triggers enrichment
 │   ├── fetch_short_interest.py   # Pulls short float data from FINRA/Nasdaq
 │   ├── post_open_signals.py      # Combines rel vol, % move, sector strength
+│   ├── sector_ws_signals.py      # Websocket script for sector rotation tab
 │   └── universe_builder.py       # Builds base universe from anchor levels
 ├── cache_manager.py         # Clears stale cache at 4AM or on demand
 ├── enrich_universe.py       # Combines signals, applies tiers and risk filters
@@ -141,9 +149,7 @@ backend/
 
 ### Next Steps and In Progress
 
-* [~] Optimize scrapers for speed
-* [~] Finish integrating new post open signals
-* [~] Improve gap logic
+* [ ] Add sort toggle to sector rotation tab
 
 ### On Deck
 

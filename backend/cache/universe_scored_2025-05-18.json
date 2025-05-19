@@ -11,7 +11,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -19,8 +23,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AIZ": {
     "score": 6,
@@ -35,7 +38,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -44,8 +52,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PNR": {
     "score": 5,
@@ -59,7 +66,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -67,8 +78,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NEE": {
     "score": 4,
@@ -82,7 +92,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -90,8 +104,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ANSS": {
     "score": 3,
@@ -104,15 +117,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "HAL": {
     "score": 3,
@@ -125,15 +140,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NTAP": {
     "score": 4,
@@ -147,7 +164,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -155,8 +176,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "STZ": {
     "score": 8,
@@ -171,7 +191,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -180,8 +205,7 @@
       "gap_up": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ROP": {
     "score": 3,
@@ -194,15 +218,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "DTE": {
     "score": 4,
@@ -216,7 +242,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -224,8 +254,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ANET": {
     "score": 3,
@@ -238,15 +267,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EXC": {
     "score": 3,
@@ -259,15 +290,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PSX": {
     "score": 4,
@@ -281,7 +314,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -289,8 +326,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ZBRA": {
     "score": 3,
@@ -303,15 +339,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "BK": {
     "score": 5,
@@ -325,7 +363,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -333,8 +375,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PAYX": {
     "score": 4,
@@ -348,7 +389,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -356,8 +401,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GLW": {
     "score": 4,
@@ -371,7 +415,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -379,8 +427,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TTWO": {
     "score": 4,
@@ -393,15 +440,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
     "signals": {
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ABBV": {
     "score": 3,
@@ -414,15 +463,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BR": {
     "score": 3,
@@ -435,15 +486,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "GRRR": {
     "score": 3,
@@ -456,15 +509,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DXCM": {
     "score": 4,
@@ -478,7 +533,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -486,8 +545,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CTRA": {
     "score": 3,
@@ -500,15 +558,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CVX": {
     "score": 4,
@@ -522,7 +582,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Energy",
     "tags": [],
@@ -530,8 +594,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "STE": {
     "score": 8,
@@ -548,7 +611,13 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -558,8 +627,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GFS": {
     "score": 4,
@@ -573,7 +641,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -581,8 +653,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WBA": {
     "score": 4,
@@ -596,7 +667,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
@@ -604,8 +679,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TMO": {
     "score": 3,
@@ -618,15 +692,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GWW": {
     "score": 4,
@@ -639,15 +715,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "high_rel_vol": true
-    },
-    "isBlocked": false
+    }
   },
   "NOW": {
     "score": 4,
@@ -661,7 +739,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -669,8 +751,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WMB": {
     "score": 3,
@@ -683,15 +764,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HSIC": {
     "score": 3,
@@ -704,15 +787,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "TEL": {
     "score": 4,
@@ -726,7 +811,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -734,8 +823,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EIX": {
     "score": 4,
@@ -749,7 +837,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -757,8 +849,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "APH": {
     "score": 4,
@@ -772,7 +863,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -780,8 +875,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "POOL": {
     "score": 7,
@@ -795,7 +889,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -803,8 +901,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "high_rel_vol": true
-    },
-    "isBlocked": false
+    }
   },
   "FANG": {
     "score": 3,
@@ -817,15 +914,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "SO": {
     "score": 3,
@@ -838,15 +937,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BYND": {
     "score": 7,
@@ -862,19 +963,21 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: squeeze_watch",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Squeeze Watch"
-    ],
+    "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "squeeze_watch": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ADSK": {
     "score": 7,
@@ -890,7 +993,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -899,8 +1007,7 @@
       "weak_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CTSH": {
     "score": 10,
@@ -917,7 +1024,13 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -927,8 +1040,7 @@
       "gap_down": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "XLF": {
     "score": 5,
@@ -942,7 +1054,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": null,
     "tags": [],
@@ -950,8 +1066,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AFL": {
     "score": 5,
@@ -965,7 +1080,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -973,8 +1092,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MCK": {
     "score": 4,
@@ -988,7 +1106,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -996,8 +1118,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LLY": {
     "score": 6,
@@ -1012,7 +1133,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -1020,8 +1145,7 @@
       "strong_sector": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CSCO": {
     "score": 3,
@@ -1034,15 +1158,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PFE": {
     "score": 3,
@@ -1055,15 +1181,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "KSS": {
     "score": 5,
@@ -1077,7 +1205,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -1085,8 +1217,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LRCX": {
     "score": 4,
@@ -1100,7 +1231,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1108,8 +1243,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MSI": {
     "score": 4,
@@ -1123,7 +1257,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1131,8 +1269,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GEHC": {
     "score": 3,
@@ -1145,15 +1282,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GPC": {
     "score": 5,
@@ -1167,7 +1306,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -1175,8 +1318,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AMC": {
     "score": 6,
@@ -1191,7 +1333,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Communication Services",
     "tags": [],
@@ -1200,8 +1347,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CPT": {
     "score": 5,
@@ -1215,7 +1361,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
@@ -1223,8 +1373,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "KMI": {
     "score": 4,
@@ -1238,7 +1387,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1246,8 +1399,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BBAI": {
     "score": 6,
@@ -1262,7 +1414,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
@@ -1270,8 +1426,7 @@
       "weak_sector": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FIS": {
     "score": 4,
@@ -1285,7 +1440,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1293,8 +1452,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "VTR": {
     "score": 4,
@@ -1307,15 +1465,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
     "signals": {
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WDAY": {
     "score": 7,
@@ -1331,7 +1491,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1340,8 +1505,7 @@
       "weak_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "INVH": {
     "score": 5,
@@ -1355,7 +1519,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
@@ -1363,8 +1531,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GILD": {
     "score": 3,
@@ -1377,15 +1544,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BKR": {
     "score": 4,
@@ -1399,7 +1568,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1407,8 +1580,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FTNT": {
     "score": 3,
@@ -1421,15 +1593,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MDB": {
     "score": 7,
@@ -1445,7 +1619,12 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1454,8 +1633,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "COR": {
     "score": 3,
@@ -1468,15 +1646,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MU": {
     "score": 4,
@@ -1490,7 +1670,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1498,8 +1682,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HUM": {
     "score": 3,
@@ -1512,15 +1695,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PPG": {
     "score": 4,
@@ -1533,15 +1718,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "UBER": {
     "score": 4,
@@ -1555,7 +1742,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1563,8 +1754,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EOG": {
     "score": 4,
@@ -1578,7 +1768,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1586,8 +1780,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MSCI": {
     "score": 4,
@@ -1600,15 +1793,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "high_rel_vol": true
-    },
-    "isBlocked": false
+    }
   },
   "PEG": {
     "score": 4,
@@ -1622,7 +1817,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -1630,8 +1829,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NXPI": {
     "score": 4,
@@ -1645,7 +1843,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1653,8 +1855,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AKAM": {
     "score": 3,
@@ -1667,15 +1868,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TER": {
     "score": 3,
@@ -1688,15 +1891,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HOLX": {
     "score": 3,
@@ -1709,15 +1914,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PCG": {
     "score": 4,
@@ -1731,7 +1938,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -1739,8 +1950,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "JNJ": {
     "score": 3,
@@ -1753,15 +1963,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PODD": {
     "score": 3,
@@ -1774,15 +1986,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "CDW": {
     "score": 3,
@@ -1795,15 +2009,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "HPQ": {
     "score": 4,
@@ -1817,7 +2033,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1825,8 +2045,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "JNPR": {
     "score": 5,
@@ -1841,7 +2060,12 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1850,8 +2074,7 @@
       "near_multi_day_low": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "VLO": {
     "score": 4,
@@ -1865,7 +2088,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1873,8 +2100,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "APP": {
     "score": 3,
@@ -1887,15 +2113,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FTV": {
     "score": 4,
@@ -1909,7 +2137,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1917,8 +2149,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WDC": {
     "score": 4,
@@ -1932,7 +2163,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1940,8 +2175,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "COO": {
     "score": 3,
@@ -1954,15 +2188,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "UHS": {
     "score": 3,
@@ -1975,15 +2211,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "XOM": {
     "score": 4,
@@ -1997,7 +2235,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -2005,8 +2247,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CNP": {
     "score": 6,
@@ -2021,7 +2262,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2029,8 +2274,7 @@
       "strong_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LDOS": {
     "score": 4,
@@ -2044,7 +2288,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -2052,8 +2300,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AMGN": {
     "score": 3,
@@ -2066,15 +2313,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HPE": {
     "score": 3,
@@ -2087,15 +2336,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ISRG": {
     "score": 4,
@@ -2109,7 +2360,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -2117,8 +2372,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "JKHY": {
     "score": 3,
@@ -2131,15 +2385,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "EPAM": {
     "score": 6,
@@ -2154,7 +2410,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -2162,8 +2422,7 @@
       "weak_sector": true,
       "gap_down": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CAH": {
     "score": 4,
@@ -2177,7 +2436,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -2185,8 +2448,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WMT": {
     "score": 5,
@@ -2200,7 +2462,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -2208,8 +2474,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CRM": {
     "score": 4,
@@ -2223,7 +2488,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Technology",
     "tags": [],
@@ -2231,8 +2500,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EQT": {
     "score": 3,
@@ -2245,15 +2513,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "VST": {
     "score": 7,
@@ -2269,7 +2539,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2278,8 +2553,7 @@
       "strong_sector": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MCHP": {
     "score": 3,
@@ -2292,15 +2566,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TECH": {
     "score": 3,
@@ -2313,15 +2589,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DELL": {
     "score": 4,
@@ -2335,7 +2613,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -2343,8 +2625,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DE": {
     "score": 5,
@@ -2358,7 +2639,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -2366,8 +2651,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "IBM": {
     "score": 4,
@@ -2381,7 +2665,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Technology",
     "tags": [],
@@ -2389,8 +2677,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ASML": {
     "score": 3,
@@ -2403,15 +2690,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LYB": {
     "score": 4,
@@ -2424,15 +2713,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BIIB": {
     "score": 4,
@@ -2446,7 +2737,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -2454,8 +2749,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MKC": {
     "score": 4,
@@ -2468,15 +2762,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NI": {
     "score": 3,
@@ -2489,15 +2785,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FE": {
     "score": 4,
@@ -2511,7 +2809,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2519,8 +2821,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DAY": {
     "score": 4,
@@ -2534,7 +2835,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -2542,8 +2847,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CMS": {
     "score": 3,
@@ -2556,15 +2860,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TTD": {
     "score": 3,
@@ -2577,15 +2883,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NRG": {
     "score": 7,
@@ -2601,7 +2909,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2610,8 +2923,7 @@
       "strong_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "IDXX": {
     "score": 3,
@@ -2624,15 +2936,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "TYL": {
     "score": 3,
@@ -2645,15 +2959,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "CCL": {
     "score": 5,
@@ -2667,7 +2983,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -2675,8 +2995,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CNC": {
     "score": 3,
@@ -2689,15 +3008,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GOOG": {
     "score": 5,
@@ -2711,7 +3032,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
@@ -2719,8 +3044,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AEE": {
     "score": 3,
@@ -2733,15 +3057,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DFS": {
     "score": 5,
@@ -2755,7 +3081,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -2763,8 +3093,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ATO": {
     "score": 3,
@@ -2777,15 +3106,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CLX": {
     "score": 4,
@@ -2798,15 +3129,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FI": {
     "score": 6,
@@ -2821,7 +3154,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -2829,8 +3166,7 @@
       "weak_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CVS": {
     "score": 3,
@@ -2843,15 +3179,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TEAM": {
     "score": 3,
@@ -2864,15 +3202,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LH": {
     "score": 3,
@@ -2885,15 +3225,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "AVGO": {
     "score": 3,
@@ -2906,15 +3248,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TDY": {
     "score": 3,
@@ -2927,15 +3271,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "GEN": {
     "score": 3,
@@ -2948,15 +3294,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "A": {
     "score": 3,
@@ -2969,15 +3317,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "KLAC": {
     "score": 3,
@@ -2990,15 +3340,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ARM": {
     "score": 4,
@@ -3012,7 +3364,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3020,8 +3376,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "XEL": {
     "score": 7,
@@ -3037,7 +3392,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3046,8 +3406,7 @@
       "strong_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ADBE": {
     "score": 11,
@@ -3065,7 +3424,14 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3076,8 +3442,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CHRW": {
     "score": 5,
@@ -3091,7 +3456,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -3099,8 +3468,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PNW": {
     "score": 3,
@@ -3113,15 +3481,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AZO": {
     "score": 4,
@@ -3134,15 +3504,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "high_rel_vol": true
-    },
-    "isBlocked": false
+    }
   },
   "D": {
     "score": 4,
@@ -3156,7 +3528,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3164,8 +3540,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AZN": {
     "score": 3,
@@ -3178,15 +3553,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EQR": {
     "score": 6,
@@ -3201,7 +3578,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
@@ -3210,8 +3592,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AMD": {
     "score": 6,
@@ -3226,7 +3607,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3234,8 +3619,7 @@
       "weak_sector": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MSTR": {
     "score": 3,
@@ -3248,15 +3632,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AES": {
     "score": 3,
@@ -3269,15 +3655,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "LNT": {
     "score": 4,
@@ -3291,7 +3679,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3299,8 +3691,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PPL": {
     "score": 3,
@@ -3313,15 +3704,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NVDA": {
     "score": 7,
@@ -3337,7 +3730,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
@@ -3346,8 +3744,7 @@
       "weak_sector": true,
       "top_volume_gainer": true,
       "gap_up": true
-    },
-    "isBlocked": false
+    }
   },
   "MRNA": {
     "score": 5,
@@ -3361,18 +3758,19 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: squeeze_watch",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Healthcare",
-    "tags": [
-      "Squeeze Watch"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "squeeze_watch": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NEM": {
     "score": 4,
@@ -3385,15 +3783,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "gap_down": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TXN": {
     "score": 4,
@@ -3407,7 +3807,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3415,8 +3819,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TPL": {
     "score": 3,
@@ -3429,15 +3832,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "MRK": {
     "score": 3,
@@ -3450,15 +3855,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "COP": {
     "score": 3,
@@ -3471,15 +3878,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PANW": {
     "score": 4,
@@ -3493,7 +3902,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3501,8 +3914,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AEP": {
     "score": 3,
@@ -3515,15 +3927,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FDS": {
     "score": 5,
@@ -3537,7 +3951,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -3545,8 +3963,7 @@
       "near_multi_day_high": true,
       "high_rel_vol": true,
       "high_volume": true
-    },
-    "isBlocked": false
+    }
   },
   "CI": {
     "score": 3,
@@ -3559,15 +3976,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ADI": {
     "score": 4,
@@ -3581,7 +4000,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3589,8 +4012,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ZTS": {
     "score": 4,
@@ -3604,7 +4026,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -3612,8 +4038,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "VTRS": {
     "score": 3,
@@ -3626,15 +4051,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "RVTY": {
     "score": 3,
@@ -3647,15 +4074,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BMY": {
     "score": 3,
@@ -3668,15 +4097,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AMAT": {
     "score": 10,
@@ -3693,7 +4124,13 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3703,8 +4140,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "SWKS": {
     "score": 4,
@@ -3718,7 +4154,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3726,8 +4166,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PAYC": {
     "score": 3,
@@ -3740,15 +4179,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "ED": {
     "score": 3,
@@ -3761,15 +4202,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GRMN": {
     "score": 3,
@@ -3782,15 +4225,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "UNH": {
     "score": 10,
@@ -3807,7 +4252,13 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
@@ -3817,8 +4268,7 @@
       "gap_up": true,
       "high_rel_vol": true,
       "high_volume": true
-    },
-    "isBlocked": false
+    }
   },
   "MAA": {
     "score": 5,
@@ -3832,7 +4282,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
@@ -3840,8 +4294,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "OXY": {
     "score": 3,
@@ -3854,15 +4307,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "INTU": {
     "score": 7,
@@ -3878,7 +4333,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3887,8 +4347,7 @@
       "weak_sector": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ADP": {
     "score": 4,
@@ -3902,7 +4361,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3910,8 +4373,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AWK": {
     "score": 3,
@@ -3924,15 +4386,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EXE": {
     "score": 4,
@@ -3946,7 +4410,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -3954,8 +4422,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "SNPS": {
     "score": 3,
@@ -3968,15 +4435,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "SMCI": {
     "score": 9,
@@ -3993,20 +4462,23 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: squeeze_watch",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
-    "tags": [
-      "Squeeze Watch"
-    ],
+    "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true,
       "gap_up": true,
       "squeeze_watch": true
-    },
-    "isBlocked": false
+    }
   },
   "MPC": {
     "score": 4,
@@ -4020,7 +4492,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -4028,8 +4504,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MDT": {
     "score": 4,
@@ -4043,7 +4518,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4051,8 +4530,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "KEYS": {
     "score": 3,
@@ -4065,15 +4543,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "ELV": {
     "score": 6,
@@ -4088,7 +4568,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4096,8 +4580,7 @@
       "strong_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "INCY": {
     "score": 4,
@@ -4111,7 +4594,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4119,8 +4606,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EL": {
     "score": 4,
@@ -4133,15 +4619,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BDX": {
     "score": 4,
@@ -4155,7 +4643,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4163,8 +4655,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EW": {
     "score": 4,
@@ -4178,7 +4669,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4186,8 +4681,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TRMB": {
     "score": 3,
@@ -4200,15 +4694,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "DGX": {
     "score": 7,
@@ -4224,7 +4720,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4233,8 +4734,7 @@
       "strong_sector": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PDD": {
     "score": 4,
@@ -4247,15 +4747,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
     "signals": {
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ETR": {
     "score": 3,
@@ -4268,15 +4770,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "COF": {
     "score": 5,
@@ -4290,7 +4794,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -4298,8 +4806,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "QCOM": {
     "score": 4,
@@ -4313,7 +4820,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -4321,8 +4832,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DVN": {
     "score": 3,
@@ -4335,15 +4845,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DHR": {
     "score": 3,
@@ -4356,15 +4868,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FSLR": {
     "score": 3,
@@ -4377,15 +4891,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MRVL": {
     "score": 3,
@@ -4398,15 +4914,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HES": {
     "score": 4,
@@ -4420,7 +4938,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -4428,8 +4950,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "JBL": {
     "score": 3,
@@ -4442,15 +4963,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "ENPH": {
     "score": 3,
@@ -4463,15 +4986,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ON": {
     "score": 3,
@@ -4484,15 +5009,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "APA": {
     "score": 3,
@@ -4505,15 +5032,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CRL": {
     "score": 3,
@@ -4526,15 +5055,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WEC": {
     "score": 3,
@@ -4547,15 +5078,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ORCL": {
     "score": 4,
@@ -4569,7 +5102,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -4577,8 +5114,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FFIV": {
     "score": 3,
@@ -4591,15 +5127,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "VRTX": {
     "score": 3,
@@ -4612,15 +5150,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CHTR": {
     "score": 6,
@@ -4635,7 +5175,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
@@ -4644,8 +5189,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DUK": {
     "score": 3,
@@ -4658,15 +5202,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ES": {
     "score": 4,
@@ -4680,7 +5226,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -4688,8 +5238,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "STX": {
     "score": 4,
@@ -4703,7 +5252,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -4711,8 +5264,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DVA": {
     "score": 3,
@@ -4725,15 +5277,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "SLB": {
     "score": 3,
@@ -4746,15 +5300,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "RMD": {
     "score": 3,
@@ -4767,15 +5323,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "strong_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "INTC": {
     "score": 3,
@@ -4788,15 +5346,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PTC": {
     "score": 3,
@@ -4809,15 +5369,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "ZS": {
     "score": 4,
@@ -4831,7 +5393,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -4839,8 +5405,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "OKE": {
     "score": 3,
@@ -4853,15 +5418,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CRWD": {
     "score": 3,
@@ -4874,15 +5441,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GOOGL": {
     "score": 5,
@@ -4896,7 +5465,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
@@ -4904,8 +5477,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "NFLX": {
     "score": 5,
@@ -4919,7 +5491,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
@@ -4927,8 +5503,7 @@
       "near_multi_day_high": true,
       "gap_up": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DDOG": {
     "score": 4,
@@ -4942,7 +5517,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -4950,8 +5529,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PLTR": {
     "score": 3,
@@ -4964,15 +5542,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "SYK": {
     "score": 4,
@@ -4986,7 +5566,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -4994,8 +5578,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BAX": {
     "score": 3,
@@ -5008,15 +5591,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ZBH": {
     "score": 3,
@@ -5029,15 +5614,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EVRG": {
     "score": 3,
@@ -5050,15 +5637,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "K": {
     "score": 3,
@@ -5071,7 +5660,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -5079,8 +5672,7 @@
       "near_multi_day_high": true,
       "near_multi_day_low": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "SRE": {
     "score": 4,
@@ -5094,7 +5686,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -5102,8 +5698,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ROL": {
     "score": 6,
@@ -5118,7 +5713,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -5127,8 +5727,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MSFT": {
     "score": 4,
@@ -5142,7 +5741,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
@@ -5150,8 +5753,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CEG": {
     "score": 4,
@@ -5165,7 +5767,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -5173,8 +5779,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "HCA": {
     "score": 4,
@@ -5188,7 +5793,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -5196,8 +5805,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AAPL": {
     "score": 4,
@@ -5211,7 +5819,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
@@ -5219,8 +5831,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CDNS": {
     "score": 4,
@@ -5234,7 +5845,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -5242,8 +5857,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EXPD": {
     "score": 6,
@@ -5258,7 +5872,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -5267,8 +5886,7 @@
       "high_rel_vol": true,
       "high_volume": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ABT": {
     "score": 4,
@@ -5282,7 +5900,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -5290,8 +5912,7 @@
       "near_multi_day_high": true,
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "IT": {
     "score": 3,
@@ -5304,15 +5925,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "TRGP": {
     "score": 3,
@@ -5325,15 +5948,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "FICO": {
     "score": 3,
@@ -5346,15 +5971,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "near_multi_day_high": true,
       "weak_sector": true
-    },
-    "isBlocked": false
+    }
   },
   "GDDY": {
     "score": 4,
@@ -5368,7 +5995,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -5376,8 +6007,7 @@
       "near_multi_day_high": true,
       "weak_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "ACN": {
     "score": 6,
@@ -5392,7 +6022,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -5400,8 +6034,7 @@
       "weak_sector": true,
       "gap_down": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "IQV": {
     "score": 3,
@@ -5414,14 +6047,16 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "strong_sector": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   }
 }
