@@ -14,8 +14,9 @@ export default function SectorRotation() {
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [secondsSince, setSecondsSince] = useState<number>(0);
+  const [sortDescending, setSortDescending] = useState(true); // true: gainers→losers
 
-  // Fetch data once
+  // Fetch & poll data
   useEffect(() => {
     async function fetchSectors() {
       try {
@@ -44,17 +45,14 @@ export default function SectorRotation() {
       }
     }
 
-    // initial fetch
     fetchSectors();
-    // poll every 30 seconds
     const interval = setInterval(fetchSectors, 30000);
     return () => clearInterval(interval);
   }, []);
 
-  // Update secondsSince every second
+  // Live timer
   useEffect(() => {
     if (!lastUpdated) return;
-    // Initialize immediately
     setSecondsSince(Math.floor((Date.now() - lastUpdated.getTime()) / 1000));
     const timer = setInterval(() => {
       setSecondsSince(Math.floor((Date.now() - lastUpdated.getTime()) / 1000));
@@ -70,9 +68,30 @@ export default function SectorRotation() {
     return <div className="text-gray-400 text-sm">No sector data available.</div>;
   }
 
+  // Sort based on toggle
+  const sorted = [...sectors].sort((a, b) =>
+    sortDescending
+      ? b.changePercent - a.changePercent
+      : a.changePercent - b.changePercent
+  );
+
   return (
-    <div className="space-y-4">
-      {[...sectors].sort((a, b) => b.changePercent - a.changePercent).map((sector) => {
+    <div className="space-y-4 w-full">
+      {/* Toggle button */}
+      <div className="flex w-full">
+        <div className="ml-auto min-w-[180px]">
+          <select
+            value={sortDescending ? 'desc' : 'asc'}
+            onChange={e => setSortDescending(e.target.value === 'desc')}
+            className="bg-gray-700 text-gray-200 text-sm px-2 py-1 rounded"
+          >
+            <option value="desc">Gainers → Losers</option>
+            <option value="asc">Losers → Gainers</option>
+          </select>
+        </div>
+      </div>
+
+      {sorted.map((sector) => {
         const colorClass = sector.changePercent >= 0 ? 'text-green-400' : 'text-red-400';
         return (
           <div
@@ -87,7 +106,9 @@ export default function SectorRotation() {
                 )}
               </div>
               <div className="flex flex-col items-end text-right gap-2">
-                <div className="text-lg font-semibold text-gray-100">${sector.price.toFixed(2)}</div>
+                <div className="text-lg font-semibold text-gray-400">
+                  ${sector.price.toFixed(2)}
+                </div>
                 <div className={`text-xl font-bold ${colorClass}`}>{
                   `${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`
                 }</div>
@@ -96,9 +117,9 @@ export default function SectorRotation() {
           </div>
         );
       })}
+
       <div className="flex w-full justify-end text-gray-400 text-xs">
-        Updated at {lastUpdated?.toLocaleTimeString()}
-        {secondsSince !== null && ` (${secondsSince}s ago)`}
+        Updated at {lastUpdated?.toLocaleTimeString()} ({secondsSince}s ago)
       </div>
     </div>
   );

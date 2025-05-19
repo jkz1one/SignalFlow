@@ -46,8 +46,6 @@ current_date_str = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-
 OUTPUT_PATH = os.path.join(CACHE_DIR, f"universe_enriched_{current_date_str}.json")
 post_open = load_json(os.path.join(CACHE_DIR, f"post_open_signals_{TODAY}.json"))
 candles = load_json(os.path.join(CACHE_DIR, f"945_signals_{TODAY}.json"))
-short_interest = load_json(os.path.join(CACHE_DIR, "short_interest.json"))
-
 tv_signals = post_open.get("tickers", {})  # derived from post_open_signals
 sector_prices = post_open.get("sectors", {})
 
@@ -71,37 +69,39 @@ def enrich_with_tv_signals(universe, tv_data):
         if tv:
             signals = info.setdefault("signals", {})
             # Map data from post_open_signals to universe fields
-            if "pd_hi" in tv:
-                info["pd_hi"] = tv["pd_hi"]
-            if "pd_lo" in tv:
-                info["pd_lo"] = tv["pd_lo"]            
-            if "last_price" in tv:
-                info["last_price"] = tv["last_price"]
-            if "vol_latest" in tv:
-                info["vol_latest"] = tv["vol_latest"]
-            if "pct_change" in tv:
-                info["pct_change"] = tv["pct_change"]
-            if "rel_vol" in tv:
-                info["rel_vol"] = tv["rel_vol"]
-            if "avg_vol_10d" in tv:
-                info["avg_vol_10d"] = tv["avg_vol_10d"]
-            if "open_price" in tv:
-                info["open_price"] = tv["open_price"]
-            if "prev_close" in tv:
-                info["prev_close"] = tv["prev_close"]        
-            if "early_percent_move" in tv:                
-                # Tier 2: Early % Move
-                epm = tv["early_percent_move"]
-                info["early_percent_move"] = epm
-                if abs(epm) >= 2.5:
-                    signals["early_move"] = epm
+            info.update({
+                "pd_hi": tv.get("pd_hi"),
+                "pd_lo": tv.get("pd_lo"),
+                "last_price": tv.get("last_price"),
+                "vol_latest": tv.get("vol_latest"),
+                "pct_change": tv.get("pct_change"),
+                "rel_vol": tv.get("rel_vol"),
+                "avg_vol_10d": tv.get("avg_vol_10d"),
+                "open_price": tv.get("open_price"),
+                "prev_close": tv.get("prev_close"),
+                "early_percent_move": tv.get("early_percent_move"),
+                "shortPercentOfFloat": tv.get("shortPercentOfFloat"),
+            })
+
+            if abs(tv.get("early_percent_move", 0)) >= 2.5:
+                signals["early_move"] = tv["early_percent_move"]
+
+            # Import the existing squeeze_watch flag directly
+            if tv.get("squeeze_watch"):
+                signals["squeeze_watch"] = True
 
             # Tier 3: Near multi-day high / low
             if tv.get("near_multi_day_high"):
                 signals["near_multi_day_high"] = True
             if tv.get("near_multi_day_low"):
                 signals["near_multi_day_low"] = True
+
+            # Import top volume gainer flag as well
+            if tv.get("top_volume_gainer"):
+                signals["top_volume_gainer"] = True
+
     return universe
+
 
 def enrich_with_sector(universe, sector_data):
     for symbol, info in universe.items():
@@ -198,20 +198,41 @@ def enrich_with_multi_day_levels(universe, multi_day_data):
             info["lo_10d"] = data["lo_10d"]
     return universe
 
-def enrich_with_short_interest(universe, short_data):
-    for symbol, info in universe.items():
-        si = short_data.get(symbol.upper())
-        rel_vol = info.get("rel_vol", 0)
-        change = info.get("pct_change", 0)
+def enrich_with_short_interest(universe, tv_signals):
+    """
+    Pulls normalized tv_signals[symbol]["shortPercentOfFloat"] → universe[...]["shortPercentOfFloat"]
+    and pre-flags squeeze_watch when criteria are met.
+    """
+    # Normalize tv_signals keys first (matching enrich_with_tv_signals)
+    normalized_tv_data = {}
+    for k, v in tv_signals.items():
+        base = k.split(".")[0].upper()
+        normalized_tv_data[base] = v
 
-        if si:
-            short_pct = si.get("shortPercentOfFloat", 0)
-            if (
-                short_pct >= 0.18 and
-                rel_vol > 1.2 and
-                abs(change) >= 1.2
-            ):
-                info.setdefault("signals", {})["squeeze_watch"] = True
+    flagged = 0
+    for symbol, info in universe.items():
+        tv = normalized_tv_data.get(symbol.upper(), {})
+        sp = tv.get("shortPercentOfFloat")
+        if sp is None:
+            continue
+
+        # Store shortPercentOfFloat in universe data
+        info["shortPercentOfFloat"] = sp
+
+        rel_vol = info.get("rel_vol", 0)
+        pct_change = abs(info.get("pct_change", 0))
+
+        # Debugging output
+        print(f"🔍 {symbol}: short%={sp:.3f}, rel_vol={rel_vol:.2f}, pct_change={pct_change:.2f}%")
+
+        # Squeeze Watch logic
+        if sp >= 0.1 and rel_vol > 1.0 and pct_change >= 1.0:
+            signals = info.setdefault("signals", {})
+            signals["squeeze_watch"] = True
+            flagged += 1
+            print(f"🚩 Squeeze Watch flagged: {symbol}")
+
+    print(f"📌 Total Squeeze Watch flags set: {flagged}")
     return universe
 
 # apply_signal_flags
@@ -272,10 +293,9 @@ def apply_signal_flags(universe):
             info["reasons"].append("T2: early_move")
 
         # --- Tier 2: Squeeze Watch ---
-        if post.get("squeeze_watch"):
-            signals["squeeze_watch"] = True
+        if info.get("signals", {}).get("squeeze_watch"):
             info["tierHits"]["T2"].append("squeeze_watch")
-            info["reasons"].append("T2: squeeze_watch")
+            info["reasons"] .append("T2: squeeze_watch")
 
         # --- Tier 2: Sector Rotation ---
         if signals.get("strong_sector"):
@@ -354,7 +374,6 @@ def main():
     print("🚀 Starting enrichment...")
     print(f"📦 Loaded {len(universe)} tickers")
 
-    # Wrap each step in try/except to handle missing data gracefully
     try:
         universe = enrich_with_tv_signals(universe, tv_signals)
     except Exception as e:
@@ -376,17 +395,13 @@ def main():
     except Exception as e:
         print(f"⚠️ Error enriching multi-day levels: {e}")
 
-    try:
-        universe = enrich_with_short_interest(universe, short_interest)
-    except Exception as e:
-        print(f"⚠️ Error enriching short interest: {e}")
-
     # Final processing
     universe = flag_top_volume_gainers(universe)
     try:
         universe = apply_signal_flags(universe)
     except Exception as e:
         print(f"⚠️ Error applying signal flags: {e}")
+
     universe = inject_risk_flags(universe)
 
     # Timestamp and save

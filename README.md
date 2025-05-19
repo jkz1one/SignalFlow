@@ -51,9 +51,8 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 ## 🔁 Daily Automation Flow
 
 ### 🕒 Timed by Scheduler
-0. **4:00 AM** - `cache_manager.py`
-1. **5:00 AM** – `universe_builder.py` 
-2. **9:35 AM** – `fetch_short_interest.py` 
+1. **4:00 AM** - `cache_manager.py`
+2. **5:00 AM** – `universe_builder.py` 
 3. **9:35 AM** – `post_open_signals.py` 
 4. **9:45 AM**  - `945_signals.py`
 5. **Auto** – `enrich_watchdog.py` detects new signals → triggers `enrich_universe.py`  
@@ -69,16 +68,19 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 # Step 0 — Install dependencies (one-time setup)
 pip install -r backend/requirements.txt
 
-# Step 1 — Run Scheduler
+# Step 1 - Activate Virtual Environment
+source backend/screener-venv/bin/activate 
+
+# Step 2 — Run Scheduler
 python3 backend/scheduler.py
 
 # Step 3 — Run Sector WS
 python3 backend/signals/sector_ws_signals.py
 
-# Step 3 — Start backend API (FastAPI)
+# Step 4 — Start backend API (FastAPI)
 uvicorn backend.main:app --reload --port 8000
 
-# Step 4 — Start frontend (Next.js)
+# Step 5 — Start frontend (Next.js)
 npm run dev
 ```
 
@@ -86,10 +88,14 @@ npm run dev
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
-* ✅ Gap threshold set to be dynamic in the future
+* ✅ Squeeze watch set to be dynamic
+* ✅ Sort toggle added to sector rotation tab
+* ✅ `post_open_signals.py` now fetches SI for all tickers
+* ✅ `fetch_short_interest.py` depreciated
+* ✅ Gap threshold set to be dynamic
 * ✅ Implented improved gap up logic
 * ✅ Optimized `post_open_signals.py`
-* ✅ Sector Rotation Tab is Live Updating
+* ✅ Sector Rotation Tab live updates
 
 ### Key Fixes & Changes (v3.72)
 
@@ -118,7 +124,6 @@ backend/
 ├── signals/                 # Signal scrapers and enrichment triggers
 │   ├── 945_signals.py            # Scrapes 9:30–9:40 range breakout data
 │   ├── enrich_watchdog.py        # Watches signal files, triggers enrichment
-│   ├── fetch_short_interest.py   # Pulls short float data from FINRA/Nasdaq
 │   ├── post_open_signals.py      # Combines rel vol, % move, sector strength
 │   ├── sector_ws_signals.py      # Websocket script for sector rotation tab
 │   └── universe_builder.py       # Builds base universe from anchor levels
@@ -149,7 +154,6 @@ backend/
 
 ### Next Steps and In Progress
 
-* [ ] Add sort toggle to sector rotation tab
 
 ### On Deck
 
@@ -170,6 +174,7 @@ backend/
 * [ ] Admin page toggles for variables
 * [ ] Integreate momentum tracker into middle tab
 * [ ] Use lazy-loaded WS and add search feature to middle tab
+* [ ] Break down scrape/enrichment/etc. scripts into smallers parts
 * [ ] Docker deploy
 
 

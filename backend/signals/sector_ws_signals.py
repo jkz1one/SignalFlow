@@ -79,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--interval",
         type=int,
-        default=int(os.getenv('INTERVAL_SECONDS', '60')),
+        default=int(os.getenv('INTERVAL_SECONDS', '30')),
         help="Polling interval in seconds (env: INTERVAL_SECONDS)"
     )
     args = parser.parse_args()
