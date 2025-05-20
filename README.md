@@ -8,8 +8,9 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ---
 
-![example](https://github.com/user-attachments/assets/97ff525c-fe60-4af3-8952-d913e9e46a75)
-![image](https://github.com/user-attachments/assets/d0661c74-cc40-4cbb-8b97-a9882bb05e28)
+![image](https://github.com/user-attachments/assets/7bd2d131-eeb0-4378-91b0-09ca3354b524)
+![image](https://github.com/user-attachments/assets/1db93560-2cef-4984-b4a4-2a924424c153)
+
 
 ---
 
