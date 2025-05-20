@@ -1,4 +1,4 @@
-# backend/signals/sector_rotation_ws.py
+# backend/signals/sector_signals.py
 import os
 import json
 import asyncio

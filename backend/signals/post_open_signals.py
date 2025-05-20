@@ -2,6 +2,7 @@ import os
 import json
 import time
 import random
+import math
 from datetime import datetime
 from tqdm import tqdm
 import yfinance as yf
@@ -81,8 +82,14 @@ def fetch_batch_data(symbols):
             past_vols = d_df["Volume"][:-1]
             today_vol = d_df["Volume"].iloc[-1]
             avg_vol = past_vols.mean()
-            result["rel_vol"] = round(today_vol / avg_vol, 2) if avg_vol else None
-            result["avg_vol_10d"] = int(avg_vol)
+
+            # Handle NaN or zero
+            if pd.notnull(avg_vol) and avg_vol > 0:
+                result["avg_vol_10d"] = int(avg_vol)
+                result["rel_vol"] = round(today_vol / avg_vol, 2)
+            else:
+                result["avg_vol_10d"] = None
+                result["rel_vol"] = None
 
             result["hi_10d"] = round(d_df["High"][:-1].max(), 2)
             result["lo_10d"] = round(d_df["Low"][:-1].min(), 2)
@@ -125,16 +132,7 @@ def main():
 
     # Sector ETF snapshot
     print("📊 Fetching sector ETF prices...")
-    for etf in SECTOR_ETFS:
-        try:
-            data = yf.Ticker(etf).info
-            combined_output["sectors"][etf] = {
-                "last_price": data.get("regularMarketPrice"),
-                "prev_close": data.get("previousClose"),
-                "pct_change": data.get("regularMarketChangePercent")
-            }
-        except Exception as e:
-            tqdm.write(f"⚠️ Failed to fetch sector {etf}: {e}")
+    combined_output.pop("sectors", None)  # no longer used
 
     # Ticker batches
     print(f"📡 Fetching post-open signals for {len(symbols)} tickers in batches...")

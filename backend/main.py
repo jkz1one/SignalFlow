@@ -6,8 +6,17 @@ import os
 import re
 from datetime import datetime
 
+# --- Route imports ---
+from backend.routes import api_global_context
+from backend.signals import fetch_global_context  # WebSocket route
+
 app = FastAPI()
 
+# --- Register routers ---
+app.include_router(api_global_context.router, prefix="/api")
+app.include_router(fetch_global_context.router)
+
+# --- CORS setup ---
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -23,28 +32,28 @@ def load_json_file(path: str, label: str):
     if not os.path.exists(path):
         return JSONResponse({"error": f"{label} not found at path: {path}"}, status_code=404)
     with open(path, "r") as f:
-        return JSONResponse(content=json.load(f))
+        return json.load(f)
 
 def load_latest_file(prefix: str, label: str, required=True):
     files = [f for f in os.listdir(CACHE_DIR) if f.startswith(prefix) and f.endswith(".json")]
     if not files:
         if required:
-            return JSONResponse({"error": f"No file found for {label} with prefix {prefix}"}, status_code=404)
+            return {"error": f"No file found for {label} with prefix {prefix}"}
         else:
-            return JSONResponse(content={})
+            return {}
     files.sort(key=lambda f: os.path.getmtime(os.path.join(CACHE_DIR, f)), reverse=True)
     path = os.path.join(CACHE_DIR, files[0])
     with open(path, "r") as f:
-        return JSONResponse(content=json.load(f))
+        return json.load(f)
 
 # --- API Endpoints ---
 @app.get("/api/scored")
 async def get_universe():
-    return load_latest_file("universe_scored_", "Scored Universe")
+    return JSONResponse(content=load_latest_file("universe_scored_", "Scored Universe"))
 
 @app.get("/api/enriched")
 async def get_universe_enriched():
-    return load_latest_file("universe_enriched_", "Enriched Universe")
+    return JSONResponse(content=load_latest_file("universe_enriched_", "Enriched Universe"))
 
 @app.get("/api/raw")
 async def get_universe_raw():
@@ -59,7 +68,6 @@ async def get_universe_raw():
 
 @app.get("/api/sector")
 async def get_sector_rotation():
-    # Find the latest dated sector file
     files = [f for f in os.listdir(CACHE_DIR) if f.startswith("sector_") and f.endswith(".json")]
     if not files:
         return JSONResponse(content={"error": "No sector_<date>.json file found"}, status_code=404)
@@ -72,7 +80,6 @@ async def get_sector_rotation():
         with open(latest_path, "r") as f:
             sector_data = json.load(f)
 
-        # Strip prefix/suffix to get date
         file_date = latest_filename[len("sector_"):-len(".json")]
 
         return JSONResponse(content={
@@ -88,17 +95,17 @@ async def get_sector_rotation():
 
 @app.get("/api/autowatchlist")
 async def get_watchlist():
-    return load_latest_file("autowatchlist_cache", "AutoWatchlist")
+    return JSONResponse(content=load_latest_file("autowatchlist_cache", "AutoWatchlist"))
 
 @app.get("/api/cache-timestamps")
 async def get_cache_timestamps():
     tracked_files = [
         "post_open_signals",
         "945_signals",
-        "short_interest.json",
         "universe_enriched",
         "universe_scored",
-        "autowatchlist_cache"
+        "autowatchlist_cache",
+        "global_context.json"
     ]
 
     now = datetime.now()

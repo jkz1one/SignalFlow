@@ -75,7 +75,7 @@ source backend/screener-venv/bin/activate
 python3 backend/scheduler.py
 
 # Step 3 — Run Sector WS
-python3 backend/signals/sector_ws_signals.py
+python3 backend/signals/sector_signals.py
 
 # Step 4 — Start backend API (FastAPI)
 uvicorn backend.main:app --reload --port 8000
@@ -86,8 +86,48 @@ npm run dev
 
 ---
 
+## 📁 Project Structure
+
+```
+
+backend/
+
+├── cache/                   # Daily signal + universe files
+├── signals/                 # Signal scrapers and enrichment triggers
+│   ├── 945_signals.py            # Scrapes 9:30–9:40 range breakout data
+│   ├── enrich_watchdog.py        # Watches signal files, triggers enrichment
+│   ├── fetch_global_context.py   # Fetches data for global context bar
+│   ├── post_open_signals.py      # Combines rel vol, % move, sector strength
+│   ├── sector_signals.py         # Websocket script for sector rotation tab
+│   └── universe_builder.py       # Builds base universe from anchor levels
+├── cache_manager.py         # Clears stale cache at 4AM or on demand
+├── enrich_universe.py       # Combines signals, applies tiers and risk filters
+├── scheduler.py             # Schedules all timed jobs and monitors run state
+├── screenbuilder.py         # Scores tickers based on tier confluence
+└── watchlist_builder.py     # Filters scored tickers into final ranked output
+
+```
+
+---
+
+## 📡 API Endpoints
+
+| Route                   | Purpose                                  |
+| ----------------------- | ---------------------------------------- |
+| `/api/autowatchlist`    | Final filtered watchlist                 |
+| `/api/cache-timestamps` | File freshness tracker for debugging/UI  |
+| `/api/global_context`   | Global context bar data                  |
+| `/api/enriched`         | Enriched universe (pre-scoring)          |
+| `/api/scored`           | Scored universe with tier signals        |
+| `/api/sector`           | Live Sector ETF % change and data        |
+| `/api/raw`              | Raw pulled universe (from CSVs/static)   |
+
+---
+
 ## 🚨 Key Fixes & Changes (v3.7+)
 
+* ✅ Added Global Context Bar 
+* ✅ `scheduler.py` bug fixes and better logging
 * ✅ Squeeze watch set to be dynamic
 * ✅ Sort toggle added to sector rotation tab
 * ✅ `post_open_signals.py` now fetches SI for all tickers
@@ -114,53 +154,21 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
-
-```
-
-backend/
-
-├── cache/                   # Daily signal + universe files
-├── signals/                 # Signal scrapers and enrichment triggers
-│   ├── 945_signals.py            # Scrapes 9:30–9:40 range breakout data
-│   ├── enrich_watchdog.py        # Watches signal files, triggers enrichment
-│   ├── post_open_signals.py      # Combines rel vol, % move, sector strength
-│   ├── sector_ws_signals.py      # Websocket script for sector rotation tab
-│   └── universe_builder.py       # Builds base universe from anchor levels
-├── cache_manager.py         # Clears stale cache at 4AM or on demand
-├── enrich_universe.py       # Combines signals, applies tiers and risk filters
-├── scheduler.py             # Schedules all timed jobs and monitors run state
-├── screenbuilder.py         # Scores tickers based on tier confluence
-└── watchlist_builder.py     # Filters scored tickers into final ranked output
-
-```
-
----
-
-## 📡 API Endpoints
-
-| Route                   | Purpose                                  |
-| ----------------------- | ---------------------------------------- |
-| `/api/autowatchlist`    | Final filtered watchlist                 |
-| `/api/scored`           | Scored universe with tier signals        |
-| `/api/enriched`         | Enriched universe (pre-scoring)          |
-| `/api/raw`              | Raw pulled universe (from CSVs/static)   |
-| `/api/sector`           | Live Sector ETF % change and data        |
-| `/api/cache-timestamps` | File freshness tracker for debugging/UI  |
-
----
-
 ## 🚧 Roadmap & Goals
 
 ### Next Steps and In Progress
 
+* [ ] Make tracker live update with WS
+* [ ] Make `sector_signals.py` activated by sector page via main
+* [ ] Add marquee to context bar
+* [ ] Investigate Rel_Vol
 
 ### On Deck
 
+* [ ] Fix Near Multi Day High/Low 
+* [ ] Break down enrichment into smaller scripts
 * [ ] Build DevOps runner to run all scripts at once
 * [ ] Update enrich universe to deal with new post open signals
-* [ ] Add VIX / SPY / QQQ Context Bar to Watchlist Page (live with websocket)
-* [ ] Try lazy-loaded websockets for both WS
 * [ ] Add more info to sector page (maybe with dropdown?) 
 * [ ] Frontend timestamp display (data freshness)
 
@@ -174,7 +182,6 @@ backend/
 * [ ] Admin page toggles for variables
 * [ ] Integreate momentum tracker into middle tab
 * [ ] Use lazy-loaded WS and add search feature to middle tab
-* [ ] Break down scrape/enrichment/etc. scripts into smallers parts
 * [ ] Docker deploy
 
 
@@ -192,9 +199,10 @@ backend/
 
 ## ⚠️ Known Issues
 
-* Gap up/down logic needs improvement
+* Context bar doesn't update
+* Multi-Day high/low not exclusive
 * Premarket levels pending (needed for Momentum Confluence logic)
-* Risk filters pending (right now, most risk filtering happens in universe build)
+* Risk filters pending (right now, most risk  iltering happens in universe build)
 
 ---
 

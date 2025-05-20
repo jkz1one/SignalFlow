@@ -102,7 +102,7 @@ export default function SectorRotation() {
               <div className="text-xl font-bold text-gray-100">
                 {sector.symbol}
                 {sector.fullName && (
-                  <span className="text-gray-400 text-sm"> ({sector.fullName})</span>
+                  <span className="text-gray-400 text-sm"> {sector.fullName}</span>
                 )}
               </div>
               <div className="flex flex-col items-end text-right gap-2">

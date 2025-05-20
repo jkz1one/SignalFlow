@@ -12,7 +12,7 @@ from tqdm import tqdm
 # === CONFIG ===
 ANCHOR_TICKERS = ["SPY", "QQQ", "AAPL", "MSFT", "TSLA", "NVDA", "GME", "KSS", 
                   "AMC", "BYND", "LMND", "GRRR", "HIMS", "PFE", "MRNA", "BNTX", 
-                  "LMND", "BBAI"]
+                  "LMND", "BBAI", "BULL", "U"]
 SECTOR_ETFS = ["XLF", "XLK", "XLE"]
 DOW_30_TICKERS = [
     "AAPL", "AMGN", "AXP", "BA", "CAT", "CSCO", "CVX", "DIS", "DOW", "GS",

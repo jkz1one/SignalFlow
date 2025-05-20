@@ -22,22 +22,19 @@ logging.basicConfig(handlers=[handler], level=logging.INFO)
 scheduler = BackgroundScheduler(timezone="US/Eastern")
 
 # --- Config ---
-CACHE_DIR = os.path.join(os.path.dirname(__file__), "cache")
+BASE_DIR = os.path.dirname(__file__)
+CACHE_DIR = os.path.join(BASE_DIR, "cache")
+
 SCRIPTS = {
-    "Cache Manager": os.path.join("backend", "cache_manager.py"),
-    "Universe Builder": os.path.join("backend", "signals", "universe_builder.py"),
-    "Short Interest": os.path.join("backend", "signals", "fetch_short_interest.py"),
-    "Post Open Signals": os.path.join("backend", "signals", "post_open_signals.py"),
-    "945 Signals": os.path.join("backend", "signals", "945_signals.py"),
-    "Enrich Watchdog": os.path.join("backend", "signals", "enrich_watchdog.py"),
+    "Cache Manager": os.path.join(BASE_DIR, "cache_manager.py"),
+    "Universe Builder": os.path.join(BASE_DIR, "signals", "universe_builder.py"),
+    "Post Open Signals": os.path.join(BASE_DIR, "signals", "post_open_signals.py"),
+    "945 Signals": os.path.join(BASE_DIR, "signals", "945_signals.py"),
+    "Enrich Watchdog": os.path.join(BASE_DIR, "signals", "enrich_watchdog.py"),
 }
 
 # --- Utility: Market Day Check ---
 def is_market_day(date=None):
-    """
-    Determine if the given date (or today) is a NYSE market day.
-    Displays a brief loading bar for visual feedback.
-    """
     with tqdm(total=1, desc="Checking market day", bar_format="{l_bar}{bar} {elapsed_s}s") as pbar:
         nyse = mcal.get_calendar("XNYS")
         tz = timezone("US/Eastern")
@@ -55,16 +52,13 @@ def run_script(path, name):
     try:
         subprocess.run([sys.executable, path], check=True)
         end = datetime.now()
-        duration = (end - start).total_seconds()
-        logging.info(f"✅ {name} completed at {end.isoformat()} (duration: {duration:.2f}s)")
+        logging.info(f"✅ {name} completed at {end.isoformat()} (duration: {(end-start).total_seconds():.2f}s)")
     except subprocess.CalledProcessError as e:
         end = datetime.now()
-        duration = (end - start).total_seconds()
-        logging.error(f"❌ {name} failed with code {e.returncode} at {end.isoformat()} (duration: {duration:.2f}s)")
+        logging.error(f"❌ {name} failed (code {e.returncode}) at {end.isoformat()}")
     except Exception as e:
         end = datetime.now()
-        duration = (end - start).total_seconds()
-        logging.error(f"❌ {name} crashed: {e} at {end.isoformat()} (duration: {duration:.2f}s)")
+        logging.error(f"❌ {name} crashed: {e} at {end.isoformat()}")
 
 # --- Market Day Wrapper ---
 def market_day_wrapper(name):
@@ -73,22 +67,8 @@ def market_day_wrapper(name):
     else:
         logging.info(f"📅 Skipping {name}: Not a market day.")
 
-# --- Backfill Helper ---
-def should_backfill(target_time_str, file_prefix):
-    tz = timezone("US/Eastern")
-    now = datetime.now(tz)
-    target = datetime.strptime(target_time_str, "%H:%M").replace(
-        year=now.year, month=now.month, day=now.day, tzinfo=tz
-    )
-    today_str = now.strftime("%Y-%m-%d")
-    expected = os.path.join(CACHE_DIR, f"{file_prefix}_{today_str}.json")
-    return now > target and not os.path.exists(expected)
-
 # --- Watchdog ---
 def launch_enrich_watchdog():
-    """
-    Start the enrichment watchdog to auto-trigger enrich_universe after data arrivals.
-    """
     logging.info("🐺 Starting Enrich WatchDog...")
     try:
         subprocess.Popen([sys.executable, SCRIPTS["Enrich Watchdog"]])
@@ -102,45 +82,48 @@ def check_and_run_backfills():
     tz = timezone("US/Eastern")
     now = datetime.now(tz)
     if not is_market_day():
-        logging.info("📅 Today is not a market day — skipping all backfills.")
+        logging.info("📅 Today is not a market day — skipping backfills.")
         return
 
     today_str = now.strftime("%Y-%m-%d")
 
     # Universe Builder @ 05:00
     uni_cutoff = datetime.combine(now.date(), dt_time(5, 0), tzinfo=tz)
+    logging.info(f"🕓 Universe cutoff: {uni_cutoff.time()}, now: {now.time()}")
     if now > uni_cutoff:
         uni_path = os.path.join(CACHE_DIR, f"universe_{today_str}.json")
+        logging.info(f"➡️ Universe file expected at: {uni_path}")
         if not os.path.exists(uni_path):
+            logging.info("🔁 Backfilling Universe Builder now...")
             run_script(SCRIPTS["Universe Builder"], "Universe Builder")
+        else:
+            logging.info("✅ Universe file exists, skipping backfill.")
 
-    # Short Interest @ 06:00
-    si_cutoff = datetime.combine(now.date(), dt_time(6, 0), tzinfo=tz)
-    if now > si_cutoff:
-        si_path = os.path.join(CACHE_DIR, "short_interest.json")
-        if not os.path.exists(si_path):
-            run_script(SCRIPTS["Short Interest"], "Short Interest")
-
-    # Post-Open Signals @ 09:35:50
+    # Post-Open Signals main @ 09:35:50
     pos_cutoff = datetime.combine(now.date(), dt_time(9, 35, 50), tzinfo=tz)
-    if now > pos_cutoff:
-        pos_path = os.path.join(CACHE_DIR, f"post_open_signals_{today_str}.json")
-        if not os.path.exists(pos_path):
-            run_script(SCRIPTS["Post Open Signals"], "Post Open Signals")
+    logging.info(f"🕓 Post-Open cutoff: {pos_cutoff.time()}, now: {now.time()}")
+    pos_path = os.path.join(CACHE_DIR, f"post_open_signals_{today_str}.json")
+    logging.info(f"➡️ Post-Open file expected at: {pos_path}")
+    if now > pos_cutoff and not os.path.exists(pos_path):
+        logging.info("🔁 Backfilling Post-Open Signals now...")
+        run_script(SCRIPTS["Post Open Signals"], "Post Open Signals")
+    else:
+        logging.info("✅ Post-Open file exists or not yet time, skipping backfill.")
 
-    # 945 Signals @ 09:45:50
-    s945_cutoff = datetime.combine(now.date(), dt_time(9, 45, 50), tzinfo=tz)
-    if now > s945_cutoff:
-        s945_path = os.path.join(CACHE_DIR, f"945_signals_{today_str}.json")
-        if not os.path.exists(s945_path):
-            run_script(SCRIPTS["945 Signals"], "945 Signals")
+    # 945 Signals (always backfill if missing)
+    s945_path = os.path.join(CACHE_DIR, f"945_signals_{today_str}.json")
+    logging.info(f"➡️ 945 file expected at: {s945_path}")
+    if not os.path.exists(s945_path):
+        logging.info("🔁 Backfilling 945 Signals now...")
+        run_script(SCRIPTS["945 Signals"], "945 Signals")
+    else:
+        logging.info("✅ 945 file exists, skipping backfill.")
 
 # --- Schedule Jobs ---
 def schedule_jobs():
     logging.info("⏲️ Scheduling daily jobs now")
     scheduler.add_job(lambda: market_day_wrapper("Cache Manager"), trigger="cron", hour=4, minute=0)
     scheduler.add_job(lambda: market_day_wrapper("Universe Builder"), trigger="cron", hour=5, minute=0)
-    scheduler.add_job(lambda: market_day_wrapper("Short Interest"), trigger="cron", hour=6, minute=0, second=10)
     scheduler.add_job(lambda: market_day_wrapper("Post Open Signals"), trigger="cron", hour=9, minute=35, second=50)
     scheduler.add_job(lambda: market_day_wrapper("945 Signals"), trigger="cron", hour=9, minute=45, second=50)
     scheduler.start()
@@ -149,20 +132,20 @@ def schedule_jobs():
 # --- Entrypoint ---
 if __name__ == "__main__":
     logging.info("📅 Scheduler initializing...")
-    # Allow any prior processes or scheduler to initialize
     time.sleep(5)
-    # 1) Run Cache Manager backfill immediately
+    logging.info("🔁 Starting Cache Manager backfill...")
     run_script(SCRIPTS["Cache Manager"], "Cache Manager")
-    # 2) Launch the enrichment watchdog to catch new cache files
+    logging.info("🔁 Cache Manager complete.")
+    logging.info("🐺 Launching Enrich WatchDog...")
     launch_enrich_watchdog()
-    # 3) Run remaining backfills (universe, short interest, post-open, 945)
+    logging.info("🔁 Running backfills for missed jobs...")
     check_and_run_backfills()
-    # 4) Start scheduled cron jobs for daily runs
+    logging.info("🔁 Backfills complete.")
+    logging.info("⏲️ Starting scheduled jobs...")
     schedule_jobs()
-
     try:
         while True:
             time.sleep(60)
     except (KeyboardInterrupt, SystemExit):
-        logging.info("🛑 Scheduler shutdown... ")
+        logging.info("🛑 Scheduler shutdown...")
         scheduler.shutdown(wait=True)

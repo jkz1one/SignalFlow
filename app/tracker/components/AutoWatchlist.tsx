@@ -15,7 +15,6 @@ type Stock = {
 export default function AutoWatchlist() {
   const [data, setData] = useState<Stock[]>([]);
   const [loading, setLoading] = useState(true);
-
   const [expanded, setExpanded] = useState<string[]>([]);
   const [tiersShown, setTiersShown] = useState<Record<string, boolean>>({
     T1: true,
@@ -28,10 +27,9 @@ export default function AutoWatchlist() {
 
   function formatLabel(text: string) {
     return text
-      .replace(/_/g, ' ')            // Replace underscores with spaces
-      .replace(/\b\w/g, (l) => l.toUpperCase()); // Capitalize first letter of each word
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, (l) => l.toUpperCase());
   }
-  
 
   useEffect(() => {
     async function fetchData() {
@@ -46,7 +44,7 @@ export default function AutoWatchlist() {
           reasons: stock.reasons || [],
           tierHits: stock.tierHits || { T1: [], T2: [], T3: [] },
         }));
-        
+
         setData(mapped);
       } catch (err) {
         console.error('Failed to fetch autowatchlist', err);
@@ -92,6 +90,7 @@ export default function AutoWatchlist() {
 
   return (
     <div className="space-y-4">
+
       <WatchlistControls
         tiersShown={tiersShown}
         setTiersShown={setTiersShown}
@@ -100,7 +99,11 @@ export default function AutoWatchlist() {
         tagFilters={tagFilters}
         setTagFilters={setTagFilters}
         sortBy={sortBy}
-        setSortBy={setSortBy}
+        setSortBy={(val) => {
+          if (val === 'score' || val === 'symbol') {
+            setSortBy(val);
+          }
+        }}
       />
 
       {filtered.map((stock) => {
@@ -143,7 +146,6 @@ export default function AutoWatchlist() {
                   <ul className="space-y-1">
                     {stock.tierHits.T1.map((s) => (
                       <li key={s}>✓ {formatLabel(s)}</li>
-
                     ))}
                   </ul>
                 </div>
@@ -159,7 +161,7 @@ export default function AutoWatchlist() {
                   <h4 className="text-purple-400 font-bold mb-1">Tier 3</h4>
                   <ul className="space-y-1">
                     {stock.tierHits.T3.map((s) => (
-                     <li key={s}>✓ {formatLabel(s)}</li>
+                      <li key={s}>✓ {formatLabel(s)}</li>
                     ))}
                   </ul>
                 </div>
