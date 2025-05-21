@@ -1,27 +1,106 @@
 {
-  "KEYS": {
-    "score": 6,
+  "CTRA": {
+    "score": 4,
     "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
+      "T1": [],
+      "T2": [
+        "weak_sector"
       ],
-      "T2": [],
-      "T3": []
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
     },
     "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range"
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
     ],
     "level": "L2",
-    "sector": "Technology",
+    "sector": "Energy",
     "tags": [],
     "signals": {
-      "gap_down": true,
-      "break_above_range": true
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
     }
   },
-  "PFE": {
+  "ADM": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "AEE": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "CI": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_up"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "top_volume_gainer": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "HUM": {
     "score": 8,
     "tierHits": {
       "T1": [
@@ -40,47 +119,252 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "level": "L0",
+    "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
       "gap_up": true,
       "break_above_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "KVUE": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
       "top_volume_gainer": true
     }
   },
-  "CI": {
+  "AFL": {
     "score": 4,
     "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_low"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_low": true
+    }
+  },
+  "CMS": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "CPRT": {
+    "score": 10,
+    "tierHits": {
       "T1": [
-        "gap_up"
+        "gap_down",
+        "break_below_range",
+        "high_rel_vol"
       ],
       "T2": [],
       "T3": [
-        "high_volume_no_breakout"
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "break_below_range": true,
+      "high_rel_vol": true,
+      "top_volume_gainer": true
+    }
+  },
+  "MTD": {
+    "score": 10,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_above_range",
+        "high_rel_vol"
+      ],
+      "T2": [],
+      "T3": [
+        "near_multi_day_high"
       ]
     },
     "reasons": [
       "T1: gap_up",
-      "T3: high_volume_no_breakout"
+      "T1: break_above_range",
+      "T1: high_rel_vol",
+      "T3: near_multi_day_high"
     ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "gap_up": true,
-      "high_volume_no_breakout": true
+      "break_above_range": true,
+      "high_rel_vol": true,
+      "near_multi_day_high": true
+    }
+  },
+  "HIG": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "GS": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "PSX": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "EL": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
     }
   },
   "DG": {
-    "score": 8,
+    "score": 13,
     "tierHits": {
       "T1": [
         "gap_up",
-        "break_above_range"
+        "break_above_range",
+        "high_rel_vol"
       ],
-      "T2": [],
+      "T2": [
+        "strong_sector"
+      ],
       "T3": [
         "top_volume_gainer",
         "near_multi_day_high"
@@ -89,6 +373,8 @@
     "reasons": [
       "T1: gap_up",
       "T1: break_above_range",
+      "T1: high_rel_vol",
+      "T2: strong_sector",
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
@@ -96,35 +382,175 @@
     "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
+      "strong_sector": true,
       "gap_up": true,
       "break_above_range": true,
-      "top_volume_gainer": true
+      "high_rel_vol": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
     }
   },
-  "ON": {
-    "score": 6,
+  "TFC": {
+    "score": 7,
     "tierHits": {
       "T1": [
-        "gap_down",
-        "break_above_range"
+        "high_rel_vol"
+      ],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "high_rel_vol": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "AZN": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_up"
       ],
       "T2": [],
-      "T3": []
+      "T3": [
+        "top_volume_gainer",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "top_volume_gainer": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "NRG": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "HBAN": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "KMB": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "J": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_down"
+      ],
+      "T2": [],
+      "T3": [
+        "near_multi_day_high",
+        "high_volume_no_breakout"
+      ]
     },
     "reasons": [
       "T1: gap_down",
-      "T1: break_above_range"
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
     ],
     "level": "L2",
-    "sector": "Technology",
+    "sector": "Industrials",
     "tags": [],
     "signals": {
       "gap_down": true,
-      "break_above_range": true
+      "near_multi_day_high": true,
+      "high_volume_no_breakout": true
     }
   },
-  "ADI": {
+  "ESS": {
     "score": 4,
     "tierHits": {
       "T1": [
@@ -132,19 +558,220 @@
       ],
       "T2": [],
       "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Real Estate",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "near_multi_day_high": true
+    }
+  },
+  "AES": {
+    "score": 9,
+    "tierHits": {
+      "T1": [
+        "gap_down",
+        "break_below_range"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "gap_down": true,
+      "break_below_range": true,
+      "top_volume_gainer": true
+    }
+  },
+  "BYND": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L0",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "CB": {
+    "score": 8,
+    "tierHits": {
+      "T1": [
+        "gap_down"
+      ],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high",
         "high_volume_no_breakout"
       ]
     },
     "reasons": [
       "T1: gap_down",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
     "level": "L2",
-    "sector": "Technology",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "gap_down": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "XEL": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "WMT": {
+    "score": 10,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_below_range"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L1",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "gap_up": true,
+      "break_below_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "RCL": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_down"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
     "tags": [],
     "signals": {
       "gap_down": true,
+      "top_volume_gainer": true,
       "high_volume_no_breakout": true
+    }
+  },
+  "PPL": {
+    "score": 6,
+    "tierHits": {
+      "T1": [
+        "high_rel_vol"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "high_rel_vol": true,
+      "top_volume_gainer": true
     }
   },
   "SBAC": {
@@ -170,698 +797,35 @@
       "high_volume_no_breakout": true
     }
   },
-  "MTD": {
-    "score": 5,
+  "ATO": {
+    "score": 3,
     "tierHits": {
-      "T1": [
-        "gap_up"
+      "T1": [],
+      "T2": [
+        "strong_sector"
       ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "LOW": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Consumer Cyclical",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "APA": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Energy",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "GPN": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "J": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "break_above_range": true
-    }
-  },
-  "ABNB": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: top_volume_gainer",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Consumer Cyclical",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "top_volume_gainer": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "AZN": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
       "T3": [
         "top_volume_gainer"
       ]
     },
     "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
+      "T2: strong_sector",
       "T3: top_volume_gainer"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "break_above_range": true,
-      "top_volume_gainer": true
-    }
-  },
-  "LW": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Consumer Defensive",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "KR": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Consumer Defensive",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "CTAS": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "break_above_range": true
-    }
-  },
-  "RCL": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Consumer Cyclical",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "EMN": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Basic Materials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "CB": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Financial Services",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "ERIE": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Financial Services",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true
-    }
-  },
-  "LNT": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
     ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
+      "strong_sector": true,
+      "top_volume_gainer": true
     }
   },
-  "DLTR": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Consumer Defensive",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "EMR": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "CDNS": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "break_above_range": true
-    }
-  },
-  "T": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: top_volume_gainer",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Communication Services",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "top_volume_gainer": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "HD": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: top_volume_gainer",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L1",
-    "sector": "Consumer Cyclical",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "top_volume_gainer": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "ROP": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "SHW": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Basic Materials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "JBL": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "WMT": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: top_volume_gainer",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L1",
-    "sector": "Consumer Defensive",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "top_volume_gainer": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "VRTX": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": []
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "NSC": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "break_above_range": true
-    }
-  },
-  "ESS": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Real Estate",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true
-    }
-  },
-  "TSLA": {
+  "PFE": {
     "score": 8,
     "tierHits": {
       "T1": [
         "gap_up",
-        "break_below_range"
+        "break_above_range"
       ],
       "T2": [],
       "T3": [
@@ -871,440 +835,148 @@
     },
     "reasons": [
       "T1: gap_up",
-      "T1: break_below_range",
+      "T1: break_above_range",
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
     "level": "L0",
-    "sector": "Consumer Cyclical",
+    "sector": "Healthcare",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
       "top_volume_gainer": true,
       "gap_up": true,
-      "break_below_range": true
+      "break_above_range": true,
+      "near_multi_day_high": true
     }
   },
-  "FOX": {
-    "score": 7,
+  "BNTX": {
+    "score": 8,
     "tierHits": {
       "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Communication Services",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "UBER": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_up"
+        "break_above_range",
+        "high_rel_vol"
       ],
       "T2": [],
       "T3": [
         "top_volume_gainer",
-        "near_multi_day_high",
-        "high_volume_no_breakout"
+        "near_multi_day_high"
       ]
     },
     "reasons": [
-      "T1: gap_up",
+      "T1: break_above_range",
+      "T1: high_rel_vol",
       "T3: top_volume_gainer",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
+      "T3: near_multi_day_high"
     ],
-    "level": "L2",
-    "sector": "Technology",
+    "level": "L0",
+    "sector": "Healthcare",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
+      "break_above_range": true,
+      "high_rel_vol": true,
       "top_volume_gainer": true,
-      "high_volume_no_breakout": true
+      "near_multi_day_high": true
     }
   },
-  "FDX": {
+  "AIG": {
     "score": 4,
     "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "EFX": {
+    "score": 5,
+    "tierHits": {
       "T1": [
-        "gap_down"
+        "high_rel_vol"
       ],
       "T2": [],
       "T3": [
-        "high_volume_no_breakout"
+        "top_volume_gainer",
+        "near_multi_day_high"
       ]
     },
     "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
     ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
     "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
+      "high_rel_vol": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
     }
   },
-  "MDB": {
-    "score": 6,
+  "HES": {
+    "score": 3,
     "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
+      "T1": [],
+      "T2": [
+        "weak_sector"
       ],
-      "T2": [],
-      "T3": []
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "break_above_range": true
-    }
-  },
-  "HUM": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
       "T3": [
-        "high_volume_no_breakout"
+        "top_volume_gainer"
       ]
     },
     "reasons": [
-      "T1: gap_up",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "VLO": {
-    "score": 6,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_below_range"
-      ],
-      "T2": [],
-      "T3": []
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_below_range"
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
     ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
     "signals": {
-      "gap_down": true,
-      "break_below_range": true
+      "weak_sector": true,
+      "top_volume_gainer": true
     }
   },
-  "MAA": {
+  "MKC": {
     "score": 4,
     "tierHits": {
-      "T1": [
-        "gap_down"
+      "T1": [],
+      "T2": [
+        "strong_sector"
       ],
-      "T2": [],
       "T3": [
-        "high_volume_no_breakout"
+        "top_volume_gainer",
+        "near_multi_day_low"
       ]
     },
     "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
     ],
     "level": "L2",
-    "sector": "Real Estate",
+    "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "SRE": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Utilities",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "UNH": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: top_volume_gainer"
-    ],
-    "level": "L1",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
+      "strong_sector": true,
       "top_volume_gainer": true,
-      "gap_up": true
-    }
-  },
-  "VTR": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Real Estate",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "NOW": {
-    "score": 4,
-    "tierHits": {
-      "T1": [
-        "gap_down"
-      ],
-      "T2": [],
-      "T3": [
-        "high_volume_no_breakout"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
-    }
-  },
-  "HPE": {
-    "score": 5,
-    "tierHits": {
-      "T1": [
-        "gap_up"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T3: top_volume_gainer",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Technology",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "top_volume_gainer": true
-    }
-  },
-  "NKE": {
-    "score": 8,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer",
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: top_volume_gainer",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L1",
-    "sector": "Consumer Cyclical",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true,
-      "top_volume_gainer": true
-    }
-  },
-  "AES": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_above_range",
-      "T3: top_volume_gainer"
-    ],
-    "level": "L2",
-    "sector": "Utilities",
-    "tags": [],
-    "signals": {
-      "gap_down": true,
-      "break_above_range": true,
-      "top_volume_gainer": true
-    }
-  },
-  "BMY": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "top_volume_gainer"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: top_volume_gainer"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "gap_up": true,
-      "break_above_range": true,
-      "top_volume_gainer": true
-    }
-  },
-  "DVA": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Healthcare",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
-    }
-  },
-  "CPRT": {
-    "score": 7,
-    "tierHits": {
-      "T1": [
-        "gap_down",
-        "break_below_range"
-      ],
-      "T2": [],
-      "T3": [
-        "near_multi_day_high"
-      ]
-    },
-    "reasons": [
-      "T1: gap_down",
-      "T1: break_below_range",
-      "T3: near_multi_day_high"
-    ],
-    "level": "L2",
-    "sector": "Industrials",
-    "tags": [],
-    "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true,
-      "break_below_range": true
+      "near_multi_day_low": true
     }
   },
   "MRK": {
@@ -1333,48 +1005,393 @@
       "top_volume_gainer": true
     }
   },
-  "AME": {
-    "score": 5,
+  "NOW": {
+    "score": 7,
     "tierHits": {
       "T1": [
-        "gap_down"
+        "gap_down",
+        "break_above_range"
       ],
       "T2": [],
       "T3": [
-        "near_multi_day_high",
-        "high_volume_no_breakout"
+        "top_volume_gainer"
       ]
     },
     "reasons": [
       "T1: gap_down",
-      "T3: near_multi_day_high",
-      "T3: high_volume_no_breakout"
+      "T1: break_above_range",
+      "T3: top_volume_gainer"
     ],
     "level": "L2",
-    "sector": "Industrials",
+    "sector": "Technology",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
       "gap_down": true,
-      "high_volume_no_breakout": true
+      "break_above_range": true,
+      "top_volume_gainer": true
     }
   },
-  "D": {
-    "score": 8,
+  "WRB": {
+    "score": 3,
     "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
+      "T1": [],
+      "T2": [
+        "weak_sector"
       ],
-      "T2": [],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "PYPL": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "STT": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
       "T3": [
         "top_volume_gainer",
         "near_multi_day_high"
       ]
     },
     "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "KEY": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "OKE": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "MPC": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "CAG": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "GL": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "COST": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "BLK": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "ALL": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "SRE": {
+    "score": 8,
+    "tierHits": {
+      "T1": [
+        "gap_up"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
       "T1: gap_up",
-      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "gap_up": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "LOW": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_below_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "break_below_range": true,
+      "top_volume_gainer": true
+    }
+  },
+  "AJG": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "ETR": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
@@ -1382,10 +1399,81 @@
     "sector": "Utilities",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true,
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "DAY": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_down"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "top_volume_gainer": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "AWK": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
       "top_volume_gainer": true
+    }
+  },
+  "DTE": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "near_multi_day_high": true
     }
   },
   "RMD": {
@@ -1396,45 +1484,704 @@
       ],
       "T2": [],
       "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "top_volume_gainer": true
+    }
+  },
+  "MNST": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "CTAS": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_down",
+        "break_above_range"
+      ],
+      "T2": [],
+      "T3": [
         "near_multi_day_high"
       ]
     },
     "reasons": [
       "T1: gap_down",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "break_above_range": true,
+      "near_multi_day_high": true
+    }
+  },
+  "COP": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "CLX": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "CVX": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L1",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "WMB": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "UNH": {
+    "score": 4,
+    "tierHits": {
+      "T1": [
+        "gap_up"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L1",
+    "sector": "Healthcare",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "top_volume_gainer": true
+    }
+  },
+  "FITB": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "SHW": {
+    "score": 8,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_below_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "break_below_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "KMI": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "HPE": {
+    "score": 4,
+    "tierHits": {
+      "T1": [
+        "gap_up"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "top_volume_gainer": true
+    }
+  },
+  "PM": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "PEG": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "EMN": {
+    "score": 5,
+    "tierHits": {
+      "T1": [
+        "gap_up"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "high_volume_no_breakout"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
+    "level": "L2",
+    "sector": "Basic Materials",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "top_volume_gainer": true,
+      "high_volume_no_breakout": true
+    }
+  },
+  "ES": {
+    "score": 10,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_above_range"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "gap_up": true,
+      "break_above_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "HAL": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "GPN": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_down",
+        "break_below_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Industrials",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "break_below_range": true,
+      "top_volume_gainer": true
+    }
+  },
+  "DVA": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_above_range"
+      ],
+      "T2": [],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
       "T3: near_multi_day_high"
     ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_down": true
+      "gap_up": true,
+      "break_above_range": true,
+      "near_multi_day_high": true
     }
   },
-  "DAY": {
-    "score": 4,
+  "DVN": {
+    "score": 3,
     "tierHits": {
-      "T1": [
-        "gap_down"
+      "T1": [],
+      "T2": [
+        "weak_sector"
       ],
-      "T2": [],
       "T3": [
-        "high_volume_no_breakout"
+        "top_volume_gainer"
       ]
     },
     "reasons": [
-      "T1: gap_down",
-      "T3: high_volume_no_breakout"
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
     ],
     "level": "L2",
-    "sector": "Technology",
+    "sector": "Energy",
     "tags": [],
     "signals": {
-      "gap_down": true,
-      "high_volume_no_breakout": true
+      "weak_sector": true,
+      "top_volume_gainer": true
     }
   },
-  "DRI": {
+  "CCEP": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "BX": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "ACGL": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "MDLZ": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "EQT": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Energy",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "WEC": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "JPM": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "BRO": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "EMR": {
     "score": 5,
     "tierHits": {
       "T1": [
@@ -1442,22 +2189,271 @@
       ],
       "T2": [],
       "T3": [
-        "near_multi_day_high",
+        "top_volume_gainer",
         "high_volume_no_breakout"
       ]
     },
     "reasons": [
       "T1: gap_down",
-      "T3: near_multi_day_high",
+      "T3: top_volume_gainer",
       "T3: high_volume_no_breakout"
     ],
     "level": "L2",
-    "sector": "Consumer Cyclical",
+    "sector": "Industrials",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
       "gap_down": true,
+      "top_volume_gainer": true,
       "high_volume_no_breakout": true
+    }
+  },
+  "TRV": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "AXP": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "APO": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "HRL": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "BMY": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_above_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Healthcare",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "break_above_range": true,
+      "top_volume_gainer": true
+    }
+  },
+  "LMND": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L0",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "BAC": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "SCHW": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "SO": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "high_rel_vol"
+      ],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: high_rel_vol",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "high_rel_vol": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "TGT": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Defensive",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
     }
   },
   "MDT": {
@@ -1483,62 +2479,359 @@
     "sector": "Healthcare",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
       "gap_down": true,
       "top_volume_gainer": true,
+      "near_multi_day_high": true,
       "high_volume_no_breakout": true
     }
   },
-  "SYY": {
-    "score": 7,
+  "KSS": {
+    "score": 5,
     "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
+      "T1": [],
+      "T2": [
+        "early_move",
+        "squeeze_watch"
       ],
-      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: early_move",
+      "T2: squeeze_watch",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L0",
+    "sector": "Consumer Cyclical",
+    "tags": [],
+    "signals": {
+      "early_move": 2.59,
+      "squeeze_watch": true,
+      "top_volume_gainer": true
+    }
+  },
+  "AMP": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
       "T3": [
         "near_multi_day_high"
       ]
     },
     "reasons": [
-      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "KKR": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "MET": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "ADI": {
+    "score": 8,
+    "tierHits": {
+      "T1": [
+        "gap_down",
+        "break_above_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
       "T1: break_above_range",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "break_above_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "UBER": {
+    "score": 8,
+    "tierHits": {
+      "T1": [
+        "gap_up",
+        "break_below_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Technology",
+    "tags": [],
+    "signals": {
+      "gap_up": true,
+      "break_below_range": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "CME": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "SJM": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
+      "strong_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
     }
   },
-  "ES": {
-    "score": 7,
+  "FDS": {
+    "score": 3,
     "tierHits": {
-      "T1": [
-        "gap_up",
-        "break_above_range"
+      "T1": [],
+      "T2": [
+        "weak_sector"
       ],
-      "T2": [],
       "T3": [
         "near_multi_day_high"
       ]
     },
     "reasons": [
-      "T1: gap_up",
-      "T1: break_above_range",
+      "T2: weak_sector",
       "T3: near_multi_day_high"
+    ],
+    "level": "L2",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "near_multi_day_high": true
+    }
+  },
+  "NI": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
     ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
     "signals": {
-      "near_multi_day_high": true,
-      "gap_up": true,
-      "break_above_range": true
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "V": {
+    "score": 4,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "weak_sector"
+      ],
+      "T3": [
+        "top_volume_gainer",
+        "near_multi_day_high"
+      ]
+    },
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
+    "level": "L1",
+    "sector": "Financial Services",
+    "tags": [],
+    "signals": {
+      "weak_sector": true,
+      "top_volume_gainer": true,
+      "near_multi_day_high": true
+    }
+  },
+  "ABNB": {
+    "score": 7,
+    "tierHits": {
+      "T1": [
+        "gap_down",
+        "break_below_range"
+      ],
+      "T2": [],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Consumer Cyclical",
+    "tags": [],
+    "signals": {
+      "gap_down": true,
+      "break_below_range": true,
+      "top_volume_gainer": true
+    }
+  },
+  "CNP": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
+    }
+  },
+  "ED": {
+    "score": 3,
+    "tierHits": {
+      "T1": [],
+      "T2": [
+        "strong_sector"
+      ],
+      "T3": [
+        "top_volume_gainer"
+      ]
+    },
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
+    "level": "L2",
+    "sector": "Utilities",
+    "tags": [],
+    "signals": {
+      "strong_sector": true,
+      "top_volume_gainer": true
     }
   }
 }

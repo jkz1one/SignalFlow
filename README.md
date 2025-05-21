@@ -126,11 +126,11 @@ backend/
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
+* ✅ Squeeze watch set to be dynamic
+* ✅ `post_open_signals.py` updates with batch mode and SI fetch
 * ✅ Added Global Context Bar 
 * ✅ `scheduler.py` bug fixes and better logging
-* ✅ Squeeze watch set to be dynamic
 * ✅ Sort toggle added to sector rotation tab
-* ✅ `post_open_signals.py` now fetches SI for all tickers
 * ✅ `fetch_short_interest.py` depreciated
 * ✅ Gap threshold set to be dynamic
 * ✅ Implented improved gap up logic
@@ -161,7 +161,6 @@ backend/
 * [ ] Make tracker live update with WS
 * [ ] Make `sector_signals.py` activated by sector page via main
 * [ ] Add marquee to context bar
-* [ ] Investigate Rel_Vol
 
 ### On Deck
 

@@ -950,3 +950,149 @@
 2025-05-20 10:37:39,621 — INFO — ✅ APScheduler started.
 2025-05-20 14:53:15,515 — INFO — 🛑 Scheduler shutdown...
 2025-05-20 14:53:15,524 — INFO — Scheduler has been shut down
+2025-05-20 15:40:34,192 — INFO — 📅 Scheduler initializing...
+2025-05-20 15:40:39,195 — INFO — 🔁 Starting Cache Manager backfill...
+2025-05-20 15:40:39,196 — INFO — ⏱️ Starting Cache Manager at 2025-05-20T15:40:39.196280
+2025-05-20 15:40:39,271 — INFO — ✅ Cache Manager completed at 2025-05-20T15:40:39.270963 (duration: 0.07s)
+2025-05-20 15:40:39,271 — INFO — 🔁 Cache Manager complete.
+2025-05-20 15:40:39,271 — INFO — 🐺 Launching Enrich WatchDog...
+2025-05-20 15:40:39,272 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-20 15:40:39,275 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-05-20 15:40:39,276 — INFO — 🔁 Running backfills for missed jobs...
+2025-05-20 15:40:39,276 — INFO — 🔁 Checking for missed jobs...
+2025-05-20 15:40:39,558 — INFO — ✅ 2025-05-20 is a market day.
+2025-05-20 15:40:39,558 — INFO — 🕓 Universe cutoff: 05:00:00, now: 15:40:39.277837
+2025-05-20 15:40:39,558 — INFO — ➡️ Universe file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/universe_2025-05-20.json
+2025-05-20 15:40:39,558 — INFO — 🔁 Backfilling Universe Builder now...
+2025-05-20 15:40:39,558 — INFO — ⏱️ Starting Universe Builder at 2025-05-20T15:40:39.558823
+2025-05-20 15:42:06,492 — INFO — ✅ Universe Builder completed at 2025-05-20T15:42:06.491854 (duration: 86.93s)
+2025-05-20 15:42:06,492 — INFO — 🕓 Post-Open cutoff: 09:35:50, now: 15:40:39.277837
+2025-05-20 15:42:06,492 — INFO — ➡️ Post-Open file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/post_open_signals_2025-05-20.json
+2025-05-20 15:42:06,492 — INFO — 🔁 Backfilling Post-Open Signals now...
+2025-05-20 15:42:06,493 — INFO — ⏱️ Starting Post Open Signals at 2025-05-20T15:42:06.493081
+2025-05-20 15:44:35,375 — INFO — ✅ Post Open Signals completed at 2025-05-20T15:44:35.375063 (duration: 148.88s)
+2025-05-20 15:44:35,376 — INFO — ➡️ 945 file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/945_signals_2025-05-20.json
+2025-05-20 15:44:35,376 — INFO — 🔁 Backfilling 945 Signals now...
+2025-05-20 15:44:35,376 — INFO — ⏱️ Starting 945 Signals at 2025-05-20T15:44:35.376801
+2025-05-20 15:44:42,328 — INFO — ✅ 945 Signals completed at 2025-05-20T15:44:42.328563 (duration: 6.95s)
+2025-05-20 15:44:42,329 — INFO — 🔁 Backfills complete.
+2025-05-20 15:44:42,329 — INFO — ⏲️ Starting scheduled jobs...
+2025-05-20 15:44:42,330 — INFO — ⏲️ Scheduling daily jobs now
+2025-05-20 15:44:42,343 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 15:44:42,344 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 15:44:42,345 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 15:44:42,347 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 15:44:42,350 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 15:44:42,351 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 15:44:42,352 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 15:44:42,352 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 15:44:42,353 — INFO — Scheduler started
+2025-05-20 15:44:42,353 — INFO — ✅ APScheduler started.
+2025-05-20 16:01:02,074 — INFO — 🛑 Scheduler shutdown...
+2025-05-20 16:01:02,082 — INFO — Scheduler has been shut down
+2025-05-20 16:01:04,398 — INFO — 📅 Scheduler initializing...
+2025-05-20 16:01:09,399 — INFO — 🔁 Starting Cache Manager backfill...
+2025-05-20 16:01:09,399 — INFO — ⏱️ Starting Cache Manager at 2025-05-20T16:01:09.399642
+2025-05-20 16:01:09,462 — INFO — ✅ Cache Manager completed at 2025-05-20T16:01:09.462776 (duration: 0.06s)
+2025-05-20 16:01:09,463 — INFO — 🔁 Cache Manager complete.
+2025-05-20 16:01:09,463 — INFO — 🐺 Launching Enrich WatchDog...
+2025-05-20 16:01:09,463 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-20 16:01:09,468 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-05-20 16:01:09,468 — INFO — 🔁 Running backfills for missed jobs...
+2025-05-20 16:01:09,468 — INFO — 🔁 Checking for missed jobs...
+2025-05-20 16:01:09,708 — INFO — ✅ 2025-05-20 is a market day.
+2025-05-20 16:01:09,708 — INFO — 🕓 Universe cutoff: 05:00:00, now: 16:01:09.470675
+2025-05-20 16:01:09,708 — INFO — ➡️ Universe file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/universe_2025-05-20.json
+2025-05-20 16:01:09,708 — INFO — ✅ Universe file exists, skipping backfill.
+2025-05-20 16:01:09,708 — INFO — 🕓 Post-Open cutoff: 09:35:50, now: 16:01:09.470675
+2025-05-20 16:01:09,708 — INFO — ➡️ Post-Open file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/post_open_signals_2025-05-20.json
+2025-05-20 16:01:09,708 — INFO — 🔁 Backfilling Post-Open Signals now...
+2025-05-20 16:01:09,708 — INFO — ⏱️ Starting Post Open Signals at 2025-05-20T16:01:09.708980
+2025-05-20 16:03:42,035 — INFO — ✅ Post Open Signals completed at 2025-05-20T16:03:42.035012 (duration: 152.33s)
+2025-05-20 16:03:42,035 — INFO — ➡️ 945 file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/945_signals_2025-05-20.json
+2025-05-20 16:03:42,035 — INFO — ✅ 945 file exists, skipping backfill.
+2025-05-20 16:03:42,035 — INFO — 🔁 Backfills complete.
+2025-05-20 16:03:42,035 — INFO — ⏲️ Starting scheduled jobs...
+2025-05-20 16:03:42,035 — INFO — ⏲️ Scheduling daily jobs now
+2025-05-20 16:03:42,041 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:03:42,041 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:03:42,041 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:03:42,042 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:03:42,043 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:03:42,043 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:03:42,044 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:03:42,044 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:03:42,044 — INFO — Scheduler started
+2025-05-20 16:03:42,044 — INFO — ✅ APScheduler started.
+2025-05-20 16:21:29,582 — INFO — 🛑 Scheduler shutdown...
+2025-05-20 16:21:29,589 — INFO — Scheduler has been shut down
+2025-05-20 16:21:32,051 — INFO — 📅 Scheduler initializing...
+2025-05-20 16:21:37,054 — INFO — 🔁 Starting Cache Manager backfill...
+2025-05-20 16:21:37,054 — INFO — ⏱️ Starting Cache Manager at 2025-05-20T16:21:37.054360
+2025-05-20 16:21:37,129 — INFO — ✅ Cache Manager completed at 2025-05-20T16:21:37.129048 (duration: 0.07s)
+2025-05-20 16:21:37,129 — INFO — 🔁 Cache Manager complete.
+2025-05-20 16:21:37,130 — INFO — 🐺 Launching Enrich WatchDog...
+2025-05-20 16:21:37,130 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-20 16:21:37,134 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-05-20 16:21:37,134 — INFO — 🔁 Running backfills for missed jobs...
+2025-05-20 16:21:37,134 — INFO — 🔁 Checking for missed jobs...
+2025-05-20 16:21:37,382 — INFO — ✅ 2025-05-20 is a market day.
+2025-05-20 16:21:37,383 — INFO — 🕓 Universe cutoff: 05:00:00, now: 16:21:37.136718
+2025-05-20 16:21:37,383 — INFO — ➡️ Universe file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/universe_2025-05-20.json
+2025-05-20 16:21:37,383 — INFO — ✅ Universe file exists, skipping backfill.
+2025-05-20 16:21:37,383 — INFO — 🕓 Post-Open cutoff: 09:35:50, now: 16:21:37.136718
+2025-05-20 16:21:37,383 — INFO — ➡️ Post-Open file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/post_open_signals_2025-05-20.json
+2025-05-20 16:21:37,383 — INFO — 🔁 Backfilling Post-Open Signals now...
+2025-05-20 16:21:37,383 — INFO — ⏱️ Starting Post Open Signals at 2025-05-20T16:21:37.383702
+2025-05-20 16:24:16,503 — INFO — ✅ Post Open Signals completed at 2025-05-20T16:24:16.503141 (duration: 159.12s)
+2025-05-20 16:24:16,504 — INFO — ➡️ 945 file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/945_signals_2025-05-20.json
+2025-05-20 16:24:16,504 — INFO — ✅ 945 file exists, skipping backfill.
+2025-05-20 16:24:16,504 — INFO — 🔁 Backfills complete.
+2025-05-20 16:24:16,504 — INFO — ⏲️ Starting scheduled jobs...
+2025-05-20 16:24:16,504 — INFO — ⏲️ Scheduling daily jobs now
+2025-05-20 16:24:16,513 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:24:16,514 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:24:16,514 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:24:16,515 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 16:24:16,518 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:24:16,518 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:24:16,519 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:24:16,519 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 16:24:16,519 — INFO — Scheduler started
+2025-05-20 16:24:16,519 — INFO — ✅ APScheduler started.
+2025-05-20 16:42:28,753 — INFO — 🛑 Scheduler shutdown...
+2025-05-20 16:42:28,755 — INFO — Scheduler has been shut down
+2025-05-20 21:37:09,585 — INFO — 📅 Scheduler initializing...
+2025-05-20 21:37:14,589 — INFO — 🔁 Starting Cache Manager backfill...
+2025-05-20 21:37:14,589 — INFO — ⏱️ Starting Cache Manager at 2025-05-20T21:37:14.589528
+2025-05-20 21:37:14,648 — INFO — ✅ Cache Manager completed at 2025-05-20T21:37:14.648408 (duration: 0.06s)
+2025-05-20 21:37:14,648 — INFO — 🔁 Cache Manager complete.
+2025-05-20 21:37:14,649 — INFO — 🐺 Launching Enrich WatchDog...
+2025-05-20 21:37:14,649 — INFO — 🐺 Starting Enrich WatchDog...
+2025-05-20 21:37:14,653 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-05-20 21:37:14,654 — INFO — 🔁 Running backfills for missed jobs...
+2025-05-20 21:37:14,654 — INFO — 🔁 Checking for missed jobs...
+2025-05-20 21:37:14,896 — INFO — ✅ 2025-05-20 is a market day.
+2025-05-20 21:37:14,897 — INFO — 🕓 Universe cutoff: 05:00:00, now: 21:37:14.656002
+2025-05-20 21:37:14,897 — INFO — ➡️ Universe file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/universe_2025-05-20.json
+2025-05-20 21:37:14,897 — INFO — ✅ Universe file exists, skipping backfill.
+2025-05-20 21:37:14,897 — INFO — 🕓 Post-Open cutoff: 09:35:50, now: 21:37:14.656002
+2025-05-20 21:37:14,897 — INFO — ➡️ Post-Open file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/post_open_signals_2025-05-20.json
+2025-05-20 21:37:14,897 — INFO — ✅ Post-Open file exists or not yet time, skipping backfill.
+2025-05-20 21:37:14,897 — INFO — ➡️ 945 file expected at: /Users/jk/Dropbox/code/Screener/screener-3.7/backend/cache/945_signals_2025-05-20.json
+2025-05-20 21:37:14,898 — INFO — ✅ 945 file exists, skipping backfill.
+2025-05-20 21:37:14,898 — INFO — 🔁 Backfills complete.
+2025-05-20 21:37:14,898 — INFO — ⏲️ Starting scheduled jobs...
+2025-05-20 21:37:14,898 — INFO — ⏲️ Scheduling daily jobs now
+2025-05-20 21:37:14,903 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 21:37:14,903 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 21:37:14,904 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 21:37:14,904 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-20 21:37:14,905 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 21:37:14,905 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 21:37:14,905 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 21:37:14,905 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-05-20 21:37:14,905 — INFO — Scheduler started
+2025-05-20 21:37:14,906 — INFO — ✅ APScheduler started.
+2025-05-20 21:42:13,638 — INFO — 🛑 Scheduler shutdown...
+2025-05-20 21:42:13,638 — INFO — Scheduler has been shut down

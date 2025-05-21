@@ -1,58 +1,36 @@
 {
   "XLK": {
-    "sector": "Technology",
-    "price": 232.45,
-    "changePercent": -0.27
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLF": {
-    "sector": "Financials",
-    "price": 51.18,
-    "changePercent": -0.38
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLE": {
-    "sector": "Energy",
-    "price": 83.68,
-    "changePercent": -0.74
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLV": {
-    "sector": "Healthcare",
-    "price": 134.35,
-    "changePercent": -0.04
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLI": {
-    "sector": "Industrials",
-    "price": 143.47,
-    "changePercent": -0.15
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLY": {
-    "sector": "Consumer Discretionary",
-    "price": 215.81,
-    "changePercent": -0.8
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLP": {
-    "sector": "Consumer Staples",
-    "price": 82.47,
-    "changePercent": 0.25
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLU": {
-    "sector": "Utilities",
-    "price": 82.84,
-    "changePercent": 0.53
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLRE": {
-    "sector": "Real Estate",
-    "price": 41.82,
-    "changePercent": 0.14
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLB": {
-    "sector": "Materials",
-    "price": 86.86,
-    "changePercent": -0.32
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
   "XLC": {
-    "sector": "Communication Services",
-    "price": 101.37,
-    "changePercent": -0.3
+    "error": "Too Many Requests. Rate limited. Try after a while."
   },
-  "_timestamp": "2025-05-20T18:52:52.508905Z"
+  "_timestamp": "2025-05-20T19:59:57.549927Z"
 }
