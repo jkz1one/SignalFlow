@@ -198,7 +198,6 @@ backend/
 
 ## ⚠️ Known Issues
 
-* Context bar doesn't update
 * Multi-Day high/low not exclusive
 * Premarket levels pending (needed for Momentum Confluence logic)
 * Risk filters pending (right now, most risk  iltering happens in universe build)
