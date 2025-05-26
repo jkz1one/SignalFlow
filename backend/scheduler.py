@@ -89,7 +89,7 @@ def check_and_run_backfills():
 
     # Universe Builder @ 05:00
     uni_cutoff = datetime.combine(now.date(), dt_time(5, 0), tzinfo=tz)
-    if now > uni_cutoff:
+    if now >= uni_cutoff:
         uni_path = os.path.join(CACHE_DIR, f"universe_{today_str}.json")
         if not os.path.exists(uni_path):
             logging.info("🔁 Backfilling Universe Builder now...")
@@ -97,32 +97,32 @@ def check_and_run_backfills():
         else:
             logging.info("✅ Universe file exists, skipping backfill.")
 
-    # Post-Open Signals main: backfill anytime after scheduled run until market close
-    pos_cutoff = datetime.combine(now.date(), dt_time(9, 35, 30), tzinfo=tz)
+    # Post-Open Signals main: backfill only after 09:35:50 ET
+    pos_cutoff = datetime.combine(now.date(), dt_time(9, 35, 50), tzinfo=tz)
     market_close = datetime.combine(now.date(), dt_time(16, 0), tzinfo=tz)
-    pos_path   = os.path.join(CACHE_DIR, f"post_open_signals_{today_str}.json")
-    logging.info(f"🕓 Post-Open window: after {pos_cutoff.time()} until market close {market_close.time()}, now: {now.time()}")
+    pos_path = os.path.join(CACHE_DIR, f"post_open_signals_{today_str}.json")
+    logging.info(f"🕓 Post-Open cutoff at {pos_cutoff.time()}, now: {now.time()}")
     if now >= pos_cutoff and now <= market_close:
         if not os.path.exists(pos_path):
-            logging.info("🔁 Backfilling Post-Open Signals during market hours...")
+            logging.info("🔁 Backfilling Post-Open Signals now...")
             run_script(SCRIPTS["Post Open Signals"], "Post Open Signals")
         else:
             logging.info("✅ Post-Open file exists, skipping backfill.")
     else:
-        logging.info("⏳ Outside Post-Open window for backfill, skipping.")
+        logging.info("⏳ Not yet reached Post-Open cutoff, skipping backfill.")
 
-    # 945 Signals @ 09:45:30: backfill anytime after cutoff until market close
-    s945_cutoff = datetime.combine(now.date(), dt_time(9, 45, 30), tzinfo=tz)
-    s945_path   = os.path.join(CACHE_DIR, f"945_signals_{today_str}.json")
-    logging.info(f"🕓 945 Signals window: after {s945_cutoff.time()} until market close {market_close.time()}, now: {now.time()}")
+    # 945 Signals @ 09:45:50 ET: backfill only after cutoff
+    s945_cutoff = datetime.combine(now.date(), dt_time(9, 45, 50), tzinfo=tz)
+    s945_path = os.path.join(CACHE_DIR, f"945_signals_{today_str}.json")
+    logging.info(f"🕓 945 cutoff at {s945_cutoff.time()}, now: {now.time()}")
     if now >= s945_cutoff and now <= market_close:
         if not os.path.exists(s945_path):
-            logging.info("🔁 Backfilling 945 Signals during market hours...")
+            logging.info("🔁 Backfilling 945 Signals now...")
             run_script(SCRIPTS["945 Signals"], "945 Signals")
         else:
             logging.info("✅ 945 file exists, skipping backfill.")
     else:
-        logging.info("⏳ Outside 945 Signals window for backfill, skipping.")
+        logging.info("⏳ Not yet reached 945 cutoff, skipping backfill.")
 
 # --- Schedule Jobs ---
 def schedule_jobs():
