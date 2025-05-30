@@ -2,7 +2,6 @@ import os
 import sys
 import time
 import subprocess
-import argparse
 from datetime import datetime, timedelta, time as dt_time
 from apscheduler.schedulers.background import BackgroundScheduler
 from pytz import timezone
@@ -53,8 +52,7 @@ def run_script(path, name):
     try:
         subprocess.run([sys.executable, path], check=True)
         end = datetime.now()
-        duration = (end - start).total_seconds()
-        logging.info(f"✅ {name} completed at {end.isoformat()} (duration: {duration:.2f}s)")
+        logging.info(f"✅ {name} completed at {end.isoformat()} (duration: {(end-start).total_seconds():.2f}s)")
     except subprocess.CalledProcessError as e:
         end = datetime.now()
         logging.error(f"❌ {name} failed (code {e.returncode}) at {end.isoformat()}")
@@ -78,7 +76,7 @@ def launch_enrich_watchdog():
     except Exception as e:
         logging.error(f"🐺 Enrich WatchDog failed to start: {e}")
 
-# --- Run Backfills If Missed ---
+# --- Run Backfills If Missed (excluding Cache Manager) ---
 def check_and_run_backfills():
     logging.info("🔁 Checking for missed jobs...")
     tz = timezone("US/Eastern")
@@ -87,13 +85,10 @@ def check_and_run_backfills():
         logging.info("📅 Today is not a market day — skipping backfills.")
         return
 
-    today = now.date()
-    today_str = today.strftime("%Y-%m-%d")
-    market_close = tz.localize(datetime.combine(today, dt_time(16, 0)))
+    today_str = now.strftime("%Y-%m-%d")
 
-    # Universe Builder
-    now = datetime.now(tz)
-    uni_cutoff = tz.localize(datetime.combine(today, dt_time(5, 0)))
+    # Universe Builder @ 05:00
+    uni_cutoff = datetime.combine(now.date(), dt_time(5, 0), tzinfo=tz)
     if now >= uni_cutoff:
         uni_path = os.path.join(CACHE_DIR, f"universe_{today_str}.json")
         if not os.path.exists(uni_path):
@@ -102,40 +97,32 @@ def check_and_run_backfills():
         else:
             logging.info("✅ Universe file exists, skipping backfill.")
 
-    # Post Open Signals
-    now = datetime.now(tz)
-    pos_cutoff = tz.localize(datetime.combine(today, dt_time(9, 35, 50)))
+    # Post-Open Signals main: backfill only after 09:35:50 ET
+    pos_cutoff = datetime.combine(now.date(), dt_time(9, 35, 50), tzinfo=tz)
+    market_close = datetime.combine(now.date(), dt_time(16, 0), tzinfo=tz)
     pos_path = os.path.join(CACHE_DIR, f"post_open_signals_{today_str}.json")
     logging.info(f"🕓 Post-Open cutoff at {pos_cutoff.time()}, now: {now.time()}")
-    if pos_cutoff <= now <= market_close:
+    if now >= pos_cutoff and now <= market_close:
         if not os.path.exists(pos_path):
             logging.info("🔁 Backfilling Post-Open Signals now...")
             run_script(SCRIPTS["Post Open Signals"], "Post Open Signals")
         else:
             logging.info("✅ Post-Open file exists, skipping backfill.")
     else:
-        logging.info("⏳ Outside Post-Open window; skipping backfill.")
+        logging.info("⏳ Not yet reached Post-Open cutoff, skipping backfill.")
 
-    # 945 Signals
-    now = datetime.now(tz)
-    s945_cutoff = tz.localize(datetime.combine(today, dt_time(9, 45, 50)))
+    # 945 Signals @ 09:45:50 ET: backfill only after cutoff
+    s945_cutoff = datetime.combine(now.date(), dt_time(9, 45, 50), tzinfo=tz)
     s945_path = os.path.join(CACHE_DIR, f"945_signals_{today_str}.json")
     logging.info(f"🕓 945 cutoff at {s945_cutoff.time()}, now: {now.time()}")
-    if s945_cutoff <= now <= market_close:
+    if now >= s945_cutoff and now <= market_close:
         if not os.path.exists(s945_path):
             logging.info("🔁 Backfilling 945 Signals now...")
             run_script(SCRIPTS["945 Signals"], "945 Signals")
         else:
             logging.info("✅ 945 file exists, skipping backfill.")
     else:
-        logging.info("⏳ Outside 945 window; skipping backfill.")
-
-# --- Force Run ---
-def force_run_all():
-    logging.info("🏃‍♂️ Forcing execution of all scripts now...")
-    for name in ["Cache Manager", "Universe Builder", "Post Open Signals", "945 Signals"]:
-        logging.info(f"🔧 Forcing {name}...")
-        run_script(SCRIPTS[name], name)
+        logging.info("⏳ Not yet reached 945 cutoff, skipping backfill.")
 
 # --- Schedule Jobs ---
 def schedule_jobs():
@@ -149,14 +136,6 @@ def schedule_jobs():
 
 # --- Entrypoint ---
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Scheduler for Screener jobs.")
-    parser.add_argument("--force", action="store_true", help="Force run all jobs immediately and exit.")
-    args = parser.parse_args()
-
-    if args.force:
-        force_run_all()
-        sys.exit(0)
-
     logging.info("📅 Scheduler initializing...")
     time.sleep(5)
     logging.info("🔁 Starting Cache Manager backfill...")

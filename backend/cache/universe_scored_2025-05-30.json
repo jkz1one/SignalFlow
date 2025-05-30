@@ -11,18 +11,19 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_below_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "GIS": {
     "score": 6,
@@ -37,7 +38,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -45,8 +50,7 @@
       "strong_sector": true,
       "gap_up": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "COO": {
     "score": 7,
@@ -62,19 +66,21 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: early_move",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": -7.26,
       "gap_down": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "DVN": {
     "score": 5,
@@ -89,7 +95,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -98,8 +109,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "RL": {
     "score": 6,
@@ -111,17 +121,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "XYL": {
     "score": 7,
@@ -135,18 +145,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "STZ": {
     "score": 7,
@@ -162,7 +173,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -171,8 +187,7 @@
       "gap_up": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "XOM": {
     "score": 5,
@@ -187,7 +202,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -196,8 +216,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "ADP": {
     "score": 5,
@@ -211,7 +230,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -219,8 +242,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "HSIC": {
     "score": 6,
@@ -235,18 +257,19 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: early_move",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": -3.76,
       "gap_up": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "HII": {
     "score": 7,
@@ -260,18 +283,19 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "FE": {
     "score": 4,
@@ -285,7 +309,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -293,8 +321,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CF": {
     "score": 6,
@@ -309,7 +336,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -317,8 +348,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "KMB": {
     "score": 4,
@@ -332,7 +362,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -340,8 +374,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "PEG": {
     "score": 9,
@@ -357,19 +390,21 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "ALGN": {
     "score": 6,
@@ -381,17 +416,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "SHW": {
     "score": 6,
@@ -406,7 +441,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -414,8 +453,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "WBA": {
     "score": 6,
@@ -430,7 +468,12 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: near_multi_day_low"
+    ],
     "level": "L1",
     "sector": "Healthcare",
     "tags": [],
@@ -439,8 +482,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "ETN": {
     "score": 4,
@@ -453,15 +495,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "DOW": {
     "score": 7,
@@ -477,7 +521,12 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L1",
     "sector": "Basic Materials",
     "tags": [],
@@ -486,8 +535,7 @@
       "gap_down": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "TTD": {
     "score": 4,
@@ -500,15 +548,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "KDP": {
     "score": 8,
@@ -525,7 +575,13 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -535,8 +591,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "NUE": {
     "score": 4,
@@ -550,7 +605,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -558,8 +617,7 @@
       "weak_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "NRG": {
     "score": 4,
@@ -573,7 +631,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -581,8 +643,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "RVTY": {
     "score": 3,
@@ -593,14 +654,15 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "gap_down": true
-    },
-    "isBlocked": false
+    }
   },
   "GILD": {
     "score": 5,
@@ -614,7 +676,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -622,8 +688,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "HSY": {
     "score": 4,
@@ -637,7 +702,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -645,8 +714,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "LNT": {
     "score": 6,
@@ -661,7 +729,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -669,8 +741,7 @@
       "strong_sector": true,
       "gap_up": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "HAL": {
     "score": 5,
@@ -685,7 +756,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -694,8 +770,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "ROL": {
     "score": 5,
@@ -709,7 +784,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -717,8 +796,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "BYND": {
     "score": 8,
@@ -732,18 +810,19 @@
       ],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T2: strong_sector"
+    ],
     "level": "L0",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "gap_down": true,
       "break_below_range": true
-    },
-    "isBlocked": false
+    }
   },
   "CL": {
     "score": 7,
@@ -759,7 +838,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -768,8 +852,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CHD": {
     "score": 4,
@@ -783,7 +866,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -791,8 +878,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "COIN": {
     "score": 5,
@@ -806,7 +892,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -814,8 +904,7 @@
       "gap_down": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "TXT": {
     "score": 6,
@@ -827,17 +916,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "LUV": {
     "score": 7,
@@ -851,18 +940,19 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TER": {
     "score": 4,
@@ -875,15 +965,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "BKNG": {
     "score": 5,
@@ -897,7 +989,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -905,8 +1001,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CLX": {
     "score": 4,
@@ -920,7 +1015,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -928,8 +1027,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "EOG": {
     "score": 8,
@@ -946,7 +1044,13 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -956,8 +1060,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "MGM": {
     "score": 6,
@@ -969,17 +1072,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "PDD": {
     "score": 6,
@@ -994,7 +1097,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -1003,8 +1111,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CCEP": {
     "score": 7,
@@ -1020,7 +1127,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1029,8 +1141,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "KVUE": {
     "score": 4,
@@ -1044,7 +1155,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1052,8 +1167,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "SJM": {
     "score": 8,
@@ -1067,18 +1181,19 @@
       ],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T2: strong_sector"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "gap_up": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "NVR": {
     "score": 5,
@@ -1092,7 +1207,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -1100,8 +1219,7 @@
       "gap_up": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "GNRC": {
     "score": 5,
@@ -1115,7 +1233,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -1123,8 +1245,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "DLTR": {
     "score": 6,
@@ -1139,7 +1260,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1147,8 +1272,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "UHS": {
     "score": 6,
@@ -1160,17 +1284,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "MNST": {
     "score": 4,
@@ -1184,7 +1308,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1192,8 +1320,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "PEP": {
     "score": 5,
@@ -1208,7 +1335,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1217,8 +1349,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "OKE": {
     "score": 6,
@@ -1233,7 +1364,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1241,8 +1376,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "HRL": {
     "score": 7,
@@ -1258,7 +1392,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1267,8 +1406,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "COST": {
     "score": 12,
@@ -1286,13 +1424,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: early_move",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Strong Setup",
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": 2.7,
       "strong_sector": true,
@@ -1300,8 +1442,7 @@
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "WAT": {
     "score": 3,
@@ -1312,14 +1453,15 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "gap_down": true
-    },
-    "isBlocked": false
+    }
   },
   "PG": {
     "score": 5,
@@ -1334,7 +1476,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1343,8 +1490,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "EMN": {
     "score": 3,
@@ -1357,15 +1503,17 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "TRGP": {
     "score": 6,
@@ -1380,7 +1528,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1388,8 +1540,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "PM": {
     "score": 4,
@@ -1403,7 +1554,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1411,8 +1566,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "KHC": {
     "score": 4,
@@ -1426,7 +1580,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1434,8 +1592,7 @@
       "strong_sector": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "NEE": {
     "score": 6,
@@ -1450,7 +1607,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -1458,8 +1619,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "CVX": {
     "score": 4,
@@ -1473,7 +1633,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Energy",
     "tags": [],
@@ -1481,8 +1645,7 @@
       "weak_sector": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CPB": {
     "score": 8,
@@ -1496,18 +1659,19 @@
       ],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T2: strong_sector"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "gap_up": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "SRE": {
     "score": 4,
@@ -1521,7 +1685,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -1529,8 +1697,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "ABNB": {
     "score": 7,
@@ -1544,18 +1711,19 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MOS": {
     "score": 6,
@@ -1570,7 +1738,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -1578,8 +1750,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "GLW": {
     "score": 7,
@@ -1593,18 +1764,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "GDDY": {
     "score": 5,
@@ -1618,7 +1790,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -1626,8 +1802,7 @@
       "gap_up": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "BMY": {
     "score": 6,
@@ -1642,7 +1817,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -1651,8 +1831,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "PFE": {
     "score": 6,
@@ -1667,7 +1846,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L0",
     "sector": "Healthcare",
     "tags": [],
@@ -1676,8 +1860,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CTVA": {
     "score": 6,
@@ -1692,7 +1875,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -1700,8 +1887,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "TGT": {
     "score": 9,
@@ -1717,19 +1903,21 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "strong_sector": true,
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "TSN": {
     "score": 6,
@@ -1744,7 +1932,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1752,8 +1944,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "CBOE": {
     "score": 5,
@@ -1767,7 +1958,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
@@ -1775,8 +1970,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "GME": {
     "score": 9,
@@ -1792,20 +1986,21 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: early_move",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup",
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": 3.7,
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MPWR": {
     "score": 3,
@@ -1816,14 +2011,15 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "gap_down": true
-    },
-    "isBlocked": false
+    }
   },
   "COP": {
     "score": 7,
@@ -1839,7 +2035,12 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -1848,8 +2049,7 @@
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "PPG": {
     "score": 4,
@@ -1863,7 +2063,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -1871,8 +2075,7 @@
       "weak_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "RSG": {
     "score": 7,
@@ -1886,18 +2089,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "EIX": {
     "score": 4,
@@ -1911,7 +2115,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -1919,8 +2127,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "MO": {
     "score": 7,
@@ -1936,7 +2143,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1945,8 +2157,7 @@
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "K": {
     "score": 8,
@@ -1963,7 +2174,13 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -1973,8 +2190,7 @@
       "near_multi_day_high": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "ACGL": {
     "score": 7,
@@ -1988,18 +2204,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Financial Services",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "ERIE": {
     "score": 3,
@@ -2010,14 +2227,15 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
     "signals": {
       "gap_up": true
-    },
-    "isBlocked": false
+    }
   },
   "GD": {
     "score": 7,
@@ -2031,18 +2249,19 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "DUK": {
     "score": 4,
@@ -2056,7 +2275,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2064,8 +2287,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "NKE": {
     "score": 5,
@@ -2079,7 +2301,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -2087,8 +2313,7 @@
       "gap_down": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "ZS": {
     "score": 10,
@@ -2105,20 +2330,23 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T2: early_move",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Technology",
-    "tags": [
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": 2.75,
       "gap_up": true,
       "high_rel_vol": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "EQT": {
     "score": 10,
@@ -2135,20 +2363,23 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Energy",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "weak_sector": true,
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "SWKS": {
     "score": 4,
@@ -2161,15 +2392,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "XEL": {
     "score": 6,
@@ -2184,7 +2417,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2192,8 +2429,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "GOOGL": {
     "score": 5,
@@ -2207,7 +2443,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Communication Services",
     "tags": [],
@@ -2215,8 +2455,7 @@
       "gap_down": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "VMC": {
     "score": 4,
@@ -2230,7 +2469,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -2238,8 +2481,7 @@
       "weak_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "CNP": {
     "score": 7,
@@ -2255,7 +2497,12 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_below_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2264,8 +2511,7 @@
       "break_below_range": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "MDLZ": {
     "score": 7,
@@ -2281,7 +2527,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -2290,8 +2541,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "WYNN": {
     "score": 5,
@@ -2305,7 +2555,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -2313,8 +2567,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "O": {
     "score": 5,
@@ -2328,7 +2581,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Real Estate",
     "tags": [],
@@ -2336,8 +2593,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "WMB": {
     "score": 6,
@@ -2352,7 +2608,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -2360,8 +2620,7 @@
       "weak_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "COF": {
     "score": 4,
@@ -2374,15 +2633,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Financial Services",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "KMI": {
     "score": 7,
@@ -2398,7 +2659,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -2407,8 +2673,7 @@
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "ECL": {
     "score": 4,
@@ -2422,7 +2687,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -2430,8 +2699,7 @@
       "weak_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "BNTX": {
     "score": 3,
@@ -2442,14 +2710,15 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down"
+    ],
     "level": "L0",
     "sector": "Healthcare",
     "tags": [],
     "signals": {
       "gap_down": true
-    },
-    "isBlocked": false
+    }
   },
   "MCD": {
     "score": 5,
@@ -2463,7 +2732,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -2471,8 +2744,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "HOLX": {
     "score": 6,
@@ -2484,17 +2756,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "ULTA": {
     "score": 11,
@@ -2512,12 +2784,17 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: high_rel_vol",
+      "T2: early_move",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": 3.79,
       "gap_up": true,
@@ -2525,8 +2802,7 @@
       "high_volume": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "KR": {
     "score": 6,
@@ -2541,7 +2817,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -2549,8 +2829,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "BULL": {
     "score": 4,
@@ -2563,15 +2842,17 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Technology",
     "tags": [],
     "signals": {
       "gap_down": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "PKG": {
     "score": 7,
@@ -2585,18 +2866,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "VLTO": {
     "score": 7,
@@ -2610,18 +2892,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_below_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "CI": {
     "score": 6,
@@ -2633,17 +2916,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "AWK": {
     "score": 7,
@@ -2659,7 +2942,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2668,8 +2956,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "LW": {
     "score": 6,
@@ -2684,7 +2971,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -2692,8 +2983,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "LIN": {
     "score": 7,
@@ -2709,7 +2999,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T2: weak_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -2718,8 +3013,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "PPL": {
     "score": 6,
@@ -2734,7 +3028,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2742,8 +3040,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "HIMS": {
     "score": 6,
@@ -2758,7 +3055,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L0",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -2766,8 +3067,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "EXC": {
     "score": 4,
@@ -2781,7 +3081,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -2789,8 +3093,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "MLM": {
     "score": 3,
@@ -2803,15 +3106,17 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "HCA": {
     "score": 6,
@@ -2823,17 +3128,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "TSLA": {
     "score": 8,
@@ -2848,19 +3153,21 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L0",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "top_volume_gainer": true,
       "gap_down": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "HON": {
     "score": 5,
@@ -2874,7 +3181,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Industrials",
     "tags": [],
@@ -2882,8 +3193,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "PARA": {
     "score": 7,
@@ -2897,18 +3207,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Communication Services",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "CRM": {
     "score": 7,
@@ -2922,18 +3233,19 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range",
+      "T3: top_volume_gainer"
+    ],
     "level": "L1",
     "sector": "Technology",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_below_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "URI": {
     "score": 6,
@@ -2945,17 +3257,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "SLB": {
     "score": 5,
@@ -2970,7 +3282,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -2979,8 +3296,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "TPR": {
     "score": 6,
@@ -2992,17 +3308,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "PCG": {
     "score": 5,
@@ -3017,7 +3333,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3026,8 +3347,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "INTU": {
     "score": 5,
@@ -3041,7 +3361,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3049,8 +3373,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "APTV": {
     "score": 4,
@@ -3063,15 +3386,17 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
     "signals": {
       "gap_down": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "WMT": {
     "score": 7,
@@ -3087,7 +3412,12 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high"
+    ],
     "level": "L1",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -3096,8 +3426,7 @@
       "break_above_range": true,
       "top_volume_gainer": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "AZN": {
     "score": 7,
@@ -3111,18 +3440,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "SWK": {
     "score": 6,
@@ -3134,17 +3464,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "ROK": {
     "score": 5,
@@ -3158,7 +3488,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -3166,8 +3500,7 @@
       "gap_up": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "LULU": {
     "score": 5,
@@ -3181,7 +3514,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -3189,8 +3526,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "AES": {
     "score": 6,
@@ -3205,7 +3541,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3213,8 +3553,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "DOV": {
     "score": 5,
@@ -3228,7 +3567,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Industrials",
     "tags": [],
@@ -3236,8 +3579,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "AMD": {
     "score": 5,
@@ -3251,7 +3593,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3259,8 +3605,7 @@
       "gap_down": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "KO": {
     "score": 5,
@@ -3275,7 +3620,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L1",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -3284,8 +3634,7 @@
       "top_volume_gainer": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "STE": {
     "score": 6,
@@ -3297,17 +3646,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "ALB": {
     "score": 6,
@@ -3322,7 +3671,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -3330,8 +3683,7 @@
       "weak_sector": true,
       "gap_down": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "APD": {
     "score": 9,
@@ -3347,19 +3699,21 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T2: weak_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "weak_sector": true,
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "SW": {
     "score": 5,
@@ -3373,7 +3727,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Cyclical",
     "tags": [],
@@ -3381,8 +3739,7 @@
       "gap_down": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "WM": {
     "score": 7,
@@ -3396,18 +3753,19 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_above_range",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "A": {
     "score": 6,
@@ -3419,17 +3777,17 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range"
+    ],
     "level": "L2",
     "sector": "Healthcare",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "REGN": {
     "score": 9,
@@ -3445,7 +3803,13 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: high_rel_vol",
+      "T3: high_volume",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Healthcare",
     "tags": [],
@@ -3455,8 +3819,7 @@
       "high_volume": true,
       "top_volume_gainer": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "ATO": {
     "score": 4,
@@ -3470,7 +3833,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3478,8 +3845,7 @@
       "strong_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "EL": {
     "score": 4,
@@ -3493,7 +3859,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -3501,8 +3871,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "HPE": {
     "score": 6,
@@ -3517,7 +3886,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3526,8 +3900,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "EXE": {
     "score": 4,
@@ -3541,7 +3914,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -3549,8 +3926,7 @@
       "weak_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "SYY": {
     "score": 6,
@@ -3565,7 +3941,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Consumer Defensive",
     "tags": [],
@@ -3573,8 +3953,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "DD": {
     "score": 4,
@@ -3588,7 +3967,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -3596,8 +3979,7 @@
       "weak_sector": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "NEM": {
     "score": 9,
@@ -3613,19 +3995,21 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_below_range",
+      "T2: weak_sector",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "weak_sector": true,
       "gap_down": true,
       "break_below_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "AEP": {
     "score": 4,
@@ -3639,7 +4023,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3647,8 +4035,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "STLD": {
     "score": 3,
@@ -3661,15 +4048,17 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
     "signals": {
       "weak_sector": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "ANET": {
     "score": 6,
@@ -3684,7 +4073,12 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T3: top_volume_gainer",
+      "T3: near_multi_day_low",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3693,8 +4087,7 @@
       "top_volume_gainer": true,
       "near_multi_day_low": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "OXY": {
     "score": 4,
@@ -3708,7 +4101,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -3716,8 +4113,7 @@
       "weak_sector": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "FCX": {
     "score": 4,
@@ -3731,7 +4127,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: weak_sector",
+      "T3: top_volume_gainer",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Basic Materials",
     "tags": [],
@@ -3739,8 +4139,7 @@
       "weak_sector": true,
       "top_volume_gainer": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "EVRG": {
     "score": 4,
@@ -3754,7 +4153,11 @@
         "high_volume_no_breakout"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T2: strong_sector",
+      "T3: near_multi_day_high",
+      "T3: high_volume_no_breakout"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3762,8 +4165,7 @@
       "strong_sector": true,
       "near_multi_day_high": true,
       "high_volume_no_breakout": true
-    },
-    "isBlocked": false
+    }
   },
   "TPL": {
     "score": 6,
@@ -3778,7 +4180,11 @@
         "near_multi_day_low"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T2: weak_sector",
+      "T3: near_multi_day_low"
+    ],
     "level": "L2",
     "sector": "Energy",
     "tags": [],
@@ -3786,8 +4192,7 @@
       "weak_sector": true,
       "gap_down": true,
       "near_multi_day_low": true
-    },
-    "isBlocked": false
+    }
   },
   "CTRA": {
     "score": 8,
@@ -3801,18 +4206,19 @@
       ],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: weak_sector"
+    ],
     "level": "L2",
     "sector": "Energy",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "weak_sector": true,
       "gap_down": true,
       "break_above_range": true
-    },
-    "isBlocked": false
+    }
   },
   "NTAP": {
     "score": 9,
@@ -3828,20 +4234,21 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: break_above_range",
+      "T2: early_move",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
-    "tags": [
-      "Strong Setup",
-      "Early Watch"
-    ],
+    "tags": [],
     "signals": {
       "early_move": 4.23,
       "gap_down": true,
       "break_above_range": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "MRVL": {
     "score": 7,
@@ -3855,7 +4262,11 @@
         "top_volume_gainer"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_down",
+      "T1: high_rel_vol",
+      "T3: top_volume_gainer"
+    ],
     "level": "L2",
     "sector": "Technology",
     "tags": [],
@@ -3863,8 +4274,7 @@
       "gap_down": true,
       "high_rel_vol": true,
       "top_volume_gainer": true
-    },
-    "isBlocked": false
+    }
   },
   "WEC": {
     "score": 6,
@@ -3879,7 +4289,11 @@
         "near_multi_day_high"
       ]
     },
-    "reasons": [],
+    "reasons": [
+      "T1: break_above_range",
+      "T2: strong_sector",
+      "T3: near_multi_day_high"
+    ],
     "level": "L2",
     "sector": "Utilities",
     "tags": [],
@@ -3887,8 +4301,7 @@
       "strong_sector": true,
       "break_above_range": true,
       "near_multi_day_high": true
-    },
-    "isBlocked": false
+    }
   },
   "LHX": {
     "score": 6,
@@ -3900,16 +4313,16 @@
       "T2": [],
       "T3": []
     },
-    "reasons": [],
+    "reasons": [
+      "T1: gap_up",
+      "T1: break_below_range"
+    ],
     "level": "L2",
     "sector": "Industrials",
-    "tags": [
-      "Strong Setup"
-    ],
+    "tags": [],
     "signals": {
       "gap_up": true,
       "break_below_range": true
-    },
-    "isBlocked": false
+    }
   }
 }

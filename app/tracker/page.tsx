@@ -2,11 +2,11 @@
 
 import { useState } from 'react';
 import AutoWatchlist from './components/AutoWatchlist';
-import Screener from './components/Screener';
 import SectorRotation from './components/SectorRotation';
+import StockTracker from './components/StockTracker';  // ✅ Add this
 import GlobalContextBar from './components/GlobalContextBar';
 
-const TABS = ['Auto-Watchlist', 'Screener', 'Sector Rotation'];
+const TABS = ['Auto-Watchlist', 'Stock Tracker', 'Sector Rotation'];
 
 export default function TrackerPage() {
   const [activeTab, setActiveTab] = useState('Auto-Watchlist');
@@ -36,7 +36,7 @@ export default function TrackerPage() {
       {/* View Renderer */}
       <div className="mt-4">
         {activeTab === 'Auto-Watchlist' && <AutoWatchlist />}
-        {activeTab === 'Screener' && <Screener />}
+        {activeTab === 'Stock Tracker' && <StockTracker />}
         {activeTab === 'Sector Rotation' && <SectorRotation />}
       </div>
     </div>

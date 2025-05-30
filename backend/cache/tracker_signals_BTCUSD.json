@@ -1,0 +1,13 @@
+{
+  "symbol": "BTCUSD",
+  "timestamp": "2025-05-30T10:13:37.758876-04:00",
+  "system_30m": "Bearish",
+  "system_1h": "Bearish",
+  "momentum": "Chop",
+  "current_price": 105629.2,
+  "premarket_high": 106014.0,
+  "premarket_low": 104627.6,
+  "prev_day_high": 108390.5,
+  "prev_day_low": 105628.0,
+  "prev_day_close": 105737.8
+}
