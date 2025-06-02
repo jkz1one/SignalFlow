@@ -126,6 +126,7 @@ backend/
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
+* ✅ Added Stock Tracker 
 * ✅ Squeeze watch set to be dynamic
 * ✅ `post_open_signals.py` updates with batch mode and SI fetch
 * ✅ Added Global Context Bar 
@@ -158,7 +159,6 @@ backend/
 
 ### Next Steps and In Progress
 
-* [ ] Make tracker live update with WS
 * [ ] Make `sector_signals.py` activated by sector page via main
 * [ ] Add marquee to context bar
 

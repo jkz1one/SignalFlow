@@ -1,63 +1,63 @@
 {
-  "timestamp": "2025-05-30T10:46:21.716025-04:00",
+  "timestamp": "2025-06-01T23:03:00.740836-04:00",
   "SPY": {
-    "last": 588.93,
+    "last": 589.46,
     "open": 588.93,
-    "pct_change": -0.0,
-    "arrow": "down"
+    "pct_change": 0.09,
+    "arrow": "up"
   },
   "QQQ": {
-    "last": 519.01,
+    "last": 519.18,
     "open": 519.52,
-    "pct_change": -0.1,
+    "pct_change": -0.07,
     "arrow": "down"
   },
   "VIX": {
-    "last": 19.12,
+    "last": 18.58,
     "open": 19.61,
-    "pct_change": -2.5,
+    "pct_change": -5.25,
     "arrow": "down"
   },
   "BTC": {
-    "last": 105491.91,
-    "open": 105593.25,
-    "pct_change": -0.1,
+    "last": 105070.34,
+    "open": 105660.39,
+    "pct_change": -0.56,
     "arrow": "down"
   },
   "DXY": {
-    "last": 99.51,
-    "open": 99.45,
-    "pct_change": 0.06,
-    "arrow": "up"
+    "last": 99.24,
+    "open": 99.41,
+    "pct_change": -0.17,
+    "arrow": "down"
   },
   "Gold": {
-    "last": 3305.6,
-    "open": 3317.7,
-    "pct_change": -0.36,
-    "arrow": "down"
+    "last": 3330.8,
+    "open": 3323.0,
+    "pct_change": 0.23,
+    "arrow": "up"
   },
   "Crude": {
-    "last": 60.53,
-    "open": 60.66,
-    "pct_change": -0.21,
-    "arrow": "down"
+    "last": 62.61,
+    "open": 61.11,
+    "pct_change": 2.45,
+    "arrow": "up"
   },
   "10Y": {
-    "last": 4.41,
+    "last": 4.42,
     "open": 4.42,
-    "pct_change": -0.32,
+    "pct_change": -0.14,
     "arrow": "down"
   },
   "5Y": {
-    "last": 3.99,
+    "last": 3.98,
     "open": 3.99,
-    "pct_change": -0.05,
+    "pct_change": -0.23,
     "arrow": "down"
   },
   "2Y": {
     "last": 4.23,
     "open": 4.23,
-    "pct_change": 0.17,
+    "pct_change": 0.09,
     "arrow": "up"
   },
   "Spread": {

@@ -79,7 +79,7 @@ export default function GlobalContextBar() {
                   className="bg-gray-700 rounded-lg px-2 py-1 flex items-center whitespace-nowrap"
                 >
                   <span className={`${color} font-bold`}>{labels[key]}:&nbsp;</span>
-                  <span className={`${color} font-thin text-sm`}>{val}&nbsp;</span>
+                  <span className={`${color} text-sm`}>{val}&nbsp;</span>
                   <span className={`${color} font-bold text-sm`}>{pct}&nbsp;</span>
                   <span className={`${color} font-bold text-sm `}>{arrow}</span>
                 </div>

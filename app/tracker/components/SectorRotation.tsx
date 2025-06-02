@@ -78,18 +78,18 @@ export default function SectorRotation() {
   return (
     <div className="space-y-4 w-full">
       {/* Toggle button */}
-      <div className="flex w-full">
-        <div className="ml-auto min-w-[180px]">
-          <select
-            value={sortDescending ? 'desc' : 'asc'}
-            onChange={e => setSortDescending(e.target.value === 'desc')}
-            className="bg-gray-700 text-gray-200 text-sm px-2 py-1 rounded"
-          >
-            <option value="desc">Gainers → Losers</option>
-            <option value="asc">Losers → Gainers</option>
-          </select>
-        </div>
+      <div className="flex justify-end w-full pr-4">
+        <select
+          value={sortDescending ? 'desc' : 'asc'}
+          onChange={e => setSortDescending(e.target.value === 'desc')}
+          className="bg-gray-700 text-gray-200 text-sm px-3 py-1 rounded w-[160px] text-center"
+        >
+          <option value="desc">Gainers → Losers</option>
+          <option value="asc">Losers → Gainers</option>
+        </select>
       </div>
+
+
 
       {sorted.map((sector) => {
         const colorClass = sector.changePercent >= 0 ? 'text-green-400' : 'text-red-400';
@@ -105,14 +105,15 @@ export default function SectorRotation() {
                   <span className="text-gray-400 text-sm"> {sector.fullName}</span>
                 )}
               </div>
-              <div className="flex flex-col items-end text-right gap-2">
+              <div className="flex items-baseline gap-2 text-right">
                 <div className="text-lg font-semibold text-gray-400">
                   ${sector.price.toFixed(2)}
                 </div>
-                <div className={`text-xl font-bold ${colorClass}`}>{
-                  `${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`
-                }</div>
+                <div className={`text-xl font-bold ${colorClass}`}>
+                  {`${sector.changePercent >= 0 ? '+' : ''}${sector.changePercent.toFixed(2)}%`}
+                </div>
               </div>
+
             </div>
           </div>
         );
