@@ -1,102 +1,102 @@
 Symbol,Name
-AAPL,Apple Inc
-MSFT,Microsoft Corp
-NVDA,NVIDIA Corp
-AMZN,Amazon.com Inc
-AVGO,Broadcom Inc
-META,Meta Platforms Inc
-NFLX,Netflix Inc
-COST,Costco Wholesale Corp
-TSLA,Tesla Inc
-GOOGL,Alphabet Inc
-GOOG,Alphabet Inc
-TMUS,T-Mobile US Inc
-PLTR,Palantir Technologies Inc
-CSCO,Cisco Systems Inc
-LIN,Linde PLC
-PEP,PepsiCo Inc
-ISRG,Intuitive Surgical Inc
-INTU,Intuit Inc
-QCOM,QUALCOMM Inc
-BKNG,Booking Holdings Inc
-ADBE,Adobe Inc
-AMD,Advanced Micro Devices Inc
-AMGN,Amgen Inc
-TXN,Texas Instruments Inc
-GILD,Gilead Sciences Inc
-HON,Honeywell International Inc
-VRTX,Vertex Pharmaceuticals Inc
-CMCSA,Comcast Corp
-AMAT,Applied Materials Inc
-PANW,Palo Alto Networks Inc
-ADP,Automatic Data Processing Inc
-MELI,MercadoLibre Inc
-CRWD,Crowdstrike Holdings Inc
-ADI,Analog Devices Inc
-SBUX,Starbucks Corp
-KLAC,KLA Corp
-LRCX,Lam Research Corp
-INTC,Intel Corp
-APP,AppLovin Corp
-MSTR,MicroStrategy Inc
-MU,Micron Technology Inc
-MDLZ,Mondelez International Inc
-CTAS,Cintas Corp
-FTNT,Fortinet Inc
-ORLY,O'Reilly Automotive Inc
-CDNS,Cadence Design Systems Inc
-DASH,DoorDash Inc
-CEG,Constellation Energy Corp
-PDD,PDD Holdings Inc ADR
-SNPS,Synopsys Inc
-REGN,Regeneron Pharmaceuticals Inc
-MAR,Marriott International Inc/MD
-PYPL,PayPal Holdings Inc
-ASML,ASML Holding NV
-ROP,Roper Technologies Inc
-ADSK,Autodesk Inc
-CPRT,Copart Inc
-AEP,American Electric Power Co Inc
-MNST,Monster Beverage Corp
-CHTR,Charter Communications Inc
-ABNB,Airbnb Inc
-CSX,CSX Corp
-PAYX,Paychex Inc
-WDAY,Workday Inc
-MRVL,Marvell Technology Inc
-NXPI,NXP Semiconductors NV
-PCAR,PACCAR Inc
-EXC,Exelon Corp
-AXON,Axon Enterprise Inc
-KDP,Keurig Dr Pepper Inc
-ROST,Ross Stores Inc
-FAST,Fastenal Co
-AZN,AstraZeneca PLC ADR
-CCEP,Coca-Cola Europacific Partners PLC
-VRSK,Verisk Analytics Inc
-XEL,Xcel Energy Inc
-FANG,Diamondback Energy Inc
-TTWO,Take-Two Interactive Software Inc
-EA,Electronic Arts Inc
-TEAM,Atlassian Corp
-CTSH,Cognizant Technology Solutions Corp
-BKR,Baker Hughes Co
-IDXX,IDEXX Laboratories Inc
-KHC,Kraft Heinz Co/The
-ZS,Zscaler Inc
-CSGP,CoStar Group Inc
-DDOG,Datadog Inc
-ODFL,Old Dominion Freight Line Inc
-LULU,Lululemon Athletica Inc
-GEHC,GE HealthCare Technologies Inc
-ANSS,ANSYS Inc
-DXCM,Dexcom Inc
-MCHP,Microchip Technology Inc
-TTD,Trade Desk Inc/The
-WBD,Warner Bros Discovery Inc
-CDW,CDW Corp/DE
-GFS,GLOBALFOUNDRIES Inc
-BIIB,Biogen Inc
-ON,ON Semiconductor Corp
-ARM,ARM Holdings PLC ADR
-MDB,MongoDB Inc
+MSFT,Microsoft
+NVDA,Nvidia
+AAPL,Apple Inc.
+AMZN,Amazon
+GOOG,Alphabet Inc. (Class C)
+GOOGL,Alphabet Inc. (Class A)
+META,Meta Platforms
+AVGO,Broadcom Inc.
+TSLA,"Tesla, Inc."
+NFLX,Netflix
+COST,Costco
+PLTR,Palantir Technologies
+ASML,ASML Holding
+TMUS,T-Mobile US
+CSCO,Cisco
+AZN,AstraZeneca
+LIN,Linde plc
+INTU,Intuit
+ISRG,Intuitive Surgical
+PEP,PepsiCo
+BKNG,Booking Holdings
+AMD,Advanced Micro Devices Inc.
+ADBE,Adobe Inc.
+TXN,Texas Instruments
+QCOM,Qualcomm
+AMGN,Amgen
+HON,Honeywell
+PDD,PDD Holdings
+GILD,Gilead Sciences
+APP,Applovin Corp
+ADP,ADP
+ARM,Arm Holdings
+MELI,MercadoLibre
+CMCSA,Comcast
+PANW,Palo Alto Networks
+AMAT,Applied Materials
+CRWD,CrowdStrike
+VRTX,Vertex Pharmaceuticals
+ADI,Analog Devices
+MU,Micron Technology
+LRCX,Lam Research
+MSTR,MicroStrategy Inc.
+KLAC,KLA Corporation
+CEG,Constellation Energy
+SBUX,Starbucks
+CTAS,Cintas
+DASH,DoorDash
+MDLZ,Mondelez International
+INTC,Intel
+ABNB,Airbnb
+CDNS,Cadence Design Systems
+ORLY,O'Reilly Automotive
+FTNT,Fortinet
+MAR,Marriott International
+SNPS,Synopsys
+PYPL,PayPal
+WDAY,"Workday, Inc."
+ADSK,Autodesk
+MNST,Monster Beverage
+ROP,Roper Technologies
+CSX,CSX Corporation
+AXON,Axon Enterprise Inc.
+PAYX,Paychex
+AEP,American Electric Power
+CHTR,Charter Communications
+TEAM,Atlassian
+REGN,Regeneron Pharmaceuticals
+MRVL,Marvell Technology
+CPRT,Copart
+PCAR,Paccar
+NXPI,NXP Semiconductors
+FAST,Fastenal
+ROST,Ross Stores
+KDP,Keurig Dr Pepper
+EXC,Exelon
+VRSK,Verisk
+ZS,Zscaler
+CCEP,Coca-Cola Europacific Partners
+TTWO,Take-Two Interactive
+IDXX,Idexx Laboratories
+DDOG,Datadog
+XEL,Xcel Energy
+CTSH,Cognizant
+LULU,Lululemon Athletica
+FANG,Diamondback Energy
+TTD,Trade Desk (The)
+BKR,Baker Hughes
+EA,Electronic Arts
+ODFL,Old Dominion Freight Line
+DXCM,DexCom
+GEHC,GE HealthCare
+KHC,Kraft Heinz
+MCHP,Microchip Technology
+CSGP,CoStar Group
+ANSS,Ansys
+WBD,Warner Bros. Discovery
+CDW,CDW Corporation
+GFS,GlobalFoundries
+BIIB,Biogen
+ON,Onsemi
+MDB,MongoDB Inc.

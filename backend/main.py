@@ -10,12 +10,16 @@ from datetime import datetime
 from backend.routes import api_global_context
 from backend.signals import fetch_global_context  # WebSocket route
 from backend.routes import tracker_router as tracker_module
+from backend.routes import raw_candles
+from backend.routes import tracker_candles
 app = FastAPI()
 
 # --- Register routers ---
 app.include_router(api_global_context.router, prefix="/api")
 app.include_router(fetch_global_context.router)
 app.include_router(tracker_module.router, prefix="/api")
+app.include_router(raw_candles.router)
+app.include_router(tracker_candles.router)
 
 # --- CORS setup ---
 app.add_middleware(

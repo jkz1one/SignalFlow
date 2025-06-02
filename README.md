@@ -18,21 +18,38 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ### 🖥️ Frontend
 
-- Live at `/tracker` via Next.js
-- Displays:
-  - Watchlist of scored stocks
-    - Tier hits (T1, T2, T3)
-    - Risk tags (e.g., Low Liquidity, Wide Spread)
-    - Custom labels like “Strong Setup” or “Squeeze Watch”
-  - Sector rotation tracker
-    - Live updates
-    - Auto sorts highest to lowest
+* Live at `/tracker` via Next.js
 
-- Interactive filters:
-  - Tier toggle (T1/T2/T3)
-  - Show/hide risk-blocked tickers
-  - Tag filters (e.g., “Early Watch”, “Top Gainer”)
-  - Sort by score
+### Includes:
+
+* **Auto-Watchlist of scored stocks**
+
+  * Tier hits (T1, T2, T3)
+  * Risk tags (e.g., Low Liquidity, Wide Spread)
+  * Custom labels like “Strong Setup” or “Squeeze Watch”
+  * Click-to-expand view with screener breakdown
+  * **Filters and Controls:**
+
+    * Tier toggle (T1/T2/T3)
+    * Show/hide risk-blocked tickers
+    * Tag filters (e.g., “Early Watch”, “Top Gainer”)
+    * Sort by score or symbol
+
+* **Sector Rotation tab**
+
+  * Live updates with top/bottom sector sort
+  * Lists leading contributors per sector
+
+* **Live Tracker tab**
+
+  * Select any ticker (default: SPY)
+  * Displays:
+
+    * Momentum status
+    * System trend (30m/1h EMA overlay)
+    * Premarket and previous day levels
+    * Real-time candle chart
+
 
 ---
 
@@ -65,23 +82,73 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 
 ## ▶️ How to Run
 
+> This script sets up the full Screener dev environment using tmux to run all backend and frontend services in parallel.
+
+### **🔧** System Requirements
+
+* Python 3.x
+* Node.js + npm
+* `tmux` (used for dev runner script)
+* `chromedriver` (if scraping via Selenium)
+* `curl`, `jq` (if used in shell scripts)
+
+---
+
+### 📂 Setup & tmux Usage
+
+### ✅ Install Requirements
+
 ```bash
-# Step 0 — Install dependencies (one-time setup)
+# System dependencies
+brew install tmux
+brew install jq
+brew install --cask chromedriver
+
+# Python packages
 pip install -r backend/requirements.txt
 
+# Frontend packages (run from project root if package.json is there)
+npm install
+```
+
+### 🚀 Run, Navigate, and Control `tmux`
+
+```bash
+# 🚀 Start full dev environment
+./run.sh
+
+# Navigate tmux windows
+Ctrl + b, then n      # next window
+Ctrl + b, then p      # previous window
+Ctrl + b, then 0-4    # switch to specific window
+Ctrl + b, then w      # list all windows
+
+# Detach (leave processes running)
+Ctrl + b, then d
+
+# Reattach later
+tmux attach -t screener-dev
+
+# Shut down all processes
+tmux kill-session -t screener-dev
+```
+
+### 🔎 What `run.sh` Handles
+
+```bash
 # Step 1 - Activate Virtual Environment
 source backend/screener-venv/bin/activate 
 
-# Step 2 — Run Scheduler
+# Step 2 - Run Scheduler
 python3 backend/scheduler.py
 
-# Step 3 — Run Sector WS
+# Step 3 - Run Sector WS
 python3 backend/signals/sector_signals.py
 
-# Step 4 — Start backend API (FastAPI)
+# Step 4 - Start backend API (FastAPI)
 uvicorn backend.main:app --reload --port 8000
 
-# Step 5 — Start frontend (Next.js)
+# Step 5 - Start frontend (Next.js)
 npm run dev
 ```
 
@@ -121,6 +188,8 @@ backend/
 | `/api/enriched`         | Enriched universe (pre-scoring)          |
 | `/api/scored`           | Scored universe with tier signals        |
 | `/api/sector`           | Live Sector ETF % change and data        |
+| `/api/tracker/{ticker}` | Real-time data + PM/PD levels            |
+| `/api/tracker-candles/` | Candle data for chart                     |
 | `/api/raw`              | Raw pulled universe (from CSVs/static)   |
 
 ---
@@ -162,6 +231,7 @@ backend/
 
 * [ ] Make `sector_signals.py` activated by sector page via main
 * [ ] Add marquee to context bar
+* [ ] Clarify T1 break above/below range on frontend for what timeframe.
 
 ### On Deck
 

@@ -36,7 +36,7 @@ def parse_df(raw, interval):
     timestamp_key = next((col for col in ['datetime', 'time', 'timestamp'] if col in df.columns), None)
     if not timestamp_key:
         raise KeyError("No valid timestamp column found in data")
-    df['timestamp'] = pd.to_datetime(df[timestamp_key]).dt.tz_localize(EASTERN)  # PATCHED: assumes timestamps are in Eastern
+    df['timestamp'] = pd.to_datetime(df[timestamp_key]).dt.tz_localize(EASTERN)
     df.set_index('timestamp', inplace=True)
     return df.sort_index()
 
@@ -102,6 +102,17 @@ def calc_tracker_signals(symbol):
 
     current_price = df_5m.iloc[-1]['close']
 
+    # --- Today's intraday high/low ---
+    today = datetime.now(EASTERN).date()
+    today_df = df_5m[
+        (df_5m.index.date == today) &
+        (df_5m.index.time >= time(9, 30)) &
+        (df_5m.index.time <= time(16, 0))
+    ]
+
+    daily_hi = today_df['high'].max() if not today_df.empty else None
+    daily_lo = today_df['low'].min() if not today_df.empty else None
+
     signals = {
         "symbol": symbol.upper(),
         "timestamp": datetime.now(EASTERN).isoformat(),
@@ -114,12 +125,14 @@ def calc_tracker_signals(symbol):
             pre_hi=pre_hi,
             pre_lo=pre_lo
         ),
-        "current_price": round(current_price, 2),  # ✅ NEW FIELD
+        "current_price": round(current_price, 2),
         "premarket_high": round(pre_hi, 2) if pre_hi else None,
         "premarket_low": round(pre_lo, 2) if pre_lo else None,
         "prev_day_high": round(prev_hi, 2) if prev_hi else None,
         "prev_day_low": round(prev_lo, 2) if prev_lo else None,
         "prev_day_close": round(prev_close, 2) if prev_close else None,
+        "daily_high": round(daily_hi, 2) if daily_hi else None,
+        "daily_low": round(daily_lo, 2) if daily_lo else None,
     }
 
     out_path = OUTPUT_TEMPLATE.format(symbol=symbol.upper())
