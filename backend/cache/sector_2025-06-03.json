@@ -1,0 +1,58 @@
+{
+  "XLK": {
+    "sector": "Technology",
+    "price": 235.92,
+    "changePercent": 1.14
+  },
+  "XLF": {
+    "sector": "Financials",
+    "price": 50.99,
+    "changePercent": 0.34
+  },
+  "XLE": {
+    "sector": "Energy",
+    "price": 83.94,
+    "changePercent": 1.91
+  },
+  "XLV": {
+    "sector": "Healthcare",
+    "price": 132.87,
+    "changePercent": 0.38
+  },
+  "XLI": {
+    "sector": "Industrials",
+    "price": 143.58,
+    "changePercent": 0.68
+  },
+  "XLY": {
+    "sector": "Consumer Discretionary",
+    "price": 216.49,
+    "changePercent": 0.93
+  },
+  "XLP": {
+    "sector": "Consumer Staples",
+    "price": 82.57,
+    "changePercent": -0.19
+  },
+  "XLU": {
+    "sector": "Utilities",
+    "price": 82.32,
+    "changePercent": -1.02
+  },
+  "XLRE": {
+    "sector": "Real Estate",
+    "price": 41.6,
+    "changePercent": 0.01
+  },
+  "XLB": {
+    "sector": "Materials",
+    "price": 87.28,
+    "changePercent": 0.88
+  },
+  "XLC": {
+    "sector": "Communication Services",
+    "price": 101.76,
+    "changePercent": 0.08
+  },
+  "_timestamp": "2025-06-03T16:25:57.630598Z"
+}

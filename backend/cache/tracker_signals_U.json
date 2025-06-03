@@ -1,15 +1,15 @@
 {
   "symbol": "U",
-  "timestamp": "2025-06-02T16:08:20.193799-04:00",
+  "timestamp": "2025-06-03T11:15:25.249813-04:00",
   "system_30m": "Bullish",
   "system_1h": "Bullish",
   "momentum": "Chop",
-  "current_price": 26.28,
-  "premarket_high": 26.53,
-  "premarket_low": 25.12,
-  "prev_day_high": 27.73,
-  "prev_day_low": 24.82,
-  "prev_day_close": 26.09,
-  "daily_high": 26.73,
-  "daily_low": 25.5
+  "current_price": 26.37,
+  "premarket_high": 26.44,
+  "premarket_low": 25.68,
+  "prev_day_high": 26.73,
+  "prev_day_low": 25.5,
+  "prev_day_close": 26.25,
+  "daily_high": 26.62,
+  "daily_low": 25.68
 }

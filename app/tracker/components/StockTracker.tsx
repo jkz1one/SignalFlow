@@ -1,34 +1,57 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, FormEvent, ChangeEvent } from 'react';
+import Chart from './Chart'; // 👈 Make sure this is correct path
 
-// @ts-nocheck – optional: disables TS errors if project still has tsconfig
+type TrackerData = {
+  timestamp?: string;
+  momentum?: string;
+  system_30m?: string;
+  system_1h?: string;
+  premarket_high?: number | null;
+  premarket_low?: number | null;
+  daily_high?: number | null;
+  daily_low?: number | null;
+  prev_day_high?: number | null;
+  prev_day_low?: number | null;
+  current_price?: number | null;
+};
+
+interface Candle {
+  time: number;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+}
 
 export default function StockTracker() {
-  const [symbol, setSymbol] = useState(() =>
+  const [symbol, setSymbol] = useState<string>(() =>
     typeof window !== 'undefined' ? localStorage.getItem('symbol_tracker') || 'SPY' : 'SPY'
   );
-  const [input, setInput] = useState(symbol);
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [input, setInput] = useState<string>(symbol);
+  const [data, setData] = useState<TrackerData | null>(null);
+  const [candles, setCandles] = useState<Candle[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const formatNum = (val) => (val !== undefined ? val.toFixed(2) : '–');
+  const formatNum = (val?: number | null): string =>
+    val != null ? val.toFixed(2) : '–';
 
-  const getColor = (val) => {
+  const getColor = (val?: string): string => {
     if (val === 'Bullish') return 'text-green-400';
     if (val === 'Bearish') return 'text-red-400';
     if (val === 'Chop' || val === 'Neutral') return 'text-yellow-300';
     return 'text-white';
   };
 
-  async function fetchTracker() {
+  const fetchTracker = async () => {
     setLoading(true);
     setError(null);
     try {
       const res = await fetch(`/api/tracker/${symbol}`);
       if (!res.ok) throw new Error('Failed to fetch tracker data');
-      const json = await res.json();
+      const json: TrackerData = await res.json();
       setData(json);
       localStorage.setItem('symbol_tracker', symbol);
     } catch {
@@ -37,24 +60,43 @@ export default function StockTracker() {
     } finally {
       setLoading(false);
     }
-  }
+  };
+
+  const fetchCandles = async () => {
+    try {
+      const res = await fetch(`/api/tracker-candles?symbol=${symbol}&interval=5m`);
+      const json = await res.json();
+      setCandles(json.candles || []);
+    } catch {
+      console.error('Error fetching candles');
+    }
+  };
 
   useEffect(() => {
     fetchTracker();
-    const interval = setInterval(fetchTracker, 60000);
+    fetchCandles();
+    const interval = setInterval(() => {
+      fetchTracker();
+      fetchCandles();
+    }, 60000);
     return () => clearInterval(interval);
   }, [symbol]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const newSymbol = input.trim().toUpperCase();
     if (!newSymbol) return;
 
     if (newSymbol === symbol) {
-      fetchTracker(); // Force re-fetch if same symbol
+      fetchTracker();
+      fetchCandles();
     } else {
       setSymbol(newSymbol);
     }
+  };
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInput(e.target.value.toUpperCase());
   };
 
   return (
@@ -64,7 +106,7 @@ export default function StockTracker() {
         <input
           className="bg-gray-700 text-white px-3 py-2 rounded-md w-32"
           value={input}
-          onChange={(e) => setInput(e.target.value.toUpperCase())}
+          onChange={handleInputChange}
           placeholder="Enter ticker"
         />
         <button
@@ -81,7 +123,7 @@ export default function StockTracker() {
       {data && (
         <>
           <div className="text-right text-xs text-gray-400">
-            Updated: {new Date(data.timestamp).toLocaleTimeString()}
+            Updated: {data.timestamp ? new Date(data.timestamp).toLocaleTimeString() : '–'}
           </div>
 
           {/* Row 1: Momentum & System */}
@@ -95,10 +137,16 @@ export default function StockTracker() {
             <div className="bg-gray-700 rounded-lg p-4 text-center space-y-1 min-w-[300px] flex-1">
               <h3 className="text-xl text-gray-300 font-bold">The System</h3>
               <p>
-                30m: <span className={`font-bold ${getColor(data.system_30m)}`}>{data.system_30m || '–'}</span>
+                30m:{' '}
+                <span className={`font-bold ${getColor(data.system_30m)}`}>
+                  {data.system_30m || '–'}
+                </span>
               </p>
               <p>
-                1h: <span className={`font-bold ${getColor(data.system_1h)}`}>{data.system_1h || '–'}</span>
+                1h:{' '}
+                <span className={`font-bold ${getColor(data.system_1h)}`}>
+                  {data.system_1h || '–'}
+                </span>
               </p>
             </div>
           </div>
@@ -131,6 +179,13 @@ export default function StockTracker() {
               <p>{formatNum(data.current_price)}</p>
             </div>
           </div>
+
+          {/* 📈 Chart */}
+          {candles.length > 0 && (
+            <div className="pt-6">
+              <Chart candles={candles} symbol={symbol} />
+            </div>
+          )}
         </>
       )}
     </div>

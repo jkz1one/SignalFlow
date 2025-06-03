@@ -1,12 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   createChart,
   CrosshairMode,
-  LineStyle,
-  IChartApi,
   CandlestickSeriesOptions,
+  CandlestickData,
   Time,
 } from 'lightweight-charts';
 
@@ -24,14 +23,15 @@ interface ChartProps {
 }
 
 export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
-  const chartContainerRef = useRef<HTMLDivElement>(null);
-  const [chartInstance, setChartInstance] = useState<IChartApi | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<ReturnType<typeof createChart> | null>(null);
+  const seriesRef = useRef<any>(null);
 
   useEffect(() => {
-    if (!chartContainerRef.current) return;
+    if (!containerRef.current) return;
 
-    const chart: IChartApi = createChart(chartContainerRef.current, {
-      width: chartContainerRef.current.clientWidth,
+    const chart = createChart(containerRef.current, {
+      width: containerRef.current.clientWidth,
       height: 300,
       layout: {
         background: { color: '#1f2937' },
@@ -46,25 +46,26 @@ export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
       timeScale: { borderColor: '#9ca3af' },
     });
 
-    setChartInstance(chart);
-
-    const series = (chart as any).addCandlestickSeries({
+    const opts: Partial<CandlestickSeriesOptions> = {
       upColor: '#10b981',
       downColor: '#ef4444',
-      borderVisible: false,
       wickUpColor: '#10b981',
       wickDownColor: '#ef4444',
-    });
+      borderVisible: false,
+    };
 
-    series.setData(candles);
+    const series = chart.addCandlestickSeries(opts);
+
+    chartRef.current = chart;
+    seriesRef.current = series;
 
     const resizeObserver = new ResizeObserver(() => {
-      chart.applyOptions({
-        width: chartContainerRef.current!.clientWidth,
-      });
+      if (containerRef.current) {
+        chart.applyOptions({ width: containerRef.current.clientWidth });
+      }
     });
 
-    resizeObserver.observe(chartContainerRef.current);
+    resizeObserver.observe(containerRef.current);
 
     return () => {
       resizeObserver.disconnect();
@@ -73,22 +74,23 @@ export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
   }, []);
 
   useEffect(() => {
-    if (chartInstance && candles.length > 0) {
-      const series = (chartInstance as any).addCandlestickSeries({
-        upColor: '#10b981',
-        downColor: '#ef4444',
-        borderVisible: false,
-        wickUpColor: '#10b981',
-        wickDownColor: '#ef4444',
-      });
-      series.setData(candles);
-    }
+    if (!seriesRef.current) return;
+
+    const formatted: CandlestickData[] = candles.map((c) => ({
+      time: c.time as Time,
+      open: c.open,
+      high: c.high,
+      low: c.low,
+      close: c.close,
+    }));
+
+    seriesRef.current.setData(formatted);
   }, [candles]);
 
   return (
     <div className="w-full">
       <div className="text-sm text-gray-300 mb-1">{symbol} Chart</div>
-      <div ref={chartContainerRef} className="w-full" />
+      <div ref={containerRef} className="w-full" />
     </div>
   );
 }

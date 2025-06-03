@@ -1,15 +1,15 @@
 {
   "symbol": "BTCUSD",
-  "timestamp": "2025-06-02T12:07:39.161377-04:00",
-  "system_30m": "Bearish",
-  "system_1h": "Bearish",
-  "momentum": "Chop",
-  "current_price": 104399.1,
-  "premarket_high": 105986.4,
-  "premarket_low": 103888.1,
-  "prev_day_high": 106003.7,
-  "prev_day_low": 103662.9,
-  "prev_day_close": 104636.8,
-  "daily_high": 104736.0,
-  "daily_low": 103685.4
+  "timestamp": "2025-06-03T12:25:47.115556-04:00",
+  "system_30m": "Bullish",
+  "system_1h": "Bullish",
+  "momentum": "Bullish",
+  "current_price": 106484.4,
+  "premarket_high": 105558.2,
+  "premarket_low": 104942.8,
+  "prev_day_high": 104787.9,
+  "prev_day_low": 103685.4,
+  "prev_day_close": 104470.3,
+  "daily_high": 106909.2,
+  "daily_low": 105100.4
 }

@@ -16,7 +16,9 @@ BARS_CONFIG = {
     "1m": 1500,     # ~2.5 days
     "5m": 1000,     # ~1 week
     "30m": 120,     # ~3–4 weeks
-    "1h": 150       # ~1 month+
+    "1h": 150,       # ~1 month+
+    "4h": 90,       # ~3 months
+    "1d": 250       # ~ 1 year
 }
 
 INTERVAL_MAP = {
@@ -24,6 +26,8 @@ INTERVAL_MAP = {
     "5m": Interval.in_5_minute,
     "30m": Interval.in_30_minute,
     "1h": Interval.in_1_hour,
+    "4h": Interval.in_4_hour,
+    "1d": Interval.in_daily, 
 }
 
 tv = TvDatafeed()

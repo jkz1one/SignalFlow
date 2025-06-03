@@ -35,11 +35,6 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
     * Tag filters (e.g., “Early Watch”, “Top Gainer”)
     * Sort by score or symbol
 
-* **Sector Rotation tab**
-
-  * Live updates with top/bottom sector sort
-  * Lists leading contributors per sector
-
 * **Live Tracker tab**
 
   * Select any ticker (default: SPY)
@@ -50,19 +45,27 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
     * Premarket and previous day levels
     * Real-time candle chart
 
+* **Sector Rotation tab**
+
+  * Live updates with top/bottom sector sort
+  * Lists leading contributors per sector
 
 ---
 
 ### ⚙️ Backend Active Modules
-
-| Module                 | Function                                                 |
-| ---------------------- | -------------------------------------------------------- |
-| `scheduler.py`         | Job manager (APScheduler) for timed runs                 |
-| `cache_manager.py`     | Cleans and resets stale files at start of day            |
-| `enrich_watchdog.py`   | Monitors signal files and auto-triggers enrichment flow  |
-| `enrich_universe.py`   | Adds Tier 1–3 signals, risk filters, sector mapping      |
-| `screenbuilder.py`     | Scores and tags all tickers by signal strength           |
-| `watchlist_builder.py` | Filters to final daily watchlist based on score/risk     |
+| Module                     | Function                                                              |
+| -------------------------- | --------------------------------------------------------------------- |
+| `scheduler.py`             | APScheduler job manager for scheduled runs                            |
+| `cache_manager.py`         | Cleans and resets stale cache files at start of day                   |
+| `enrich_watchdog.py`       | Monitors post-open signal files and triggers enrichment automatically |
+| `enrich_universe.py`       | Applies Tier 1–3 screeners, risk filters, and sector mapping          |
+| `screenbuilder.py`         | Assigns scores and tags based on confluence of triggered signals      |
+| `watchlist_builder.py`     | Final pass: filters scored tickers into daily watchlist (score/risk)  |
+| `post_open_signals.py`     | Unified fetcher for TV signals, early % move, multi-day highs/lows    |
+| `fetch_tv_data.py`         | Scrapes TradingView candles (5m–1D) and caches by symbol+interval     |
+| `sector_signals.py`        | Extracts sector % change and leading contributors (SPDR ETFs)         |
+| `calc_tracker_signals.py`  | Calculates tracker metrics: system labels (EMA10/50), trend, levels   |
+| `build_tracker_candles.py` | Groups raw TV candles, patches timestamps, computes interval EMAs     |
 
 ---
 
@@ -180,17 +183,18 @@ backend/
 
 ## 📡 API Endpoints
 
-| Route                   | Purpose                                  |
-| ----------------------- | ---------------------------------------- |
-| `/api/autowatchlist`    | Final filtered watchlist                 |
-| `/api/cache-timestamps` | File freshness tracker for debugging/UI  |
-| `/api/global_context`   | Global context bar data                  |
-| `/api/enriched`         | Enriched universe (pre-scoring)          |
-| `/api/scored`           | Scored universe with tier signals        |
-| `/api/sector`           | Live Sector ETF % change and data        |
-| `/api/tracker/{ticker}` | Real-time data + PM/PD levels            |
-| `/api/tracker-candles/` | Candle data for chart                     |
-| `/api/raw`              | Raw pulled universe (from CSVs/static)   |
+| Route                                                        | Purpose                                                               |
+| ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| `/api/autowatchlist`                                         | Final filtered watchlist with score and tier logic                    |
+| `/api/cache-timestamps`                                      | File freshness tracker for debugging or UI display                    |
+| `/api/global_context`                                        | Global context bar data (SPY, BTC, DXY, etc.)                         |
+| `/api/enriched`                                              | Enriched universe before scoring                                      |
+| `/api/scored`                                                | Fully scored universe with tier signal flags                          |
+| `/api/sector`                                                | Live sector ETF data and % change breakdown                           |
+| `/api/tracker/{symbol}`                                      | On-demand run: fetch TV candles → calculate system/momentum levels    |
+| `/api/tracker-candles?symbol={SYMBOL}[&interval={INTERVAL}]` | On-demand  TV candle data. Defaults to `5m` if `interval` omitted |
+| `/api/raw`                                                   | Raw pulled ticker universe (from static CSV sources)                  |
+
 
 ---
 
