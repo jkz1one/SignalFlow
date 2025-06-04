@@ -9,7 +9,7 @@ A real-time stock scanning tool that builds a tiered watchlist using volume, pri
 ---
 
 ![image](https://github.com/user-attachments/assets/e0152b0d-9d26-4f12-9ea6-ee0a9b4813bb)
-![image](https://github.com/user-attachments/assets/9965319a-835a-4a52-bd35-66dcae720f49)
+![image](https://github.com/user-attachments/assets/a7f46762-5a3f-4719-83d3-f703b1de10ec)
 ![image](https://github.com/user-attachments/assets/1db93560-2cef-4984-b4a4-2a924424c153)
 
 ---
@@ -326,7 +326,7 @@ backend/
 
 * Multi-Day high/low not exclusive
 * Premarket levels pending (needed for Momentum Confluence logic)
-* Risk filters pending (right now, most risk  iltering happens in universe build)
+* Risk filters pending (right now, most risk filtering happens in universe build)
 
 ---
 
