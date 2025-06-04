@@ -1,3 +1,4 @@
+#build_tracker_candles.py
 import os, json
 import pandas as pd
 from datetime import datetime
@@ -49,6 +50,7 @@ def build(symbol: str, date: str):
     result = {
         "symbol": symbol,
         "date": date,
+        "generated_at": datetime.now().isoformat(),
         "intervals": {}
     }
 

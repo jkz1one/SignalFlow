@@ -1009,3 +1009,90 @@
 2025-06-03 11:45:33,039 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
 2025-06-03 11:45:33,039 — INFO — Scheduler started
 2025-06-03 11:45:33,040 — INFO — ✅ APScheduler started.
+2025-06-03 12:34:09,626 — INFO — 📅 Scheduler initializing...
+2025-06-03 12:34:14,628 — INFO — 🔁 Starting Cache Manager backfill...
+2025-06-03 12:34:14,628 — INFO — ⏱️ Starting Cache Manager at 2025-06-03T12:34:14.628706
+2025-06-03 12:34:14,728 — INFO — ✅ Cache Manager completed at 2025-06-03T12:34:14.728708 (duration: 0.10s)
+2025-06-03 12:34:14,729 — INFO — 🔁 Cache Manager complete.
+2025-06-03 12:34:14,729 — INFO — 🐺 Launching Enrich WatchDog...
+2025-06-03 12:34:14,729 — INFO — 🐺 Starting Enrich WatchDog...
+2025-06-03 12:34:14,734 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-06-03 12:34:14,734 — INFO — 🔁 Running backfills for missed jobs...
+2025-06-03 12:34:14,734 — INFO — 🔁 Checking for missed jobs...
+2025-06-03 12:34:15,222 — INFO — ✅ 2025-06-03 is a market day.
+2025-06-03 12:34:15,225 — INFO — ✅ Universe file exists, skipping backfill.
+2025-06-03 12:34:15,225 — INFO — 🕓 Post-Open cutoff at 09:35:50, now: 12:34:15.225384
+2025-06-03 12:34:15,225 — INFO — ✅ Post-Open file exists, skipping backfill.
+2025-06-03 12:34:15,225 — INFO — 🕓 945 cutoff at 09:45:50, now: 12:34:15.225784
+2025-06-03 12:34:15,226 — INFO — ✅ 945 file exists, skipping backfill.
+2025-06-03 12:34:15,226 — INFO — 🔁 Backfills complete.
+2025-06-03 12:34:15,226 — INFO — ⏲️ Starting scheduled jobs...
+2025-06-03 12:34:15,226 — INFO — ⏲️ Scheduling daily jobs now
+2025-06-03 12:34:15,233 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 12:34:15,234 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 12:34:15,234 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 12:34:15,234 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 12:34:15,236 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 12:34:15,237 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 12:34:15,237 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 12:34:15,237 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 12:34:15,237 — INFO — Scheduler started
+2025-06-03 12:34:15,240 — INFO — ✅ APScheduler started.
+2025-06-03 18:15:57,075 — INFO — 📅 Scheduler initializing...
+2025-06-03 18:16:02,079 — INFO — 🔁 Starting Cache Manager backfill...
+2025-06-03 18:16:02,080 — INFO — ⏱️ Starting Cache Manager at 2025-06-03T18:16:02.080204
+2025-06-03 18:16:02,192 — INFO — ✅ Cache Manager completed at 2025-06-03T18:16:02.191817 (duration: 0.11s)
+2025-06-03 18:16:02,192 — INFO — 🔁 Cache Manager complete.
+2025-06-03 18:16:02,192 — INFO — 🐺 Launching Enrich WatchDog...
+2025-06-03 18:16:02,192 — INFO — 🐺 Starting Enrich WatchDog...
+2025-06-03 18:16:02,199 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-06-03 18:16:02,199 — INFO — 🔁 Running backfills for missed jobs...
+2025-06-03 18:16:02,200 — INFO — 🔁 Checking for missed jobs...
+2025-06-03 18:16:02,867 — INFO — ✅ 2025-06-03 is a market day.
+2025-06-03 18:16:02,867 — INFO — ✅ Universe file exists, skipping backfill.
+2025-06-03 18:16:02,868 — INFO — 🕓 Post-Open cutoff at 09:35:50, now: 18:16:02.868057
+2025-06-03 18:16:02,868 — INFO — ⏳ Outside Post-Open window; skipping backfill.
+2025-06-03 18:16:02,868 — INFO — 🕓 945 cutoff at 09:45:50, now: 18:16:02.868334
+2025-06-03 18:16:02,868 — INFO — ⏳ Outside 945 window; skipping backfill.
+2025-06-03 18:16:02,868 — INFO — 🔁 Backfills complete.
+2025-06-03 18:16:02,868 — INFO — ⏲️ Starting scheduled jobs...
+2025-06-03 18:16:02,868 — INFO — ⏲️ Scheduling daily jobs now
+2025-06-03 18:16:02,877 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 18:16:02,878 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 18:16:02,878 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 18:16:02,878 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 18:16:02,883 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 18:16:02,884 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 18:16:02,884 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 18:16:02,884 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 18:16:02,884 — INFO — Scheduler started
+2025-06-03 18:16:02,885 — INFO — ✅ APScheduler started.
+2025-06-03 23:02:03,931 — INFO — 📅 Scheduler initializing...
+2025-06-03 23:02:08,935 — INFO — 🔁 Starting Cache Manager backfill...
+2025-06-03 23:02:08,936 — INFO — ⏱️ Starting Cache Manager at 2025-06-03T23:02:08.936027
+2025-06-03 23:02:09,029 — INFO — ✅ Cache Manager completed at 2025-06-03T23:02:09.029112 (duration: 0.09s)
+2025-06-03 23:02:09,029 — INFO — 🔁 Cache Manager complete.
+2025-06-03 23:02:09,029 — INFO — 🐺 Launching Enrich WatchDog...
+2025-06-03 23:02:09,030 — INFO — 🐺 Starting Enrich WatchDog...
+2025-06-03 23:02:09,036 — INFO — 🐺 Enrich WatchDog launched successfully.
+2025-06-03 23:02:09,037 — INFO — 🔁 Running backfills for missed jobs...
+2025-06-03 23:02:09,037 — INFO — 🔁 Checking for missed jobs...
+2025-06-03 23:02:09,728 — INFO — ✅ 2025-06-03 is a market day.
+2025-06-03 23:02:09,728 — INFO — ✅ Universe file exists, skipping backfill.
+2025-06-03 23:02:09,729 — INFO — 🕓 Post-Open cutoff at 09:35:50, now: 23:02:09.729033
+2025-06-03 23:02:09,729 — INFO — ⏳ Outside Post-Open window; skipping backfill.
+2025-06-03 23:02:09,729 — INFO — 🕓 945 cutoff at 09:45:50, now: 23:02:09.729274
+2025-06-03 23:02:09,729 — INFO — ⏳ Outside 945 window; skipping backfill.
+2025-06-03 23:02:09,729 — INFO — 🔁 Backfills complete.
+2025-06-03 23:02:09,729 — INFO — ⏲️ Starting scheduled jobs...
+2025-06-03 23:02:09,729 — INFO — ⏲️ Scheduling daily jobs now
+2025-06-03 23:02:09,735 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 23:02:09,736 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 23:02:09,736 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 23:02:09,736 — INFO — Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-03 23:02:09,738 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 23:02:09,738 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 23:02:09,739 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 23:02:09,739 — INFO — Added job "schedule_jobs.<locals>.<lambda>" to job store "default"
+2025-06-03 23:02:09,739 — INFO — Scheduler started
+2025-06-03 23:02:09,742 — INFO — ✅ APScheduler started.

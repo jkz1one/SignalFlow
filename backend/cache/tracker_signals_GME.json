@@ -1,15 +1,15 @@
 {
   "symbol": "GME",
-  "timestamp": "2025-06-03T12:12:31.844886-04:00",
-  "system_30m": "Bullish",
+  "timestamp": "2025-06-04T01:28:20.674467-04:00",
+  "system_30m": "Bearish",
   "system_1h": "Bearish",
   "momentum": "Chop",
-  "current_price": 30.56,
-  "premarket_high": 31.05,
-  "premarket_low": 30.64,
-  "prev_day_high": 30.87,
-  "prev_day_low": 29.74,
-  "prev_day_close": 30.61,
-  "daily_high": 31.05,
-  "daily_low": 30.49
+  "current_price": 30.02,
+  "premarket_high": null,
+  "premarket_low": null,
+  "prev_day_high": 31.05,
+  "prev_day_low": 30.03,
+  "prev_day_close": 30.1,
+  "daily_high": null,
+  "daily_low": null
 }

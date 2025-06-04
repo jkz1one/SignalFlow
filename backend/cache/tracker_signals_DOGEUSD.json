@@ -1,0 +1,15 @@
+{
+  "symbol": "DOGEUSD",
+  "timestamp": "2025-06-04T01:29:55.229936-04:00",
+  "system_30m": "Chop",
+  "system_1h": "Chop",
+  "momentum": "Chop",
+  "current_price": 0.2,
+  "premarket_high": null,
+  "premarket_low": null,
+  "prev_day_high": 0.2,
+  "prev_day_low": 0.19,
+  "prev_day_close": 0.2,
+  "daily_high": null,
+  "daily_low": null
+}

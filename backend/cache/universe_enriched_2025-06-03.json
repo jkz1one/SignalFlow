@@ -32,7 +32,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "INCY": {
     "sources": [
@@ -67,7 +67,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ROK": {
     "sources": [
@@ -102,7 +102,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SO": {
     "sources": [
@@ -137,7 +137,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MSCI": {
     "sources": [
@@ -172,7 +172,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BR": {
     "sources": [
@@ -217,7 +217,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TER": {
     "sources": [
@@ -252,7 +252,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AME": {
     "sources": [
@@ -287,7 +287,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KO": {
     "sources": [
@@ -335,7 +335,7 @@
       "T3: near_multi_day_high",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GS": {
     "sources": [
@@ -380,7 +380,7 @@
       "T1: break_below_range",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DUK": {
     "sources": [
@@ -415,7 +415,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DHI": {
     "sources": [
@@ -450,7 +450,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CMG": {
     "sources": [
@@ -495,7 +495,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NVR": {
     "sources": [
@@ -540,7 +540,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TRMB": {
     "sources": [
@@ -584,7 +584,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMC": {
     "sources": [
@@ -613,7 +613,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CINF": {
     "sources": [
@@ -658,7 +658,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TSLA": {
     "sources": [
@@ -704,7 +704,7 @@
       "T3: top_volume_gainer",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MNST": {
     "sources": [
@@ -743,7 +743,7 @@
       "T3: near_multi_day_high",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BSX": {
     "sources": [
@@ -778,7 +778,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AVGO": {
     "sources": [
@@ -830,7 +830,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EMN": {
     "sources": [
@@ -865,7 +865,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BEN": {
     "sources": [
@@ -913,7 +913,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GOOGL": {
     "sources": [
@@ -949,7 +949,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HST": {
     "sources": [
@@ -994,7 +994,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PCG": {
     "sources": [
@@ -1029,7 +1029,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NWS": {
     "sources": [
@@ -1064,7 +1064,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ORLY": {
     "sources": [
@@ -1109,7 +1109,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XLK": {
     "sources": [
@@ -1151,7 +1151,7 @@
       "T1: break_above_range",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EXPD": {
     "sources": [
@@ -1186,7 +1186,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PFG": {
     "sources": [
@@ -1231,7 +1231,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CBOE": {
     "sources": [
@@ -1275,7 +1275,7 @@
       "T1: break_below_range",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VLO": {
     "sources": [
@@ -1304,7 +1304,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EQIX": {
     "sources": [
@@ -1349,7 +1349,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PFE": {
     "sources": [
@@ -1388,7 +1388,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MS": {
     "sources": [
@@ -1423,7 +1423,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BIIB": {
     "sources": [
@@ -1459,7 +1459,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "REGN": {
     "sources": [
@@ -1489,7 +1489,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EPAM": {
     "sources": [
@@ -1534,7 +1534,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IVZ": {
     "sources": [
@@ -1579,7 +1579,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IRM": {
     "sources": [
@@ -1623,7 +1623,7 @@
       "T1: break_below_range",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PGR": {
     "sources": [
@@ -1668,7 +1668,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AWK": {
     "sources": [
@@ -1703,7 +1703,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PCAR": {
     "sources": [
@@ -1739,7 +1739,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TMUS": {
     "sources": [
@@ -1775,7 +1775,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CAT": {
     "sources": [
@@ -1811,7 +1811,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COST": {
     "sources": [
@@ -1847,7 +1847,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HAL": {
     "sources": [
@@ -1882,7 +1882,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "INVH": {
     "sources": [
@@ -1927,7 +1927,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KHC": {
     "sources": [
@@ -1957,7 +1957,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FCX": {
     "sources": [
@@ -1995,7 +1995,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GD": {
     "sources": [
@@ -2030,7 +2030,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LVS": {
     "sources": [
@@ -2075,7 +2075,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PG": {
     "sources": [
@@ -2111,7 +2111,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "STT": {
     "sources": [
@@ -2156,7 +2156,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BBY": {
     "sources": [
@@ -2191,7 +2191,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "USB": {
     "sources": [
@@ -2226,7 +2226,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MCHP": {
     "sources": [
@@ -2275,7 +2275,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ADSK": {
     "sources": [
@@ -2320,7 +2320,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PNW": {
     "sources": [
@@ -2355,7 +2355,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CBRE": {
     "sources": [
@@ -2390,7 +2390,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TTWO": {
     "sources": [
@@ -2426,7 +2426,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IR": {
     "sources": [
@@ -2455,7 +2455,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FIS": {
     "sources": [
@@ -2499,7 +2499,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DGX": {
     "sources": [
@@ -2528,7 +2528,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EG": {
     "sources": [
@@ -2573,7 +2573,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FAST": {
     "sources": [
@@ -2609,7 +2609,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FICO": {
     "sources": [
@@ -2644,7 +2644,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FDX": {
     "sources": [
@@ -2679,7 +2679,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TPL": {
     "sources": [
@@ -2714,7 +2714,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LII": {
     "sources": [
@@ -2743,7 +2743,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CVS": {
     "sources": [
@@ -2778,7 +2778,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MRNA": {
     "sources": [
@@ -2823,7 +2823,7 @@
       "T1: break_above_range",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CTAS": {
     "sources": [
@@ -2859,7 +2859,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EW": {
     "sources": [
@@ -2894,7 +2894,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HPE": {
     "sources": [
@@ -2941,7 +2941,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ORCL": {
     "sources": [
@@ -2985,7 +2985,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TSCO": {
     "sources": [
@@ -3020,7 +3020,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HLT": {
     "sources": [
@@ -3055,7 +3055,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WFC": {
     "sources": [
@@ -3100,7 +3100,7 @@
       "T2: weak_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SYK": {
     "sources": [
@@ -3129,7 +3129,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NUE": {
     "sources": [
@@ -3158,7 +3158,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMT": {
     "sources": [
@@ -3206,7 +3206,7 @@
       "T3: near_multi_day_high",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "OMC": {
     "sources": [
@@ -3241,7 +3241,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DAY": {
     "sources": [
@@ -3276,7 +3276,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CHTR": {
     "sources": [
@@ -3312,7 +3312,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WM": {
     "sources": [
@@ -3347,7 +3347,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ELV": {
     "sources": [
@@ -3382,7 +3382,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KEYS": {
     "sources": [
@@ -3417,7 +3417,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GEHC": {
     "sources": [
@@ -3447,7 +3447,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WELL": {
     "sources": [
@@ -3495,7 +3495,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CRWD": {
     "sources": [
@@ -3544,7 +3544,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DXCM": {
     "sources": [
@@ -3574,7 +3574,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GRRR": {
     "sources": [
@@ -3615,7 +3615,7 @@
       "T1: gap_up",
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "A": {
     "sources": [
@@ -3644,7 +3644,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IP": {
     "sources": [
@@ -3688,7 +3688,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WDAY": {
     "sources": [
@@ -3724,7 +3724,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KDP": {
     "sources": [
@@ -3760,7 +3760,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BULL": {
     "sources": [
@@ -3808,7 +3808,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "C": {
     "sources": [
@@ -3853,7 +3853,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FANG": {
     "sources": [
@@ -3889,7 +3889,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "INTC": {
     "sources": [
@@ -3939,7 +3939,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TYL": {
     "sources": [
@@ -3984,7 +3984,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "STZ": {
     "sources": [
@@ -4019,7 +4019,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SWK": {
     "sources": [
@@ -4063,7 +4063,7 @@
       "T1: break_above_range",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ABNB": {
     "sources": [
@@ -4099,7 +4099,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XOM": {
     "sources": [
@@ -4134,7 +4134,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RCL": {
     "sources": [
@@ -4178,7 +4178,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DOC": {
     "sources": [
@@ -4219,7 +4219,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JCI": {
     "sources": [
@@ -4254,7 +4254,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FITB": {
     "sources": [
@@ -4289,7 +4289,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ON": {
     "sources": [
@@ -4325,7 +4325,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MPC": {
     "sources": [
@@ -4354,7 +4354,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CMI": {
     "sources": [
@@ -4383,7 +4383,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ATO": {
     "sources": [
@@ -4427,7 +4427,7 @@
       "T1: break_below_range",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MTCH": {
     "sources": [
@@ -4456,7 +4456,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GDDY": {
     "sources": [
@@ -4501,7 +4501,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LMT": {
     "sources": [
@@ -4536,7 +4536,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LDOS": {
     "sources": [
@@ -4581,7 +4581,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XYL": {
     "sources": [
@@ -4616,7 +4616,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CEG": {
     "sources": [
@@ -4665,7 +4665,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LYV": {
     "sources": [
@@ -4700,7 +4700,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COP": {
     "sources": [
@@ -4741,7 +4741,7 @@
       "T1: gap_up",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CMCSA": {
     "sources": [
@@ -4780,7 +4780,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CTRA": {
     "sources": [
@@ -4815,7 +4815,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VST": {
     "sources": [
@@ -4859,7 +4859,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NSC": {
     "sources": [
@@ -4894,7 +4894,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BLDR": {
     "sources": [
@@ -4923,7 +4923,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DG": {
     "sources": [
@@ -4974,7 +4974,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ADI": {
     "sources": [
@@ -5010,7 +5010,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RJF": {
     "sources": [
@@ -5055,7 +5055,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BAC": {
     "sources": [
@@ -5100,7 +5100,7 @@
       "T2: weak_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MSTR": {
     "sources": [
@@ -5148,7 +5148,7 @@
       "T2: strong_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LMND": {
     "sources": [
@@ -5188,7 +5188,7 @@
       "T2: early_move",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SYY": {
     "sources": [
@@ -5223,7 +5223,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RL": {
     "sources": [
@@ -5258,7 +5258,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VMC": {
     "sources": [
@@ -5293,7 +5293,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JNJ": {
     "sources": [
@@ -5329,7 +5329,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "STE": {
     "sources": [
@@ -5364,7 +5364,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DECK": {
     "sources": [
@@ -5399,7 +5399,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DPZ": {
     "sources": [
@@ -5444,7 +5444,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DASH": {
     "sources": [
@@ -5490,7 +5490,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SBUX": {
     "sources": [
@@ -5526,7 +5526,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "STX": {
     "sources": [
@@ -5571,7 +5571,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LYB": {
     "sources": [
@@ -5606,7 +5606,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMCR": {
     "sources": [
@@ -5651,7 +5651,7 @@
       "T2: strong_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PAYX": {
     "sources": [
@@ -5699,7 +5699,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NEE": {
     "sources": [
@@ -5743,7 +5743,7 @@
       "T3: top_volume_gainer",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VZ": {
     "sources": [
@@ -5782,7 +5782,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EXE": {
     "sources": [
@@ -5817,7 +5817,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GNRC": {
     "sources": [
@@ -5846,7 +5846,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DDOG": {
     "sources": [
@@ -5891,7 +5891,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CRL": {
     "sources": [
@@ -5920,7 +5920,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "K": {
     "sources": [
@@ -5958,7 +5958,7 @@
       "T3: near_multi_day_high",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TROW": {
     "sources": [
@@ -6003,7 +6003,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EXR": {
     "sources": [
@@ -6048,7 +6048,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CTVA": {
     "sources": [
@@ -6083,7 +6083,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MET": {
     "sources": [
@@ -6118,7 +6118,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WY": {
     "sources": [
@@ -6162,7 +6162,7 @@
       "T1: break_above_range",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ZTS": {
     "sources": [
@@ -6197,7 +6197,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DLTR": {
     "sources": [
@@ -6241,7 +6241,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IQV": {
     "sources": [
@@ -6270,7 +6270,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMD": {
     "sources": [
@@ -6319,7 +6319,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WMT": {
     "sources": [
@@ -6358,7 +6358,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DOW": {
     "sources": [
@@ -6397,7 +6397,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "D": {
     "sources": [
@@ -6426,7 +6426,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NEM": {
     "sources": [
@@ -6461,7 +6461,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EL": {
     "sources": [
@@ -6490,7 +6490,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WBA": {
     "sources": [
@@ -6538,7 +6538,7 @@
       "T3: near_multi_day_high",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AXP": {
     "sources": [
@@ -6574,7 +6574,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FE": {
     "sources": [
@@ -6609,7 +6609,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BG": {
     "sources": [
@@ -6644,7 +6644,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CZR": {
     "sources": [
@@ -6688,7 +6688,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MAR": {
     "sources": [
@@ -6724,7 +6724,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SHW": {
     "sources": [
@@ -6768,7 +6768,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MDLZ": {
     "sources": [
@@ -6804,7 +6804,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AJG": {
     "sources": [
@@ -6852,7 +6852,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SBAC": {
     "sources": [
@@ -6897,7 +6897,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMGN": {
     "sources": [
@@ -6934,7 +6934,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MPWR": {
     "sources": [
@@ -6969,7 +6969,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MKC": {
     "sources": [
@@ -7004,7 +7004,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SRE": {
     "sources": [
@@ -7039,7 +7039,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DOV": {
     "sources": [
@@ -7074,7 +7074,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HOLX": {
     "sources": [
@@ -7103,7 +7103,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HSIC": {
     "sources": [
@@ -7138,7 +7138,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RTX": {
     "sources": [
@@ -7173,7 +7173,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TGT": {
     "sources": [
@@ -7213,7 +7213,7 @@
       "T1: gap_up",
       "T1: break_above_range"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BRK.B": {
     "sources": [
@@ -7229,7 +7229,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IEX": {
     "sources": [
@@ -7264,7 +7264,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BF.B": {
     "sources": [
@@ -7280,7 +7280,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MOS": {
     "sources": [
@@ -7315,7 +7315,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HIMS": {
     "sources": [
@@ -7363,7 +7363,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CTSH": {
     "sources": [
@@ -7399,7 +7399,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SPY": {
     "sources": [
@@ -7435,7 +7435,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PANW": {
     "sources": [
@@ -7481,7 +7481,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CAH": {
     "sources": [
@@ -7525,7 +7525,7 @@
       "T1: break_below_range",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MSFT": {
     "sources": [
@@ -7575,7 +7575,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SWKS": {
     "sources": [
@@ -7610,7 +7610,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ROL": {
     "sources": [
@@ -7658,7 +7658,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IT": {
     "sources": [
@@ -7703,7 +7703,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ETR": {
     "sources": [
@@ -7743,7 +7743,7 @@
       "T1: gap_up",
       "T1: break_below_range"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PSX": {
     "sources": [
@@ -7772,7 +7772,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DELL": {
     "sources": [
@@ -7817,7 +7817,7 @@
       "T2: strong_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AVY": {
     "sources": [
@@ -7862,7 +7862,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HAS": {
     "sources": [
@@ -7906,7 +7906,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ENPH": {
     "sources": [
@@ -7941,7 +7941,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EA": {
     "sources": [
@@ -7971,7 +7971,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ICE": {
     "sources": [
@@ -8016,7 +8016,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NFLX": {
     "sources": [
@@ -8061,7 +8061,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TRGP": {
     "sources": [
@@ -8105,7 +8105,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TMO": {
     "sources": [
@@ -8140,7 +8140,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MTB": {
     "sources": [
@@ -8184,7 +8184,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BNTX": {
     "sources": [
@@ -8228,7 +8228,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TECH": {
     "sources": [
@@ -8257,7 +8257,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MMC": {
     "sources": [
@@ -8302,7 +8302,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CLX": {
     "sources": [
@@ -8337,7 +8337,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AZN": {
     "sources": [
@@ -8372,7 +8372,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BYND": {
     "sources": [
@@ -8407,7 +8407,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SYF": {
     "sources": [
@@ -8442,7 +8442,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TKO": {
     "sources": [
@@ -8471,7 +8471,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PDD": {
     "sources": [
@@ -8519,7 +8519,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RSG": {
     "sources": [
@@ -8554,7 +8554,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SLB": {
     "sources": [
@@ -8592,7 +8592,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GL": {
     "sources": [
@@ -8637,7 +8637,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FI": {
     "sources": [
@@ -8682,7 +8682,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MLM": {
     "sources": [
@@ -8726,7 +8726,7 @@
       "T1: break_below_range",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AOS": {
     "sources": [
@@ -8761,7 +8761,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CAG": {
     "sources": [
@@ -8790,7 +8790,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PNR": {
     "sources": [
@@ -8819,7 +8819,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MDT": {
     "sources": [
@@ -8854,7 +8854,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ETN": {
     "sources": [
@@ -8895,7 +8895,7 @@
       "T1: gap_up",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LLY": {
     "sources": [
@@ -8930,7 +8930,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AEE": {
     "sources": [
@@ -8970,7 +8970,7 @@
       "T1: gap_up",
       "T1: break_below_range"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CDW": {
     "sources": [
@@ -9006,7 +9006,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IFF": {
     "sources": [
@@ -9041,7 +9041,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CME": {
     "sources": [
@@ -9076,7 +9076,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CCI": {
     "sources": [
@@ -9121,7 +9121,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GOOG": {
     "sources": [
@@ -9157,7 +9157,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EIX": {
     "sources": [
@@ -9201,7 +9201,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AIZ": {
     "sources": [
@@ -9246,7 +9246,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AXON": {
     "sources": [
@@ -9282,7 +9282,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PYPL": {
     "sources": [
@@ -9334,7 +9334,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PSA": {
     "sources": [
@@ -9379,7 +9379,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WRB": {
     "sources": [
@@ -9424,7 +9424,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "META": {
     "sources": [
@@ -9463,7 +9463,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CL": {
     "sources": [
@@ -9498,7 +9498,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CPT": {
     "sources": [
@@ -9533,7 +9533,7 @@
     "reasons": [
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KSS": {
     "sources": [
@@ -9568,7 +9568,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "J": {
     "sources": [
@@ -9603,7 +9603,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ALL": {
     "sources": [
@@ -9648,7 +9648,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CSCO": {
     "sources": [
@@ -9697,7 +9697,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GM": {
     "sources": [
@@ -9745,7 +9745,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ES": {
     "sources": [
@@ -9786,7 +9786,7 @@
       "T1: gap_up",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MHK": {
     "sources": [
@@ -9830,7 +9830,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NVDA": {
     "sources": [
@@ -9880,7 +9880,7 @@
       "T2: strong_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "INTU": {
     "sources": [
@@ -9926,7 +9926,7 @@
       "T2: strong_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AZO": {
     "sources": [
@@ -9961,7 +9961,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CNP": {
     "sources": [
@@ -10005,7 +10005,7 @@
       "T1: break_below_range",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IPG": {
     "sources": [
@@ -10040,7 +10040,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UAL": {
     "sources": [
@@ -10075,7 +10075,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NDSN": {
     "sources": [
@@ -10104,7 +10104,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ANSS": {
     "sources": [
@@ -10140,7 +10140,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BMY": {
     "sources": [
@@ -10178,7 +10178,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CPRT": {
     "sources": [
@@ -10214,7 +10214,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TJX": {
     "sources": [
@@ -10249,7 +10249,7 @@
     "reasons": [
       "T2: strong_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CCL": {
     "sources": [
@@ -10300,7 +10300,7 @@
       "T3: top_volume_gainer",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SJM": {
     "sources": [
@@ -10335,7 +10335,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NKE": {
     "sources": [
@@ -10380,7 +10380,7 @@
       "T3: top_volume_gainer",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NCLH": {
     "sources": [
@@ -10425,7 +10425,7 @@
       "T2: strong_sector",
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WBD": {
     "sources": [
@@ -10461,7 +10461,7 @@
     "reasons": [
       "T3: top_volume_gainer"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HCA": {
     "sources": [
@@ -10496,7 +10496,7 @@
     "reasons": [
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GE": {
     "sources": [
@@ -10531,7 +10531,7 @@
     "reasons": [
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NDAQ": {
     "sources": [
@@ -10576,7 +10576,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_high"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SPGI": {
     "sources": [
@@ -10624,7 +10624,7 @@
       "T2: weak_sector",
       "T3: near_multi_day_low"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VICI": {
     "sources": [
@@ -10668,7 +10668,7 @@
       "T3: near_multi_day_high",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APO": {
     "sources": [
@@ -10712,7 +10712,7 @@
       "T1: break_below_range",
       "T2: weak_sector"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PKG": {
     "sources": [
@@ -10759,7 +10759,7 @@
       "T3: near_multi_day_low",
       "T3: high_volume_no_breakout"
     ],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MDB": {
     "sources": [
@@ -10790,7 +10790,7 @@
       "T3": []
     },
     "reasons": [],
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UHS": {
     "sources": [
@@ -10813,7 +10813,7 @@
     "shortPercentOfFloat": 0.062,
     "hi_10d": 197.75,
     "lo_10d": 183.47,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COF": {
     "sources": [
@@ -10838,7 +10838,7 @@
     "shortPercentOfFloat": 0.0736,
     "hi_10d": 199.36,
     "lo_10d": 183.38,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RF": {
     "sources": [
@@ -10863,7 +10863,7 @@
     "shortPercentOfFloat": 0.0665,
     "hi_10d": 22.29,
     "lo_10d": 20.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KEY": {
     "sources": [
@@ -10888,7 +10888,7 @@
     "shortPercentOfFloat": 0.0261,
     "hi_10d": 16.38,
     "lo_10d": 15.08,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DVN": {
     "sources": [
@@ -10911,7 +10911,7 @@
     "shortPercentOfFloat": 0.0325,
     "hi_10d": 32.88,
     "lo_10d": 30.24,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HON": {
     "sources": [
@@ -10936,7 +10936,7 @@
     "shortPercentOfFloat": 0.0118,
     "hi_10d": 227.89,
     "lo_10d": 220.62,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LKQ": {
     "sources": [
@@ -10961,7 +10961,7 @@
     "shortPercentOfFloat": 0.0495,
     "hi_10d": 42.55,
     "lo_10d": 39.52,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SW": {
     "sources": [
@@ -10986,7 +10986,7 @@
     "shortPercentOfFloat": 0.0494,
     "hi_10d": 46.6,
     "lo_10d": 42.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DTE": {
     "sources": [
@@ -11009,7 +11009,7 @@
     "shortPercentOfFloat": 0.0292,
     "hi_10d": 139.25,
     "lo_10d": 133.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KMI": {
     "sources": [
@@ -11032,7 +11032,7 @@
     "shortPercentOfFloat": 0.0252,
     "hi_10d": 28.69,
     "lo_10d": 27.07,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BAX": {
     "sources": [
@@ -11055,7 +11055,7 @@
     "shortPercentOfFloat": 0.0443,
     "hi_10d": 31.45,
     "lo_10d": 29.3,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LW": {
     "sources": [
@@ -11078,7 +11078,7 @@
     "shortPercentOfFloat": 0.042,
     "hi_10d": 56.2,
     "lo_10d": 49.96,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VRSN": {
     "sources": [
@@ -11103,7 +11103,7 @@
     "shortPercentOfFloat": 0.0293,
     "hi_10d": 284.08,
     "lo_10d": 265.24,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DD": {
     "sources": [
@@ -11126,7 +11126,7 @@
     "shortPercentOfFloat": 0.0127,
     "hi_10d": 69.09,
     "lo_10d": 64.91,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PH": {
     "sources": [
@@ -11149,7 +11149,7 @@
     "shortPercentOfFloat": 0.0118,
     "hi_10d": 682.48,
     "lo_10d": 637.21,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VRTX": {
     "sources": [
@@ -11173,7 +11173,7 @@
     "shortPercentOfFloat": 0.0212,
     "hi_10d": 451.64,
     "lo_10d": 427.43,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HUM": {
     "sources": [
@@ -11196,7 +11196,7 @@
     "shortPercentOfFloat": 0.032,
     "hi_10d": 255.87,
     "lo_10d": 221.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XEL": {
     "sources": [
@@ -11220,7 +11220,7 @@
     "shortPercentOfFloat": 0.0186,
     "hi_10d": 72.78,
     "lo_10d": 68.49,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ADM": {
     "sources": [
@@ -11243,7 +11243,7 @@
     "shortPercentOfFloat": 0.0354,
     "hi_10d": 50.37,
     "lo_10d": 47.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CHRW": {
     "sources": [
@@ -11266,7 +11266,7 @@
     "shortPercentOfFloat": 0.0582,
     "hi_10d": 101.07,
     "lo_10d": 94.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PWR": {
     "sources": [
@@ -11289,7 +11289,7 @@
     "shortPercentOfFloat": 0.0392,
     "hi_10d": 348.9,
     "lo_10d": 320.56,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GEV": {
     "sources": [
@@ -11312,7 +11312,7 @@
     "shortPercentOfFloat": 0.0221,
     "hi_10d": 489.13,
     "lo_10d": 421.64,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DAL": {
     "sources": [
@@ -11335,7 +11335,7 @@
     "shortPercentOfFloat": 0.0405,
     "hi_10d": 51.64,
     "lo_10d": 46.88,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WST": {
     "sources": [
@@ -11358,7 +11358,7 @@
     "shortPercentOfFloat": 0.0411,
     "hi_10d": 217.95,
     "lo_10d": 203.74,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EOG": {
     "sources": [
@@ -11381,7 +11381,7 @@
     "shortPercentOfFloat": 0.0277,
     "hi_10d": 114.63,
     "lo_10d": 107.46,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HUBB": {
     "sources": [
@@ -11404,7 +11404,7 @@
     "shortPercentOfFloat": 0.0568,
     "hi_10d": 399.94,
     "lo_10d": 374.68,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NOC": {
     "sources": [
@@ -11427,7 +11427,7 @@
     "shortPercentOfFloat": 0.0188,
     "hi_10d": 483.85,
     "lo_10d": 466.06,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VTR": {
     "sources": [
@@ -11452,7 +11452,7 @@
     "shortPercentOfFloat": 0.0354,
     "hi_10d": 65.64,
     "lo_10d": 63.03,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TTD": {
     "sources": [
@@ -11475,7 +11475,7 @@
     "shortPercentOfFloat": 0.0516,
     "hi_10d": 78.03,
     "lo_10d": 71.85,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MSI": {
     "sources": [
@@ -11500,7 +11500,7 @@
     "shortPercentOfFloat": 0.0142,
     "hi_10d": 428.87,
     "lo_10d": 409.67,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "OTIS": {
     "sources": [
@@ -11523,7 +11523,7 @@
     "shortPercentOfFloat": 0.0174,
     "hi_10d": 98.96,
     "lo_10d": 93.29,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ALLE": {
     "sources": [
@@ -11546,7 +11546,7 @@
     "shortPercentOfFloat": 0.0384,
     "hi_10d": 145.07,
     "lo_10d": 138.78,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PLD": {
     "sources": [
@@ -11571,7 +11571,7 @@
     "shortPercentOfFloat": 0.0199,
     "hi_10d": 111.38,
     "lo_10d": 103.02,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CI": {
     "sources": [
@@ -11594,7 +11594,7 @@
     "shortPercentOfFloat": 0.0158,
     "hi_10d": 326.0,
     "lo_10d": 308.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "F": {
     "sources": [
@@ -11619,7 +11619,7 @@
     "shortPercentOfFloat": 0.0441,
     "hi_10d": 10.84,
     "lo_10d": 9.88,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TRV": {
     "sources": [
@@ -11645,7 +11645,7 @@
     "shortPercentOfFloat": 0.0142,
     "hi_10d": 277.65,
     "lo_10d": 268.12,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TDY": {
     "sources": [
@@ -11670,7 +11670,7 @@
     "shortPercentOfFloat": 0.0145,
     "hi_10d": 500.53,
     "lo_10d": 483.23,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WTW": {
     "sources": [
@@ -11695,7 +11695,7 @@
     "shortPercentOfFloat": 0.0172,
     "hi_10d": 317.67,
     "lo_10d": 304.52,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RMD": {
     "sources": [
@@ -11718,7 +11718,7 @@
     "shortPercentOfFloat": 0.0858,
     "hi_10d": 253.43,
     "lo_10d": 239.94,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GILD": {
     "sources": [
@@ -11742,7 +11742,7 @@
     "shortPercentOfFloat": 0.0199,
     "hi_10d": 111.62,
     "lo_10d": 102.84,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AES": {
     "sources": [
@@ -11765,7 +11765,7 @@
     "shortPercentOfFloat": 0.0619,
     "hi_10d": 12.06,
     "lo_10d": 9.46,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PODD": {
     "sources": [
@@ -11788,7 +11788,7 @@
     "shortPercentOfFloat": 0.0492,
     "hi_10d": 329.33,
     "lo_10d": 315.91,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NRG": {
     "sources": [
@@ -11811,7 +11811,7 @@
     "shortPercentOfFloat": 0.0362,
     "hi_10d": 161.78,
     "lo_10d": 152.38,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FFIV": {
     "sources": [
@@ -11836,7 +11836,7 @@
     "shortPercentOfFloat": 0.0378,
     "hi_10d": 290.34,
     "lo_10d": 277.78,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DIS": {
     "sources": [
@@ -11860,7 +11860,7 @@
     "shortPercentOfFloat": 0.012,
     "hi_10d": 113.4,
     "lo_10d": 108.78,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LIN": {
     "sources": [
@@ -11884,7 +11884,7 @@
     "shortPercentOfFloat": 0.0115,
     "hi_10d": 469.1,
     "lo_10d": 453.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ANET": {
     "sources": [
@@ -11909,7 +11909,7 @@
     "shortPercentOfFloat": 0.0236,
     "hi_10d": 96.9,
     "lo_10d": 83.86,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "U": {
     "sources": [
@@ -11934,7 +11934,7 @@
     "shortPercentOfFloat": 0.0768,
     "hi_10d": 27.73,
     "lo_10d": 20.45,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MA": {
     "sources": [
@@ -11959,7 +11959,7 @@
     "shortPercentOfFloat": 0.0067,
     "hi_10d": 588.45,
     "lo_10d": 562.51,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JKHY": {
     "sources": [
@@ -11984,7 +11984,7 @@
     "shortPercentOfFloat": 0.0326,
     "hi_10d": 185.93,
     "lo_10d": 177.88,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GPN": {
     "sources": [
@@ -12007,7 +12007,7 @@
     "shortPercentOfFloat": 0.0302,
     "hi_10d": 81.9,
     "lo_10d": 73.69,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GPC": {
     "sources": [
@@ -12032,7 +12032,7 @@
     "shortPercentOfFloat": 0.0383,
     "hi_10d": 129.37,
     "lo_10d": 124.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BKR": {
     "sources": [
@@ -12056,7 +12056,7 @@
     "shortPercentOfFloat": 0.0351,
     "hi_10d": 38.03,
     "lo_10d": 35.83,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NTRS": {
     "sources": [
@@ -12081,7 +12081,7 @@
     "shortPercentOfFloat": 0.0364,
     "hi_10d": 109.03,
     "lo_10d": 104.09,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XLE": {
     "sources": [
@@ -12102,7 +12102,7 @@
     "shortPercentOfFloat": null,
     "hi_10d": 84.86,
     "lo_10d": 80.72,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NWSA": {
     "sources": [
@@ -12125,7 +12125,7 @@
     "shortPercentOfFloat": 0.0238,
     "hi_10d": 28.52,
     "lo_10d": 27.24,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "L": {
     "sources": [
@@ -12150,7 +12150,7 @@
     "shortPercentOfFloat": 0.0109,
     "hi_10d": 89.7,
     "lo_10d": 86.76,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MAS": {
     "sources": [
@@ -12173,7 +12173,7 @@
     "shortPercentOfFloat": 0.0321,
     "hi_10d": 66.56,
     "lo_10d": 60.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HSY": {
     "sources": [
@@ -12196,7 +12196,7 @@
     "shortPercentOfFloat": 0.0809,
     "hi_10d": 162.57,
     "lo_10d": 150.04,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TT": {
     "sources": [
@@ -12219,7 +12219,7 @@
     "shortPercentOfFloat": 0.0173,
     "hi_10d": 436.61,
     "lo_10d": 418.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ODFL": {
     "sources": [
@@ -12243,7 +12243,7 @@
     "shortPercentOfFloat": 0.0625,
     "hi_10d": 172.39,
     "lo_10d": 157.26,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ZS": {
     "sources": [
@@ -12268,7 +12268,7 @@
     "shortPercentOfFloat": 0.0885,
     "hi_10d": 293.53,
     "lo_10d": 247.3,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ALB": {
     "sources": [
@@ -12291,7 +12291,7 @@
     "shortPercentOfFloat": 0.2414,
     "hi_10d": 60.49,
     "lo_10d": 54.28,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LUV": {
     "sources": [
@@ -12314,7 +12314,7 @@
     "shortPercentOfFloat": 0.1111,
     "hi_10d": 34.33,
     "lo_10d": 30.32,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AAPL": {
     "sources": [
@@ -12342,7 +12342,7 @@
     "shortPercentOfFloat": 0.007,
     "hi_10d": 209.48,
     "lo_10d": 193.46,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CVX": {
     "sources": [
@@ -12366,7 +12366,7 @@
     "shortPercentOfFloat": 0.0388,
     "hi_10d": 139.52,
     "lo_10d": 133.77,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ECL": {
     "sources": [
@@ -12389,7 +12389,7 @@
     "shortPercentOfFloat": 0.0101,
     "hi_10d": 266.36,
     "lo_10d": 256.55,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KMB": {
     "sources": [
@@ -12412,7 +12412,7 @@
     "shortPercentOfFloat": 0.0177,
     "hi_10d": 144.31,
     "lo_10d": 138.06,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EVRG": {
     "sources": [
@@ -12435,7 +12435,7 @@
     "shortPercentOfFloat": 0.0535,
     "hi_10d": 67.27,
     "lo_10d": 64.58,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NOW": {
     "sources": [
@@ -12460,7 +12460,7 @@
     "shortPercentOfFloat": 0.0206,
     "hi_10d": 1037.67,
     "lo_10d": 994.6,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BALL": {
     "sources": [
@@ -12485,7 +12485,7 @@
     "shortPercentOfFloat": 0.021,
     "hi_10d": 54.28,
     "lo_10d": 51.45,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SNA": {
     "sources": [
@@ -12508,7 +12508,7 @@
     "shortPercentOfFloat": 0.0628,
     "hi_10d": 330.31,
     "lo_10d": 314.09,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HII": {
     "sources": [
@@ -12531,7 +12531,7 @@
     "shortPercentOfFloat": 0.0417,
     "hi_10d": 230.87,
     "lo_10d": 219.41,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CSGP": {
     "sources": [
@@ -12557,7 +12557,7 @@
     "shortPercentOfFloat": 0.0484,
     "hi_10d": 77.2,
     "lo_10d": 71.35,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LHX": {
     "sources": [
@@ -12580,7 +12580,7 @@
     "shortPercentOfFloat": 0.0235,
     "hi_10d": 249.13,
     "lo_10d": 229.1,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CARR": {
     "sources": [
@@ -12603,7 +12603,7 @@
     "shortPercentOfFloat": 0.0229,
     "hi_10d": 76.63,
     "lo_10d": 69.31,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ESS": {
     "sources": [
@@ -12628,7 +12628,7 @@
     "shortPercentOfFloat": 0.0331,
     "hi_10d": 289.12,
     "lo_10d": 269.1,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AON": {
     "sources": [
@@ -12653,7 +12653,7 @@
     "shortPercentOfFloat": 0.0234,
     "hi_10d": 376.57,
     "lo_10d": 351.9,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VTRS": {
     "sources": [
@@ -12676,7 +12676,7 @@
     "shortPercentOfFloat": 0.0502,
     "hi_10d": 8.85,
     "lo_10d": 8.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PEG": {
     "sources": [
@@ -12699,7 +12699,7 @@
     "shortPercentOfFloat": 0.0253,
     "hi_10d": 82.7,
     "lo_10d": 76.74,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FTV": {
     "sources": [
@@ -12727,7 +12727,7 @@
     "range_930_940_low": 70.47,
     "hi_10d": 72.71,
     "lo_10d": 68.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JNPR": {
     "sources": [
@@ -12752,7 +12752,7 @@
     "shortPercentOfFloat": 0.0401,
     "hi_10d": 36.05,
     "lo_10d": 35.4,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IDXX": {
     "sources": [
@@ -12776,7 +12776,7 @@
     "shortPercentOfFloat": 0.0493,
     "hi_10d": 523.48,
     "lo_10d": 496.61,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FRT": {
     "sources": [
@@ -12801,7 +12801,7 @@
     "shortPercentOfFloat": 0.0361,
     "hi_10d": 97.93,
     "lo_10d": 92.11,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MU": {
     "sources": [
@@ -12827,7 +12827,7 @@
     "shortPercentOfFloat": 0.0308,
     "hi_10d": 99.63,
     "lo_10d": 90.93,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HBAN": {
     "sources": [
@@ -12852,7 +12852,7 @@
     "shortPercentOfFloat": 0.0388,
     "hi_10d": 16.18,
     "lo_10d": 15.06,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PTC": {
     "sources": [
@@ -12877,7 +12877,7 @@
     "shortPercentOfFloat": 0.0379,
     "hi_10d": 174.26,
     "lo_10d": 164.66,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KLAC": {
     "sources": [
@@ -12903,7 +12903,7 @@
     "shortPercentOfFloat": 0.0248,
     "hi_10d": 799.72,
     "lo_10d": 740.44,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "T": {
     "sources": [
@@ -12926,7 +12926,7 @@
     "shortPercentOfFloat": 0.0134,
     "hi_10d": 28.26,
     "lo_10d": 27.16,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MTD": {
     "sources": [
@@ -12949,7 +12949,7 @@
     "shortPercentOfFloat": 0.0336,
     "hi_10d": 1191.66,
     "lo_10d": 1103.05,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TEAM": {
     "sources": [
@@ -12974,7 +12974,7 @@
     "shortPercentOfFloat": 0.0242,
     "hi_10d": 216.51,
     "lo_10d": 198.5,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ASML": {
     "sources": [
@@ -12999,7 +12999,7 @@
     "shortPercentOfFloat": 0.0081,
     "hi_10d": 761.21,
     "lo_10d": 722.52,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KIM": {
     "sources": [
@@ -13024,7 +13024,7 @@
     "shortPercentOfFloat": 0.0417,
     "hi_10d": 21.74,
     "lo_10d": 20.35,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMZN": {
     "sources": [
@@ -13050,7 +13050,7 @@
     "shortPercentOfFloat": 0.0075,
     "hi_10d": 208.81,
     "lo_10d": 197.85,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SNPS": {
     "sources": [
@@ -13076,7 +13076,7 @@
     "shortPercentOfFloat": 0.0316,
     "hi_10d": 518.47,
     "lo_10d": 437.69,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APP": {
     "sources": [
@@ -13099,7 +13099,7 @@
     "shortPercentOfFloat": 0.0339,
     "hi_10d": 402.9,
     "lo_10d": 340.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ADP": {
     "sources": [
@@ -13125,7 +13125,7 @@
     "shortPercentOfFloat": 0.0152,
     "hi_10d": 327.99,
     "lo_10d": 317.37,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VLTO": {
     "sources": [
@@ -13148,7 +13148,7 @@
     "shortPercentOfFloat": 0.016,
     "hi_10d": 102.66,
     "lo_10d": 99.4,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MKTX": {
     "sources": [
@@ -13173,7 +13173,7 @@
     "shortPercentOfFloat": 0.0322,
     "hi_10d": 222.75,
     "lo_10d": 212.93,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ALGN": {
     "sources": [
@@ -13196,7 +13196,7 @@
     "shortPercentOfFloat": 0.0534,
     "hi_10d": 185.97,
     "lo_10d": 168.01,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AEP": {
     "sources": [
@@ -13220,7 +13220,7 @@
     "shortPercentOfFloat": 0.0395,
     "hi_10d": 104.24,
     "lo_10d": 100.86,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMAT": {
     "sources": [
@@ -13246,7 +13246,7 @@
     "shortPercentOfFloat": 0.022,
     "hi_10d": 165.82,
     "lo_10d": 153.47,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HD": {
     "sources": [
@@ -13272,7 +13272,7 @@
     "shortPercentOfFloat": 0.0093,
     "hi_10d": 389.75,
     "lo_10d": 361.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BBAI": {
     "sources": [
@@ -13300,7 +13300,7 @@
     "range_930_940_low": 3.94,
     "hi_10d": 4.61,
     "lo_10d": 3.44,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BX": {
     "sources": [
@@ -13325,7 +13325,7 @@
     "shortPercentOfFloat": 0.0181,
     "hi_10d": 145.9,
     "lo_10d": 133.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KR": {
     "sources": [
@@ -13348,7 +13348,7 @@
     "shortPercentOfFloat": 0.0635,
     "hi_10d": 70.32,
     "lo_10d": 66.02,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EFX": {
     "sources": [
@@ -13371,7 +13371,7 @@
     "shortPercentOfFloat": 0.0294,
     "hi_10d": 280.5,
     "lo_10d": 255.58,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LOW": {
     "sources": [
@@ -13396,7 +13396,7 @@
     "shortPercentOfFloat": 0.0161,
     "hi_10d": 237.54,
     "lo_10d": 220.26,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EQR": {
     "sources": [
@@ -13421,7 +13421,7 @@
     "shortPercentOfFloat": 0.0249,
     "hi_10d": 71.52,
     "lo_10d": 66.95,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PRU": {
     "sources": [
@@ -13446,7 +13446,7 @@
     "shortPercentOfFloat": 0.023,
     "hi_10d": 107.17,
     "lo_10d": 100.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WAB": {
     "sources": [
@@ -13469,7 +13469,7 @@
     "shortPercentOfFloat": 0.0135,
     "hi_10d": 207.44,
     "lo_10d": 195.74,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ADBE": {
     "sources": [
@@ -13495,7 +13495,7 @@
     "shortPercentOfFloat": 0.0229,
     "hi_10d": 422.95,
     "lo_10d": 396.73,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PLTR": {
     "sources": [
@@ -13522,7 +13522,7 @@
     "shortPercentOfFloat": 0.0259,
     "range_930_940_high": 133.75,
     "range_930_940_low": 131.23,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "VRSK": {
     "sources": [
@@ -13546,7 +13546,7 @@
     "shortPercentOfFloat": 0.0233,
     "hi_10d": 317.81,
     "lo_10d": 309.76,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SMCI": {
     "sources": [
@@ -13571,7 +13571,7 @@
     "shortPercentOfFloat": 0.2735,
     "hi_10d": 46.41,
     "lo_10d": 39.05,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CRM": {
     "sources": [
@@ -13597,7 +13597,7 @@
     "shortPercentOfFloat": 0.0144,
     "hi_10d": 289.9,
     "lo_10d": 254.5,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CHD": {
     "sources": [
@@ -13620,7 +13620,7 @@
     "shortPercentOfFloat": 0.0273,
     "hi_10d": 100.22,
     "lo_10d": 94.47,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HRL": {
     "sources": [
@@ -13643,7 +13643,7 @@
     "shortPercentOfFloat": 0.0368,
     "hi_10d": 30.86,
     "lo_10d": 28.77,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ITW": {
     "sources": [
@@ -13666,7 +13666,7 @@
     "shortPercentOfFloat": 0.0259,
     "hi_10d": 252.47,
     "lo_10d": 240.5,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FOX": {
     "sources": [
@@ -13689,7 +13689,7 @@
     "shortPercentOfFloat": 0.0351,
     "hi_10d": 52.46,
     "lo_10d": 49.61,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GLW": {
     "sources": [
@@ -13714,7 +13714,7 @@
     "shortPercentOfFloat": 0.0168,
     "hi_10d": 50.06,
     "lo_10d": 47.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FSLR": {
     "sources": [
@@ -13739,7 +13739,7 @@
     "shortPercentOfFloat": 0.1416,
     "hi_10d": 174.08,
     "lo_10d": 148.8,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ULTA": {
     "sources": [
@@ -13764,7 +13764,7 @@
     "shortPercentOfFloat": 0.0897,
     "hi_10d": 491.98,
     "lo_10d": 402.5,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ROP": {
     "sources": [
@@ -13790,7 +13790,7 @@
     "shortPercentOfFloat": 0.0163,
     "hi_10d": 584.03,
     "lo_10d": 562.54,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TEL": {
     "sources": [
@@ -13815,7 +13815,7 @@
     "shortPercentOfFloat": 0.0222,
     "hi_10d": 163.27,
     "lo_10d": 155.37,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JBL": {
     "sources": [
@@ -13840,7 +13840,7 @@
     "shortPercentOfFloat": 0.0461,
     "hi_10d": 170.9,
     "lo_10d": 161.52,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ACN": {
     "sources": [
@@ -13865,7 +13865,7 @@
     "shortPercentOfFloat": 0.0141,
     "hi_10d": 322.86,
     "lo_10d": 307.87,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WDC": {
     "sources": [
@@ -13890,7 +13890,7 @@
     "shortPercentOfFloat": 0.1032,
     "hi_10d": 53.35,
     "lo_10d": 49.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CB": {
     "sources": [
@@ -13915,7 +13915,7 @@
     "shortPercentOfFloat": 0.0074,
     "hi_10d": 300.0,
     "lo_10d": 285.11,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ERIE": {
     "sources": [
@@ -13940,7 +13940,7 @@
     "shortPercentOfFloat": 0.0583,
     "hi_10d": 374.09,
     "lo_10d": 343.76,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GIS": {
     "sources": [
@@ -13963,7 +13963,7 @@
     "shortPercentOfFloat": 0.0598,
     "hi_10d": 55.35,
     "lo_10d": 52.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AFL": {
     "sources": [
@@ -13988,7 +13988,7 @@
     "shortPercentOfFloat": 0.0155,
     "hi_10d": 106.77,
     "lo_10d": 101.67,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BXP": {
     "sources": [
@@ -14013,7 +14013,7 @@
     "shortPercentOfFloat": 0.0886,
     "hi_10d": 68.88,
     "lo_10d": 63.86,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AMP": {
     "sources": [
@@ -14038,7 +14038,7 @@
     "shortPercentOfFloat": 0.0211,
     "hi_10d": 524.6,
     "lo_10d": 499.64,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APA": {
     "sources": [
@@ -14061,7 +14061,7 @@
     "shortPercentOfFloat": 0.1276,
     "hi_10d": 17.79,
     "lo_10d": 16.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CFG": {
     "sources": [
@@ -14086,7 +14086,7 @@
     "shortPercentOfFloat": 0.0402,
     "hi_10d": 41.77,
     "lo_10d": 38.8,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ARM": {
     "sources": [
@@ -14111,7 +14111,7 @@
     "shortPercentOfFloat": 0.1261,
     "hi_10d": 138.59,
     "lo_10d": 121.56,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BRO": {
     "sources": [
@@ -14136,7 +14136,7 @@
     "shortPercentOfFloat": 0.0152,
     "hi_10d": 113.67,
     "lo_10d": 109.69,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EMR": {
     "sources": [
@@ -14159,7 +14159,7 @@
     "shortPercentOfFloat": 0.0215,
     "hi_10d": 121.49,
     "lo_10d": 114.83,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "STLD": {
     "sources": [
@@ -14182,7 +14182,7 @@
     "shortPercentOfFloat": 0.0213,
     "hi_10d": 142.42,
     "lo_10d": 121.41,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UNP": {
     "sources": [
@@ -14205,7 +14205,7 @@
     "shortPercentOfFloat": 0.0109,
     "hi_10d": 228.68,
     "lo_10d": 217.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ZBRA": {
     "sources": [
@@ -14230,7 +14230,7 @@
     "shortPercentOfFloat": 0.0186,
     "hi_10d": 298.43,
     "lo_10d": 278.51,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BA": {
     "sources": [
@@ -14254,7 +14254,7 @@
     "shortPercentOfFloat": 0.0238,
     "hi_10d": 212.34,
     "lo_10d": 198.75,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CSX": {
     "sources": [
@@ -14278,7 +14278,7 @@
     "shortPercentOfFloat": 0.0144,
     "hi_10d": 31.77,
     "lo_10d": 30.05,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NXPI": {
     "sources": [
@@ -14304,7 +14304,7 @@
     "shortPercentOfFloat": 0.0327,
     "hi_10d": 213.36,
     "lo_10d": 188.18,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LRCX": {
     "sources": [
@@ -14330,7 +14330,7 @@
     "shortPercentOfFloat": 0.0216,
     "hi_10d": 86.26,
     "lo_10d": 79.49,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "XLF": {
     "sources": [
@@ -14351,7 +14351,7 @@
     "shortPercentOfFloat": null,
     "hi_10d": 51.77,
     "lo_10d": 49.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MELI": {
     "sources": [
@@ -14376,7 +14376,7 @@
     "shortPercentOfFloat": 0.0143,
     "hi_10d": 2635.88,
     "lo_10d": 2501.1,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TSN": {
     "sources": [
@@ -14399,7 +14399,7 @@
     "shortPercentOfFloat": 0.0298,
     "hi_10d": 56.54,
     "lo_10d": 54.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CCEP": {
     "sources": [
@@ -14422,7 +14422,7 @@
     "shortPercentOfFloat": 0.0307,
     "hi_10d": 92.73,
     "lo_10d": 87.84,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "QQQ": {
     "sources": [
@@ -14443,7 +14443,7 @@
     "shortPercentOfFloat": null,
     "hi_10d": 526.48,
     "lo_10d": 505.58,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SCHW": {
     "sources": [
@@ -14468,7 +14468,7 @@
     "shortPercentOfFloat": 0.0103,
     "hi_10d": 89.85,
     "lo_10d": 86.03,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MO": {
     "sources": [
@@ -14491,7 +14491,7 @@
     "shortPercentOfFloat": 0.0242,
     "hi_10d": 60.64,
     "lo_10d": 58.74,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KMX": {
     "sources": [
@@ -14516,7 +14516,7 @@
     "shortPercentOfFloat": 0.0928,
     "hi_10d": 68.44,
     "lo_10d": 61.34,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AIG": {
     "sources": [
@@ -14541,7 +14541,7 @@
     "shortPercentOfFloat": 0.0216,
     "hi_10d": 85.76,
     "lo_10d": 81.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NTAP": {
     "sources": [
@@ -14566,7 +14566,7 @@
     "shortPercentOfFloat": 0.0545,
     "hi_10d": 102.17,
     "lo_10d": 94.11,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CNC": {
     "sources": [
@@ -14589,7 +14589,7 @@
     "shortPercentOfFloat": 0.0251,
     "hi_10d": 62.21,
     "lo_10d": 54.08,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WEC": {
     "sources": [
@@ -14612,7 +14612,7 @@
     "shortPercentOfFloat": 0.0475,
     "hi_10d": 108.13,
     "lo_10d": 104.64,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CPB": {
     "sources": [
@@ -14635,7 +14635,7 @@
     "shortPercentOfFloat": 0.0961,
     "hi_10d": 36.03,
     "lo_10d": 32.95,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BDX": {
     "sources": [
@@ -14658,7 +14658,7 @@
     "shortPercentOfFloat": 0.0114,
     "hi_10d": 177.2,
     "lo_10d": 167.97,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DRI": {
     "sources": [
@@ -14683,7 +14683,7 @@
     "shortPercentOfFloat": 0.0626,
     "hi_10d": 216.9,
     "lo_10d": 201.92,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ABBV": {
     "sources": [
@@ -14706,7 +14706,7 @@
     "shortPercentOfFloat": 0.0113,
     "hi_10d": 186.99,
     "lo_10d": 180.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WMB": {
     "sources": [
@@ -14729,7 +14729,7 @@
     "shortPercentOfFloat": 0.0177,
     "hi_10d": 61.39,
     "lo_10d": 57.22,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JPM": {
     "sources": [
@@ -14755,7 +14755,7 @@
     "shortPercentOfFloat": 0.011,
     "hi_10d": 268.32,
     "lo_10d": 256.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GRMN": {
     "sources": [
@@ -14780,7 +14780,7 @@
     "shortPercentOfFloat": 0.0135,
     "hi_10d": 205.52,
     "lo_10d": 197.55,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "OKE": {
     "sources": [
@@ -14803,7 +14803,7 @@
     "shortPercentOfFloat": 0.0207,
     "hi_10d": 85.07,
     "lo_10d": 79.08,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AKAM": {
     "sources": [
@@ -14828,7 +14828,7 @@
     "shortPercentOfFloat": 0.067,
     "hi_10d": 78.9,
     "lo_10d": 74.69,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COO": {
     "sources": [
@@ -14851,7 +14851,7 @@
     "shortPercentOfFloat": 0.0259,
     "hi_10d": 82.17,
     "lo_10d": 65.68,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MRK": {
     "sources": [
@@ -14875,7 +14875,7 @@
     "shortPercentOfFloat": 0.0183,
     "hi_10d": 79.18,
     "lo_10d": 75.4,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MCK": {
     "sources": [
@@ -14898,7 +14898,7 @@
     "shortPercentOfFloat": 0.0169,
     "hi_10d": 730.28,
     "lo_10d": 704.29,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MRVL": {
     "sources": [
@@ -14923,7 +14923,7 @@
     "shortPercentOfFloat": 0.0356,
     "hi_10d": 67.59,
     "lo_10d": 58.61,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HWM": {
     "sources": [
@@ -14946,7 +14946,7 @@
     "shortPercentOfFloat": 0.0371,
     "hi_10d": 172.76,
     "lo_10d": 160.01,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PHM": {
     "sources": [
@@ -14971,7 +14971,7 @@
     "shortPercentOfFloat": 0.0452,
     "hi_10d": 103.61,
     "lo_10d": 95.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DLR": {
     "sources": [
@@ -14996,7 +14996,7 @@
     "shortPercentOfFloat": 0.0349,
     "hi_10d": 174.14,
     "lo_10d": 166.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MOH": {
     "sources": [
@@ -15019,7 +15019,7 @@
     "shortPercentOfFloat": 0.0263,
     "hi_10d": 327.68,
     "lo_10d": 292.34,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PNC": {
     "sources": [
@@ -15044,7 +15044,7 @@
     "shortPercentOfFloat": 0.0133,
     "hi_10d": 179.71,
     "lo_10d": 169.32,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DHR": {
     "sources": [
@@ -15067,7 +15067,7 @@
     "shortPercentOfFloat": 0.0117,
     "hi_10d": 198.16,
     "lo_10d": 183.05,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ED": {
     "sources": [
@@ -15090,7 +15090,7 @@
     "shortPercentOfFloat": 0.0267,
     "hi_10d": 106.08,
     "lo_10d": 101.48,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PPL": {
     "sources": [
@@ -15113,7 +15113,7 @@
     "shortPercentOfFloat": 0.0361,
     "hi_10d": 35.09,
     "lo_10d": 34.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ACGL": {
     "sources": [
@@ -15138,7 +15138,7 @@
     "shortPercentOfFloat": 0.012,
     "hi_10d": 96.33,
     "lo_10d": 91.16,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "O": {
     "sources": [
@@ -15163,7 +15163,7 @@
     "shortPercentOfFloat": 0.0351,
     "hi_10d": 56.59,
     "lo_10d": 54.38,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BK": {
     "sources": [
@@ -15188,7 +15188,7 @@
     "shortPercentOfFloat": 0.0113,
     "hi_10d": 90.63,
     "lo_10d": 87.8,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TXN": {
     "sources": [
@@ -15214,7 +15214,7 @@
     "shortPercentOfFloat": 0.0278,
     "hi_10d": 189.9,
     "lo_10d": 173.75,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WAT": {
     "sources": [
@@ -15237,7 +15237,7 @@
     "shortPercentOfFloat": 0.036,
     "hi_10d": 364.01,
     "lo_10d": 339.36,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "URI": {
     "sources": [
@@ -15260,7 +15260,7 @@
     "shortPercentOfFloat": 0.0361,
     "hi_10d": 726.26,
     "lo_10d": 681.98,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ZBH": {
     "sources": [
@@ -15283,7 +15283,7 @@
     "shortPercentOfFloat": 0.0345,
     "hi_10d": 96.27,
     "lo_10d": 90.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "POOL": {
     "sources": [
@@ -15306,7 +15306,7 @@
     "shortPercentOfFloat": 0.1142,
     "hi_10d": 324.42,
     "lo_10d": 295.7,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CMS": {
     "sources": [
@@ -15329,7 +15329,7 @@
     "shortPercentOfFloat": 0.0338,
     "hi_10d": 72.39,
     "lo_10d": 68.37,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ISRG": {
     "sources": [
@@ -15353,7 +15353,7 @@
     "shortPercentOfFloat": 0.0136,
     "hi_10d": 562.61,
     "lo_10d": 529.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UNH": {
     "sources": [
@@ -15377,7 +15377,7 @@
     "shortPercentOfFloat": 0.0123,
     "hi_10d": 324.64,
     "lo_10d": 289.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EQT": {
     "sources": [
@@ -15400,7 +15400,7 @@
     "shortPercentOfFloat": 0.0323,
     "hi_10d": 57.37,
     "lo_10d": 54.48,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COR": {
     "sources": [
@@ -15423,7 +15423,7 @@
     "shortPercentOfFloat": 0.0537,
     "hi_10d": 296.95,
     "lo_10d": 285.98,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GME": {
     "sources": [
@@ -15448,7 +15448,7 @@
     "shortPercentOfFloat": 0.1213,
     "hi_10d": 35.81,
     "lo_10d": 27.69,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "RVTY": {
     "sources": [
@@ -15471,7 +15471,7 @@
     "shortPercentOfFloat": 0.0631,
     "hi_10d": 94.61,
     "lo_10d": 88.01,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MCD": {
     "sources": [
@@ -15497,7 +15497,7 @@
     "shortPercentOfFloat": 0.0135,
     "hi_10d": 319.91,
     "lo_10d": 308.29,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PPG": {
     "sources": [
@@ -15520,7 +15520,7 @@
     "shortPercentOfFloat": 0.0192,
     "hi_10d": 114.83,
     "lo_10d": 109.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "IBM": {
     "sources": [
@@ -15546,7 +15546,7 @@
     "shortPercentOfFloat": 0.0255,
     "hi_10d": 269.28,
     "lo_10d": 255.79,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "V": {
     "sources": [
@@ -15572,7 +15572,7 @@
     "shortPercentOfFloat": 0.0166,
     "hi_10d": 369.15,
     "lo_10d": 352.22,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CDNS": {
     "sources": [
@@ -15598,7 +15598,7 @@
     "shortPercentOfFloat": 0.0169,
     "hi_10d": 323.39,
     "lo_10d": 276.61,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ARE": {
     "sources": [
@@ -15623,7 +15623,7 @@
     "shortPercentOfFloat": 0.0485,
     "hi_10d": 74.39,
     "lo_10d": 67.37,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MCO": {
     "sources": [
@@ -15648,7 +15648,7 @@
     "shortPercentOfFloat": 0.0196,
     "hi_10d": 493.3,
     "lo_10d": 466.8,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FTNT": {
     "sources": [
@@ -15674,7 +15674,7 @@
     "shortPercentOfFloat": 0.025,
     "hi_10d": 106.06,
     "lo_10d": 99.85,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FDS": {
     "sources": [
@@ -15699,7 +15699,7 @@
     "shortPercentOfFloat": 0.043,
     "hi_10d": 472.21,
     "lo_10d": 442.09,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CPAY": {
     "sources": [
@@ -15724,7 +15724,7 @@
     "shortPercentOfFloat": 0.0282,
     "hi_10d": 349.74,
     "lo_10d": 316.3,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PAYC": {
     "sources": [
@@ -15749,7 +15749,7 @@
     "shortPercentOfFloat": 0.0402,
     "hi_10d": 262.66,
     "lo_10d": 252.95,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HPQ": {
     "sources": [
@@ -15774,7 +15774,7 @@
     "shortPercentOfFloat": 0.0499,
     "hi_10d": 29.48,
     "lo_10d": 23.59,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KVUE": {
     "sources": [
@@ -15799,7 +15799,7 @@
     "shortPercentOfFloat": 0.034,
     "hi_10d": 24.35,
     "lo_10d": 23.35,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MMM": {
     "sources": [
@@ -15823,7 +15823,7 @@
     "shortPercentOfFloat": 0.0191,
     "hi_10d": 153.98,
     "lo_10d": 143.91,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PEP": {
     "sources": [
@@ -15847,7 +15847,7 @@
     "shortPercentOfFloat": 0.0152,
     "hi_10d": 132.72,
     "lo_10d": 127.75,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TXT": {
     "sources": [
@@ -15870,7 +15870,7 @@
     "shortPercentOfFloat": 0.0321,
     "hi_10d": 76.77,
     "lo_10d": 72.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HES": {
     "sources": [
@@ -15893,7 +15893,7 @@
     "shortPercentOfFloat": 0.0357,
     "hi_10d": 134.93,
     "lo_10d": 128.27,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UPS": {
     "sources": [
@@ -15916,7 +15916,7 @@
     "shortPercentOfFloat": 0.0248,
     "hi_10d": 99.14,
     "lo_10d": 95.23,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "KKR": {
     "sources": [
@@ -15941,7 +15941,7 @@
     "shortPercentOfFloat": 0.0152,
     "hi_10d": 125.95,
     "lo_10d": 115.0,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GFS": {
     "sources": [
@@ -15966,7 +15966,7 @@
     "shortPercentOfFloat": 0.106,
     "hi_10d": 39.24,
     "lo_10d": 35.44,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WYNN": {
     "sources": [
@@ -15991,7 +15991,7 @@
     "shortPercentOfFloat": 0.0863,
     "hi_10d": 96.95,
     "lo_10d": 87.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "QCOM": {
     "sources": [
@@ -16017,7 +16017,7 @@
     "shortPercentOfFloat": 0.0255,
     "hi_10d": 156.13,
     "lo_10d": 141.77,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SOLV": {
     "sources": [
@@ -16040,7 +16040,7 @@
     "shortPercentOfFloat": 0.0333,
     "hi_10d": 75.97,
     "lo_10d": 70.41,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "JBHT": {
     "sources": [
@@ -16063,7 +16063,7 @@
     "shortPercentOfFloat": 0.0336,
     "hi_10d": 147.16,
     "lo_10d": 135.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PM": {
     "sources": [
@@ -16086,7 +16086,7 @@
     "shortPercentOfFloat": 0.0086,
     "hi_10d": 182.83,
     "lo_10d": 170.51,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DVA": {
     "sources": [
@@ -16109,7 +16109,7 @@
     "shortPercentOfFloat": 0.1406,
     "hi_10d": 147.68,
     "lo_10d": 133.9,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "AVB": {
     "sources": [
@@ -16134,7 +16134,7 @@
     "shortPercentOfFloat": 0.0286,
     "hi_10d": 209.21,
     "lo_10d": 196.82,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EXC": {
     "sources": [
@@ -16158,7 +16158,7 @@
     "shortPercentOfFloat": 0.0262,
     "hi_10d": 44.62,
     "lo_10d": 42.99,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BLK": {
     "sources": [
@@ -16183,7 +16183,7 @@
     "shortPercentOfFloat": 0.0129,
     "hi_10d": 999.0,
     "lo_10d": 950.3,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "COIN": {
     "sources": [
@@ -16208,7 +16208,7 @@
     "shortPercentOfFloat": 0.0606,
     "hi_10d": 277.01,
     "lo_10d": 240.91,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LH": {
     "sources": [
@@ -16231,7 +16231,7 @@
     "shortPercentOfFloat": 0.0435,
     "hi_10d": 250.94,
     "lo_10d": 239.05,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LNT": {
     "sources": [
@@ -16254,7 +16254,7 @@
     "shortPercentOfFloat": 0.0366,
     "hi_10d": 63.94,
     "lo_10d": 60.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TDG": {
     "sources": [
@@ -16277,7 +16277,7 @@
     "shortPercentOfFloat": 0.0298,
     "hi_10d": 1472.39,
     "lo_10d": 1389.95,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APD": {
     "sources": [
@@ -16300,7 +16300,7 @@
     "shortPercentOfFloat": 0.0214,
     "hi_10d": 279.45,
     "lo_10d": 265.57,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "SPG": {
     "sources": [
@@ -16325,7 +16325,7 @@
     "shortPercentOfFloat": 0.0246,
     "hi_10d": 165.0,
     "lo_10d": 155.96,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "WSM": {
     "sources": [
@@ -16350,7 +16350,7 @@
     "shortPercentOfFloat": 0.0858,
     "hi_10d": 177.29,
     "lo_10d": 147.39,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "OXY": {
     "sources": [
@@ -16373,7 +16373,7 @@
     "shortPercentOfFloat": 0.0512,
     "hi_10d": 42.55,
     "lo_10d": 40.16,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MAA": {
     "sources": [
@@ -16398,7 +16398,7 @@
     "shortPercentOfFloat": 0.0541,
     "hi_10d": 162.65,
     "lo_10d": 152.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "BKNG": {
     "sources": [
@@ -16424,7 +16424,7 @@
     "shortPercentOfFloat": 0.0182,
     "hi_10d": 5544.43,
     "lo_10d": 5227.23,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "YUM": {
     "sources": [
@@ -16449,7 +16449,7 @@
     "shortPercentOfFloat": 0.0179,
     "hi_10d": 149.3,
     "lo_10d": 142.06,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ABT": {
     "sources": [
@@ -16472,7 +16472,7 @@
     "shortPercentOfFloat": 0.0129,
     "hi_10d": 136.17,
     "lo_10d": 130.43,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UDR": {
     "sources": [
@@ -16497,7 +16497,7 @@
     "shortPercentOfFloat": 0.0243,
     "hi_10d": 42.37,
     "lo_10d": 39.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EBAY": {
     "sources": [
@@ -16522,7 +16522,7 @@
     "shortPercentOfFloat": 0.0626,
     "hi_10d": 74.94,
     "lo_10d": 70.44,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "GEN": {
     "sources": [
@@ -16547,7 +16547,7 @@
     "shortPercentOfFloat": 0.0338,
     "hi_10d": 28.69,
     "lo_10d": 27.21,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TPR": {
     "sources": [
@@ -16572,7 +16572,7 @@
     "shortPercentOfFloat": 0.0715,
     "hi_10d": 83.52,
     "lo_10d": 76.29,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "EXPE": {
     "sources": [
@@ -16597,7 +16597,7 @@
     "shortPercentOfFloat": 0.0547,
     "hi_10d": 171.79,
     "lo_10d": 155.68,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LULU": {
     "sources": [
@@ -16623,7 +16623,7 @@
     "shortPercentOfFloat": 0.0674,
     "hi_10d": 330.49,
     "lo_10d": 309.79,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APTV": {
     "sources": [
@@ -16648,7 +16648,7 @@
     "shortPercentOfFloat": 0.0531,
     "hi_10d": 68.74,
     "lo_10d": 64.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "FOXA": {
     "sources": [
@@ -16671,7 +16671,7 @@
     "shortPercentOfFloat": 0.0878,
     "hi_10d": 56.8,
     "lo_10d": 54.15,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "NI": {
     "sources": [
@@ -16694,7 +16694,7 @@
     "shortPercentOfFloat": 0.0332,
     "hi_10d": 40.1,
     "lo_10d": 38.13,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "DE": {
     "sources": [
@@ -16717,7 +16717,7 @@
     "shortPercentOfFloat": 0.0162,
     "hi_10d": 532.47,
     "lo_10d": 501.02,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "REG": {
     "sources": [
@@ -16742,7 +16742,7 @@
     "shortPercentOfFloat": 0.0509,
     "hi_10d": 74.27,
     "lo_10d": 70.53,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "LEN": {
     "sources": [
@@ -16767,7 +16767,7 @@
     "shortPercentOfFloat": 0.0484,
     "hi_10d": 111.39,
     "lo_10d": 102.98,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "CF": {
     "sources": [
@@ -16790,7 +16790,7 @@
     "shortPercentOfFloat": 0.0704,
     "hi_10d": 93.26,
     "lo_10d": 85.58,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "ROST": {
     "sources": [
@@ -16816,7 +16816,7 @@
     "shortPercentOfFloat": 0.0159,
     "hi_10d": 155.58,
     "lo_10d": 129.2,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TFC": {
     "sources": [
@@ -16841,7 +16841,7 @@
     "shortPercentOfFloat": 0.0225,
     "hi_10d": 41.49,
     "lo_10d": 38.27,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "UBER": {
     "sources": [
@@ -16866,7 +16866,7 @@
     "shortPercentOfFloat": 0.0282,
     "hi_10d": 93.6,
     "lo_10d": 82.54,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "APH": {
     "sources": [
@@ -16891,7 +16891,7 @@
     "shortPercentOfFloat": 0.015,
     "hi_10d": 90.38,
     "lo_10d": 83.44,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "MGM": {
     "sources": [
@@ -16916,7 +16916,7 @@
     "shortPercentOfFloat": 0.1236,
     "hi_10d": 33.75,
     "lo_10d": 30.58,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "TAP": {
     "sources": [
@@ -16939,7 +16939,7 @@
     "shortPercentOfFloat": 0.0862,
     "hi_10d": 57.57,
     "lo_10d": 52.25,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "HIG": {
     "sources": [
@@ -16964,7 +16964,7 @@
     "shortPercentOfFloat": 0.0163,
     "hi_10d": 131.56,
     "lo_10d": 127.34,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   },
   "PARA": {
     "sources": [
@@ -16987,6 +16987,6 @@
     "shortPercentOfFloat": 0.1163,
     "hi_10d": 12.23,
     "lo_10d": 11.62,
-    "enriched_timestamp": "2025-06-03T11:45:32.717406-04:00"
+    "enriched_timestamp": "2025-06-03T23:02:09.382734-04:00"
   }
 }

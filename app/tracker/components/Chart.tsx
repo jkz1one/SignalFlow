@@ -1,12 +1,14 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   createChart,
   CrosshairMode,
   CandlestickSeriesOptions,
   CandlestickData,
   Time,
+  IChartApi,
+  ISeriesApi,
 } from 'lightweight-charts';
 
 interface Candle {
@@ -24,9 +26,12 @@ interface ChartProps {
 
 export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const chartRef = useRef<ReturnType<typeof createChart> | null>(null);
-  const seriesRef = useRef<any>(null);
+  const chartRef = useRef<IChartApi | null>(null);
+  const seriesRef = useRef<ISeriesApi<'Candlestick'> | null>(null);
+  const prevSymbolRef = useRef<string | null>(null);
+  const [hasData, setHasData] = useState(false);
 
+  // ✅ Create chart once
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -42,8 +47,23 @@ export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
         horzLines: { color: '#374151' },
       },
       crosshair: { mode: CrosshairMode.Normal },
-      rightPriceScale: { borderColor: '#9ca3af' },
-      timeScale: { borderColor: '#9ca3af' },
+      rightPriceScale: {
+        borderColor: '#9ca3af',
+        scaleMargins: { top: 0.1, bottom: 0.1 },
+        visible: true,
+      },
+      timeScale: {
+        borderColor: '#9ca3af',
+        rightOffset: 0,
+        shiftVisibleRangeOnNewBar: false,
+        rightBarStaysOnScroll: false,
+      },
+      handleScroll: {
+        mouseWheel: true,
+        pressedMouseMove: true,
+        horzTouchDrag: true,
+        vertTouchDrag: false,
+      },
     });
 
     const opts: Partial<CandlestickSeriesOptions> = {
@@ -70,11 +90,17 @@ export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
     return () => {
       resizeObserver.disconnect();
       chart.remove();
+      chartRef.current = null;
+      seriesRef.current = null;
     };
   }, []);
 
+  // ✅ Update candles + reset autoscale on symbol change
   useEffect(() => {
-    if (!seriesRef.current) return;
+    if (!seriesRef.current || !chartRef.current || !candles || candles.length === 0) {
+      setHasData(false);
+      return;
+    }
 
     const formatted: CandlestickData[] = candles.map((c) => ({
       time: c.time as Time,
@@ -85,12 +111,49 @@ export default function Chart({ candles, symbol = 'SPY' }: ChartProps) {
     }));
 
     seriesRef.current.setData(formatted);
-  }, [candles]);
+    setHasData(true);
+
+    if (prevSymbolRef.current !== symbol) {
+      chartRef.current.timeScale().fitContent();
+      chartRef.current.priceScale('right').applyOptions({ autoScale: true });
+    }
+
+    prevSymbolRef.current = symbol;
+  }, [candles, symbol]);
+
+  const handleReset = () => {
+    chartRef.current?.timeScale().fitContent();
+    chartRef.current?.priceScale('right').applyOptions({ autoScale: true });
+  };
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+      {/* Title */}
       <div className="text-sm text-gray-300 mb-1">{symbol} Chart</div>
-      <div ref={containerRef} className="w-full" />
+
+      {/* ↻ Reset button, top-right absolute */}
+      {hasData && (
+        <button
+          onClick={handleReset}
+          className="absolute top-1 right-1 text-lg px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700 z-10"
+          title="Reset View"
+        >
+          ↻
+        </button>
+      )}
+
+      {/* Chart container */}
+      <div
+        ref={containerRef}
+        className="w-full h-[300px] bg-gray-900 rounded-md"
+      />
+
+      {/* Empty state */}
+      {(!candles || candles.length === 0) && (
+        <div className="text-gray-400 text-center text-sm pt-2">
+          No chart data available.
+        </div>
+      )}
     </div>
   );
 }
