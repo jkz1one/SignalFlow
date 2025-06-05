@@ -1,7 +1,5 @@
 # 📈 Screener 3.7 – Final Roadmap (Pre-Deployment)
 
-This is the deployment-ready roadmap for Screener 3.7, categorized by system section. Each block is collapsible for easier viewing.
-
 ---
 
 <details open>
