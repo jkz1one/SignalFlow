@@ -257,9 +257,9 @@ backend/
 * ✅ Added Global Context Bar 
 * ✅ `scheduler.py` bug fixes and better logging
 * ✅ Sort toggle added to sector rotation tab
-* ✅ `fetch_short_interest.py` depreciated
+* ✅ `fetch_short_interest.py` deprecated
 * ✅ Gap threshold set to be dynamic
-* ✅ Implented improved gap up logic
+* ✅ Implemented improved gap up logic
 * ✅ Optimized `post_open_signals.py`
 * ✅ Sector Rotation Tab live updates
 * ✅ Updated frontend with new working Sector Rotation tab

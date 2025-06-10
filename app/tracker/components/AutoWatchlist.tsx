@@ -31,6 +31,17 @@ export default function AutoWatchlist() {
       .replace(/\b\w/g, (l) => l.toUpperCase());
   }
 
+  function formatT1Display(t1Hits: string[]): string {
+    const lower = t1Hits.map((s) => s.toLowerCase());
+    if (lower.some((s) => s.includes('break_above') || s.includes('above'))) {
+      return 'Above 9:30–40 range';
+    }
+    if (lower.some((s) => s.includes('break_below') || s.includes('below'))) {
+      return 'Below 9:30–40 range';
+    }
+    return 'T1';
+  }
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -145,7 +156,9 @@ export default function AutoWatchlist() {
                   <h4 className="text-green-400 font-bold mb-1">Tier 1</h4>
                   <ul className="space-y-1">
                     {stock.tierHits.T1.map((s) => (
-                      <li key={s}>✓ {formatLabel(s)}</li>
+                      <li key={s}>
+                        ✓ {formatT1Display([s]) !== 'T1' ? formatT1Display([s]) : formatLabel(s)}
+                      </li>
                     ))}
                   </ul>
                 </div>

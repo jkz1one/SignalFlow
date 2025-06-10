@@ -1,4 +1,4 @@
-# backend/routes/fetch_global_context.py
+# backend/signals/fetch_global_context.py
 
 from fastapi import WebSocket, APIRouter, WebSocketDisconnect
 import yfinance as yf
@@ -56,7 +56,7 @@ def build_global_context():
         ten_y = context.get("10Y", {}).get("last")
         two_y = context.get("2Y", {}).get("last")
         if isinstance(ten_y, (int, float)) and isinstance(two_y, (int, float)):
-            spread = round(ten_y * 0.1 - two_y / 100, 2)
+            spread = round(ten_y - two_y, 2)
             context["Spread"] = {
                 "value": spread,
                 "arrow": "up" if spread > 0 else "down" if spread < 0 else "flat"

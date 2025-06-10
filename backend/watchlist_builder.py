@@ -50,7 +50,7 @@ def build_autowatchlist(scored_path=None):
                 "gap_down",
                 "break_above_range",
                 "break_below_range",
-                "high_relative_volume"
+                "high_rel_vol"
             ]
             t1_hits = sum(1 for k in t1_signals if signals.get(k))
             if t1_hits >= 2:

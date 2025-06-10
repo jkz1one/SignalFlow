@@ -52,13 +52,25 @@ def fetch_yf_data(symbol, lookback_days=10, retries=3):
 
             if USE_BATCH_DOWNLOAD:
                 try:
-                    daily_hist = yf.download(yf_symbol, period=f"{lookback_days + 1}d", interval="1d")
+                    daily_hist = yf.download(
+                        yf_symbol,
+                        period=f"{lookback_days + 1}d",
+                        interval="1d",
+                        auto_adjust=False,
+                        progress=False,
+                    )
                 except Exception as e:
                     tqdm.write(f"⚠️ Failed daily download for {symbol}: {e}")
                     daily_hist = None
 
                 try:
-                    intraday_hist = yf.download(yf_symbol, period="1d", interval="5m")
+                    intraday_hist = yf.download(
+                        yf_symbol,
+                        period="1d",
+                        interval="5m",
+                        auto_adjust=False,
+                        progress=False,
+                    )
                 except Exception as e:
                     tqdm.write(f"⚠️ Failed intraday download for {symbol}: {e}")
                     intraday_hist = None
@@ -69,14 +81,25 @@ def fetch_yf_data(symbol, lookback_days=10, retries=3):
             info = ticker.info
 
             rel_vol, avg_vol_10d = None, None
-            if not daily_hist.empty and len(daily_hist) >= 10:
+            if daily_hist is not None and not daily_hist.empty and len(daily_hist) >= 10:
+                # convert timezone to US/Eastern if needed
+                if daily_hist.index.tz is not None:
+                    daily_hist.index = daily_hist.index.tz_convert("US/Eastern")
+                else:
+                    daily_hist.index = daily_hist.index.tz_localize("UTC").tz_convert("US/Eastern")
+
                 past_volumes = daily_hist['Volume'][:-1]
                 avg_vol_10d = past_volumes.mean()
                 today_volume = daily_hist['Volume'].iloc[-1]
                 rel_vol = today_volume / avg_vol_10d if avg_vol_10d > 0 else 0
 
             early_move = None
-            if not intraday_hist.empty:
+            if intraday_hist is not None and not intraday_hist.empty:
+                if intraday_hist.index.tz is not None:
+                    intraday_hist.index = intraday_hist.index.tz_convert("US/Eastern")
+                else:
+                    intraday_hist.index = intraday_hist.index.tz_localize("UTC").tz_convert("US/Eastern")
+
                 early_candle = intraday_hist.between_time("09:30", "09:35")
                 if not early_candle.empty:
                     early_open = early_candle['Open'].iloc[0]
@@ -105,7 +128,7 @@ def fetch_yf_data(symbol, lookback_days=10, retries=3):
             if early_move is not None:
                 output["early_percent_move"] = early_move
 
-            if not daily_hist.empty:
+            if daily_hist is not None and not daily_hist.empty:
                 output["hi_10d"] = round(daily_hist["High"][:-1].max(), 2)
                 output["lo_10d"] = round(daily_hist["Low"][:-1].min(), 2)
                 if len(daily_hist) >= 2:
