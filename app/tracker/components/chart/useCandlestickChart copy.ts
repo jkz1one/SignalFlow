@@ -9,6 +9,7 @@ import {
   Time,
 } from 'lightweight-charts';
 import { useEffect, useRef, useState } from 'react';
+import { DateTime } from 'luxon';
 import { formatCrosshairTime } from './formatters';
 
 interface Candle {
@@ -57,24 +58,6 @@ export const useCandlestickChart = (
       timeScale: {
         borderColor: '#9ca3af',
         timeVisible: true,
-        tickMarkFormatter: (time: Time) => {
-          const t = time as number;
-          const date = new Date(t * 1000);
-          const hours = date.getHours();
-          const minutes = date.getMinutes();
-
-          // Show date on first candle of each new day
-          if (newDayTimestamps.current.has(t)) {
-            const month = date.toLocaleString('en-US', { month: 'short' });
-            const day = date.getDate();
-            return `${month} ${day}`;
-          }
-
-          // Otherwise show 12-hour formatted time
-          const ampm = hours >= 12 ? 'PM' : 'AM';
-          const displayHour = hours % 12 || 12;
-          return `${displayHour}:${minutes.toString().padStart(2, '0')} ${ampm}`;
-        },
         tickMarkMaxCharacterLength: 10,
       },
       handleScroll: {
@@ -129,25 +112,16 @@ export const useCandlestickChart = (
       return;
     }
 
-    // Detect new-day ticks
-    newDayTimestamps.current.clear();
-    let lastDate: string | null = null;
-
-    candles.forEach((c) => {
-      const dateStr = new Date(c.time * 1000).toISOString().split('T')[0]; // YYYY-MM-DD
-      if (dateStr !== lastDate) {
-        newDayTimestamps.current.add(c.time);
-        lastDate = dateStr;
-      }
+    const formatted: CandlestickData[] = candles.map((c) => {
+      const dt = DateTime.fromSeconds(c.time, { zone: 'utc' }).setZone('America/New_York');
+      return {
+        time: Math.floor(dt.toSeconds()) as Time,
+        open: c.open,
+        high: c.high,
+        low: c.low,
+        close: c.close,
+      };
     });
-
-    const formatted: CandlestickData[] = candles.map((c) => ({
-      time: c.time as Time,
-      open: c.open,
-      high: c.high,
-      low: c.low,
-      close: c.close,
-    }));
 
     seriesRef.current.setData(formatted);
     setHasData(true);

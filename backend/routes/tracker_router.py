@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 import subprocess, os, json
+# import logging
 
 router = APIRouter()
 CACHE_DIR = "backend/cache"
@@ -9,23 +10,21 @@ CACHE_DIR = "backend/cache"
 def get_tracker_data(symbol: str):
     symbol = symbol.upper()
 
-    # Step 1: Run fetch + calc pipeline
+    # Step 1: Run DASHBOARD pipeline (lightweight fetch + signal calc)
     try:
         result = subprocess.run(
-            ["python", "backend/tracker/run_tracker.py", symbol],
+            ["python", "backend/tracker/run_tracker_dashboard.py", symbol],
             capture_output=True,
             check=True
         )
     except subprocess.CalledProcessError as e:
+        # logging.error(f"[tracker] Subprocess failed for {symbol}: {e.stderr.decode().strip()}")
         return JSONResponse(
             status_code=500,
-            content={
-                "error": f"Tracker pipeline failed for {symbol}",
-                "stderr": e.stderr.decode() if e.stderr else "Unknown error"
-            }
+            content={"error": f"Error loading tracker data for {symbol}."}
         )
 
-    # Step 2: Locate output file
+    # Step 2: Load prebuilt signal file
     path = os.path.join(CACHE_DIR, f"tracker_signals_{symbol}.json")
     if not os.path.exists(path):
         return JSONResponse(
@@ -33,13 +32,13 @@ def get_tracker_data(symbol: str):
             content={"error": f"No tracker output found for {symbol}"}
         )
 
-    # Step 3: Load and return JSON
     try:
         with open(path, "r") as f:
             data = json.load(f)
         return data
     except Exception as e:
+        # logging.error(f"[tracker] JSON load failed for {symbol}: {str(e)}")
         return JSONResponse(
             status_code=500,
-            content={"error": f"Failed to load output for {symbol}", "detail": str(e)}
+            content={"error": f"Failed to load tracker data for {symbol}."}
         )

@@ -1,4 +1,3 @@
-#build_tracker_candles.py
 import os, json
 import pandas as pd
 from datetime import datetime
@@ -69,7 +68,6 @@ def build(symbol: str, date: str):
             print(f"⚠️ Skipping {interval}: no data.")
             continue
 
-        # Always patch "time" from "timestamp"
         for entry in candles:
             ts = entry.get("timestamp")
             if ts:
@@ -91,7 +89,18 @@ def build(symbol: str, date: str):
 
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
+
     print(f"✅ Built tracker cache: {output_path}")
 
+# --- CLI Entry Point ---
 if __name__ == "__main__":
-    build("SPY", datetime.now().strftime("%Y-%m-%d"))
+    import sys
+
+    if len(sys.argv) not in [2, 3]:
+        print("Usage: python build_tracker_candles.py SYMBOL [DATE]")
+        sys.exit(1)
+
+    symbol = sys.argv[1].upper()
+    date = sys.argv[2] if len(sys.argv) == 3 else datetime.now().strftime("%Y-%m-%d")
+
+    build(symbol, date)

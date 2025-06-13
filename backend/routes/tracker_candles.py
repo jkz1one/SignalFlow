@@ -1,8 +1,8 @@
-from fastapi import APIRouter, Query, HTTPException
+from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse
 import os, json, subprocess
 from datetime import datetime
-from backend.tracker.build_tracker_candles import build as build_tracker
+# import logging
 
 router = APIRouter()
 CACHE_DIR = os.path.join(os.path.dirname(__file__), '..', 'cache')
@@ -16,45 +16,48 @@ def get_tracker_candles(
 ):
     allowed = {"5m", "10m", "30m", "1h", "4h", "1d"}
     if interval not in allowed:
-        raise HTTPException(status_code=400, detail="Invalid interval")
+        return JSONResponse(status_code=400, content={"error": "Invalid interval"})
 
     symbol = symbol.upper()
     path = os.path.join(CACHE_DIR, f"tracker_candles_{symbol}_{date}.json")
 
-    if not os.path.exists(path):
-        if cache_only:
-            raise HTTPException(status_code=404, detail="Cache not available")
-        try:
-            subprocess.run(
-                ["python", "backend/tracker/run_tracker.py", symbol],
-                check=True
-            )
-        except subprocess.CalledProcessError as e:
-            raise HTTPException(status_code=500, detail=f"Tracker pipeline failed: {e.stderr.decode()}")
-
-        try:
-            build_tracker(symbol, date)
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Build failed: {str(e)}")
-
+    try:
         if not os.path.exists(path):
-            raise HTTPException(status_code=500, detail="Tracker cache missing after build")
-
-    elif not cache_only:
-        try:
+            if cache_only:
+                return JSONResponse(status_code=404, content={"error": "Candle cache not available"})
             subprocess.run(
-                ["python", "backend/tracker/run_tracker.py", symbol],
-                check=True
+                ["python", "backend/tracker/run_tracker_chart.py", symbol],
+                check=True,
+                capture_output=True
             )
-            build_tracker(symbol, date)
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Refresh failed: {str(e)}")
+        elif not cache_only:
+            subprocess.run(
+                ["python", "backend/tracker/run_tracker_chart.py", symbol],
+                check=True,
+                capture_output=True
+            )
+    except subprocess.CalledProcessError as e:
+        # logging.error(f"[tracker-candles] Subprocess failed for {symbol} ({interval}): {e.stderr.decode().strip()}")
+        return JSONResponse(status_code=500, content={"error": "Error loading chart data."})
 
-    with open(path, "r") as f:
-        data = json.load(f)
+    if not os.path.exists(path):
+        return JSONResponse(status_code=500, content={"error": "Candle cache missing after build"})
 
-    result = data.get("intervals", {}).get(interval)
-    if not result:
-        raise HTTPException(status_code=404, detail=f"No data for {interval}")
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+        interval_block = data.get("intervals", {}).get(interval)
+        if not interval_block or "candles" not in interval_block:
+            return JSONResponse(status_code=404, content={"error": f"No data for interval '{interval}'"})
 
-    return JSONResponse(content=result)
+        return JSONResponse(content={
+            "symbol": symbol,
+            "interval": interval,
+            "candles": interval_block["candles"],
+            "ema10": interval_block.get("ema10"),
+            "ema50": interval_block.get("ema50")
+        })
+
+    except Exception as e:
+        # logging.error(f"[tracker-candles] JSON load failed for {symbol}: {str(e)}")
+        return JSONResponse(status_code=500, content={"error": "Failed to parse chart data."})
