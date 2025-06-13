@@ -1,11 +1,11 @@
-// Updated StockTracker.tsx with smart cache_only routing
-
 'use client';
 
 import { useEffect, useState, FormEvent, ChangeEvent, useRef } from 'react';
 import Chart from './Chart';
 
-// ...types remain unchanged
+interface StockTrackerProps {
+  symbol?: string; // symbol is now optional (for localStorage fallback)
+}
 
 type TrackerData = {
   timestamp?: string;
@@ -31,16 +31,25 @@ interface Candle {
 
 const INTERVAL_OPTIONS = ['5m', '10m', '30m', '1h', '4h', '1d'];
 
-export default function StockTracker() {
-  const [symbol, setSymbol] = useState(() =>
-    typeof window !== 'undefined' ? localStorage.getItem('symbol_tracker') || 'SPY' : 'SPY'
-  );
+export default function StockTracker({ symbol: initialSymbol }: StockTrackerProps) {
+  const fallback = typeof window !== 'undefined'
+    ? localStorage.getItem('symbol_tracker') || 'SPY'
+    : 'SPY';
+
+  const [symbol, setSymbol] = useState(initialSymbol?.toUpperCase() || fallback);
   const [input, setInput] = useState(symbol);
-  const [interval, setIntervalStr] = useState('5m');
   const [data, setData] = useState<TrackerData | null>(null);
   const [candles, setCandles] = useState<Candle[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [interval, setIntervalStr] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('interval_tracker') || '5m';
+    }
+    return '5m';
+  });
+  
 
   const latestSymbol = useRef(symbol);
   const latestInterval = useRef(interval);
@@ -85,10 +94,10 @@ export default function StockTracker() {
 
   useEffect(() => {
     fetchTracker();
-    fetchCandles(true); // initial full fetch
+    fetchCandles(true);
     const id = setInterval(() => {
       fetchTracker();
-      fetchCandles(true); // refresh every 60s
+      fetchCandles(true);
     }, 60000);
     return () => clearInterval(id);
   }, []);
@@ -113,9 +122,10 @@ export default function StockTracker() {
     const newInterval = e.target.value;
     setIntervalStr(newInterval);
     latestInterval.current = newInterval;
+    localStorage.setItem('interval_tracker', newInterval); // ← persist
     fetchCandles(false); // cache-only fetch
   };
-
+  
   return (
     <div className="bg-gray-800 p-4 rounded-2xl w-full max-w-6xl mx-auto space-y-4 shadow-lg">
       <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2">

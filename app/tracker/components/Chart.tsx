@@ -25,26 +25,27 @@ export default function Chart({ candles = [], symbol = 'SPY' }: ChartProps) {
 
   return (
     <div className="w-full relative">
+      {/* Title */}
       <div className="text-sm text-gray-300 mb-1">{symbol} Chart</div>
 
-      {showChart && hasData && (
-        <button
-          onClick={resetView}
-          className="absolute top-1 right-1 text-lg px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700 z-10"
-          title="Reset View"
-        >
-          ↻
-        </button>
-      )}
+      {/* Chart Container with overlayed button */}
+      <div className="relative w-full h-[300px] bg-gray-800 rounded-md">
+        {showChart && hasData && (
+          <button
+            onClick={resetView}
+            className="absolute top-2 left-2 text-lg px-2 py-1 rounded bg-gray-800 text-gray-300 hover:bg-gray-700 z-10"
+            title="Reset View"
+          >
+            ↻
+          </button>
+        )}
 
-      {showChart && crosshairTime && crosshairX !== null && (
-        <CrosshairTooltip time={crosshairTime} x={crosshairX} />
-      )}
+        {showChart && crosshairTime && crosshairX !== null && (
+          <CrosshairTooltip time={crosshairTime} x={crosshairX} />
+        )}
 
-      <div
-        ref={containerRef}
-        className="w-full h-[300px] bg-gray-900 rounded-md"
-      />
+        <div ref={containerRef} className="absolute inset-0" />
+      </div>
 
       {!showChart && (
         <div className="text-gray-400 text-center text-sm pt-2">
@@ -54,3 +55,4 @@ export default function Chart({ candles = [], symbol = 'SPY' }: ChartProps) {
     </div>
   );
 }
+

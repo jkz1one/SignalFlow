@@ -189,6 +189,15 @@ export default function AutoWatchlist() {
                     </ul>
                   </div>
                 )}
+
+                    <div className="col-span-3 flex justify-end">
+                      <button
+                        onClick={() => window.location.href = `/tracker?ticker=${stock.symbol}`}
+                        className="text-green-400 hover:text-green-300 text-xs font-medium"
+                      >
+                         Tracker →
+                      </button>
+                    </div>
               </div>
             )}
           </div>

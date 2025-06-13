@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-06-12T23:07:47.427583-04:00",
+  "timestamp": "2025-06-13T00:55:55.144246-04:00",
   "SPY": {
     "last": 603.68,
     "open": 600.01,
@@ -19,27 +19,27 @@
     "arrow": "up"
   },
   "BTC": {
-    "last": 103718.66,
+    "last": 104553.05,
     "open": 105729.95,
-    "pct_change": -1.9,
+    "pct_change": -1.11,
     "arrow": "down"
   },
   "DXY": {
-    "last": 98.13,
-    "open": 98.35,
-    "pct_change": -0.22,
-    "arrow": "down"
+    "last": 98.28,
+    "open": 98.19,
+    "pct_change": 0.09,
+    "arrow": "up"
   },
   "Gold": {
-    "last": 3465.7,
-    "open": 3391.5,
-    "pct_change": 2.19,
+    "last": 3451.4,
+    "open": 3447.8,
+    "pct_change": 0.1,
     "arrow": "up"
   },
   "Crude": {
-    "last": 76.27,
-    "open": 67.9,
-    "pct_change": 12.33,
+    "last": 74.38,
+    "open": 73.91,
+    "pct_change": 0.64,
     "arrow": "up"
   },
   "10Y": {
