@@ -1,8 +1,9 @@
 'use client';
 
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useCandlestickChart } from './chart/useCandlestickChart';
 import CrosshairTooltip from './chart/CrosshairTooltip';
+import { removeTradingViewAttribution } from './chart/removeAttribution';
 
 interface Candle {
   time: number;
@@ -19,9 +20,17 @@ interface ChartProps {
 
 export default function Chart({ candles = [], symbol = 'SPY' }: ChartProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const { hasData, crosshairTime, crosshairX, resetView } = useCandlestickChart(candles, symbol, containerRef);
+  const { hasData, crosshairTime, crosshairX, resetView } = useCandlestickChart(
+    candles,
+    symbol,
+    containerRef
+  );
 
   const showChart = candles.length > 0;
+
+  useEffect(() => {
+    removeTradingViewAttribution();
+  }, []);
 
   return (
     <div className="w-full relative">
@@ -55,4 +64,3 @@ export default function Chart({ candles = [], symbol = 'SPY' }: ChartProps) {
     </div>
   );
 }
-

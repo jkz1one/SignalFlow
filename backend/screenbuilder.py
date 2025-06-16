@@ -1,9 +1,9 @@
-
 import json
 import os
 from datetime import datetime
 import pytz
 from tqdm import tqdm
+from tooltip_builder import build_tooltip  # 👈 NEW IMPORT
 
 CACHE_DIR = "backend/cache"
 
@@ -100,6 +100,7 @@ def main():
     universe = load_json(UNIVERSE_PATH)
     print(f"📦 Loaded {len(universe)} tickers to enrich")
     print("⚙️ Scoring tickers...")
+
     filtered = {}
     for symbol in tqdm(universe):
         stock = universe[symbol]
@@ -108,12 +109,24 @@ def main():
         stock["score"] = score(stock)
         if stock["score"] < 3:
             continue
+
         stock["tierHits"] = build_tier_hits(stock)
         stock["reasons"] = build_reasons(stock)
+
+        screeners = []
+        for tier, hits in stock["tierHits"].items():
+            for sig in hits:
+                screeners.append({
+                    "name": sig,
+                    "tier": tier,
+                    "tooltip": build_tooltip(sig, stock)
+                })
+
         filtered[symbol] = {
             "score": stock["score"],
             "tierHits": stock["tierHits"],
             "reasons": stock["reasons"],
+            "screeners": screeners,
             "level": stock.get("level"),
             "sector": stock.get("sector"),
             "tags": stock.get("tags", []),

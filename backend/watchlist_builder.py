@@ -67,7 +67,19 @@ def build_autowatchlist(scored_path=None):
             info["tags"] = tags
             info["isBlocked"] = is_blocked
             info["reasons"] = reasons
-            watchlist[symbol] = info
+
+            # ✅ Construct final dict with screeners included
+            watchlist[symbol] = {
+                "score": score,
+                "tierHits": info.get("tierHits", {}),
+                "reasons": info.get("reasons", []),
+                "screeners": info.get("screeners", []),
+                "level": info.get("level"),
+                "sector": info.get("sector"),
+                "tags": tags,
+                "signals": signals,
+                "isBlocked": is_blocked
+            }
 
     # Dump autowatchlist cache
     out_path = os.path.join(CACHE_DIR, "autowatchlist_cache.json")

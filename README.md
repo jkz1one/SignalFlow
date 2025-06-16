@@ -239,6 +239,7 @@ backend/
 
 ## 🚨 Key Fixes & Changes (v3.7+)
 
+* ✅ Added click through link for Watchlist to Tracker 
 * ✅ Added fully functional Stock Tracker tab  
   * Symbol search, multi-timeframe chart, real-time level data
 * ✅ Integrated Lightweight Charts (v4.1.1) with autoscaling + ↻ reset

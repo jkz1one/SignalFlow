@@ -3,11 +3,17 @@
 import { useEffect, useState } from 'react';
 import WatchlistControls from './WatchlistControls';
 
+type Screener = {
+  name: string;
+  tier: 'T1' | 'T2' | 'T3';
+  tooltip: string;
+};
+
 type Stock = {
   symbol: string;
   score: number;
   tags: string[];
-  tierHits: Record<string, string[]>;
+  screeners: Screener[];
   isBlocked: boolean;
   reasons: string[];
 };
@@ -31,17 +37,6 @@ export default function AutoWatchlist() {
       .replace(/\b\w/g, (l) => l.toUpperCase());
   }
 
-  function formatT1Display(t1Hits: string[]): string {
-    const lower = t1Hits.map((s) => s.toLowerCase());
-    if (lower.some((s) => s.includes('break_above') || s.includes('above'))) {
-      return 'Above 9:30–40 range';
-    }
-    if (lower.some((s) => s.includes('break_below') || s.includes('below'))) {
-      return 'Below 9:30–40 range';
-    }
-    return 'T1';
-  }
-
   useEffect(() => {
     async function fetchData() {
       try {
@@ -53,7 +48,7 @@ export default function AutoWatchlist() {
           tags: stock.tags || [],
           isBlocked: stock.isBlocked || false,
           reasons: stock.reasons || [],
-          tierHits: stock.tierHits || { T1: [], T2: [], T3: [] },
+          screeners: stock.screeners || [],
         }));
 
         setData(mapped);
@@ -70,30 +65,26 @@ export default function AutoWatchlist() {
   const toggleRow = (symbol: string, isCmdOrCtrl: boolean) => {
     setExpanded((prev) => {
       const isOpen = prev.includes(symbol);
-      if (isCmdOrCtrl) {
-        return isOpen ? prev.filter((s) => s !== symbol) : [...prev, symbol];
-      } else {
-        return isOpen ? [] : [symbol];
-      }
+      return isCmdOrCtrl
+        ? isOpen ? prev.filter((s) => s !== symbol) : [...prev, symbol]
+        : isOpen ? [] : [symbol];
     });
   };
 
   const filtered = data
     .filter((stock) => {
+      const grouped = { T1: [], T2: [], T3: [] } as Record<'T1' | 'T2' | 'T3', Screener[]>;
+      stock.screeners.forEach(s => grouped[s.tier].push(s));
       const matchesTier =
-        (tiersShown.T1 && stock.tierHits.T1.length > 0) ||
-        (tiersShown.T2 && stock.tierHits.T2.length > 0) ||
-        (tiersShown.T3 && stock.tierHits.T3.length > 0);
+        (tiersShown.T1 && grouped.T1.length > 0) ||
+        (tiersShown.T2 && grouped.T2.length > 0) ||
+        (tiersShown.T3 && grouped.T3.length > 0);
       const riskDisqualified = stock.isBlocked;
       const matchesTags =
         tagFilters.length === 0 || tagFilters.some((tag) => stock.tags.includes(tag));
       return matchesTier && matchesTags && (showRisk || !riskDisqualified);
     })
-    .sort((a, b) => {
-      if (sortBy === 'score') return b.score - a.score;
-      if (sortBy === 'symbol') return a.symbol.localeCompare(b.symbol);
-      return 0;
-    });
+    .sort((a, b) => sortBy === 'score' ? b.score - a.score : a.symbol.localeCompare(b.symbol));
 
   if (loading) {
     return <div className="text-gray-400 text-sm">Loading watchlist...</div>;
@@ -101,7 +92,6 @@ export default function AutoWatchlist() {
 
   return (
     <div className="space-y-4">
-
       <WatchlistControls
         tiersShown={tiersShown}
         setTiersShown={setTiersShown}
@@ -110,15 +100,13 @@ export default function AutoWatchlist() {
         tagFilters={tagFilters}
         setTagFilters={setTagFilters}
         sortBy={sortBy}
-        setSortBy={(val) => {
-          if (val === 'score' || val === 'symbol') {
-            setSortBy(val);
-          }
-        }}
+        setSortBy={(val) => val === 'score' || val === 'symbol' ? setSortBy(val) : null}
       />
 
       {filtered.map((stock) => {
         const isOpen = expanded.includes(stock.symbol);
+        const groupedScreeners: Record<'T1' | 'T2' | 'T3', Screener[]> = { T1: [], T2: [], T3: [] };
+        stock.screeners.forEach((s) => groupedScreeners[s.tier].push(s));
 
         return (
           <div key={stock.symbol} className="bg-gray-800 rounded-lg shadow-md">
@@ -126,25 +114,31 @@ export default function AutoWatchlist() {
               className="flex justify-between items-center px-4 py-3 cursor-pointer"
               onClick={(e) => toggleRow(stock.symbol, e.metaKey || e.ctrlKey)}
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap">
                 <div className="text-lg font-bold">{stock.symbol}</div>
                 <div className="text-sm text-gray-400">Score: {stock.score}</div>
                 {stock.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="bg-gray-700 text-xs px-2 py-0.5 rounded-full text-gray-200"
-                  >
+                  <span key={tag} className="bg-gray-700 text-xs px-2 py-0.5 rounded-full text-gray-200">
                     {tag}
                   </span>
                 ))}
-                {tiersShown.T1 && stock.tierHits.T1.length > 0 && (
-                  <span className="bg-green-600 text-white text-xs px-2 py-0.5 rounded-full font-semibold">T1</span>
-                )}
-                {tiersShown.T2 && stock.tierHits.T2.length > 0 && (
-                  <span className="bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full font-semibold">T2</span>
-                )}
-                {tiersShown.T3 && stock.tierHits.T3.length > 0 && (
-                  <span className="bg-purple-600 text-white text-xs px-2 py-0.5 rounded-full font-semibold">T3</span>
+
+                {(['T1', 'T2', 'T3'] as const).map((tier) =>
+                  tiersShown[tier] && groupedScreeners[tier].length > 0 ? (
+                    <span
+                      key={`${stock.symbol}-${tier}`}
+                      title={groupedScreeners[tier].map(s => `✓ ${s.tooltip}`).join('\n')}
+                      className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
+                        tier === 'T1'
+                          ? 'bg-green-600 text-white'
+                          : tier === 'T2'
+                          ? 'bg-blue-500 text-white'
+                          : 'bg-purple-600 text-white'
+                      }`}
+                    >
+                      {tier}
+                    </span>
+                  ) : null
                 )}
               </div>
               <div className="text-gray-400 text-sm">{isOpen ? '▲' : '▼'}</div>
@@ -152,32 +146,33 @@ export default function AutoWatchlist() {
 
             {isOpen && (
               <div className="grid grid-cols-3 gap-4 bg-gray-700 px-4 py-3 text-sm text-gray-200 border-t border-gray-600">
-                <div>
-                  <h4 className="text-green-400 font-bold mb-1">Tier 1</h4>
-                  <ul className="space-y-1">
-                    {stock.tierHits.T1.map((s) => (
-                      <li key={s}>
-                        ✓ {formatT1Display([s]) !== 'T1' ? formatT1Display([s]) : formatLabel(s)}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-blue-400 font-bold mb-1">Tier 2</h4>
-                  <ul className="space-y-1">
-                    {stock.tierHits.T2.map((s) => (
-                      <li key={s}>✓ {formatLabel(s)}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-purple-400 font-bold mb-1">Tier 3</h4>
-                  <ul className="space-y-1">
-                    {stock.tierHits.T3.map((s) => (
-                      <li key={s}>✓ {formatLabel(s)}</li>
-                    ))}
-                  </ul>
-                </div>
+                {(['T1', 'T2', 'T3'] as const).map((tier) => (
+                  groupedScreeners[tier].length > 0 && (
+                    <div key={`${stock.symbol}-col-${tier}`}>
+                      <h4
+                        className={`font-bold mb-1 ${
+                          tier === 'T1'
+                            ? 'text-green-400'
+                            : tier === 'T2'
+                            ? 'text-blue-400'
+                            : 'text-purple-400'
+                        }`}
+                      >
+                        Tier {tier[1]}
+                      </h4>
+                      <ul className="space-y-1">
+                        {groupedScreeners[tier].map((s) => (
+                          <li key={s.name}>
+                            ✓ {formatLabel(s.name)}
+                            {s.tooltip && /\d/.test(s.tooltip) && (
+                              <span className="ml-[0.9rem] text-gray-500 italic font-light">{s.tooltip}</span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )
+                ))}
 
                 {stock.reasons.length > 0 && (
                   <div className="col-span-3 pt-2 border-t border-gray-600">
@@ -190,14 +185,14 @@ export default function AutoWatchlist() {
                   </div>
                 )}
 
-                    <div className="col-span-3 flex justify-end">
-                      <button
-                        onClick={() => window.location.href = `/tracker?ticker=${stock.symbol}`}
-                        className="text-green-400 hover:text-green-300 text-xs font-medium"
-                      >
-                         Tracker →
-                      </button>
-                    </div>
+                <div className="col-span-3 flex justify-end">
+                  <button
+                    onClick={() => (window.location.href = `/tracker?ticker=${stock.symbol}`)}
+                    className="text-green-400 hover:text-green-300 text-xs font-medium"
+                  >
+                    Tracker →
+                  </button>
+                </div>
               </div>
             )}
           </div>
