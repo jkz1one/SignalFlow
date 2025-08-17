@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import AutoWatchlist from './components/AutoWatchlist';
 import SectorRotation from './components/SectorRotation';
@@ -9,7 +9,17 @@ import GlobalContextBar from './components/GlobalContextBar';
 
 const TABS = ['Auto-Watchlist', 'Stock Tracker', 'Sector Rotation'];
 
+// Wrapper page component (no hooks)
 export default function TrackerPage() {
+  return (
+    <Suspense fallback={<div className="text-gray-400 text-sm p-4">Loading…</div>}>
+      <TrackerPageInner />
+    </Suspense>
+  );
+}
+
+// Inner client component that uses useSearchParams()
+function TrackerPageInner() {
   const searchParams = useSearchParams();
   const tickerParam = searchParams.get('ticker');
 
@@ -18,15 +28,17 @@ export default function TrackerPage() {
 
   useEffect(() => {
     if (tickerParam) {
-      setSymbol(tickerParam.toUpperCase());
+      const up = tickerParam.toUpperCase();
+      setSymbol(up);
       setActiveTab('Stock Tracker');
-      localStorage.setItem('symbol_tracker', tickerParam.toUpperCase());
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('symbol_tracker', up);
+      }
     }
   }, [tickerParam]);
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 p-4 space-y-4">
-      {/* Tab Switcher */}
       <div className="flex justify-center gap-2">
         {TABS.map((tab) => (
           <button
@@ -43,10 +55,8 @@ export default function TrackerPage() {
         ))}
       </div>
 
-      {/* Global Context Bar directly under tab switcher */}
       <GlobalContextBar />
 
-      {/* View Renderer */}
       <div className="mt-4">
         {activeTab === 'Auto-Watchlist' && <AutoWatchlist />}
         {activeTab === 'Stock Tracker' && <StockTracker symbol={symbol} />}
