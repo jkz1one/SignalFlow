@@ -26,6 +26,24 @@ scheduler = BackgroundScheduler(timezone="US/Eastern")
 BASE_DIR = os.path.dirname(__file__)
 CACHE_DIR = os.path.join(BASE_DIR, "cache")
 
+#--- Status Lock ---
+LOCK_PATH = os.path.join(CACHE_DIR, "scrape.lock")
+
+def _write_lock(process: str):
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    try:
+        with open(LOCK_PATH, "w") as f:
+            f.write(process)
+    except Exception:
+        pass
+
+def _clear_lock():
+    try:
+        if os.path.exists(LOCK_PATH):
+            os.remove(LOCK_PATH)
+    except Exception:
+        pass
+
 SCRIPTS = {
     "Cache Manager": os.path.join(BASE_DIR, "cache_manager.py"),
     "Universe Builder": os.path.join(BASE_DIR, "signals", "universe_builder.py"),
@@ -50,6 +68,7 @@ def is_market_day(date=None):
 def run_script(path, name):
     start = datetime.now()
     logging.info(f"⏱️ Starting {name} at {start.isoformat()}")
+    _write_lock(name)
     try:
         subprocess.run([sys.executable, path], check=True)
         end = datetime.now()
@@ -61,7 +80,9 @@ def run_script(path, name):
     except Exception as e:
         end = datetime.now()
         logging.error(f"❌ {name} crashed: {e} at {end.isoformat()}")
-
+    finally:
+        _clear_lock()
+        
 # --- Market Day Wrapper ---
 def market_day_wrapper(name):
     if is_market_day():

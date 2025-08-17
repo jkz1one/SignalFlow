@@ -12,6 +12,8 @@ from backend.signals import fetch_global_context  # WebSocket route
 from backend.routes import tracker_router as tracker_module
 from backend.routes import raw_candles
 from backend.routes import tracker_candles
+from backend.routes import system_status_router  # <-- NEW: mount status router
+
 app = FastAPI()
 
 # --- Register routers ---
@@ -20,6 +22,7 @@ app.include_router(fetch_global_context.router)
 app.include_router(tracker_module.router, prefix="/api")
 app.include_router(raw_candles.router)
 app.include_router(tracker_candles.router)
+app.include_router(system_status_router.router, prefix="/api")  # <-- NEW
 
 # --- CORS setup ---
 app.add_middleware(

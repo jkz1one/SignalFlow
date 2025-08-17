@@ -205,7 +205,7 @@ def main():
     # Tier 3: top-5 volume gainers
     top5 = sorted(
         combined_output["tickers"].items(),
-        key=lambda kv: kv[1].get("vol_latest", 0),
+        key=lambda kv: kv[1].get("vol_latest") or 0,
         reverse=True
     )[:5]
     for sym, _ in top5:

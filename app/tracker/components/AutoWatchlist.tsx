@@ -18,6 +18,13 @@ type Stock = {
   reasons: string[];
 };
 
+type SystemStatus = {
+  scraping: boolean;
+  phase: 'running' | 'idle' | 'completed' | 'error' | null;
+  process?: string | null;
+  watchlist_count?: number;
+};
+
 export default function AutoWatchlist() {
   const [data, setData] = useState<Stock[]>([]);
   const [loading, setLoading] = useState(true);
@@ -30,6 +37,7 @@ export default function AutoWatchlist() {
   const [showRisk, setShowRisk] = useState(true);
   const [tagFilters, setTagFilters] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState<'score' | 'symbol'>('score');
+  const [status, setStatus] = useState<SystemStatus | null>(null);
 
   function formatLabel(text: string) {
     return text
@@ -37,11 +45,13 @@ export default function AutoWatchlist() {
       .replace(/\b\w/g, (l) => l.toUpperCase());
   }
 
+  // Fetch watchlist once on load (keeps your existing behavior)
   useEffect(() => {
     async function fetchData() {
       try {
         const res = await fetch('/api/autowatchlist');
         const json = await res.json();
+
         const mapped = Object.entries(json).map(([symbol, stock]: [string, any]) => ({
           symbol,
           score: stock.score,
@@ -49,7 +59,7 @@ export default function AutoWatchlist() {
           isBlocked: stock.isBlocked || false,
           reasons: stock.reasons || [],
           screeners: stock.screeners || [],
-        }));
+        })) as Stock[];
 
         setData(mapped);
       } catch (err) {
@@ -60,6 +70,28 @@ export default function AutoWatchlist() {
     }
 
     fetchData();
+  }, []);
+
+  // Poll read-only system status every 15s
+  useEffect(() => {
+    let alive = true;
+
+    const loadStatus = async () => {
+      try {
+        const res = await fetch('/api/system-status');
+        const j = await res.json();
+        if (alive) setStatus(j);
+      } catch (e) {
+        // soft-fail: leave status as-is
+      }
+    };
+
+    loadStatus();
+    const id = setInterval(loadStatus, 15000);
+    return () => {
+      alive = false;
+      clearInterval(id);
+    };
   }, []);
 
   const toggleRow = (symbol: string, isCmdOrCtrl: boolean) => {
@@ -102,6 +134,19 @@ export default function AutoWatchlist() {
         sortBy={sortBy}
         setSortBy={(val) => val === 'score' || val === 'symbol' ? setSortBy(val) : null}
       />
+
+      {/* Status message under filter row (read-only) */}
+      {status && (
+        <div className="flex justify-center">
+          <div className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-lg text-gray-300 font-bold">
+            {status.scraping
+              ? '🚀 Building Signals…'
+              : filtered.length === 0
+                ? '⏳ No Candidates – System Idle '
+                : null}
+          </div>
+        </div>
+      )}
 
       {filtered.map((stock) => {
         const isOpen = expanded.includes(stock.symbol);
