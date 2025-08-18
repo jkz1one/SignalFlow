@@ -26,7 +26,9 @@ export default function GlobalContextBar() {
   const [rowIndex, setRowIndex] = useState(0);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:8000/ws/global_context");
+    const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsUrl = `${proto}//${window.location.host}/ws/global_context`;
+    const socket = new WebSocket(wsUrl);
   
     socket.onopen = () => {
       console.log("🟢 Connected to global context WebSocket");
