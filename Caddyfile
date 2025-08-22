@@ -1,0 +1,23 @@
+signalflow.duckdns.org {
+  encode zstd gzip
+
+  # WebSocket → FastAPI
+  @ws path /ws/*
+  reverse_proxy @ws api:8000
+
+  # Health
+  @health path /health
+  respond @health 200
+
+  # REST API → FastAPI
+  @api path /api/*
+  reverse_proxy @api api:8000
+
+  # Frontend (no path stripping)
+  @tracker path /tracker*
+  reverse_proxy @tracker frontend:3000
+
+  # Fallback everything else → frontend
+  reverse_proxy frontend:3000
+}
+

@@ -142,3 +142,80 @@ async def get_cache_timestamps():
             }
 
     return JSONResponse(content=output)
+# --- health & status probes (added for docker healthcheck) ---
+from fastapi.responses import JSONResponse
+import os, glob, json, time
+from datetime import datetime, timezone
+
+@app.get("/api/health")
+def health():
+    return {"ok": True}
+
+# Optional: quick visibility into cache files
+CACHE_DIR = os.path.join(os.path.dirname(__file__), "cache")
+def _latest(pattern):
+    files = glob.glob(os.path.join(CACHE_DIR, pattern))
+    return max(files, key=os.path.getmtime) if files else None
+
+@app.get("/api/status")
+def status():
+    def brief(p):
+        if not p: return None
+        try:
+            with open(p) as f: d = json.load(f)
+            return {"file": os.path.basename(p), "items": len(d) if isinstance(d,(list,dict)) else None}
+        except Exception as e:
+            return {"file": os.path.basename(p), "error": str(e)}
+    po = _latest("post_open_signals_*.json")
+    en = _latest("universe_enriched_*.json")
+    wl = _latest("autowatchlist_*.json")
+    return JSONResponse({
+        "now": datetime.now().astimezone().isoformat(),
+        "tz": time.tzname,
+        "cache_dir": CACHE_DIR,
+        "post_open": brief(po),
+        "enriched": brief(en),
+        "watchlist": brief(wl),
+    })
+# --- health & status probes (added for docker healthcheck) ---
+from fastapi.responses import JSONResponse
+import os, glob, json, time
+from datetime import datetime, timezone
+
+@app.get("/api/health")
+def health():
+    return {"ok": True}
+
+# Optional: quick visibility into cache files
+CACHE_DIR = os.path.join(os.path.dirname(__file__), "cache")
+def _latest(pattern):
+    files = glob.glob(os.path.join(CACHE_DIR, pattern))
+    return max(files, key=os.path.getmtime) if files else None
+
+@app.get("/api/status")
+def status():
+    def brief(p):
+        if not p: return None
+        try:
+            with open(p) as f: d = json.load(f)
+            return {"file": os.path.basename(p), "items": len(d) if isinstance(d,(list,dict)) else None}
+        except Exception as e:
+            return {"file": os.path.basename(p), "error": str(e)}
+    po = _latest("post_open_signals_*.json")
+    en = _latest("universe_enriched_*.json")
+    wl = _latest("autowatchlist_*.json")
+    return JSONResponse({
+        "now": datetime.now().astimezone().isoformat(),
+        "tz": time.tzname,
+        "cache_dir": CACHE_DIR,
+        "post_open": brief(po),
+        "enriched": brief(en),
+        "watchlist": brief(wl),
+    })
+
+# --- include health/status router ---
+try:
+    from .probes import router as _probes_router
+except Exception:
+    from backend.probes import router as _probes_router
+app.include_router(_probes_router)

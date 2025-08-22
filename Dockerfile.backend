@@ -1,0 +1,22 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# needed for healthcheck (curl), tz data, and pip install from git
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl tzdata git \
+  && rm -rf /var/lib/apt/lists/*
+
+# Install Python deps
+COPY backend/requirements.txt backend/requirements.txt
+RUN pip install --no-cache-dir -r backend/requirements.txt
+
+# Copy source
+COPY . .
+
+# Ensure cache dir exists at the canonical path used in compose
+RUN mkdir -p /app/backend/cache
+
+EXPOSE 8000

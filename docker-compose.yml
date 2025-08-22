@@ -1,0 +1,87 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000
+    environment:
+      - TZ=America/New_York
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - cache_data:/app/backend/cache
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/api/health || exit 1"]
+      interval: 20s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    command: python backend/scheduler.py
+    environment:
+      - TZ=America/New_York
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - cache_data:/app/backend/cache
+    depends_on:
+      api:
+        condition: service_started
+    restart: unless-stopped
+
+  sector:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    command: python backend/signals/sector_signals.py
+    environment:
+      - TZ=America/New_York
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - cache_data:/app/backend/cache
+    depends_on:
+      api:
+        condition: service_started
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    environment:
+      - TZ=America/New_York
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_BASE=/api
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/health >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 20s
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  proxy:
+    image: caddy:2
+    depends_on:
+      frontend:
+        condition: service_started
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    restart: unless-stopped
+
+volumes:
+  cache_data:

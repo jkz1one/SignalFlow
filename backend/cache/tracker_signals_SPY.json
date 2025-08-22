@@ -1,0 +1,15 @@
+{
+  "symbol": "SPY",
+  "timestamp": "2025-08-18T16:44:15.878404-04:00",
+  "system_30m": "Bullish",
+  "system_1h": "Bullish",
+  "momentum": "Chop",
+  "current_price": 643.14,
+  "premarket_high": 644.69,
+  "premarket_low": 642.08,
+  "prev_day_high": 646.09,
+  "prev_day_low": 642.52,
+  "prev_day_close": 643.45,
+  "daily_high": 643.95,
+  "daily_low": 642.17
+}
